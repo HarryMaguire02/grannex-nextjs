@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="bg-primary text-white">
       {/* Main Footer Content */}
       <div className="w-full py-6 lg:py-8">
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+        <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
             
             {/* Logo Section */}
@@ -14,9 +14,9 @@ export default function Footer() {
               <Image
                 src="/grannexLogoFooter.svg"
                 alt="Grannex International Logo"
-                width={240}
-                height={72}
-                className="h-16 w-auto"
+                width={320}
+                height={96}
+                className="h-20 md:h-24 lg:h-28 w-auto"
               />
             </div>
 
@@ -27,7 +27,7 @@ export default function Footer() {
                 <h3 className="text-lg font-semibold mb-4">Contact</h3>
                 <div className="space-y-3 text-sm">
                   <p>address 45</p>
-                  <p>email@gmail.com</p>
+                  <p>info@grannex.com</p>
                   <p>012345678</p>
                 </div>
               </div>
@@ -36,7 +36,7 @@ export default function Footer() {
               <div>
                 <h3 className="text-lg font-semibold mb-4">Contact Person</h3>
                 <div className="space-y-3 text-sm">
-                  <p>email@gmail.com</p>
+                  <p>info@grannex.com</p>
                   <p>012345678</p>
                 </div>
               </div>
@@ -44,17 +44,17 @@ export default function Footer() {
               {/* Social Media Section */}
               <div>
                 <h3 className="text-lg font-semibold mb-4">Follow us!</h3>
-                <div className="flex flex-col gap-4">
+                <div className="flex gap-4">
                   <Link
-                    href="https://instagram.com"
+                    href="https://www.linkedin.com/company/grannex-international"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hover:opacity-80 transition-opacity"
-                    aria-label="Instagram"
+                    aria-label="Follow us on LinkedIn"
                   >
                     <Image
-                      src="/grannexLogo.svg"
-                      alt="Instagram"
+                      src="/linkedin-icon.svg"
+                      alt="LinkedIn"
                       width={32}
                       height={32}
                       className="w-8 h-8"
@@ -62,15 +62,15 @@ export default function Footer() {
                   </Link>
 
                   <Link
-                    href="https://linkedin.com"
+                    href="https://www.facebook.com/grannex_international"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hover:opacity-80 transition-opacity"
-                    aria-label="LinkedIn"
+                    aria-label="Follow us on Facebook"
                   >
                     <Image
-                      src="/grannexLogo.svg"
-                      alt="LinkedIn"
+                      src="/facebook-icon.svg"
+                      alt="Facebook"
                       width={32}
                       height={32}
                       className="w-8 h-8"
@@ -86,7 +86,7 @@ export default function Footer() {
 
       {/* Footer Bottom */}
       <div className="w-full py-6">
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+        <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12">
           <div className="border-t-2 border-secondary pt-6">
             <div className="flex flex-col gap-4">
 

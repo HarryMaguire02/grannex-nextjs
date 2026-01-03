@@ -16,10 +16,10 @@ export default function Header() {
   return (
     <header className="w-full">
       <div className="border-b border-gray-100">
-        <div className="w-full">
-          <div className="relative flex items-center h-16 md:h-20">
-            {/* Logo - Left aligned */}
-            <Link href="/" className="flex items-center pl-6 sm:pl-8 lg:pl-12 z-10">
+        <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12">
+          <div className="flex items-center justify-between h-16 md:h-20">
+            {/* Logo - Left side */}
+            <Link href="/" className="flex items-center">
               <Image
                 src="/grannexLogo.svg"
                 alt="Grannex International Logo"
@@ -30,15 +30,11 @@ export default function Header() {
               />
             </Link>
 
-            {/* Desktop Navigation - Absolutely centered */}
-            <div className="hidden md:flex absolute left-1/2 transform -translate-x-1/2">
-              <Navigation navLinks={navLinks} />
-            </div>
+            {/* Desktop Navigation - Right side */}
+            <Navigation navLinks={navLinks} />
 
-            {/* Mobile Menu - Right aligned */}
-            <div className="md:hidden ml-auto pr-6 sm:pr-8 lg:pr-12">
-              <MobileMenu navLinks={navLinks} />
-            </div>
+            {/* Mobile Menu - Right side */}
+            <MobileMenu navLinks={navLinks} />
           </div>
         </div>
       </div>
