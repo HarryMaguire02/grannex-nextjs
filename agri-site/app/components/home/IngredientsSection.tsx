@@ -65,7 +65,7 @@ export default function IngredientsSection() {
         </h2>
 
         {/* Tabs */}
-        <div className="border-2 border-primary rounded-xl p-1 mb-8 flex flex-wrap gap-2 justify-between">
+        <div className="border-2 border-primary rounded-xl p-1 mb-8 flex flex-wrap gap-2 justify-center lg:justify-between">
           {tabs.map((tab) => (
             <button
               key={tab}
