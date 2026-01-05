@@ -57,10 +57,10 @@ export default function IngredientsSection() {
   const content = tabContent[activeTab];
 
   return (
-    <section className="py-16 bg-white">
+    <section className="relative py-8 sm:py-10 md:py-12 lg:py-16 bg-white">
       <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12">
         {/* Title */}
-        <h2 className="text-3xl md:text-4xl font-bold text-primary mb-8">
+        <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6 md:mb-8">
           Ingredients
         </h2>
 
@@ -102,6 +102,16 @@ export default function IngredientsSection() {
             </div>
           </div>
         </div>
+      </div>
+      {/* Decoration SVG - Bottom Left */}
+      <div className="absolute top-1/2 lg:top-auto lg:bottom-0 left-0 w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 pointer-events-none">
+        <Image
+          src="/decoration.svg"
+          alt=""
+          width={320}
+          height={320}
+          className="w-full h-full object-contain"
+        />
       </div>
     </section>
   );

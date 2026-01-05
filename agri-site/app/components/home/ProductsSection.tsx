@@ -30,10 +30,10 @@ const mockProducts = [
 
 export default function ProductsSection() {
   return (
-    <section className="py-16 bg-white">
+    <section className="relative py-8 sm:py-10 md:py-12 lg:py-16 bg-white">
       <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12">
         {/* Title */}
-        <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+        <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6 md:mb-8">
           <span className="font-normal">Our</span> products
         </h2>
 

@@ -23,10 +23,11 @@ export default function Header() {
               <Image
                 src="/grannexLogo.svg"
                 alt="Grannex International Logo"
-                width={160}
-                height={48}
+                width={200}
+                height={60}
                 className="h-10 md:h-12 w-auto"
                 priority
+                unoptimized
               />
             </Link>
 

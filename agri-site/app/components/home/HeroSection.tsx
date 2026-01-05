@@ -13,7 +13,7 @@ export default function HeroSection() {
       {/* Content */}
       <div className="relative max-w-content mx-auto px-6 sm:px-8 lg:px-12 h-full flex flex-col justify-between pt-16 md:pt-20 lg:pt-24 pb-8 md:pb-12">
         {/* Hero Text - Left Aligned, Max 50% Width */}
-        <div className="max-w-xl lg:max-w-2xl">
+        <div className="max-w-xl lg:max-w-2xl text-center md:text-left mx-auto md:mx-0">
           <h1 className="mb-4 sm:mb-6">
             <span className="text-primary font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl leading-tight">Grannex International</span>{' '}
             <span className="text-white font-normal text-lg sm:text-xl md:text-2xl lg:text-3xl leading-relaxed">
@@ -29,10 +29,10 @@ export default function HeroSection() {
         <div className="grid grid-cols-2 lg:grid-cols-4 rounded-2xl overflow-hidden h-auto lg:h-[97px]">
           {[
             { title: 'Oils and fats', icon: '/oils-and-fats.svg', href: '/products?category=oils-fats' },
-            { title: 'Food ingredients', icon: '/food-ingredients.svg', href: '/products?category=food-ingredients' },
             { title: 'Aqua feeds ingredients', icon: '/aqua-feeds-ingredients.svg', href: '/products?category=aqua-feeds' },
             { title: 'Animal feeds ingredients', icon: '/animal-feeds-ingredients.svg', href: '/products?category=animal-feeds' },
-          ].map((category, index, array) => (
+            { title: 'Food ingredients', icon: '/food-ingredients.svg', href: '/products?category=food-ingredients' },
+          ].map((category, index) => (
             <Link
               key={category.title}
               href={category.href}

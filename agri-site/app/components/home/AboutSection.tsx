@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function AboutSection() {
   return (
-    <section className="py-16 bg-white">
+    <section className="relative py-8 sm:py-10 md:py-12 lg:py-16 bg-white">
       <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
@@ -38,6 +38,16 @@ export default function AboutSection() {
             </div>
           </div>
         </div>
+      </div>
+      {/* Decoration SVG - Bottom Left */}
+      <div className="absolute top-1/2 lg:top-auto lg:bottom-0 left-0 w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 pointer-events-none">
+        <Image
+          src="/decoration.svg"
+          alt=""
+          width={320}
+          height={320}
+          className="w-full h-full object-contain"
+        />
       </div>
     </section>
   );
