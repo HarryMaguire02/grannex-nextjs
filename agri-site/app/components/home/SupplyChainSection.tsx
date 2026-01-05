@@ -56,9 +56,10 @@ export default function SupplyChainSection() {
                 <Image
                   src={item.icon}
                   alt={item.alt}
-                  width={128}
-                  height={128}
+                  width={256}
+                  height={256}
                   className="h-16 w-16 md:h-24 md:w-24 lg:h-32 lg:w-32 object-contain"
+                  unoptimized
                 />
               </div>
             ) : (
