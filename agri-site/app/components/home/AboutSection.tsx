@@ -1,12 +1,19 @@
 import Image from 'next/image';
 
-export default function AboutSection() {
+interface AboutSectionProps {
+  showSubtitle?: boolean;
+  showPadding?: boolean;
+}
+
+export default function AboutSection({ showSubtitle = true, showPadding = true }: AboutSectionProps) {
   return (
-    <section className="relative py-8 sm:py-10 md:py-12 lg:py-16 bg-white">
+    <section className={`relative bg-white ${showPadding ? 'py-8 sm:py-10 md:py-12 lg:py-16' : ''}`}>
       <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-sm font-semibold text-green-medium mb-4">— ABOUT US</h2>
+            {showSubtitle && (
+              <h2 className="text-sm font-semibold text-green-medium mb-4">— ABOUT US</h2>
+            )}
             <h3 className="font-bold text-[32px] leading-[38px] uppercase text-primary mb-6">GRANNEX</h3>
             <div className="space-y-4 text-primary font-normal text-sm leading-4 text-justify">
               <p>

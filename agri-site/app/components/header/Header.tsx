@@ -4,12 +4,11 @@ import Navigation from './Navigation';
 import MobileMenu from './MobileMenu';
 
 const navLinks = [
-  { href: '/news', label: 'News' },
   { href: '/products', label: 'Products' },
+  { href: '/logistics', label: 'Logistics' },
   { href: '/', label: 'Home' },
-  //{ href: '/logistics', label: 'Logistics' },
   { href: '/about', label: 'About us' },
-  { href: '/contact', label: 'Contact us' },
+  { href: '/#contact', label: 'Contact us' },
 ];
 
 export default function Header() {

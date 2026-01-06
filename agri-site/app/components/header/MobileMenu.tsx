@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 
 interface NavLink {
   href: string;
@@ -16,9 +16,44 @@ interface MobileMenuProps {
 export default function MobileMenu({ navLinks }: MobileMenuProps) {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
+  const router = useRouter();
 
   const toggleMenu = () => setIsOpen(!isOpen);
   const closeMenu = () => setIsOpen(false);
+
+  const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    // Check if it's a hash link
+    if (href.includes('#')) {
+      e.preventDefault();
+      const [path, hash] = href.split('#');
+
+      // Close the menu first
+      closeMenu();
+
+      // If we're not on the home page, navigate there first
+      if (pathname !== '/' && path === '/') {
+        router.push('/');
+        // Wait for navigation and menu close animation to complete before scrolling
+        setTimeout(() => {
+          const element = document.getElementById(hash);
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }, 400);
+      } else {
+        // We're already on the right page, scroll after menu closes
+        setTimeout(() => {
+          const element = document.getElementById(hash);
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }, 300);
+      }
+    } else {
+      // Regular link, just close the menu
+      closeMenu();
+    }
+  };
 
   // Prevent body scroll when menu is open
   useEffect(() => {
@@ -103,7 +138,7 @@ export default function MobileMenu({ navLinks }: MobileMenuProps) {
                 <Link
                   key={link.href}
                   href={link.href}
-                  onClick={closeMenu}
+                  onClick={(e) => handleLinkClick(e, link.href)}
                   className={`py-3 px-4 rounded-lg text-base font-medium transition-colors ${
                     isActive
                       ? 'bg-primary text-white'

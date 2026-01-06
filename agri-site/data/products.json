@@ -1,0 +1,338 @@
+[
+  {
+    "id": "potato-starch-001",
+    "slug": "potato-starch",
+    "name": "Potato Starch",
+    "category": "Starches",
+    "market": "Food",
+    "segment": "Starches",
+    "type": "Conventional",
+    "image": "/potato-starch.png",
+    "shortDescription": "Potato starch is the starch extracted from potatoes. The granules of potato starch are roughly twice the size of those from other starches, resulting in significantly higher water absorption capacity and improved texture. It is a highly refined starch, containing minimal protein or fat, which gives the flour a clear white color. When cooked, potato starch exhibits neutral taste, good clarity and transparency, high binding strength, a long texture, and a minimal tendency to foam.",
+    "description": "Potato starch is a very refined starch, containing minimal protein or fat. This gives the powder a clear white colour, and the cooked starch typical characteristics of neutral taste, good clarity, high binding strength, long texture and a minimal tendency to foaming or yellowing of the solution. It is used in food industry, for example to keep the cake moist and give a soft texture. It is also occasionally used in the preparation of pre-packed grated cheese, to reduce sweating and binding. It is also used in nonfood applications as wallpaper adhesive, for textile finishing and textile sizing, in paper coating and sizing, and as an adhesive in paper sacks and gummed tape.",
+    "application": [
+      "Thickener and stabilizer in foods such as puddings, custards, soups, sauces, gravies, pie fillings, and salad dressings",
+      "Ingredient in making noodles and pastas",
+      "Gluten-free flour substitute in baking recipes",
+      "Used in the paper and packaging industry to improve paper strength and as a binder for coatings",
+      "Common plant-based ingredient in pet food"
+    ],
+    "packingOption": [
+      "Polypropylene bags with an insert/paper laminates, net weight of up to 50 kg",
+      "Soft polypropylene containers (big bags) net weight of up to 1,000 kg or as agreed with the customer",
+      "In Bulk"
+    ],
+    "specifications": [
+      {
+        "mainAnalysis": "Dry matter",
+        "unit": "% as fed",
+        "avg": "92.1",
+        "sd": "1.9",
+        "min": "88.3",
+        "max": "95.7",
+        "nb": "107"
+      },
+      {
+        "mainAnalysis": "Crude protein",
+        "unit": "%DM",
+        "avg": "85.7",
+        "sd": "5.0",
+        "min": "73.8",
+        "max": "96.5",
+        "nb": "118"
+      },
+      {
+        "mainAnalysis": "Crude fibre",
+        "unit": "%DM",
+        "avg": "0.9",
+        "sd": "0.6",
+        "min": "0.3",
+        "max": "2.9",
+        "nb": "18"
+      },
+      {
+        "mainAnalysis": "NDF",
+        "unit": "%DM",
+        "avg": "55.8",
+        "sd": "1.9",
+        "min": "53.8",
+        "max": "57.5",
+        "nb": "3"
+      },
+      {
+        "mainAnalysis": "ADF",
+        "unit": "%DM",
+        "avg": "6.5",
+        "sd": "2.9",
+        "min": "2.0",
+        "max": "11.7",
+        "nb": "10"
+      }
+    ]
+  },
+  {
+    "id": "vital-wheat-gluten-001",
+    "slug": "vital-wheat-gluten",
+    "name": "Vital Wheat Gluten",
+    "category": "Proteins",
+    "market": "Food",
+    "segment": "Proteins",
+    "type": "Conventional",
+    "image": "/vital-wheat-gluten.png",
+    "shortDescription": "High-protein wheat gluten for bread improvement and meat alternatives. Vital wheat gluten is a natural protein derived from wheat with excellent binding and texturizing properties.",
+    "description": "Vital wheat gluten is a natural protein derived from wheat. It is widely used in baking to improve dough strength, texture, and volume. Also an essential ingredient in plant-based meat alternatives and vegetarian products due to its excellent binding and texturizing properties. The high protein content makes it ideal for nutritional enhancement in various food applications.",
+    "application": [
+      "Bread and baked goods improvement",
+      "Plant-based meat alternatives",
+      "Breakfast cereals and nutrition bars",
+      "Pet food formulations",
+      "Noodles and pasta products"
+    ],
+    "packingOption": [
+      "25kg paper bags",
+      "Big bags up to 1,000 kg",
+      "Bulk packaging available"
+    ],
+    "specifications": [
+      {
+        "mainAnalysis": "Protein",
+        "unit": "%DM",
+        "avg": "80.0",
+        "sd": "2.0",
+        "min": "75.0",
+        "max": "85.0",
+        "nb": "50"
+      },
+      {
+        "mainAnalysis": "Moisture",
+        "unit": "%",
+        "avg": "8.0",
+        "sd": "0.5",
+        "min": "7.0",
+        "max": "9.0",
+        "nb": "50"
+      },
+      {
+        "mainAnalysis": "Ash",
+        "unit": "%DM",
+        "avg": "1.0",
+        "sd": "0.2",
+        "min": "0.8",
+        "max": "1.5",
+        "nb": "50"
+      }
+    ]
+  },
+  {
+    "id": "corn-starch-001",
+    "slug": "corn-starch",
+    "name": "Corn Starch",
+    "category": "Starches",
+    "market": "Food",
+    "segment": "Starches",
+    "type": "Conventional",
+    "image": "/corn-starch.png",
+    "shortDescription": "Versatile corn starch for food and industrial use. Our corn starch is produced from premium quality corn and is one of the most versatile ingredients in the food industry.",
+    "description": "Our corn starch is produced from premium quality corn and is one of the most versatile ingredients in the food industry. It serves as a thickening agent, stabilizer, and anti-caking agent in numerous applications. Also widely used in industrial applications including paper, textile, and adhesives.",
+    "application": [
+      "Bakery and confectionery",
+      "Dairy products thickening",
+      "Soups and sauces",
+      "Beverage industry stabilization",
+      "Paper and textile industry"
+    ],
+    "packingOption": [
+      "25kg bags",
+      "500kg big bags",
+      "Bulk packaging"
+    ],
+    "specifications": [
+      {
+        "mainAnalysis": "Moisture",
+        "unit": "%",
+        "avg": "12.0",
+        "sd": "0.5",
+        "min": "11.0",
+        "max": "13.0",
+        "nb": "75"
+      },
+      {
+        "mainAnalysis": "Protein",
+        "unit": "%DM",
+        "avg": "0.3",
+        "sd": "0.05",
+        "min": "0.2",
+        "max": "0.4",
+        "nb": "75"
+      },
+      {
+        "mainAnalysis": "pH",
+        "unit": "",
+        "avg": "5.5",
+        "sd": "0.5",
+        "min": "4.5",
+        "max": "7.0",
+        "nb": "75"
+      }
+    ]
+  },
+  {
+    "id": "soybean-meal-001",
+    "slug": "soybean-meal",
+    "name": "Soybean Meal",
+    "category": "Proteins",
+    "market": "Feed",
+    "segment": "Proteins",
+    "type": "Conventional",
+    "image": "/oils-and-fats.png",
+    "shortDescription": "High-protein soybean meal for animal and aqua feed. Soybean meal is the most important protein source used to feed farm animals and aquaculture.",
+    "description": "Soybean meal is the most important protein source used to feed farm animals and aquaculture. It represents two-thirds of the total world output of protein feedstuffs. Our soybean meal is produced from high-quality soybeans and offers excellent nutritional value with a balanced amino acid profile.",
+    "application": [
+      "Poultry feed formulation",
+      "Swine feed nutrition",
+      "Cattle feed supplement",
+      "Aquaculture feed ingredient",
+      "Pet food protein source"
+    ],
+    "packingOption": [
+      "Bulk shipments",
+      "50kg bags",
+      "Custom packaging available"
+    ],
+    "specifications": [
+      {
+        "mainAnalysis": "Protein",
+        "unit": "%DM",
+        "avg": "46.0",
+        "sd": "1.5",
+        "min": "44.0",
+        "max": "48.0",
+        "nb": "100"
+      },
+      {
+        "mainAnalysis": "Moisture",
+        "unit": "%",
+        "avg": "11.0",
+        "sd": "0.5",
+        "min": "10.0",
+        "max": "12.0",
+        "nb": "100"
+      },
+      {
+        "mainAnalysis": "Fiber",
+        "unit": "%DM",
+        "avg": "6.0",
+        "sd": "0.5",
+        "min": "5.0",
+        "max": "7.0",
+        "nb": "100"
+      }
+    ]
+  },
+  {
+    "id": "sunflower-oil-001",
+    "slug": "sunflower-oil",
+    "name": "Sunflower Oil",
+    "category": "Oils & Fats",
+    "market": "Food",
+    "segment": "Oils & Fats",
+    "type": "Conventional",
+    "image": "/oils-and-fats.png",
+    "shortDescription": "Premium refined sunflower oil for cooking and food production. Our refined sunflower oil is a light, versatile cooking oil extracted from sunflower seeds.",
+    "description": "Our refined sunflower oil is a light, versatile cooking oil extracted from sunflower seeds. Known for its mild flavor and high smoke point, it is ideal for frying, baking, and salad dressings. Rich in vitamin E and low in saturated fats, making it a healthy choice for various culinary applications.",
+    "application": [
+      "Cooking and deep frying",
+      "Salad dressings and marinades",
+      "Margarine production",
+      "Mayonnaise and sauces",
+      "Baking industry applications"
+    ],
+    "packingOption": [
+      "Bulk flexi-tanks",
+      "1L and 5L bottles",
+      "Custom packaging solutions"
+    ],
+    "specifications": [
+      {
+        "mainAnalysis": "Free fatty acid",
+        "unit": "%",
+        "avg": "0.08",
+        "sd": "0.02",
+        "min": "0.05",
+        "max": "0.10",
+        "nb": "60"
+      },
+      {
+        "mainAnalysis": "Peroxide value",
+        "unit": "meq/kg",
+        "avg": "0.8",
+        "sd": "0.1",
+        "min": "0.5",
+        "max": "1.0",
+        "nb": "60"
+      },
+      {
+        "mainAnalysis": "Moisture",
+        "unit": "%",
+        "avg": "0.08",
+        "sd": "0.01",
+        "min": "0.05",
+        "max": "0.10",
+        "nb": "60"
+      }
+    ]
+  },
+  {
+    "id": "rapeseed-oil-001",
+    "slug": "rapeseed-oil",
+    "name": "Rapeseed Oil (Canola)",
+    "category": "Oils & Fats",
+    "market": "Food",
+    "segment": "Oils & Fats",
+    "type": "Conventional",
+    "image": "/oils-and-fats.png",
+    "shortDescription": "Healthy rapeseed oil with optimal omega-3 to omega-6 ratio. Rapeseed oil is one of the healthiest cooking oils available with the lowest saturated fat content.",
+    "description": "Rapeseed oil, also known as canola oil, is one of the healthiest cooking oils available. It has the lowest saturated fat content among cooking oils and contains beneficial omega-3 fatty acids. Our refined rapeseed oil has a neutral taste and high heat tolerance, making it perfect for all cooking methods.",
+    "application": [
+      "Cooking and frying applications",
+      "Food processing industry",
+      "Margarine and spreads production",
+      "Salad dressings manufacturing",
+      "Biodiesel production"
+    ],
+    "packingOption": [
+      "Bulk flexi-tanks",
+      "Bottles (various sizes)",
+      "Custom packaging"
+    ],
+    "specifications": [
+      {
+        "mainAnalysis": "Free fatty acid",
+        "unit": "%",
+        "avg": "0.08",
+        "sd": "0.02",
+        "min": "0.05",
+        "max": "0.10",
+        "nb": "55"
+      },
+      {
+        "mainAnalysis": "Peroxide value",
+        "unit": "meq/kg",
+        "avg": "0.8",
+        "sd": "0.1",
+        "min": "0.5",
+        "max": "1.0",
+        "nb": "55"
+      },
+      {
+        "mainAnalysis": "Moisture",
+        "unit": "%",
+        "avg": "0.08",
+        "sd": "0.01",
+        "min": "0.05",
+        "max": "0.10",
+        "nb": "55"
+      }
+    ]
+  }
+]
