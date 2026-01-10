@@ -41,12 +41,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="h-full">
       <body
-        className={`${roboto.variable} antialiased`}
+        className={`${roboto.variable} antialiased flex flex-col min-h-full`}
       >
         <ScrollHeader />
-        <main className="pt-16 md:pt-20">
+        <main className="pt-16 md:pt-20 grow">
           {children}
         </main>
         <Footer />

@@ -2,58 +2,25 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { usePathname, useRouter } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 
 interface NavLink {
   href: string;
   label: string;
+  isContactButton?: boolean;
 }
 
 interface MobileMenuProps {
   navLinks: NavLink[];
+  onContactClick: () => void;
 }
 
-export default function MobileMenu({ navLinks }: MobileMenuProps) {
+export default function MobileMenu({ navLinks, onContactClick }: MobileMenuProps) {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
-  const router = useRouter();
 
   const toggleMenu = () => setIsOpen(!isOpen);
   const closeMenu = () => setIsOpen(false);
-
-  const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
-    // Check if it's a hash link
-    if (href.includes('#')) {
-      e.preventDefault();
-      const [path, hash] = href.split('#');
-
-      // Close the menu first
-      closeMenu();
-
-      // If we're not on the home page, navigate there first
-      if (pathname !== '/' && path === '/') {
-        router.push('/');
-        // Wait for navigation and menu close animation to complete before scrolling
-        setTimeout(() => {
-          const element = document.getElementById(hash);
-          if (element) {
-            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-          }
-        }, 400);
-      } else {
-        // We're already on the right page, scroll after menu closes
-        setTimeout(() => {
-          const element = document.getElementById(hash);
-          if (element) {
-            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-          }
-        }, 300);
-      }
-    } else {
-      // Regular link, just close the menu
-      closeMenu();
-    }
-  };
 
   // Prevent body scroll when menu is open
   useEffect(() => {
@@ -134,11 +101,28 @@ export default function MobileMenu({ navLinks }: MobileMenuProps) {
           <nav className="flex flex-col space-y-1">
             {navLinks.map((link) => {
               const isActive = pathname === link.href;
+
+              // If it's the contact button, render a button instead
+              if (link.isContactButton) {
+                return (
+                  <button
+                    key={link.href}
+                    onClick={() => {
+                      onContactClick();
+                      closeMenu();
+                    }}
+                    className="py-3 px-4 rounded-lg text-base font-medium transition-colors text-primary hover:bg-secondary text-left"
+                  >
+                    {link.label}
+                  </button>
+                );
+              }
+
               return (
                 <Link
                   key={link.href}
                   href={link.href}
-                  onClick={(e) => handleLinkClick(e, link.href)}
+                  onClick={closeMenu}
                   className={`py-3 px-4 rounded-lg text-base font-medium transition-colors ${
                     isActive
                       ? 'bg-primary text-white'

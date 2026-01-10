@@ -13,6 +13,9 @@
 
   /* Global content container width */
   --max-width-content: 1240px;
+
+  /* Custom breakpoint */
+  --breakpoint-xs: 500px;
 }
 
 :root {

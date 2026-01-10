@@ -39,7 +39,7 @@ export default function SupplyChainSection() {
         </div>
 
         {/* Icons Row with Connecting Lines */}
-        <div className="flex flex-wrap items-center justify-center gap-4 md:gap-0 md:justify-between max-w-content mx-auto w-full">
+        <div className="flex items-center justify-between gap-1 xs:gap-2 md:gap-4 max-w-content mx-auto w-full">
           {[
             { type: 'icon', icon: '/plant.svg', alt: 'Origin' },
             { type: 'line' },
@@ -58,12 +58,12 @@ export default function SupplyChainSection() {
                   alt={item.alt}
                   width={256}
                   height={256}
-                  className="h-16 w-16 md:h-24 md:w-24 lg:h-32 lg:w-32 object-contain"
+                  className="h-10 w-10 xs:h-12 xs:w-12 sm:h-16 sm:w-16 md:h-20 md:w-20 lg:h-24 lg:w-24 xl:h-32 xl:w-32 object-contain"
                   unoptimized
                 />
               </div>
             ) : (
-              <div key={`line-${index}`} className="hidden md:block h-px flex-1 bg-green-medium"></div>
+              <div key={`line-${index}`} className="h-px flex-1 bg-green-medium"></div>
             )
           ))}
         </div>

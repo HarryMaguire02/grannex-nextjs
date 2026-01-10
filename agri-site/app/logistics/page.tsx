@@ -5,7 +5,7 @@ import SupplyChainSection from '../components/home/SupplyChainSection';
 
 export default function LogisticsPage() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="bg-white">
       {/* Breadcrumb */}
       <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12 py-6">
         <nav className="text-sm text-primary" aria-label="Breadcrumb">

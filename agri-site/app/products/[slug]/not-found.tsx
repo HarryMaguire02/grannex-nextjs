@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function NotFound() {
   return (
-    <main className="min-h-screen bg-white flex items-center justify-center">
+    <div className="min-h-[60vh] bg-white flex items-center justify-center py-6">
       <div className="max-w-md mx-auto px-6 text-center">
         <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">
           Product Not Found
@@ -17,6 +17,6 @@ export default function NotFound() {
           View All Products
         </Link>
       </div>
-    </main>
+    </div>
   );
 }

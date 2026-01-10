@@ -3,7 +3,7 @@
     "slug": "vital-wheat-gluten",
     "name": "Vital  Wheat Gluten",
     "group": "food-ingredients",
-    "groupLabel": "Food Ingredients",
+    "groupLabel": "Food ingredients",
     "info": "Wheat gluten is extracted from flour by washing out the starch. Wheat gluten is a plant protein composed of two components gliadin and glutenin.",
     "description": "Vital wheat gluten is a natural vegetable protein extracted from wheat flour. It is characterized by its high viscoelasticity and ability to bind water, which improves the texture and volume of baked goods. When hydrated, it forms a strong, elastic network that retains gases and stabilizes structures. It is a highly digestible protein source, typically containing over 80% protein, making it an essential ingredient for improving flour quality.",
     "application": "Milling & Baking: Improves dough elasticity and gas retention in bread and pastry. ;Meat Industry: Used as a binder and structural stabilizer in processed meats. ;Vegetarian Foods: Key ingredient for meat substitutes like seitan. ;Aquafeed & Pet Food: High-quality protein source and binder for fish and pet pellets.",
@@ -25,9 +25,10 @@
       "Pet Food",
       "Animal Feed",
       "Cosmetics",
-      "Technical & Industrial."
+      "Technical & Industrial"
     ],
     "isActive": true,
+    "isFeatured": true,
     "image": "/vital-wheat-gluten.png"
   },
   {
@@ -50,7 +51,7 @@
       "Food & Beverage",
       "Pet Food",
       "Animal Feed",
-      "Aquaculture."
+      "Aquaculture"
     ],
     "isActive": true,
     "image": "/corn-starch.png"
@@ -69,7 +70,7 @@
       "Pet Food",
       "Animal Feed",
       "Aquaculture",
-      "Agriculture."
+      "Agriculture"
     ],
     "isActive": true,
     "image": "/corn-starch.png"
@@ -87,7 +88,7 @@
     "industry": [
       "Animal Feed",
       "Pet Food",
-      "Aquaculture."
+      "Aquaculture"
     ],
     "isActive": true,
     "image": "/vital-wheat-gluten.png"
@@ -105,7 +106,7 @@
     "industry": [
       "Animal Feed",
       "Aquaculture",
-      "Agriculture."
+      "Agriculture"
     ],
     "isActive": true,
     "image": "/vital-wheat-gluten.png"
@@ -123,7 +124,7 @@
     "industry": [
       "Pet Food",
       "Animal Feed",
-      "Technical & Industrial."
+      "Technical & Industrial"
     ],
     "isActive": true,
     "image": "/vital-wheat-gluten.png"
@@ -140,7 +141,7 @@
     "specification": [],
     "industry": [
       "Animal Feed",
-      "Technical & Industrial."
+      "Technical & Industrial"
     ],
     "isActive": true,
     "image": "/vital-wheat-gluten.png"
@@ -158,16 +159,17 @@
     "industry": [
       "Animal Feed",
       "Agriculture",
-      "Technical & Industrial."
+      "Technical & Industrial"
     ],
     "isActive": true,
+    "isFeatured": true,
     "image": "/vital-wheat-gluten.png"
   },
   {
     "slug": "fish-meal",
     "name": "Fish meal",
-    "group": "⁠aqua-feeds-ingredients",
-    "groupLabel": "⁠Aqua feeds ingredients",
+    "group": "aqua-feeds-ingredients",
+    "groupLabel": "Aqua feeds ingredients",
     "info": "Fish Meal is a premium marine protein known for its optimal amino acid profile and high concentration of Omega-3 fatty acids (EPA and DHA). It provides essential vitamins and minerals that support immune function and high-performance growth in aquaculture and young livestock. It remains one of the most effective ingredients for stimulating appetite and ensuring healthy development.",
     "description": "Optimal amino acid profile; rich in Omega-3 fatty acids (EPA/DHA) and vitamins.",
     "application": "Crucial for aquaculture; high-performance diets for piglets/poultry.",
@@ -176,7 +178,7 @@
     "industry": [
       "Pet Food",
       "Animal Feed",
-      "Aquaculture."
+      "Aquaculture"
     ],
     "isActive": true,
     "image": "/vital-wheat-gluten.png"
@@ -184,8 +186,8 @@
   {
     "slug": "soyabean-oil",
     "name": "Soyabean oil",
-    "group": "⁠oils-and-fats",
-    "groupLabel": "⁠Oils and fats",
+    "group": "oils-and-fats",
+    "groupLabel": "Oils and fats",
     "info": "Soybean Oil is a refined vegetable oil rich in polyunsaturated fats and essential linoleic acid. It serves as a concentrated energy source that improves the calorie density of liquid feeds while helping to control dust in feed mills. Its neutral profile makes it a versatile ingredient for enhancing the health and performance of various animal species.",
     "description": "Rich in polyunsaturated fats and essential linoleic acid.",
     "application": "High-energy liquid feed; dust control in mills; essential fatty acid source.",
@@ -196,7 +198,7 @@
       "Pet Food",
       "Animal Feed",
       "Cosmetics",
-      "Technical & Industrial."
+      "Technical & Industrial"
     ],
     "isActive": true,
     "image": "/vital-wheat-gluten.png"
@@ -204,8 +206,8 @@
   {
     "slug": "sunflower-oil",
     "name": "Sunflower oil",
-    "group": "⁠oils-and-fats",
-    "groupLabel": "⁠Oils and fats",
+    "group": "oils-and-fats",
+    "groupLabel": "Oils and fats",
     "info": "Sunflower Oil is an excellent source of unsaturated fats and is naturally high in Vitamin E, which acts as a powerful antioxidant. It is easily digestible, providing a clean energy source that promotes healthy skin and a shiny coat in horses and pets. Its inclusion in diets helps support cellular health and overall animal vitality.",
     "description": "High Vitamin E content; easily digestible and improves animal coat condition.",
     "application": "Energy for poultry/swine; horse skin/coat health supplement.",
@@ -216,7 +218,7 @@
       "Pet Food",
       "Animal Feed",
       "Cosmetics",
-      "Technical & Industrial."
+      "Technical & Industrial"
     ],
     "isActive": true,
     "image": "/vital-wheat-gluten.png"
@@ -224,8 +226,8 @@
   {
     "slug": "rape-oil",
     "name": "Rape oil",
-    "group": "⁠oils-and-fats",
-    "groupLabel": "⁠Oils and fats",
+    "group": "oils-and-fats",
+    "groupLabel": "Oils and fats",
     "info": "Rape Oil, specifically low-erucic varieties, provides a balanced fatty acid profile that offers high metabolizable energy. It is an ideal liquid fat for stabilizing mash feeds and reducing dust during the milling process. Its stability and cost-effectiveness make it a preferred choice for large-scale swine and poultry operations.",
     "description": "Low-erucic acid profile; provides stable energy and high metabolizable energy.",
     "application": "General energy source; dust suppressant for mash and pelleted feeds.",
@@ -234,7 +236,7 @@
     "industry": [
       "Food & Beverage",
       "Animal Feed",
-      "Technical & Industrial."
+      "Technical & Industrial"
     ],
     "isActive": true,
     "image": "/vital-wheat-gluten.png"
@@ -242,8 +244,8 @@
   {
     "slug": "corn-oil",
     "name": "Corn oil",
-    "group": "⁠oils-and-fats",
-    "groupLabel": "⁠Oils and fats",
+    "group": "oils-and-fats",
+    "groupLabel": "Oils and fats",
     "info": "Corn Oil is a premium vegetable fat extracted from the maize germ, containing high levels of linoleic acid and natural tocopherols. It is highly valued for its ability to improve the palatability of pet foods while supporting healthy skin and coat conditions. As an antioxidant-rich energy source, it helps maintain the shelf-life and nutritional quality of finished feeds.",
     "description": "High linoleic acid and natural tocopherol (antioxidant) levels.",
     "application": "Premium energy source; improves skin health and palatability in pets.",
@@ -253,7 +255,7 @@
       "Food & Beverage",
       "Pet Food",
       "Animal Feed",
-      "Technical & Industrial."
+      "Technical & Industrial"
     ],
     "isActive": true,
     "image": "/vital-wheat-gluten.png"
@@ -261,8 +263,8 @@
   {
     "slug": "palm-oil",
     "name": "Palm oil",
-    "group": "⁠oils-and-fats",
-    "groupLabel": "⁠Oils and fats",
+    "group": "oils-and-fats",
+    "groupLabel": "Oils and fats",
     "info": "Palm Oil is a semi-solid vegetable fat that provides a heat-stable and dense energy source for various livestock species. In dairy nutrition, it often functions as a bypass fat to help increase milk fat production without disrupting rumen fermentation. It is a highly economical choice for boosting the caloric intake of swine and poultry during high-growth phases.",
     "description": "Semi-solid vegetable fat; provides heat-stable energy and high bypass fat.",
     "application": "Dairy bypass fat (milk fat boost); economical swine energy source.",
@@ -273,7 +275,7 @@
       "Pet Food",
       "Animal Feed",
       "Cosmetics",
-      "Technical & Industrial."
+      "Technical & Industrial"
     ],
     "isActive": true,
     "image": "/vital-wheat-gluten.png"
@@ -292,7 +294,7 @@
       "Food & Beverage",
       "Pet Food",
       "Animal Feed",
-      "Technical & Industrial."
+      "Technical & Industrial"
     ],
     "isActive": true,
     "image": "/vital-wheat-gluten.png"
@@ -311,7 +313,7 @@
       "Food & Beverage",
       "Bakery",
       "Pet Food",
-      "Animal Feed."
+      "Animal Feed"
     ],
     "isActive": true,
     "image": "/vital-wheat-gluten.png"
@@ -331,9 +333,10 @@
       "Bakery",
       "Pet Food",
       "Animal Feed",
-      "Technical & Industrial."
+      "Technical & Industrial"
     ],
     "isActive": true,
+    "isFeatured": true,
     "image": "/vital-wheat-gluten.png"
   },
   {
@@ -350,7 +353,7 @@
       "Food & Beverage",
       "Pet Food",
       "Animal Feed",
-      "Technical & Industrial."
+      "Technical & Industrial"
     ],
     "isActive": true,
     "image": "/vital-wheat-gluten.png"
@@ -369,9 +372,10 @@
       "Food & Beverage",
       "Pet Food",
       "Animal Feed",
-      "Technical & Industrial."
+      "Technical & Industrial"
     ],
     "isActive": true,
+    "isFeatured": true,
     "image": "/vital-wheat-gluten.png"
   },
   {
@@ -389,7 +393,7 @@
       "Pet Food",
       "Animal Feed",
       "Aquaculture",
-      "Technical & Industrial."
+      "Technical & Industrial"
     ],
     "isActive": true,
     "image": "/vital-wheat-gluten.png"
@@ -409,7 +413,7 @@
       "Bakery",
       "Pet Food",
       "Animal Feed",
-      "Technical & Industrial."
+      "Technical & Industrial"
     ],
     "isActive": true,
     "image": "/vital-wheat-gluten.png"
@@ -428,7 +432,7 @@
       "Food & Beverage",
       "Pet Food",
       "Animal Feed",
-      "Technical & Industrial."
+      "Technical & Industrial"
     ],
     "isActive": true,
     "image": "/vital-wheat-gluten.png"
@@ -447,7 +451,7 @@
       "Food & Beverage",
       "Pet Food",
       "Animal Feed",
-      "Technical & Industrial."
+      "Technical & Industrial"
     ],
     "isActive": true,
     "image": "/vital-wheat-gluten.png"
@@ -467,7 +471,7 @@
       "Pet Food",
       "Animal Feed",
       "Cosmetics",
-      "Technical & Industrial."
+      "Technical & Industrial"
     ],
     "isActive": true,
     "image": "/vital-wheat-gluten.png"
@@ -484,7 +488,7 @@
     "specification": [],
     "industry": [
       "Food & Beverage",
-      "Animal Feed."
+      "Animal Feed"
     ],
     "isActive": true,
     "image": "/vital-wheat-gluten.png"
@@ -501,7 +505,7 @@
     "specification": [],
     "industry": [
       "Pet Food",
-      "Animal Feed."
+      "Animal Feed"
     ],
     "isActive": true,
     "image": "/vital-wheat-gluten.png"
@@ -520,7 +524,7 @@
       "Food & Beverage",
       "Bakery",
       "Pet Food",
-      "Animal Feed."
+      "Animal Feed"
     ],
     "isActive": true,
     "image": "/vital-wheat-gluten.png"
@@ -528,8 +532,8 @@
   {
     "slug": "sunflower",
     "name": "Sunflower",
-    "group": "⁠oils-and-fats",
-    "groupLabel": "⁠Oils and fats",
+    "group": "oils-and-fats",
+    "groupLabel": "Oils and fats",
     "info": "These raw agricultural grains provide a natural, unprocessed source of fiber, protein, and energy for a variety of livestock. Used as the foundation for ruminant Total Mixed Rations (TMR) or as scratch feed for poultry, they support natural foraging behaviors and rumen health. These whole grains ensure a slow-release energy profile that is essential for maintaining steady growth and production.",
     "description": "Whole seeds providing fiber, protein, and energy in natural form.",
     "application": "Component for ruminant TMR; wild bird feed.",
@@ -537,7 +541,7 @@
     "specification": [],
     "industry": [
       "Animal Feed",
-      "Agriculture."
+      "Agriculture"
     ],
     "isActive": true,
     "image": "/vital-wheat-gluten.png"
@@ -545,8 +549,8 @@
   {
     "slug": "soyabean",
     "name": "Soyabean",
-    "group": "⁠oils-and-fats",
-    "groupLabel": "⁠Oils and fats",
+    "group": "oils-and-fats",
+    "groupLabel": "Oils and fats",
     "info": "These raw agricultural grains provide a natural, unprocessed source of fiber, protein, and energy for a variety of livestock. Used as the foundation for ruminant Total Mixed Rations (TMR) or as scratch feed for poultry, they support natural foraging behaviors and rumen health. These whole grains ensure a slow-release energy profile that is essential for maintaining steady growth and production.",
     "description": "Whole seeds providing fiber, protein, and energy in natural form.",
     "application": "Base for animal diets; raw material for processing.",
@@ -554,7 +558,7 @@
     "specification": [],
     "industry": [
       "Animal Feed",
-      "Agriculture."
+      "Agriculture"
     ],
     "isActive": true,
     "image": "/vital-wheat-gluten.png"
@@ -562,8 +566,8 @@
   {
     "slug": "corn",
     "name": "Corn",
-    "group": "⁠oils-and-fats",
-    "groupLabel": "⁠Oils and fats",
+    "group": "oils-and-fats",
+    "groupLabel": "Oils and fats",
     "info": "These raw agricultural grains provide a natural, unprocessed source of fiber, protein, and energy for a variety of livestock. Used as the foundation for ruminant Total Mixed Rations (TMR) or as scratch feed for poultry, they support natural foraging behaviors and rumen health. These whole grains ensure a slow-release energy profile that is essential for maintaining steady growth and production.",
     "description": "Whole seeds providing fiber, protein, and energy in natural form.",
     "application": "Primary energy source for livestock; scratch feed.",
@@ -571,7 +575,7 @@
     "specification": [],
     "industry": [
       "Animal Feed",
-      "Agriculture."
+      "Agriculture"
     ],
     "isActive": true,
     "image": "/vital-wheat-gluten.png"
@@ -579,8 +583,8 @@
   {
     "slug": "rape",
     "name": "Rape",
-    "group": "⁠oils-and-fats",
-    "groupLabel": "⁠Oils and fats",
+    "group": "oils-and-fats",
+    "groupLabel": "Oils and fats",
     "info": "These raw agricultural grains provide a natural, unprocessed source of fiber, protein, and energy for a variety of livestock. Used as the foundation for ruminant Total Mixed Rations (TMR) or as scratch feed for poultry, they support natural foraging behaviors and rumen health. These whole grains ensure a slow-release energy profile that is essential for maintaining steady growth and production.",
     "description": "Whole seeds providing fiber, protein, and energy in natural form.",
     "application": "Energy supplement for livestock; raw oil source.",
@@ -589,7 +593,7 @@
     "industry": [
       "Animal Feed",
       "Agriculture",
-      "Technical & Industrial."
+      "Technical & Industrial"
     ],
     "isActive": true,
     "image": "/vital-wheat-gluten.png"

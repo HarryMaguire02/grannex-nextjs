@@ -44,19 +44,21 @@ export default function ProductPage({ params }: PageProps) {
   };
 
   return (
-    <main className="min-h-screen bg-white">
-      {/* Hero Section */}
-      <div className="bg-white py-8 sm:py-10 md:py-12 lg:py-16">
-        <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12">
-          {/* Breadcrumb */}
-          <nav className="mb-6 text-sm text-primary">
-            <Link href="/" className="hover:text-green-medium">Home</Link>
-            <span className="mx-2">/</span>
-            <Link href="/products" className="hover:text-green-medium">Products</Link>
-            <span className="mx-2">/</span>
-            <span className="font-medium">{product.name}</span>
-          </nav>
+    <div className="bg-white">
+      {/* Breadcrumb */}
+      <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12 py-6">
+        <nav className="text-sm text-primary" aria-label="Breadcrumb">
+          <Link href="/" className="hover:text-green-medium transition-colors">Home</Link>
+          <span className="mx-2">/</span>
+          <Link href="/products" className="hover:text-green-medium transition-colors">Products</Link>
+          <span className="mx-2">/</span>
+          <span className="font-medium">{product.name}</span>
+        </nav>
+      </div>
 
+      {/* Hero Section */}
+      <div>
+        <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12">
           {/* Hero Content */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
             {/* Left: Product Image */}
@@ -336,6 +338,6 @@ export default function ProductPage({ params }: PageProps) {
           </div>
         </div>
       </section>
-    </main>
+    </div>
   );
 }
