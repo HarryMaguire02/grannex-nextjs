@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -21,7 +21,7 @@ type Product = {
   image: string;
 };
 
-export default function ProductsPage() {
+function ProductsContent() {
   const searchParams = useSearchParams();
   const groupParam = searchParams.get('group');
 
@@ -266,5 +266,17 @@ export default function ProductsPage() {
         )}
       </div>
     </div>
+  );
+}
+
+export default function ProductsPage() {
+  return (
+    <Suspense fallback={
+      <div className="bg-white min-h-screen flex items-center justify-center">
+        <div className="text-primary">Loading products...</div>
+      </div>
+    }>
+      <ProductsContent />
+    </Suspense>
   );
 }
