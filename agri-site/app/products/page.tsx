@@ -6,19 +6,18 @@ import Link from 'next/link';
 import productsData from '@/data/products.json';
 
 type Product = {
-  id: string;
   slug: string;
   name: string;
-  category: string;
-  market: string;
-  segment: string;
-  type: string;
-  image: string;
-  shortDescription: string;
+  group: string;
+  groupLabel: string;
+  info: string;
   description: string;
-  application: string[];
-  packingOption: string[];
-  specifications: any[];
+  application: string;
+  packing: string;
+  specification: string[];
+  industry: string[];
+  isActive: boolean;
+  image: string;
 };
 
 export default function ProductsPage() {
@@ -28,17 +27,19 @@ export default function ProductsPage() {
 
   const products = productsData as Product[];
 
-  // Get unique values for filters
-  const markets = ['All', ...Array.from(new Set(products.map(p => p.market)))];
-  const segments = ['All', ...Array.from(new Set(products.map(p => p.segment)))];
-  const types = ['All', ...Array.from(new Set(products.map(p => p.type)))];
+  const industries = [
+  'All',
+  ...Array.from(
+    new Set(products.flatMap(p => p.industry))
+  )
+];
+  const group = ['All', ...Array.from(new Set(products.map(p => p.group)))];
+  const groupLabel = ['All', ...Array.from(new Set(products.map(p => p.groupLabel)))];
 
   // Filter products
   const filteredProducts = products.filter(product => {
     return (
-      (selectedMarket === 'All' || product.market === selectedMarket) &&
-      (selectedSegment === 'All' || product.segment === selectedSegment) &&
-      (selectedType === 'All' || product.type === selectedType)
+      product.isActive
     );
   });
 
@@ -77,8 +78,8 @@ export default function ProductsPage() {
             onChange={(e) => setSelectedMarket(e.target.value)}
             className="pl-4 py-2 border-0 rounded-lg text-sm font-normal text-primary bg-white cursor-pointer hover:bg-primary/5"
           >
-            {markets.map(market => (
-              <option key={market} value={market}>{market === 'All' ? 'Markets' : market}</option>
+            {industries.map(industry => (
+              <option key={industry} value={industry}>{industry === 'All' ? 'Markets' : industry}</option>
             ))}
           </select>
 
@@ -87,8 +88,8 @@ export default function ProductsPage() {
             onChange={(e) => setSelectedSegment(e.target.value)}
             className="pl-4 py-2 border-0 rounded-lg text-sm font-normal text-primary bg-white cursor-pointer hover:bg-primary/5"
           >
-            {segments.map(segment => (
-              <option key={segment} value={segment}>{segment === 'All' ? 'Segments' : segment}</option>
+            {group.map(group => (
+              <option key={group} value={group}>{group === 'All' ? 'Segments' : group}</option>
             ))}
           </select>
 
@@ -97,8 +98,8 @@ export default function ProductsPage() {
             onChange={(e) => setSelectedType(e.target.value)}
             className="pl-4 py-2 border-0 rounded-lg text-sm font-normal text-primary bg-white cursor-pointer hover:bg-primary/5"
           >
-            {types.map(type => (
-              <option key={type} value={type}>{type === 'All' ? 'Type' : type}</option>
+            {groupLabel.map(groupLabel => (
+              <option key={groupLabel} value={groupLabel}>{groupLabel === 'All' ? 'Type' : groupLabel}</option>
             ))}
           </select>
         </div>
@@ -107,7 +108,7 @@ export default function ProductsPage() {
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
           {filteredProducts.map((product) => (
             <Link
-              key={product.id}
+              key={product.slug}
               href={`/products/${product.slug}`}
               className="group cursor-pointer max-w-xs mx-auto w-full"
             >

@@ -5,10 +5,9 @@ export default function WorldMapSection() {
     <section className="relative py-8 sm:py-10 md:py-12 lg:py-16 bg-white">
       <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12">
         {/* Title */}
-        <h2 className="text-3xl md:text-4xl font-bold text-primary mb-2">
+        <h2 className="font-bold text-primary mb-6 text-2xl md:text-4xl leading-tight md:leading-normal">
           We supply our products to
-        </h2>
-        <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
+          <br />
           5 continents
         </h2>
 
@@ -27,6 +26,67 @@ export default function WorldMapSection() {
               height={600}
               className="w-full h-auto"
             />
+
+            {/* Location Pins */}
+            {/* North America */}
+            <div className="absolute top-[10%] left-[14%] sm:top-[19%] w-6 h-6 md:w-8 md:h-8">
+              <Image
+                src="/location-ping.svg"
+                alt="North America"
+                width={32}
+                height={32}
+                className="w-full h-full"
+                unoptimized
+              />
+            </div>
+
+            {/* South America */}
+            <div className="absolute sm:top-[63%] top-[61%] left-[24%] sm:left-[26%] w-6 h-6 md:w-8 md:h-8">
+              <Image
+                src="/location-ping.svg"
+                alt="South America"
+                width={32}
+                height={32}
+                className="w-full h-full"
+                unoptimized
+              />
+            </div>
+
+            {/* Asia */}
+            <div className="absolute top-[1%] sm:top-[10%] left-[58%] w-6 h-6 md:w-8 md:h-8">
+              <Image
+                src="/location-ping.svg"
+                alt="Asia"
+                width={32}
+                height={32}
+                className="w-full h-full"
+                unoptimized
+              />
+            </div>
+
+            {/* Africa */}
+            <div className="absolute top-[50%] left-[52%] w-6 h-6 md:w-8 md:h-8">
+              <Image
+                src="/location-ping.svg"
+                alt="Africa"
+                width={32}
+                height={32}
+                className="w-full h-full"
+                unoptimized
+              />
+            </div>
+
+            {/* Asia/Oceania */}
+            <div className="absolute top-[62%] left-[83%] sm:top-[70%] sm:left-[85%] w-6 h-6 md:w-8 md:h-8">
+              <Image
+                src="/location-ping.svg"
+                alt="Asia and Oceania"
+                width={32}
+                height={32}
+                className="w-full h-full"
+                unoptimized
+              />
+            </div>
           </div>
         </div>
       </div>

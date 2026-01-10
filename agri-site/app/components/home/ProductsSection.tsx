@@ -38,7 +38,7 @@ export default function ProductsSection() {
         </h2>
 
         {/* Description */}
-        <p className="text-primary font-normal text-sm leading-4 text-justify mb-8 w-full lg:w-1/2">
+        <p className="text-primary font-normal text-sm leading-4 text-justify mb-8 w-full">
           We offer a broad portfolio of products, commodities, and ingredients serving the human food,
           aquaculture, and animal feed industries. Our range includes oilseeds, vegetable oils, and related
           agricultural products sourced from multiple origins to meet diverse market and customer requirements.

@@ -29,9 +29,9 @@ export default function HeroSection() {
         <div className="grid grid-cols-2 lg:grid-cols-4 rounded-2xl overflow-hidden h-auto lg:h-[97px]">
           {[
             { title: 'Oils and fats', icon: '/oils-and-fats.svg', href: '/products?category=oils-fats' },
-            { title: 'Aqua feeds ingredients', icon: '/aqua-feeds-ingredients.svg', href: '/products?category=aqua-feeds' },
-            { title: 'Animal feeds ingredients', icon: '/animal-feeds-ingredients.svg', href: '/products?category=animal-feeds' },
             { title: 'Food ingredients', icon: '/food-ingredients.svg', href: '/products?category=food-ingredients' },
+            { title: 'Animal feeds ingredients', icon: '/animal-feeds-ingredients.svg', href: '/products?category=animal-feeds' },
+            { title: 'Aqua feeds ingredients', icon: '/aqua-feeds-ingredients.svg', href: '/products?category=aqua-feeds' },
           ].map((category, index) => (
             <Link
               key={category.title}
