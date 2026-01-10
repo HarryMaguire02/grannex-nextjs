@@ -6,30 +6,19 @@ import Link from 'next/link';
 import productsData from '@/data/products.json';
 import NotFound from './not-found';
 
-type Specification = {
-  mainAnalysis: string;
-  unit: string;
-  avg: string;
-  sd: string;
-  min: string;
-  max: string;
-  nb: string;
-};
-
 type Product = {
-  id: string;
   slug: string;
   name: string;
-  category: string;
-  market: string;
-  segment: string;
-  type: string;
-  image: string;
-  shortDescription: string;
+  group: string;
+  groupLabel: string;
+  info: string;
   description: string;
-  application: string[];
-  packingOption: string[];
-  specifications: Specification[];
+  application: string;
+  packing: string;
+  specification: string[];
+  industry: string[];
+  isActive: boolean;
+  image: string;
 };
 
 type PageProps = {
@@ -88,7 +77,7 @@ export default function ProductPage({ params }: PageProps) {
               </h1>
 
               <p className="text-primary font-normal text-sm leading-6 text-justify mb-8">
-                {product.shortDescription}
+                {product.info}
               </p>
 
               {/* CTA Buttons */}
@@ -131,7 +120,7 @@ export default function ProductPage({ params }: PageProps) {
             </div>
 
             {/* Application */}
-            <div>
+            {/* <div>
               <h3 className="text-xl font-bold text-primary mb-4">Application</h3>
               <ul className="space-y-2">
                 {product.application.map((app, index) => (
@@ -141,10 +130,10 @@ export default function ProductPage({ params }: PageProps) {
                   </li>
                 ))}
               </ul>
-            </div>
+            </div> */}
 
             {/* Packing Option */}
-            <div>
+            {/* <div>
               <h3 className="text-xl font-bold text-primary mb-4">Packing option</h3>
               <ul className="space-y-2">
                 {product.packingOption.map((option, index) => (
@@ -154,7 +143,7 @@ export default function ProductPage({ params }: PageProps) {
                   </li>
                 ))}
               </ul>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
@@ -171,7 +160,7 @@ export default function ProductPage({ params }: PageProps) {
 
           {/* Specification Table */}
           <div className="overflow-x-auto rounded-2xl shadow-md">
-            <table className="w-full border-collapse">
+            {/* <table className="w-full border-collapse">
               <thead>
                 <tr className="bg-[#D4C5B0]">
                   <th className="px-4 py-3 text-left text-sm font-bold text-primary border-r border-[#C4B5A0]">
@@ -227,7 +216,7 @@ export default function ProductPage({ params }: PageProps) {
                   </tr>
                 ))}
               </tbody>
-            </table>
+            </table> */}
           </div>
 
           {/* Download Link */}
