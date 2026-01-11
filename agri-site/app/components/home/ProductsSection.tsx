@@ -1,6 +1,6 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import productsData from '@/data/products.json';
+import ProductCard from '@/app/components/ProductCard';
 
 type Product = {
   slug: string;
@@ -45,28 +45,15 @@ export default function ProductsSection() {
         </p>
 
         {/* Product Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {featuredProducts.map((product) => (
-            <Link
+            <ProductCard
               key={product.slug}
-              href={`/products/${product.slug}`}
-              className="group cursor-pointer max-w-xs mx-auto w-full"
-            >
-              {/* Product Image */}
-              <div className="relative w-full aspect-square overflow-hidden rounded-t-lg">
-                <Image
-                  src={product.image}
-                  alt={product.name}
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-
-              {/* Product Name */}
-              <div className="bg-secondary rounded-b-lg py-3 px-4 text-center min-h-[64px] flex items-center justify-center">
-                <h3 className="text-primary font-medium text-base line-clamp-2">{product.name}</h3>
-              </div>
-            </Link>
+              slug={product.slug}
+              name={product.name}
+              image={product.image}
+              info={product.info}
+            />
           ))}
         </div>
       </div>

@@ -14,7 +14,7 @@ export default function AboutSection({ showSubtitle = true, showPadding = true }
             {showSubtitle && (
               <h2 className="text-sm font-semibold text-green-medium mb-4">— ABOUT US</h2>
             )}
-            <h3 className="font-bold text-[32px] leading-[38px] uppercase text-primary mb-6">GRANNEX</h3>
+            <h3 className="font-bold text-[32px] leading-9.5 uppercase text-primary mb-6">GRANNEX</h3>
             <div className="space-y-4 text-primary font-normal text-sm leading-4 text-justify">
               <p>
                 <strong>GRANNEX INTERNATIONAL</strong> is a leading global agriculture commodities trading and brokerage firm.

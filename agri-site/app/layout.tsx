@@ -16,13 +16,6 @@ export const metadata: Metadata = {
   description: "Grannex International is a leading global agriculture commodities trading and brokerage firm. We supply quality agricultural ingredients including proteins, starches, sweeteners, oils, animal feed and aqua feed.",
   keywords: ["agriculture", "commodities trading", "animal feed", "aqua feed", "proteins", "starches", "vegetable oils", "food ingredients"],
   authors: [{ name: "Grannex International" }],
-  icons: {
-    icon: [
-      { url: '/grannexLogo.svg', type: 'image/svg+xml' },
-    ],
-    shortcut: '/grannexLogo.svg',
-    apple: '/grannexLogo.svg',
-  },
   openGraph: {
     title: "Grannex International - Leading Global Agriculture Commodities Trading",
     description: "Quality agricultural ingredients, secure global delivery. Leading supplier of proteins, starches, sweeteners, and oils.",
@@ -41,7 +34,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="h-full">
+    <html lang="en" className="h-full" data-scroll-behavior="smooth">
       <body
         className={`${roboto.variable} antialiased flex flex-col min-h-full`}
       >

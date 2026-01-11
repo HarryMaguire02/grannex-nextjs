@@ -2,9 +2,9 @@
 
 import { useState, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
-import Image from 'next/image';
 import Link from 'next/link';
 import productsData from '@/data/products.json';
+import ProductCard from '@/app/components/ProductCard';
 
 type Product = {
   slug: string;
@@ -38,20 +38,30 @@ function ProductsContent() {
 
   const products = productsData as Product[];
 
-  // Get unique industries from all products
+  // Static industry options
   const industries = [
     'All',
-    ...Array.from(
-      new Set(products.flatMap(p => p.industry))
-    ).sort()
+    'Agriculture',
+    'Animal feed',
+    'Aquaculture',
+    'Bakery',
+    'Cosmetics',
+    'Food & Beverage',
+    'Milling',
+    'Pasta',
+    'Pet Food',
+    'Technical & Industrial'
   ];
 
-  // Get unique groups from all products using 'group' property
+  // Static group options with value-label pairs
   const groups = [
-    'All',
-    ...Array.from(
-      new Set(products.map(p => p.group))
-    ).sort()
+    { value: 'All', label: 'Group' },
+    { value: 'animal-feed-ingredients', label: 'Animal feed ingredients' },
+    { value: 'aqua-feeds-ingredients', label: 'Aqua feeds ingredients' },
+    { value: 'food-ingredients', label: 'Food ingredients' },
+    { value: 'oils-and-fats', label: 'Oils and fats' },
+    { value: 'sweetners', label: 'Sweeteners' },
+    { value: 'other', label: 'Other' }
   ];
 
   // Filter products by industry, group, and search query
@@ -84,6 +94,16 @@ function ProductsContent() {
     setCurrentPage(1);
   };
 
+  // Reset filters only (search has its own clear button)
+  const handleReset = () => {
+    setSelectedIndustry('All');
+    setSelectedGroup('All');
+    setCurrentPage(1);
+  };
+
+  // Check if any filters are active (excluding search since it has its own clear button)
+  const hasActiveFilters = selectedIndustry !== 'All' || selectedGroup !== 'All';
+
   return (
     <div className="bg-white">
       {/* Breadcrumb */}
@@ -100,7 +120,7 @@ function ProductsContent() {
               </Link>
               <span className="mx-2">/</span>
               <span className="font-medium">
-                {products.find(p => p.group === groupParam)?.groupLabel || groupParam}
+                {groups.find(g => g.value === groupParam)?.label || groupParam}
               </span>
             </>
           ) : (
@@ -116,7 +136,7 @@ function ProductsContent() {
         </h1>
 
         {/* Description */}
-        <p className="text-primary font-normal text-sm leading-4 text-justify mb-8 w-full lg:w-1/2">
+        <p className="text-primary font-normal text-sm leading-4 text-justify mb-8 w-full">
           We offer a broad portfolio of products, commodities, and ingredients serving the human food,
           aquaculture, and animal feed industries. Our range includes oilseeds, vegetable oils, and related
           agricultural products sourced from multiple origins to meet diverse market and customer requirements.
@@ -150,18 +170,33 @@ function ProductsContent() {
                   : 'bg-white hover:bg-primary/5 cursor-pointer'
               }`}
             >
-              {groups.map(group => {
-                // Find a product with this group to get the groupLabel for display
-                const product = products.find(p => p.group === group);
-                const displayName = group === 'All' ? 'Group' : (product?.groupLabel || group);
-
-                return (
-                  <option key={group} value={group}>
-                    {displayName}
-                  </option>
-                );
-              })}
+              {groups.map(group => (
+                <option key={group.value} value={group.value}>
+                  {group.label}
+                </option>
+              ))}
             </select>
+
+            {hasActiveFilters && (
+              <button
+                onClick={handleReset}
+                className="p-2 text-primary/60 hover:text-red-600 hover:bg-red-50 rounded-lg transition-colors"
+                title="Clear all filters"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-5 w-5"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </button>
+            )}
           </div>
 
           {/* Search Container */}
@@ -174,7 +209,7 @@ function ProductsContent() {
                 setSearchQuery(e.target.value);
                 setCurrentPage(1);
               }}
-              className="pl-10 pr-4 py-2 border border-primary/20 rounded-lg text-sm font-normal text-primary bg-white focus:outline-none focus:border-green-medium focus:ring-1 focus:ring-green-medium w-full md:w-64"
+              className="pl-10 pr-10 py-2 border border-primary/20 rounded-lg text-sm font-normal text-primary bg-white focus:outline-none focus:border-green-medium focus:ring-1 focus:ring-green-medium w-full md:w-64"
             />
             <svg
               className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-primary/60"
@@ -189,32 +224,42 @@ function ProductsContent() {
                 d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
               />
             </svg>
+            {searchQuery && (
+              <button
+                onClick={() => {
+                  setSearchQuery('');
+                  setCurrentPage(1);
+                }}
+                className="absolute right-3 top-1/2 -translate-y-1/2 p-1 text-primary/60 hover:text-red-600 hover:bg-red-50 rounded transition-colors"
+                title="Clear search"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-4 w-4"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </button>
+            )}
           </div>
         </div>
 
         {/* Product Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 mb-8">
+        <div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-8">
           {paginatedProducts.map((product) => (
-            <Link
+            <ProductCard
               key={product.slug}
-              href={`/products/${product.slug}`}
-              className="group cursor-pointer max-w-xs mx-auto w-full"
-            >
-              {/* Product Image */}
-              <div className="relative w-full aspect-square overflow-hidden rounded-t-lg">
-                <Image
-                  src={product.image}
-                  alt={product.name}
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-
-              {/* Product Name */}
-              <div className="bg-secondary rounded-b-lg py-3 px-4 text-center min-h-[64px] flex items-center justify-center">
-                <h3 className="text-primary font-medium text-base line-clamp-2">{product.name}</h3>
-              </div>
-            </Link>
+              slug={product.slug}
+              name={product.name}
+              image={product.image}
+              info={product.info}
+            />
           ))}
         </div>
 

@@ -26,7 +26,7 @@ export default function HeroSection() {
         </div>
 
         {/* Category Cards */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 rounded-2xl overflow-hidden h-auto lg:h-[97px]">
+        <div className="grid grid-cols-2 lg:grid-cols-4 rounded-2xl overflow-hidden h-auto">
           {[
             { title: 'Oils and fats', icon: '/oils-and-fats.svg', group: 'oils-and-fats' },
             { title: 'Food ingredients', icon: '/food-ingredients.svg', group: 'food-ingredients' },
@@ -36,18 +36,17 @@ export default function HeroSection() {
             <Link
               key={category.title}
               href={`/products?group=${encodeURIComponent(category.group)}`}
-              className="bg-primary text-secondary p-3 md:p-4 lg:p-5 hover:bg-green-medium transition-colors cursor-pointer group flex items-center justify-center gap-2 md:gap-3 relative min-h-[70px] md:min-h-[70px] lg:h-full"
+              className="bg-primary text-secondary p-2 sm:p-3 md:p-4 lg:p-5 hover:bg-green-medium transition-colors cursor-pointer group flex items-center justify-center gap-2 md:gap-3 relative min-h-17.5"
               aria-label={`View ${category.title} products`}
             >
-              <div className="h-8 md:h-10 lg:h-12 flex items-center shrink-0">
+              <div className="flex items-center shrink-0">
                 <Image
                   src={category.icon}
                   alt={category.title}
-                  width={64}
-                  height={64}
-                  className="h-8 md:h-10 lg:h-12 w-8 md:w-10 lg:w-12 object-contain"
-                  style={{ filter: 'brightness(0) saturate(100%) invert(88%) sepia(13%) saturate(468%) hue-rotate(346deg) brightness(98%) contrast(91%)' }}
-                />
+                  width={56}
+                  height={56}
+                  className="h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 lg:h-14 lg:w-14 object-contain"
+                  />
               </div>
               <h3 className="text-sm md:text-base font-light leading-tight md:leading-5 text-center">{category.title}</h3>
 

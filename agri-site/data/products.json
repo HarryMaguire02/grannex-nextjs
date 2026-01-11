@@ -184,8 +184,8 @@
     "image": "/vital-wheat-gluten.png"
   },
   {
-    "slug": "soyabean-oil",
-    "name": "Soyabean oil",
+    "slug": "soybean-oil",
+    "name": "soybean oil",
     "group": "oils-and-fats",
     "groupLabel": "Oils and fats",
     "info": "Soybean Oil is a refined vegetable oil rich in polyunsaturated fats and essential linoleic acid. It serves as a concentrated energy source that improves the calorie density of liquid feeds while helping to control dust in feed mills. Its neutral profile makes it a versatile ingredient for enhancing the health and performance of various animal species.",
@@ -547,8 +547,8 @@
     "image": "/vital-wheat-gluten.png"
   },
   {
-    "slug": "soyabean",
-    "name": "Soyabean",
+    "slug": "soybean",
+    "name": "soybean",
     "group": "oils-and-fats",
     "groupLabel": "Oils and fats",
     "info": "These raw agricultural grains provide a natural, unprocessed source of fiber, protein, and energy for a variety of livestock. Used as the foundation for ruminant Total Mixed Rations (TMR) or as scratch feed for poultry, they support natural foraging behaviors and rumen health. These whole grains ensure a slow-release energy profile that is essential for maintaining steady growth and production.",

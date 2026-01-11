@@ -56,6 +56,7 @@ export default function ContactPopup({ isOpen, onClose }: ContactPopupProps) {
               src="/popup-cover.png"
               alt="Agricultural field"
               fill
+              sizes="(max-width: 768px) 50vw, 40vw"
               className="object-cover"
             />
           </div>
@@ -69,7 +70,7 @@ export default function ContactPopup({ isOpen, onClose }: ContactPopupProps) {
                 alt="Grannex International"
                 width={320}
                 height={96}
-                className="h-20 md:h-24 w-auto"
+                className="h-20 md:h-24"
               />
             </div>
 

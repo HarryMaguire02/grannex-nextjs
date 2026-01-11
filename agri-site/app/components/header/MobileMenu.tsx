@@ -126,7 +126,7 @@ export default function MobileMenu({ navLinks, onContactClick }: MobileMenuProps
                   className={`py-3 px-4 rounded-lg text-base font-medium transition-colors ${
                     isActive
                       ? 'bg-primary text-white'
-                      : 'text-primary hover:bg-secondary'
+                      : 'text-primary hover:bg-primary/20'
                   }`}
                 >
                   {link.label}
