@@ -31,19 +31,22 @@ export default function LogisticsHero() {
           {/* Left Side - Text */}
           <div className="space-y-4 text-primary font-normal text-sm leading-4 text-justify">
             <p>
-              We manage the end-to-end movement of oilseeds, vegetable oils, and other agricultural commodities, integrating procurement, storage, transportation, and delivery into a single, coordinated supply chain. This approach ensures efficiency, consistency, and control from origin to destination.
+             At Grannex, we integrate every stage of the supply chain—from initial procurement and quality testing at the origin to final-mile delivery. 
             </p>
             <p>
-              Through established relationships with producers, processors, and logistics partners, we secure reliable supply across multiple origins. Our operational oversight and market presence allow us to adapt to changing conditions while maintaining product quality and timely execution.
+              By coordinating storage, multi-modal transportation, and real-time operational oversight, we ensure that our agricultural commodities move seamlessly across borders. 
             </p>
             <p>
-              Risk management is embedded throughout our supply chain operations. Careful planning, continuous monitoring, and disciplined execution enable dependable delivery, competitive pricing, and long-term value for our customers and partners.
+              Our deep-rooted relationships with global producers allow us to guarantee consistency, even in the most volatile market conditions.
             </p>
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the le.
+              We maintain deep-rooted relationships with global producers across five continents, allowing us to guarantee consistency even in the most volatile market conditions.
             </p>
             <p>
-              Lorem Ipsum is simply dummy text of t
+               Before any commodity is loaded, it undergoes comprehensive quality testing to ensure it meets international standards and our clients specific requirements.
+            </p>
+            <p>
+              Efficiency is driven by our ability to move goods through diverse transport channels. We coordinate complex multi-modal solutions including sea freight, rail, and road transport to optimize transit times and reduce costs.
             </p>
           </div>
 
@@ -112,7 +115,7 @@ export default function LogisticsHero() {
       {/* Decoration SVG - Bottom Left */}
       <div className="absolute top-1/4 lg:top-auto lg:bottom-0 left-0 w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 pointer-events-none">
         <Image
-          src="/decoration.svg"
+          src="/decoration.png"
           alt=""
           width={320}
           height={320}

@@ -31,7 +31,7 @@ export default function Header() {
               {/* Logo - Left side */}
               <Link href="/" className="flex items-center">
                 <Image
-                  src="/grannexLogo.svg"
+                  src="/grannexLogo.png"
                   alt="Grannex International Logo"
                   width={200}
                   height={60}

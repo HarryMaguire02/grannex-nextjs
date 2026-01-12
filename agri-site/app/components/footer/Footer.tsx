@@ -12,7 +12,7 @@ export default function Footer() {
             {/* Logo Section */}
             <div className="flex items-center">
               <Image
-                src="/grannexLogoFooter.svg"
+                src="/grannexLogoFooter.png"
                 alt="Grannex International Logo"
                 width={320}
                 height={96}
@@ -26,9 +26,9 @@ export default function Footer() {
               <div>
                 <h3 className="text-lg font-semibold mb-4">Contact</h3>
                 <div className="space-y-3 text-sm">
-                  <p>address 45</p>
+                  <p>Dimitri Stavrou 1 Street Nicosia Cyprus</p>
                   <p>info@grannex.com</p>
-                  <p>012345678</p>
+                  <p>+30 6984614171</p>
                 </div>
               </div>
 
@@ -36,8 +36,9 @@ export default function Footer() {
               <div>
                 <h3 className="text-lg font-semibold mb-4">Contact Person</h3>
                 <div className="space-y-3 text-sm">
-                  <p>info@grannex.com</p>
-                  <p>012345678</p>
+                  <p>Vlado Šaranović</p>
+                  <p>vsaranovic@grannexcy.com</p>
+                  <p>+381 631077708</p>
                 </div>
               </div>
 

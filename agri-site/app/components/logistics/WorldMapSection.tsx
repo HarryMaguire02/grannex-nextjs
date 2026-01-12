@@ -8,12 +8,15 @@ export default function WorldMapSection() {
         <h2 className="font-bold text-primary mb-6 text-2xl md:text-4xl leading-tight md:leading-normal">
           We supply our products to
           <br />
-          5 continents
+          6 continents
         </h2>
 
         {/* Subtitle */}
+        <p className="text-primary font-normal text-sm leading-4 text-justify max-w-md mb-2">
+          Operating across six continents requires more than just transport. it requires a deep understanding of regional regulations and market dynamics.
+        </p>
         <p className="text-primary font-normal text-sm leading-4 text-justify max-w-md mb-8">
-          Premium producers and distributors of potato starch, tapioca starch, vital wheat gluten, and corn starch for consumer and professional markets.
+          Grannex specializes in navigating the complexities of international trade to deliver oilseeds, grains, and vegetable oils to every corner of the globe.
         </p>
 
         {/* World Map */}
@@ -31,7 +34,7 @@ export default function WorldMapSection() {
             {/* North America */}
             <div className="absolute top-[10%] left-[14%] sm:top-[19%] w-6 h-6 md:w-8 md:h-8">
               <Image
-                src="/location-ping.svg"
+                src="/location-ping.png"
                 alt="North America"
                 width={32}
                 height={32}
@@ -43,7 +46,7 @@ export default function WorldMapSection() {
             {/* South America */}
             <div className="absolute sm:top-[63%] top-[61%] left-[24%] sm:left-[26%] w-6 h-6 md:w-8 md:h-8">
               <Image
-                src="/location-ping.svg"
+                src="/location-ping.png"
                 alt="South America"
                 width={32}
                 height={32}
@@ -55,7 +58,7 @@ export default function WorldMapSection() {
             {/* Asia */}
             <div className="absolute top-[1%] sm:top-[10%] left-[58%] w-6 h-6 md:w-8 md:h-8">
               <Image
-                src="/location-ping.svg"
+                src="/location-ping.png"
                 alt="Asia"
                 width={32}
                 height={32}
@@ -67,7 +70,7 @@ export default function WorldMapSection() {
             {/* Africa */}
             <div className="absolute top-[50%] left-[52%] w-6 h-6 md:w-8 md:h-8">
               <Image
-                src="/location-ping.svg"
+                src="/location-ping.png"
                 alt="Africa"
                 width={32}
                 height={32}
@@ -79,7 +82,7 @@ export default function WorldMapSection() {
             {/* Asia/Oceania */}
             <div className="absolute top-[62%] left-[83%] sm:top-[70%] sm:left-[85%] w-6 h-6 md:w-8 md:h-8">
               <Image
-                src="/location-ping.svg"
+                src="/location-ping.png"
                 alt="Asia and Oceania"
                 width={32}
                 height={32}

@@ -17,37 +17,37 @@ const tabContent: Record<string, { title: string; description: string; image: st
   'Oils&Fats': {
     title: 'Oils&Fats',
     description: 'Our range of premium Oils & Fats provides essential, high-density energy sources for a variety of industrial and nutritional applications. From refined vegetable oils like Soybean and Sunflower to specialized rendered fats like Poultry Fat, our products are selected for their purity, stable fatty acid profiles, and high metabolizable energy. Whether used as a palatability enhancer in pet food, a dust suppressant in feed mills, or a key ingredient in technical manufacturing, our fats ensure optimal performance and quality consistency.',
-    image: '/oils-and-fats.png',
+    image: '/oils.png',
   },
   'Proteins': {
     title: 'Proteins',
     description: 'In high-performance Proteins portfolio our offer is premium plant and animal-based solutions designed for maximum nutritional efficiency. We provide a diverse range of protein sources including Vital Wheat Gluten, Soy Protein Concentrate, and specialized Poultry and Fish Meals characterized by high biological value and excellent digestibility. These ingredients serve as essential building blocks for muscle development, immune support, and growth across the Pet Food, Aquaculture, and Animal Feed industries.',
-    image: '/oils-and-fats.png',
+    image: '/proteins.png',
   },
   'Fibers': {
     title: 'Fibers',
     description: 'Our Fibers category offers essential functional solutions designed to support digestive health and metabolic efficiency across both human and animal nutrition. We provide a variety of specialized dietary fibers, including our high-performance FiberZ and nutrient-dense Sugar Beet Pulp, which are engineered to improve intestinal motility and promote a healthy gut microbiome. These products serve as critical ingredients for clean-label formulations, providing the necessary structural and nutritional benefits required for modern wellness products.',
-    image: '/oils-and-fats.png',
+    image: '/fibers.png',
   },
   'Sweeteners': {
     title: 'Sweeteners',
     description: 'Our Sweeteners category offers a comprehensive range of caloric and non-nutritive solutions designed for superior taste, functional performance, and immediate energy delivery. From high-purity Glucose Syrups and Dextrose to natural Sucrose, we provide versatile sweetening agents that serve critical roles in the Food & Beverage, Pharmaceutical, and Animal Feed industries. These products are essential for enhancing flavor profiles, improving moisture retention, and acting as powerful attractants to increase feed intake in livestock.',
-    image: '/oils-and-fats.png',
+    image: '/sweeteners.png',
   },
   'Additives': {
     title: 'Additives',
     description: 'Our Additives category provides essential micro-nutrients and mineral supplements designed to ensure peak physiological performance and nutritional balance. We offer high-purity, bioavailable solutions like Monocalcium Phosphate, which serve as the foundation for skeletal development and metabolic health in the Animal Feed and Agriculture industries. These additives are critical for preventing nutritional deficiencies, improving feed efficiency, and supporting high-productivity livestock environments.',
-    image: '/oils-and-fats.png',
+    image: '/additives.png',
   },
   'Organic': {
     title: 'Organic',
     description: 'Our Organic category represents our commitment to sustainability and natural nutritional integrity. These products are sourced from certified organic agriculture, ensuring they are produced without the use of synthetic fertilizers, pesticides, or genetically modified organisms (GMOs). By focusing on minimally processed ingredients, we provide the Food & Beverage, Pet Food, and Agriculture sectors with high-purity solutions that meet the growing global demand for transparent and ecologically responsible supply chains.',
-    image: '/oils-and-fats.png',
+    image: '/organic.png',
   },
   'Others': {
     title: 'Others',
     description: 'This Category encompasses a diverse range of foundational agricultural commodities and specialized biological ingredients that serve as the backbone for various global industries.',
-    image: '/oils-and-fats.png',
+    image: '/others.png',
   },
 };
 
@@ -106,7 +106,7 @@ export default function IngredientsSection() {
       {/* Decoration SVG - Bottom Left */}
       <div className="absolute top-1/2 lg:top-auto lg:bottom-0 left-0 w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 pointer-events-none">
         <Image
-          src="/decoration.svg"
+          src="/decoration.png"
           alt=""
           width={320}
           height={320}

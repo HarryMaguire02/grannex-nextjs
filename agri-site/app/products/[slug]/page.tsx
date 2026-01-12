@@ -278,7 +278,7 @@ export default function ProductPage({ params }: PageProps) {
               {/* Decoration SVG - Right Side */}
               <div className="absolute -right-12 lg:-right-20 top-1/2 -translate-y-1/2 w-32 h-32 md:w-48 md:h-48 lg:w-64 lg:h-64 pointer-events-none">
                 <Image
-                  src="/decoration2.svg"
+                  src="/decoration2.png"
                   alt=""
                   width={256}
                   height={256}

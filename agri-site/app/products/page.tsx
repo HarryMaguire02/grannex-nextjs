@@ -1,7 +1,7 @@
 'use client';
 
-import { useState, Suspense } from 'react';
-import { useSearchParams } from 'next/navigation';
+import { useState, Suspense, useEffect, useRef } from 'react';
+import { useSearchParams, useRouter } from 'next/navigation';
 import Link from 'next/link';
 import productsData from '@/data/products.json';
 import ProductCard from '@/app/components/ProductCard';
@@ -23,18 +23,52 @@ type Product = {
 
 function ProductsContent() {
   const searchParams = useSearchParams();
+  const router = useRouter();
   const marketParam = searchParams.get('market');
+  const industryParam = searchParams.get('industry');
 
-  const [selectedIndustry, setSelectedIndustry] = useState<string>('All');
-  // Use URL parameter if available, otherwise use state
-  const [selectedMarket, setSelectedMarket] = useState<string>('All');
+  const [selectedIndustry, setSelectedIndustry] = useState<string>(industryParam || 'All');
+  // Initialize with URL parameter if available, otherwise 'All'
+  const [selectedMarket, setSelectedMarket] = useState<string>(marketParam || 'All');
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [currentPage, setCurrentPage] = useState<number>(1);
 
+  // Ref for smooth scrolling to top of products section
+  const productsTopRef = useRef<HTMLDivElement>(null);
+
   const PRODUCTS_PER_PAGE = 12;
 
-  // Derive the actual selected market from URL param or state
-  const activeMarket = marketParam || selectedMarket;
+  // Update URL when filters change
+  useEffect(() => {
+    const params = new URLSearchParams();
+
+    // Add market param if not 'All'
+    if (selectedMarket !== 'All') {
+      params.set('market', selectedMarket);
+    }
+
+    // Add industry param if not 'All'
+    if (selectedIndustry !== 'All') {
+      params.set('industry', selectedIndustry);
+    }
+
+    // Build the URL
+    const queryString = params.toString();
+    const newUrl = queryString ? `/products?${queryString}` : '/products';
+
+    // Update URL without adding to history (so back button doesn't go through every filter change)
+    router.replace(newUrl, { scroll: false });
+  }, [selectedMarket, selectedIndustry, router]);
+
+  // Smooth scroll to top when page changes
+  useEffect(() => {
+    if (productsTopRef.current) {
+      productsTopRef.current.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  }, [currentPage]);
 
   const products = productsData as Product[];
 
@@ -71,8 +105,8 @@ function ProductsContent() {
     // Filter by industry
     const matchesIndustry = selectedIndustry === 'All' || product.industry.includes(selectedIndustry);
 
-    // Filter by market - use activeMarket which considers URL param
-    const matchesMarket = activeMarket === 'All' || product.market === activeMarket;
+    // Filter by market
+    const matchesMarket = selectedMarket === 'All' || product.market === selectedMarket;
 
     // Filter by search query (search in name)
     const matchesSearch = searchQuery === '' ||
@@ -107,20 +141,20 @@ function ProductsContent() {
   return (
     <div className="bg-white">
       {/* Breadcrumb */}
-      <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12 py-6">
+      <div ref={productsTopRef} className="max-w-content mx-auto px-6 sm:px-8 lg:px-12 py-6">
         <nav className="text-sm text-primary" aria-label="Breadcrumb">
           <Link href="/" className="hover:text-green-medium transition-colors">
             Home
           </Link>
           <span className="mx-2">/</span>
-          {marketParam ? (
+          {selectedMarket !== 'All' ? (
             <>
               <Link href="/products" className="hover:text-green-medium transition-colors">
                 Products
               </Link>
               <span className="mx-2">/</span>
               <span className="font-medium">
-                {markets.find(m => m.value === marketParam)?.label || marketParam}
+                {markets.find(m => m.value === selectedMarket)?.label || selectedMarket}
               </span>
             </>
           ) : (
@@ -132,7 +166,7 @@ function ProductsContent() {
       <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12 pb-8 sm:pb-10 md:pb-12 lg:pb-16">
         {/* Title */}
         <h1 className="text-3xl md:text-4xl font-bold text-primary mb-6 md:mb-8">
-          <span className="font-normal">Our</span> products
+          Our products
         </h1>
 
         {/* Description */}
@@ -151,7 +185,11 @@ function ProductsContent() {
             <select
               value={selectedIndustry}
               onChange={(e) => handleFilterChange(setSelectedIndustry, e.target.value)}
-              className="pl-4 py-2 border-0 rounded-lg text-sm font-normal text-primary bg-white cursor-pointer hover:bg-primary/5"
+              className={`pl-4 py-2 border-0 rounded-lg text-sm font-normal text-primary cursor-pointer transition-colors ${
+                selectedIndustry !== 'All'
+                  ? 'bg-green-light/30 ring-2 ring-green-medium'
+                  : 'bg-white hover:bg-primary/5'
+              }`}
             >
               {industries.map(industry => (
                 <option key={industry} value={industry}>
@@ -161,13 +199,12 @@ function ProductsContent() {
             </select>
 
             <select
-              value={activeMarket}
+              value={selectedMarket}
               onChange={(e) => handleFilterChange(setSelectedMarket, e.target.value)}
-              disabled={!!marketParam}
-              className={`pl-4 py-2 border-0 rounded-lg text-sm font-normal text-primary transition-colors ${
-                marketParam
-                  ? 'bg-green-light/30 ring-2 ring-green-medium cursor-not-allowed opacity-90'
-                  : 'bg-white hover:bg-primary/5 cursor-pointer'
+              className={`pl-4 py-2 border-0 rounded-lg text-sm font-normal text-primary cursor-pointer transition-colors ${
+                selectedMarket !== 'All'
+                  ? 'bg-green-light/30 ring-2 ring-green-medium'
+                  : 'bg-white hover:bg-primary/5'
               }`}
             >
               {markets.map(market => (

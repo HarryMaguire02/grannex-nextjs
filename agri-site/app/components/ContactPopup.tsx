@@ -66,7 +66,7 @@ export default function ContactPopup({ isOpen, onClose }: ContactPopupProps) {
             {/* Logo with white background */}
             <div className="p-6 rounded-lg inline-block self-start">
               <Image
-                src="/grannexLogo.svg"
+                src="/grannexLogo.png"
                 alt="Grannex International"
                 width={320}
                 height={96}
@@ -82,9 +82,10 @@ export default function ContactPopup({ isOpen, onClose }: ContactPopupProps) {
                 <div>
                   <h3 className="text-lg font-semibold text-primary mb-3">Contact</h3>
                   <div className="space-y-2 text-sm text-primary">
-                    <p>address 45</p>
-                    <p>email@gmail.com</p>
-                    <p>012345678</p>
+                    <p>
+                      Dimitri Stavrou 1 Street Nicosia Cyprus</p>
+                    <p>info@grannex.com</p>
+                    <p>+30 6984614171</p>
                   </div>
                 </div>
 
@@ -92,8 +93,9 @@ export default function ContactPopup({ isOpen, onClose }: ContactPopupProps) {
                 <div>
                   <h3 className="text-lg font-semibold text-primary mb-3">Contact Person</h3>
                   <div className="space-y-2 text-sm text-primary">
-                    <p>email@gmail.com</p>
-                    <p>012345678</p>
+                    <p>Vlado Šaranović</p>
+                    <p>vsaranovic@grannexcy.com</p>
+                    <p>+381 631077708</p>
                   </div>
                 </div>
               </div>

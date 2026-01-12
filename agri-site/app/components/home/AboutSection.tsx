@@ -49,7 +49,7 @@ export default function AboutSection({ showSubtitle = true, showPadding = true }
       {/* Decoration SVG - Bottom Left */}
       <div className="absolute top-1/2 lg:top-auto lg:bottom-0 left-0 w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 pointer-events-none">
         <Image
-          src="/decoration.svg"
+          src="/decoration.png"
           alt=""
           width={320}
           height={320}
