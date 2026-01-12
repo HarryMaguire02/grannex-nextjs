@@ -28,14 +28,14 @@ export default function HeroSection() {
         {/* Category Cards */}
         <div className="grid grid-cols-2 lg:grid-cols-4 rounded-2xl overflow-hidden h-auto">
           {[
-            { title: 'Oils and fats', icon: '/oils-and-fats.svg', group: 'oils-and-fats' },
-            { title: 'Food ingredients', icon: '/food-ingredients.svg', group: 'food-ingredients' },
-            { title: 'Animal feeds ingredients', icon: '/animal-feeds-ingredients.svg', group: 'animal-feed-ingredients' },
-            { title: 'Aqua feeds ingredients', icon: '/aqua-feeds-ingredients.svg', group: 'aqua-feeds-ingredients' },
+            { title: 'Oils and fats', icon: '/oils-and-fats.svg', market: 'oils-and-fats' },
+            { title: 'Food ingredients', icon: '/food-ingredients.svg', market: 'food-ingredients' },
+            { title: 'Animal feeds ingredients', icon: '/animal-feeds-ingredients.svg', market: 'animal-feed-ingredients' },
+            { title: 'Aqua feeds ingredients', icon: '/aqua-feeds-ingredients.svg', market: 'aqua-feeds-ingredients' },
           ].map((category, index) => (
             <Link
               key={category.title}
-              href={`/products?group=${encodeURIComponent(category.group)}`}
+              href={`/products?market=${encodeURIComponent(category.market)}`}
               className="bg-primary text-secondary p-2 sm:p-3 md:p-4 lg:p-5 hover:bg-green-medium transition-colors cursor-pointer group flex items-center justify-center gap-2 md:gap-3 relative min-h-17.5"
               aria-label={`View ${category.title} products`}
             >

@@ -11,8 +11,8 @@ import autoTable from 'jspdf-autotable';
 type Product = {
   slug: string;
   name: string;
-  group: string;
-  groupLabel: string;
+  market: string;
+  marketLabel: string;
   info: string;
   description: string;
   application: string;

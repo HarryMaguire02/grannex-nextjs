@@ -2,8 +2,9 @@
   {
     "slug": "vital-wheat-gluten",
     "name": "Vital  Wheat Gluten",
-    "group": "food-ingredients",
-    "groupLabel": "Food ingredients",
+    "image": "/1-VitalWheatGluten.png",
+    "market": "food-ingredients",
+    "marketLabel": "Food Ingredients",
     "info": "Wheat gluten is extracted from flour by washing out the starch. Wheat gluten is a plant protein composed of two components gliadin and glutenin.",
     "description": "Vital wheat gluten is a natural vegetable protein extracted from wheat flour. It is characterized by its high viscoelasticity and ability to bind water, which improves the texture and volume of baked goods. When hydrated, it forms a strong, elastic network that retains gases and stabilizes structures. It is a highly digestible protein source, typically containing over 80% protein, making it an essential ingredient for improving flour quality.",
     "application": "Milling & Baking: Improves dough elasticity and gas retention in bread and pastry. ;Meat Industry: Used as a binder and structural stabilizer in processed meats. ;Vegetarian Foods: Key ingredient for meat substitutes like seitan. ;Aquafeed & Pet Food: High-quality protein source and binder for fish and pet pellets.",
@@ -28,14 +29,14 @@
       "Technical & Industrial"
     ],
     "isActive": true,
-    "isFeatured": true,
-    "image": "/vital-wheat-gluten.png"
+    "isFeatured": true
   },
   {
     "slug": "soy-protein-concentrate",
     "name": "Soy protein concentrate",
-    "group": "animal-feed-ingredients",
-    "groupLabel": "Animal feed ingredients",
+    "image": "/2-SoyProteinConcentrate.png",
+    "market": "animal-feed-ingredients",
+    "marketLabel": "Animal feed ingredients",
     "info": "Soybean feed grade protein concentrate is a purified protein product with up to 65% crude protein. It is made from toasted feed-grade soy meals or food-grade soy meals (white flake) separated from soluble sugars in the alcohol extraction process. The basic protein fractions are presented in an easily available form.",
     "description": "Soy protein concentrate is produced by removing soluble carbohydrates from defatted soy flakes. This process significantly increases the protein content (typically min. 60-65%) while reducing anti-nutritional factors and oligosaccharides that can cause digestive issues. It has a high biological value and excellent amino acid profile, serving as a highly digestible alternative to animal proteins like fishmeal or skim milk powder.",
     "application": "Piglets & Calves: Ideal for young animals with sensitive digestive tracts. ;Aquaculture: High-potential replacement ;for fishmeal in salmonid and shrimp diets.;Pet Food: High-quality protein for premium cat and dog food formulations.;Food Industry: Used in meat analogs and nutritional supplements.",
@@ -53,146 +54,227 @@
       "Animal Feed",
       "Aquaculture"
     ],
-    "isActive": true,
-    "image": "/corn-starch.png"
+    "isActive": true
   },
   {
     "slug": "polutry-meal",
     "name": "Polutry Meal",
-    "group": "animal-feed-ingredients",
-    "groupLabel": "Animal feed ingredients",
+    "image": "/3-PolutryMeal.png",
+    "market": "animal-feed-ingredients",
+    "marketLabel": "Animal feed ingredients",
     "info": "Poultry Meal is a high-quality animal protein source produced by rendering clean parts of poultry. It is exceptionally rich in essential amino acids, calcium, and phosphorus, providing a highly digestible nutrient profile for carnivores. It is widely used in premium pet kibble and aquatic feeds to support healthy growth and muscle development.",
     "description": "Rendered from clean poultry parts; high in essential amino acids, calcium, and phosphorus.",
     "application": "Pet food (kibble) ingredient; aquatic feed; poultry growth booster.",
     "packing": "Bags  weight of up to 25 kg.; Big bags up to 1,000 kg.; In Bulk.",
-    "specification": [],
+    "specification": [
+      "Dry matter:93.7%",
+      "Crude protein:82.2%",
+      "Ether extract:11.2%",
+      "Ash:5.1%",
+      "Calcium:15.0g",
+      "Phosphorus:6.1g",
+      "TMEn polutry:14.8MJ/kg"
+    ],
     "industry": [
       "Pet Food",
       "Animal Feed",
       "Aquaculture",
       "Agriculture"
     ],
-    "isActive": true,
-    "image": "/corn-starch.png"
+    "isActive": true
   },
   {
     "slug": "corn-gluten-meal-60",
     "name": "Corn Gluten Meal 60%",
-    "group": "animal-feed-ingredients",
-    "groupLabel": "Animal feed ingredients",
+    "image": "/4-CornGlutenMeal.png",
+    "market": "animal-feed-ingredients",
+    "marketLabel": "Animal feed ingredients",
     "info": "This protein-rich by-product is obtained during the wet-milling process of maize and is characterized by its bright golden color. It is a dense source of energy and methionine, as well as natural xanthophyll pigments that enhance the coloring of egg yolks and poultry skin. It serves as an efficient, nutrient-dense ingredient for poultry, fish, and pet food formulations.",
     "description": "Golden powder from wet-milling; rich in methionine and natural xanthophyll pigments.",
     "application": "Natural pigment for egg yolks/skin; energy source for pets and fish.",
     "packing": "Bags  weight of up to 25 kg.; Big bags up to 1,000 kg.; In Bulk.",
-    "specification": [],
+    "specification": [
+      "Dry matter:90%",
+      "Crude protein:67.2%",
+      "Crude Fiber:1.2%",
+      "NDF:4.1%",
+      "ADF:1.6",
+      "Lignin:0.3%",
+      "Ether exctract:2.9%",
+      "Ash:2.1%",
+      "Starch:17.6%",
+      "Sugars:0.5%",
+      "Gross energy:23.1MJ/kg"
+    ],
     "industry": [
       "Animal Feed",
       "Pet Food",
       "Aquaculture"
     ],
-    "isActive": true,
-    "image": "/vital-wheat-gluten.png"
+    "isActive": true
   },
   {
     "slug": "feather-meal",
     "name": "Feather meal",
-    "group": "animal-feed-ingredients",
-    "groupLabel": "Animal feed ingredients",
+    "image": "/5-FeatherMeal.png",
+    "market": "animal-feed-ingredients",
+    "marketLabel": "Animal feed ingredients",
     "info": "Feather Meal is a high-protein supplement produced through hydrothermal hydrolysis, which breaks down keratin into a highly digestible form. Containing over 80% crude protein, it offers a sustainable and cost-effective nitrogen source for ruminants and poultry. It is valued for its ability to boost the overall protein density of feed without significantly increasing volume.",
     "description": "Produced via hydrothermal hydrolysis to make protein digestible; 80%+ crude protein.",
     "application": "Ruminant and poultry protein supplement; organic nitrogen source.",
     "packing": "Bags  weight of up to 25 kg.; Big bags up to 1,000 kg.; In Bulk.",
-    "specification": [],
+    "specification": [
+      "Dry matter:92.1%",
+      "Crude protein:85.7%",
+      "Crude fibre:0.9%",
+      "NDF:55.8%",
+      "ADF:6.5%",
+      "Lignin:5.5%",
+      "Ether extract:6.7%",
+      "Ether extract, HCl hydrolysis:9.5%",
+      "Ash:5.5%",
+      "Total sugars:0.3%",
+      "Gross energy:23.5 MJ/kg DM"
+    ],
     "industry": [
       "Animal Feed",
       "Aquaculture",
       "Agriculture"
     ],
-    "isActive": true,
-    "image": "/vital-wheat-gluten.png"
+    "isActive": true
   },
   {
     "slug": "polutry-fat",
     "name": "Polutry fat",
-    "group": "animal-feed-ingredients",
-    "groupLabel": "Animal feed ingredients",
+    "image": "/6-PolutryFat.png",
+    "market": "animal-feed-ingredients",
+    "marketLabel": "Animal feed ingredients",
     "info": "Poultry Fat is a high-energy liquid ingredient extracted during the rendering process, offering a rich source of linoleic acid. It provides a dense source of metabolic energy and significantly improves the palatability of dry pet foods and poultry diets. Its inclusion helps ensure animals meet their daily caloric requirements while improving the physical quality of the feed.",
     "description": "Extracted during the rendering process; rich in linoleic acid and metabolic energy.",
     "application": "Energy booster in poultry diets; palatability enhancer in dry pet food.",
     "packing": "Bags  weight of up to 25 kg.; Big bags up to 1,000 kg.; In Bulk.",
-    "specification": [],
+    "specification": [
+      "Dry matter:90.0%",
+      "Crude protein:67.2%",
+      "Crude fibre:1.2%",
+      "NDF:4.1%",
+      "ADF:1.6%",
+      "Lignin:0.3%",
+      "Ether extract:2.9%",
+      "Ash:2.1%",
+      "Starch (polarimetry):17.6%",
+      "Total sugars:0.5%",
+      "Gross energy:23.1 MJ/kg DM"
+    ],
     "industry": [
       "Pet Food",
       "Animal Feed",
       "Technical & Industrial"
     ],
-    "isActive": true,
-    "image": "/vital-wheat-gluten.png"
+    "isActive": true
   },
   {
     "slug": "sugar-beet-pulp",
     "name": "Sugar beet pulp",
-    "group": "animal-feed-ingredients",
-    "groupLabel": "Animal feed ingredients",
+    "image": "/7-SugarBeetPulp.png",
+    "market": "animal-feed-ingredients",
+    "marketLabel": "Animal feed ingredients",
     "info": "Sugar Beet Pulp is the fibrous material remaining after sugar extraction, known as a \"super fiber\" for its high digestibility. It promotes excellent gut health and provides a steady source of energy without the \"fizz\" associated with high-starch diets. It is particularly popular in equine nutrition and as a digestive aid in premium cattle and pet feeds.",
     "description": "Fibrous material from sugar extraction; highly palatable and promotes gut health.",
     "application": "\"Super fiber\" for horses; dairy cattle energy; digestive aid in pet food.",
     "packing": "Bags  weight of up to 25 kg.; Big bags up to 1,000 kg.; In Bulk.",
-    "specification": [],
+    "specification": [
+      "Dry matter:88.8%",
+      "Crude protein:8.9%",
+      "Crude fibre:19.4%",
+      "Ether extract:0.9%",
+      "Ash:7.1%",
+      "Insoluble ash:1.5%",
+      "Neutral detergent fibre:47.1%",
+      "Acid detergent fibre:23.8%",
+      "Lignin:2.7%",
+      "Starch (polarimetry):0.9%",
+      "Total sugars:7.8%",
+      "Gross energy:17.1 MJ/kg DM"
+    ],
     "industry": [
       "Animal Feed",
       "Technical & Industrial"
     ],
-    "isActive": true,
-    "image": "/vital-wheat-gluten.png"
+    "isActive": true
   },
   {
     "slug": "monocalcium-phospate",
     "name": "Monocalcium Phospate",
-    "group": "animal-feed-ingredients",
-    "groupLabel": "Animal feed ingredients",
+    "image": "/8-MonocalciumPhosphate.png",
+    "market": "animal-feed-ingredients",
+    "marketLabel": "Animal feed ingredients",
     "info": "This essential mineral source provides highly bioavailable phosphorus and calcium, which are critical for bone formation and energy metabolism. It is a vital supplement for all livestock classes to ensure skeletal integrity and prevent metabolic deficiencies. Its high solubility ensures that the minerals are easily absorbed and utilized by the animal’s body.",
     "description": "Highly bioavailable phosphorus/calcium for bone formation and energy metabolism.",
     "application": "Mineral supplement for all livestock; prevents milk fever in dairy.",
     "packing": "Bags  weight of up to 25 kg.; Big bags up to 1,000 kg.; In Bulk.",
-    "specification": [],
+    "specification": [
+      "Appearance:White or grey granules/powder",
+      "Phosphorus (P):21.0% – 22.7%",
+      "Calcium (Ca):15.0% – 18.0%",
+      "Moisture:max 1.5% – 4%",
+      "pH:3.3 – 4.5",
+      "Fluorine (F):max 0.16% – 0.21%",
+      "Ash insoluble in HCl:max 1.0%",
+      "Arsenic (As):max 10 ppm",
+      "Lead (Pb):max 15 ppm."
+    ],
     "industry": [
       "Animal Feed",
       "Agriculture",
       "Technical & Industrial"
     ],
-    "isActive": true,
-    "isFeatured": true,
-    "image": "/vital-wheat-gluten.png"
+    "isActive": true
   },
   {
     "slug": "fish-meal",
     "name": "Fish meal",
-    "group": "aqua-feeds-ingredients",
-    "groupLabel": "Aqua feeds ingredients",
+    "image": "/9-FishMeal.png",
+    "market": "aqua-feeds-ingredients",
+    "marketLabel": "Aqua feeds ingredients",
     "info": "Fish Meal is a premium marine protein known for its optimal amino acid profile and high concentration of Omega-3 fatty acids (EPA and DHA). It provides essential vitamins and minerals that support immune function and high-performance growth in aquaculture and young livestock. It remains one of the most effective ingredients for stimulating appetite and ensuring healthy development.",
     "description": "Optimal amino acid profile; rich in Omega-3 fatty acids (EPA/DHA) and vitamins.",
     "application": "Crucial for aquaculture; high-performance diets for piglets/poultry.",
     "packing": "Bags  weight of up to 25 kg.; Big bags up to 1,000 kg.; In Bulk.",
-    "specification": [],
+    "specification": [
+      "Dry matter:92.1%",
+      "Crude protein:75.4%",
+      "Ether extract, HCl hydrolysis:11.0%",
+      "Ash:13.6%",
+      "Gross energy:21.9 MJ/kg DM"
+    ],
     "industry": [
       "Pet Food",
       "Animal Feed",
       "Aquaculture"
     ],
-    "isActive": true,
-    "image": "/vital-wheat-gluten.png"
+    "isActive": true
   },
   {
     "slug": "soybean-oil",
-    "name": "soybean oil",
-    "group": "oils-and-fats",
-    "groupLabel": "Oils and fats",
+    "name": "Soybean oil",
+    "image": "/10-Soybean-oil.png",
+    "market": "oils-and-fats",
+    "marketLabel": "Oils and fats",
     "info": "Soybean Oil is a refined vegetable oil rich in polyunsaturated fats and essential linoleic acid. It serves as a concentrated energy source that improves the calorie density of liquid feeds while helping to control dust in feed mills. Its neutral profile makes it a versatile ingredient for enhancing the health and performance of various animal species.",
     "description": "Rich in polyunsaturated fats and essential linoleic acid.",
     "application": "High-energy liquid feed; dust control in mills; essential fatty acid source.",
     "packing": "Bags  weight of up to 25 kg.; Big bags up to 1,000 kg.; In Bulk.",
-    "specification": [],
+    "specification": [
+      "FFA (as oleic with a molecular weight of 282):1.00%",
+      "Moisture and Volatile Matter:0.20%",
+      "Impurities (insoluble in petroleum ether):0.10%",
+      "Sediment (Gardner Break Test):0.10%",
+      "Lecithin (expressed as phosphorous):0.02%",
+      "Colour (Lovibond cell 1 inch):50 yellow plus 5 red",
+      "Flash point:250ºF (121ºC)",
+      "Unsaponifiable Matter (test as per n.s.p.a.):1.50%"
+    ],
     "industry": [
       "Food & Beverage",
       "Pet Food",
@@ -201,18 +283,31 @@
       "Technical & Industrial"
     ],
     "isActive": true,
-    "image": "/vital-wheat-gluten.png"
+    "isFeatured": true
   },
   {
     "slug": "sunflower-oil",
     "name": "Sunflower oil",
-    "group": "oils-and-fats",
-    "groupLabel": "Oils and fats",
+    "image": "/11-SunflowerOil.png",
+    "market": "oils-and-fats",
+    "marketLabel": "Oils and fats",
     "info": "Sunflower Oil is an excellent source of unsaturated fats and is naturally high in Vitamin E, which acts as a powerful antioxidant. It is easily digestible, providing a clean energy source that promotes healthy skin and a shiny coat in horses and pets. Its inclusion in diets helps support cellular health and overall animal vitality.",
     "description": "High Vitamin E content; easily digestible and improves animal coat condition.",
     "application": "Energy for poultry/swine; horse skin/coat health supplement.",
     "packing": "Bags  weight of up to 25 kg.; Big bags up to 1,000 kg.; In Bulk.",
-    "specification": [],
+    "specification": [
+      "FFA (as oleic acid):0.1%",
+      "Refractive index (25°C):1.4719 – 1.4740",
+      "Lovibond Color (5 ¼” cell):Max 1.50",
+      "Peroxide value (As meq O2/Kg):2.0",
+      "Unsaponificable matter:1.00%",
+      "Flavor:Slight characteristic",
+      "Aspect:limpid at 25°C",
+      "Cold test:limpid after 5 hours",
+      "BHA:75-100ppm",
+      "BHT:75-100ppm",
+      "Citric acid:40-50ppm"
+    ],
     "industry": [
       "Food & Beverage",
       "Pet Food",
@@ -220,56 +315,79 @@
       "Cosmetics",
       "Technical & Industrial"
     ],
-    "isActive": true,
-    "image": "/vital-wheat-gluten.png"
+    "isActive": true
   },
   {
     "slug": "rape-oil",
     "name": "Rape oil",
-    "group": "oils-and-fats",
-    "groupLabel": "Oils and fats",
+    "image": "/12-RapeOil.png",
+    "market": "oils-and-fats",
+    "marketLabel": "Oils and fats",
     "info": "Rape Oil, specifically low-erucic varieties, provides a balanced fatty acid profile that offers high metabolizable energy. It is an ideal liquid fat for stabilizing mash feeds and reducing dust during the milling process. Its stability and cost-effectiveness make it a preferred choice for large-scale swine and poultry operations.",
     "description": "Low-erucic acid profile; provides stable energy and high metabolizable energy.",
     "application": "General energy source; dust suppressant for mash and pelleted feeds.",
     "packing": "Bags  weight of up to 25 kg.; Big bags up to 1,000 kg.; In Bulk.",
-    "specification": [],
+    "specification": [
+      "FFA (as oleic acid):1.75%",
+      "Moisture, Volatile Matter and Impurities:0.40%",
+      "Lecithin (expressed as Phosphorus):300ppm",
+      "Sand / Silica:1.00%",
+      "Erucic Acid:2.00%"
+    ],
     "industry": [
       "Food & Beverage",
       "Animal Feed",
       "Technical & Industrial"
     ],
-    "isActive": true,
-    "image": "/vital-wheat-gluten.png"
+    "isActive": true
   },
   {
     "slug": "corn-oil",
     "name": "Corn oil",
-    "group": "oils-and-fats",
-    "groupLabel": "Oils and fats",
+    "image": "/13-CornOil.png",
+    "market": "oils-and-fats",
+    "marketLabel": "Oils and fats",
     "info": "Corn Oil is a premium vegetable fat extracted from the maize germ, containing high levels of linoleic acid and natural tocopherols. It is highly valued for its ability to improve the palatability of pet foods while supporting healthy skin and coat conditions. As an antioxidant-rich energy source, it helps maintain the shelf-life and nutritional quality of finished feeds.",
     "description": "High linoleic acid and natural tocopherol (antioxidant) levels.",
     "application": "Premium energy source; improves skin health and palatability in pets.",
     "packing": "Bags  weight of up to 25 kg.; Big bags up to 1,000 kg.; In Bulk.",
-    "specification": [],
+    "specification": [
+      "FFA (as oleic acid):2%",
+      "Linolenic acid (c 18:3):2%",
+      "Palmitic acid (c 16:0):9 – 14",
+      "Refractive index at 40°c:1,4653 – 1,468",
+      "Iodine value:115 – 121",
+      "Moisture and Volatile matter:0.4%",
+      "Saponification value:188 – 195",
+      "Unsaponifiable matter:2%",
+      "Peroxide value (wheeler) (meq o2/kg.):20",
+      "Phosphorus:200ppm",
+      "Sediment:1%",
+      "Colour lovibond (Basis yellow 50 – cell 25.4 cm):Red Max 6.50"
+    ],
     "industry": [
       "Food & Beverage",
       "Pet Food",
       "Animal Feed",
       "Technical & Industrial"
     ],
-    "isActive": true,
-    "image": "/vital-wheat-gluten.png"
+    "isActive": true
   },
   {
     "slug": "palm-oil",
     "name": "Palm oil",
-    "group": "oils-and-fats",
-    "groupLabel": "Oils and fats",
+    "image": "/14-PalmOil.png",
+    "market": "oils-and-fats",
+    "marketLabel": "Oils and fats",
     "info": "Palm Oil is a semi-solid vegetable fat that provides a heat-stable and dense energy source for various livestock species. In dairy nutrition, it often functions as a bypass fat to help increase milk fat production without disrupting rumen fermentation. It is a highly economical choice for boosting the caloric intake of swine and poultry during high-growth phases.",
     "description": "Semi-solid vegetable fat; provides heat-stable energy and high bypass fat.",
     "application": "Dairy bypass fat (milk fat boost); economical swine energy source.",
     "packing": "Bags  weight of up to 25 kg.; Big bags up to 1,000 kg.; In Bulk.",
-    "specification": [],
+    "specification": [
+      "FFA (as palmitic):5%",
+      "M&I:0.5%",
+      "IV (Wijs):51 – 55"
+    ],
     "industry": [
       "Food & Beverage",
       "Pet Food",
@@ -277,57 +395,81 @@
       "Cosmetics",
       "Technical & Industrial"
     ],
-    "isActive": true,
-    "image": "/vital-wheat-gluten.png"
+    "isActive": true
   },
   {
     "slug": "corn-grits",
     "name": "Corn grits",
-    "group": "food-ingredients",
-    "groupLabel": "Food ingredients",
+    "image": "/15-CornGrits.png",
+    "market": "food-ingredients",
+    "marketLabel": "Food ingredients",
     "info": "Corn Grits consist of the coarse, granular endosperm of the maize kernel, offering a pure energy source with minimal fiber content. They are highly valued for their consistent texture and energy density, making them an excellent base for high-performance poultry diets. Their physical structure also makes them a popular raw material for the brewing and snack food industries.",
     "description": "Pure corn starch granules with minimal fiber; excellent energy density.",
     "application": "Energy in poultry/swine diets; base for brewing and snacks.",
     "packing": "Bags  weight of up to 25 kg.; Big bags up to 1,000 kg.; In Bulk.",
-    "specification": [],
+    "specification": [
+      "Ash: max 0.5%",
+      "Total alfatoxin: 20mg/kg",
+      "Fat: max 1%",
+      "Protein: max 7%",
+      "Moisture: max 14%"
+    ],
     "industry": [
       "Food & Beverage",
       "Pet Food",
       "Animal Feed",
       "Technical & Industrial"
     ],
-    "isActive": true,
-    "image": "/vital-wheat-gluten.png"
+    "isActive": true
   },
   {
     "slug": "fresh-eggs",
     "name": "Fresh eggs",
-    "group": "other",
-    "groupLabel": "Other",
+    "image": "/16-FreshEggs.png",
+    "market": "other",
+    "marketLabel": "Other",
     "info": "Fresh Egg material provides the highest biological value of any protein source, containing a perfect balance of essential amino acids and immunoglobulins. These natural antibodies help support the immune systems of young animals, making it an essential ingredient in specialty weaning diets for piglets. It also serves as a premium, highly palatable component in high-end wet pet foods.",
     "description": "Highest biological value protein; contains essential fats and immunoglobulins.",
     "application": "Specialty weaning diets (piglets); premium wet pet food.",
     "packing": "Bags  weight of up to 25 kg.; Big bags up to 1,000 kg.; In Bulk.",
-    "specification": [],
+    "specification": [
+      "Energy kcal (calories):131",
+      "Energy kJ:547",
+      "Fat (g):9.0",
+      "Saturates (g):2.5",
+      "Monounsaturates (g):3.4",
+      "Polyunsaturates (g):1.4",
+      "Carbohydrate (g):trace",
+      "Sugars (g):trace",
+      "Protein (g):12.6",
+      "Salt (g):0.39"
+    ],
     "industry": [
       "Food & Beverage",
       "Bakery",
       "Pet Food",
       "Animal Feed"
     ],
-    "isActive": true,
-    "image": "/vital-wheat-gluten.png"
+    "isActive": true
   },
   {
     "slug": "wheat-starch",
     "name": "Wheat starch",
-    "group": "food-ingredients",
-    "groupLabel": "Food ingredients",
+    "image": "/17-WheatStarch.png",
+    "market": "food-ingredients",
+    "marketLabel": "Food ingredients",
     "info": "Wheat Starch is a refined carbohydrate known for its high swelling capacity and ability to form elastic gels when heated. It serves as an excellent binder for feed pellets and a reliable thickener in milk replacers for young animals. Its fine texture and consistent performance make it a preferred carrier for various micro-additives in the feed industry.",
     "description": "High swelling capacity; forms clear, elastic gels when heated.",
     "application": "Binder for feed pellets; thickener in milk replacers; carrier for additives.",
     "packing": "Bags  weight of up to 25 kg.; Big bags up to 1,000 kg.; In Bulk.",
-    "specification": [],
+    "specification": [
+      "Appearanc:tasteless white powder",
+      "Ash:0.25%",
+      "Protein:0.35%",
+      "Moisture:14%",
+      "pH:5.0-7.5",
+      "SO2:20mg/kg"
+    ],
     "industry": [
       "Food & Beverage",
       "Bakery",
@@ -335,20 +477,27 @@
       "Animal Feed",
       "Technical & Industrial"
     ],
-    "isActive": true,
-    "isFeatured": true,
-    "image": "/vital-wheat-gluten.png"
+    "isActive": true
   },
   {
     "slug": "corn-starch",
     "name": "Corn starch",
-    "group": "food-ingredients",
-    "groupLabel": "Food ingredients",
+    "image": "/18-CornStarch.png",
+    "market": "food-ingredients",
+    "marketLabel": "Food ingredients",
     "info": "Native Corn Starch is a highly digestible and versatile energy source used extensively in both food and animal nutrition. It acts as a stable thickening agent and provides a consistent source of glucose for young animals. Beyond nutrition, it is frequently utilized in industrial applications like paper sizing and textile finishing due to its reliable adhesive properties.",
     "description": "Highly digestible energy source; stable thickening agent for food and feed.",
     "application": "Thickener for gravies/puddings; energy for young animals; paper sizing.",
     "packing": "Bags  weight of up to 25 kg.; Big bags up to 1,000 kg.; In Bulk.",
-    "specification": [],
+    "specification": [
+      "Appearenc:white or light yellow shadow",
+      "Ash:0.3%",
+      "Protein:0.50%",
+      "Fat:0.20%",
+      "Moisture:14%",
+      "pH:4.5-6.5",
+      "SO2:30mg/kg"
+    ],
     "industry": [
       "Food & Beverage",
       "Pet Food",
@@ -356,38 +505,55 @@
       "Technical & Industrial"
     ],
     "isActive": true,
-    "image": "/vital-wheat-gluten.png"
+    "isFeatured": true
   },
   {
     "slug": "potato-starch",
     "name": "Potato starch",
-    "group": "food-ingredients",
-    "groupLabel": "Food ingredients",
+    "image": "/19-PotatoStarch.png",
+    "market": "food-ingredients",
+    "marketLabel": "Food ingredients",
     "info": "Potato starch is a highly refined carbohydrate extracted from potatoes, featuring granules roughly twice the size of other starches. It is known for its superior water absorption, high binding strength, and the ability to form clear, long-textured gels. Because it is gluten-free and has a neutral taste, it is an ideal thickener for both food applications and technical industries.",
     "description": "High water absorption; neutral taste; high binding strength and transparency.",
     "application": "Gluten-free thickener; meat/pet food binder; textile/paper sizing.",
     "packing": "Bags  weight of up to 25 kg.; Big bags up to 1,000 kg.; In Bulk.",
-    "specification": [],
+    "specification": [
+      "Appearenc:white powder",
+      "Neutral taste and odour:unique texture",
+      "Ash:0.5%",
+      "Viscosity:min 1350 BU",
+      "Moisture:20.5%",
+      "pH:6.0-8.0",
+      "SO2:10mg/kg"
+    ],
     "industry": [
       "Food & Beverage",
       "Pet Food",
       "Animal Feed",
       "Technical & Industrial"
     ],
-    "isActive": true,
-    "isFeatured": true,
-    "image": "/vital-wheat-gluten.png"
+    "isActive": true
   },
   {
     "slug": "tapioca-starch",
     "name": "Tapioca starch",
-    "group": "food-ingredients",
-    "groupLabel": "Food ingredients",
+    "image": "/20-TapiocaStarch.png",
+    "market": "food-ingredients",
+    "marketLabel": "Food ingredients",
     "info": "Extracted from the cassava root, Tapioca Starch is prized for its neutral flavor profile and excellent freeze-thaw stability. It produces a high-viscosity paste that is clear and elastic, making it a preferred binder in fish pellets and wet pet foods. Its unique functional properties allow for smooth textures in a wide variety of moisture-rich applications.",
     "description": "Neutral flavor; high viscosity; excellent freeze-thaw stability.",
     "application": "Binder in fish pellets; thickening agent in wet pet food.",
     "packing": "Bags  weight of up to 25 kg.; Big bags up to 1,000 kg.; In Bulk.",
-    "specification": [],
+    "specification": [
+      "Appearenc:white powder",
+      "Slightly sweet taste:no discernible smell",
+      "Starch:85%",
+      "Ash:0.20%",
+      "Moisture:14%",
+      "pH:5.0-7.0",
+      "HCN:<10 ppm",
+      "SO2:30mg/kg"
+    ],
     "industry": [
       "Food & Beverage",
       "Pet Food",
@@ -395,19 +561,26 @@
       "Aquaculture",
       "Technical & Industrial"
     ],
-    "isActive": true,
-    "image": "/vital-wheat-gluten.png"
+    "isActive": true
   },
   {
     "slug": "glucose-syrups",
     "name": "Glucose syrups",
-    "group": "sweetners",
-    "groupLabel": "Sweetners",
+    "image": "/21-FiberZ.png",
+    "market": "sweetners",
+    "marketLabel": "Sweetners",
     "info": "Glucose Syrups are concentrated liquid carbohydrates produced through the controlled hydrolysis of starch, providing a source of immediate energy. They are used to enhance the palatability of feeds through their natural sweetness and serve as effective binders for improving pellet quality. Their liquid form allows for easy dosing and uniform distribution throughout various feed formulations.",
     "description": "Concentrated carbs from starch hydrolysis; provides immediate energy.",
     "application": "Liquid energy; palatability enhancer (sweetness); pellet binder.",
     "packing": "Bags  weight of up to 25 kg.; Big bags up to 1,000 kg.; In Bulk.",
-    "specification": [],
+    "specification": [
+      "Type:DE 28 to DE 66",
+      "Procent solids:78-84%",
+      "pH:4.0-5.0",
+      "Viscosity:Higher in low DE",
+      "Sweetness:Increases with DE",
+      "Function:Prevents crystallization and provides body"
+    ],
     "industry": [
       "Food & Beverage",
       "Bakery",
@@ -415,57 +588,79 @@
       "Animal Feed",
       "Technical & Industrial"
     ],
-    "isActive": true,
-    "image": "/vital-wheat-gluten.png"
+    "isActive": true
   },
   {
     "slug": "fructose",
     "name": "Fructose",
-    "group": "sweetners",
-    "groupLabel": "Sweetners",
+    "image": "/22-Fructose.png",
+    "market": "sweetners",
+    "marketLabel": "Sweetners",
     "info": "These simple sugars are monosaccharides designed for nearly instant absorption into the bloodstream, making them ideal for animals requiring quick energy recovery. They are frequently used as sweeteners to encourage feed intake in young or stressed animals. Additionally, their high solubility makes them an excellent carrier for water-soluble vitamins and electrolytes.",
     "description": "Monosaccharides for instant absorption; high glycemic index.",
     "application": "Quick energy; sweetener; vitamin carrier.",
     "packing": "Bags  weight of up to 25 kg.; Big bags up to 1,000 kg.; In Bulk.",
-    "specification": [],
+    "specification": [
+      "Appearenc:white crystals",
+      "Moisture:0.5%",
+      "Fructose assay:98%",
+      "Taste:Sweet",
+      "Residue on ignition (Ash):0.1%",
+      "SO2:Depends on origin"
+    ],
     "industry": [
       "Food & Beverage",
       "Pet Food",
       "Animal Feed",
       "Technical & Industrial"
     ],
-    "isActive": true,
-    "image": "/vital-wheat-gluten.png"
+    "isActive": true
   },
   {
     "slug": "dextrose",
     "name": "Dextrose",
-    "group": "sweetners",
-    "groupLabel": "Sweetners",
+    "image": "/23-Dextrose.png",
+    "market": "sweetners",
+    "marketLabel": "Sweetners",
     "info": "These simple sugars are monosaccharides designed for nearly instant absorption into the bloodstream, making them ideal for animals requiring quick energy recovery. They are frequently used as sweeteners to encourage feed intake in young or stressed animals. Additionally, their high solubility makes them an excellent carrier for water-soluble vitamins and electrolytes.",
     "description": "Monosaccharides for instant absorption; high glycemic index.",
     "application": "Instant energy for recovery; carrier for additives.",
     "packing": "Bags  weight of up to 25 kg.; Big bags up to 1,000 kg.; In Bulk.",
-    "specification": [],
+    "specification": [
+      "Appearenc:white crystals",
+      "Specific rotation:52,5 – 54,0 °",
+      "Moisture:10,0 %",
+      "Residue on ignition (Ash):0.25 %",
+      "Assay:99,5 %",
+      "SO2:Depends on origin",
+      "Taste:Bland, sweet"
+    ],
     "industry": [
       "Food & Beverage",
       "Pet Food",
       "Animal Feed",
       "Technical & Industrial"
     ],
-    "isActive": true,
-    "image": "/vital-wheat-gluten.png"
+    "isActive": true
   },
   {
     "slug": "maltodextrin",
     "name": "Maltodextrin",
-    "group": "sweetners",
-    "groupLabel": "Sweetners",
+    "image": "/24-Maltodextrin.png",
+    "market": "sweetners",
+    "marketLabel": "Sweetners",
     "info": "Maltodextrin is a complex carbohydrate derived from starch hydrolysis that offers easy digestibility with very low sweetness. It serves as an effective energy source in milk replacers and a stable carrier for sensitive micro-ingredients like vitamins or flavors. Its high solubility and neutral impact on taste make it a staple in specialized nutritional formulations",
     "description": "Starch-derived polymer; easily digestible and low sweetness.",
     "application": "Carrier for micro-ingredients; energy source in milk replacers.",
     "packing": "Bags  weight of up to 25 kg.; Big bags up to 1,000 kg.; In Bulk.",
-    "specification": [],
+    "specification": [
+      "Appearenc:yellow amorphous powder",
+      "pH:4.0-6.5",
+      "Moisture:10.0%",
+      "DE:max 20",
+      "Ash:0.5%",
+      "SO2:0.0025%"
+    ],
     "industry": [
       "Food & Beverage",
       "Pet Food",
@@ -473,129 +668,182 @@
       "Cosmetics",
       "Technical & Industrial"
     ],
-    "isActive": true,
-    "image": "/vital-wheat-gluten.png"
+    "isActive": true
   },
   {
     "slug": "sugar",
     "name": "Sugar",
-    "group": "sweetners",
-    "groupLabel": "Sweetners",
+    "image": "/25-Sugar.png",
+    "market": "sweetners",
+    "marketLabel": "Sweetners",
     "info": "Crystalline Sugar is a 100% digestible carbohydrate that provides a potent and immediate source of energy for livestock. Its primary role in animal nutrition is as a powerful attractant, significantly improving the intake of less palatable feeds. It is also a key component in the manufacturing of lick blocks and high-energy supplement tubs for grazing animals.",
     "description": "100% digestible carbohydrate; acts as a powerful feed attractant.",
     "application": "Feed attractant; instant energy; used in lick blocks.",
     "packing": "Bags  weight of up to 25 kg.; Big bags up to 1,000 kg.; In Bulk.",
-    "specification": [],
+    "specification": [
+      "Appearance:Fine amorphous to large golden crystals",
+      "Hygroscopy:High (Amorphous)",
+      "Purity:ICUMSA 45 (Refined) to ICUMSA 7500 (Raw)",
+      "Composition:Sucrose with varying molasses content (VHP/Demerara)"
+    ],
     "industry": [
       "Food & Beverage",
       "Animal Feed"
     ],
-    "isActive": true,
-    "image": "/vital-wheat-gluten.png"
+    "isActive": true
   },
   {
     "slug": "fiberz",
     "name": "FiberZ",
-    "group": "food-ingredients",
-    "groupLabel": "Food ingredients",
+    "image": "/26-FiberZ.png",
+    "market": "food-ingredients",
+    "marketLabel": "Food ingredients",
     "info": "FiberZ is a concentrated source of insoluble dietary fiber specifically formulated to support healthy intestinal motility and digestive transit. It is a key tool for weight management in pet foods, providing a feeling of fullness without excess calories. In livestock, it is particularly effective at preventing constipation and improving gut health in gestating sows",
     "description": "Concentrated insoluble fiber to support intestinal motility.",
     "application": "Weight management in pets; prevents constipation in gestating sows.",
     "packing": "Bags  weight of up to 25 kg.; Big bags up to 1,000 kg.; In Bulk.",
-    "specification": [],
+    "specification": [
+      "Appearance:Powdery",
+      "Color:Light yellow, cream",
+      "Moisture content:max 10%",
+      "pH:3-4",
+      "Solubility:92-100%",
+      "Total fiber content:min. 50-60%",
+      "Whiteness:84-89",
+      "Total plate count (30°C):max 10000 CFU/g",
+      "Lead (Pb):max 1 mg/kg",
+      "Arsenic (As):max 1 mg/kg."
+    ],
     "industry": [
       "Pet Food",
       "Animal Feed"
     ],
     "isActive": true,
-    "image": "/vital-wheat-gluten.png"
+    "isFeatured": true
   },
   {
     "slug": "wheat-flour",
     "name": "Wheat flour",
-    "group": "food-ingredients",
-    "groupLabel": "Food ingredients",
+    "image": "/27-WheatFlour.png",
+    "market": "food-ingredients",
+    "marketLabel": "Food ingredients",
     "info": "Wheat Flour is produced from the finely ground endosperm of wheat, providing a balanced combination of starch and gluten protein. It provides the necessary structural integrity for baked pet treats and serves as a natural binder in various pelleted feed types. Its high digestibility and reliable baking properties make it a foundational ingredient in many specialty animal snacks.",
     "description": "Balanced starch and protein (gluten) for structure and energy.",
     "application": "Base for baked pet treats; general binder in pelleted feed.",
     "packing": "Bags  weight of up to 25 kg.; Big bags up to 1,000 kg.; In Bulk.",
-    "specification": [],
+    "specification": [
+      "Dry matter:87.6%",
+      "Crude protein:15.1%",
+      "Crude fat:2.7%",
+      "Crude fibre:1.1%",
+      "Starch:69.7%",
+      "Ash:1.7%",
+      "Gross energy:18.9 MJ/kg DM"
+    ],
     "industry": [
       "Food & Beverage",
       "Bakery",
       "Pet Food",
       "Animal Feed"
     ],
-    "isActive": true,
-    "image": "/vital-wheat-gluten.png"
+    "isActive": true
   },
   {
-    "slug": "sunflower",
-    "name": "Sunflower",
-    "group": "oils-and-fats",
-    "groupLabel": "Oils and fats",
+    "slug": "sunflower-seed",
+    "name": "Sunflower seed",
+    "image": "/28-SunflowerSeed.png",
+    "market": "oils-and-fats",
+    "marketLabel": "Oils and fats",
     "info": "These raw agricultural grains provide a natural, unprocessed source of fiber, protein, and energy for a variety of livestock. Used as the foundation for ruminant Total Mixed Rations (TMR) or as scratch feed for poultry, they support natural foraging behaviors and rumen health. These whole grains ensure a slow-release energy profile that is essential for maintaining steady growth and production.",
     "description": "Whole seeds providing fiber, protein, and energy in natural form.",
     "application": "Component for ruminant TMR; wild bird feed.",
     "packing": "Bags  weight of up to 25 kg.; Big bags up to 1,000 kg.; In Bulk.",
-    "specification": [],
+    "specification": [
+      "Dry matter:94.0%",
+      "Crude protein:19.0%",
+      "Ether extract:48.0%",
+      "Crude fibre:22.0%",
+      "Ash:3.5%",
+      "Gross energy:28.5 MJ/kg DM"
+    ],
     "industry": [
       "Animal Feed",
       "Agriculture"
     ],
-    "isActive": true,
-    "image": "/vital-wheat-gluten.png"
+    "isActive": true
   },
   {
-    "slug": "soybean",
-    "name": "soybean",
-    "group": "oils-and-fats",
-    "groupLabel": "Oils and fats",
+    "slug": "soybean-seed",
+    "name": "Soybean seed",
+    "image": "/29-SoybeanSeed.png",
+    "market": "oils-and-fats",
+    "marketLabel": "Oils and fats",
     "info": "These raw agricultural grains provide a natural, unprocessed source of fiber, protein, and energy for a variety of livestock. Used as the foundation for ruminant Total Mixed Rations (TMR) or as scratch feed for poultry, they support natural foraging behaviors and rumen health. These whole grains ensure a slow-release energy profile that is essential for maintaining steady growth and production.",
     "description": "Whole seeds providing fiber, protein, and energy in natural form.",
     "application": "Base for animal diets; raw material for processing.",
     "packing": "Bags  weight of up to 25 kg.; Big bags up to 1,000 kg.; In Bulk.",
-    "specification": [],
+    "specification": [
+      "Dry matter:90.0%",
+      "Crude protein:38.0%",
+      "Ether extract:18.0%",
+      "Crude fibre:5.0%",
+      "Ash:5.0%",
+      "Gross energy:22.5 MJ/kg DM"
+    ],
     "industry": [
       "Animal Feed",
       "Agriculture"
     ],
-    "isActive": true,
-    "image": "/vital-wheat-gluten.png"
+    "isActive": true
   },
   {
     "slug": "corn",
     "name": "Corn",
-    "group": "oils-and-fats",
-    "groupLabel": "Oils and fats",
+    "image": "/30-Corn.png",
+    "market": "oils-and-fats",
+    "marketLabel": "Oils and fats",
     "info": "These raw agricultural grains provide a natural, unprocessed source of fiber, protein, and energy for a variety of livestock. Used as the foundation for ruminant Total Mixed Rations (TMR) or as scratch feed for poultry, they support natural foraging behaviors and rumen health. These whole grains ensure a slow-release energy profile that is essential for maintaining steady growth and production.",
     "description": "Whole seeds providing fiber, protein, and energy in natural form.",
     "application": "Primary energy source for livestock; scratch feed.",
     "packing": "Bags  weight of up to 25 kg.; Big bags up to 1,000 kg.; In Bulk.",
-    "specification": [],
+    "specification": [
+      "Dry matter:87.0%",
+      "Crude protein:9.0%",
+      "Ether extract:4.0%",
+      "Crude fibre:2.5%",
+      "Starch:72.0%",
+      "Ash:1.5%",
+      "Gross energy:18.5 MJ/kg DM"
+    ],
     "industry": [
       "Animal Feed",
       "Agriculture"
     ],
-    "isActive": true,
-    "image": "/vital-wheat-gluten.png"
+    "isActive": true
   },
   {
-    "slug": "rape",
-    "name": "Rape",
-    "group": "oils-and-fats",
-    "groupLabel": "Oils and fats",
+    "slug": "rapeseed",
+    "name": "Rapeseed",
+    "image": "/31-Rapeseed.png",
+    "market": "oils-and-fats",
+    "marketLabel": "Oils and fats",
     "info": "These raw agricultural grains provide a natural, unprocessed source of fiber, protein, and energy for a variety of livestock. Used as the foundation for ruminant Total Mixed Rations (TMR) or as scratch feed for poultry, they support natural foraging behaviors and rumen health. These whole grains ensure a slow-release energy profile that is essential for maintaining steady growth and production.",
     "description": "Whole seeds providing fiber, protein, and energy in natural form.",
     "application": "Energy supplement for livestock; raw oil source.",
     "packing": "Bags  weight of up to 25 kg.; Big bags up to 1,000 kg.; In Bulk.",
-    "specification": [],
+    "specification": [
+      "Dry matter:91.0%",
+      "Crude protein:20.0%",
+      "Ether extract:42.0%",
+      "Crude fibre:12.0%",
+      "Ash:4.0%",
+      "Gross energy:27.0 MJ/kg DM"
+    ],
     "industry": [
       "Animal Feed",
       "Agriculture",
       "Technical & Industrial"
     ],
-    "isActive": true,
-    "image": "/vital-wheat-gluten.png"
+    "isActive": true
   }
 ]

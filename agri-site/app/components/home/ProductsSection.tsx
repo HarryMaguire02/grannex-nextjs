@@ -5,8 +5,8 @@ import ProductCard from '@/app/components/ProductCard';
 type Product = {
   slug: string;
   name: string;
-  group: string;
-  groupLabel: string;
+  market: string;
+  marketLabel: string;
   info: string;
   description: string;
   application: string;
@@ -27,7 +27,7 @@ export default function ProductsSection() {
         {/* Title and Button Row */}
         <div className="flex justify-between items-center mb-6 md:mb-8">
           <h2 className="text-3xl md:text-4xl font-bold text-primary">
-            <span className="font-normal">Our</span> products
+            Our products
           </h2>
           <Link
             href="/products"

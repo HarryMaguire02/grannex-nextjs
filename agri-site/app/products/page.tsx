@@ -9,8 +9,8 @@ import ProductCard from '@/app/components/ProductCard';
 type Product = {
   slug: string;
   name: string;
-  group: string;
-  groupLabel: string;
+  market: string;
+  marketLabel: string;
   info: string;
   description: string;
   application: string;
@@ -23,18 +23,18 @@ type Product = {
 
 function ProductsContent() {
   const searchParams = useSearchParams();
-  const groupParam = searchParams.get('group');
+  const marketParam = searchParams.get('market');
 
   const [selectedIndustry, setSelectedIndustry] = useState<string>('All');
   // Use URL parameter if available, otherwise use state
-  const [selectedGroup, setSelectedGroup] = useState<string>('All');
+  const [selectedMarket, setSelectedMarket] = useState<string>('All');
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [currentPage, setCurrentPage] = useState<number>(1);
 
   const PRODUCTS_PER_PAGE = 12;
 
-  // Derive the actual selected group from URL param or state
-  const activeGroup = groupParam || selectedGroup;
+  // Derive the actual selected market from URL param or state
+  const activeMarket = marketParam || selectedMarket;
 
   const products = productsData as Product[];
 
@@ -53,9 +53,9 @@ function ProductsContent() {
     'Technical & Industrial'
   ];
 
-  // Static group options with value-label pairs
-  const groups = [
-    { value: 'All', label: 'Group' },
+  // Static market options with value-label pairs
+  const markets = [
+    { value: 'All', label: 'Market' },
     { value: 'animal-feed-ingredients', label: 'Animal feed ingredients' },
     { value: 'aqua-feeds-ingredients', label: 'Aqua feeds ingredients' },
     { value: 'food-ingredients', label: 'Food ingredients' },
@@ -64,22 +64,22 @@ function ProductsContent() {
     { value: 'other', label: 'Other' }
   ];
 
-  // Filter products by industry, group, and search query
+  // Filter products by industry, market, and search query
   const filteredProducts = products.filter(product => {
     if (!product.isActive) return false;
 
     // Filter by industry
     const matchesIndustry = selectedIndustry === 'All' || product.industry.includes(selectedIndustry);
 
-    // Filter by group - use activeGroup which considers URL param
-    const matchesGroup = activeGroup === 'All' || product.group === activeGroup;
+    // Filter by market - use activeMarket which considers URL param
+    const matchesMarket = activeMarket === 'All' || product.market === activeMarket;
 
     // Filter by search query (search in name)
     const matchesSearch = searchQuery === '' ||
       product.name.toLowerCase().includes(searchQuery.toLowerCase());
 
     // Product must match all filters
-    return matchesIndustry && matchesGroup && matchesSearch;
+    return matchesIndustry && matchesMarket && matchesSearch;
   });
 
   // Calculate pagination
@@ -97,12 +97,12 @@ function ProductsContent() {
   // Reset filters only (search has its own clear button)
   const handleReset = () => {
     setSelectedIndustry('All');
-    setSelectedGroup('All');
+    setSelectedMarket('All');
     setCurrentPage(1);
   };
 
   // Check if any filters are active (excluding search since it has its own clear button)
-  const hasActiveFilters = selectedIndustry !== 'All' || selectedGroup !== 'All';
+  const hasActiveFilters = selectedIndustry !== 'All' || selectedMarket !== 'All';
 
   return (
     <div className="bg-white">
@@ -113,14 +113,14 @@ function ProductsContent() {
             Home
           </Link>
           <span className="mx-2">/</span>
-          {groupParam ? (
+          {marketParam ? (
             <>
               <Link href="/products" className="hover:text-green-medium transition-colors">
                 Products
               </Link>
               <span className="mx-2">/</span>
               <span className="font-medium">
-                {groups.find(g => g.value === groupParam)?.label || groupParam}
+                {markets.find(m => m.value === marketParam)?.label || marketParam}
               </span>
             </>
           ) : (
@@ -161,18 +161,18 @@ function ProductsContent() {
             </select>
 
             <select
-              value={activeGroup}
-              onChange={(e) => handleFilterChange(setSelectedGroup, e.target.value)}
-              disabled={!!groupParam}
+              value={activeMarket}
+              onChange={(e) => handleFilterChange(setSelectedMarket, e.target.value)}
+              disabled={!!marketParam}
               className={`pl-4 py-2 border-0 rounded-lg text-sm font-normal text-primary transition-colors ${
-                groupParam
+                marketParam
                   ? 'bg-green-light/30 ring-2 ring-green-medium cursor-not-allowed opacity-90'
                   : 'bg-white hover:bg-primary/5 cursor-pointer'
               }`}
             >
-              {groups.map(group => (
-                <option key={group.value} value={group.value}>
-                  {group.label}
+              {markets.map(market => (
+                <option key={market.value} value={market.value}>
+                  {market.label}
                 </option>
               ))}
             </select>
