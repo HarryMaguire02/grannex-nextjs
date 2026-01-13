@@ -20,76 +20,15 @@ export default function WorldMapSection() {
         </p>
 
         {/* World Map */}
-        <div className="relative w-full flex justify-center items-center my-8">
-          <div className="relative w-full max-w-4xl">
+        <div className="w-full flex justify-center items-center my-8">
+          <div className="w-full max-w-4xl">
             <Image
-              src="/worldmap.png"
+              src="/worldmap-location.png"
               alt="World Map showing our global distribution"
               width={1200}
               height={600}
               className="w-full h-auto"
             />
-
-            {/* Location Pins */}
-            {/* North America */}
-            <div className="absolute top-[10%] left-[14%] sm:top-[19%] w-6 h-6 md:w-8 md:h-8">
-              <Image
-                src="/location-ping.png"
-                alt="North America"
-                width={32}
-                height={32}
-                className="w-full h-full"
-                unoptimized
-              />
-            </div>
-
-            {/* South America */}
-            <div className="absolute sm:top-[63%] top-[61%] left-[24%] sm:left-[26%] w-6 h-6 md:w-8 md:h-8">
-              <Image
-                src="/location-ping.png"
-                alt="South America"
-                width={32}
-                height={32}
-                className="w-full h-full"
-                unoptimized
-              />
-            </div>
-
-            {/* Asia */}
-            <div className="absolute top-[1%] sm:top-[10%] left-[58%] w-6 h-6 md:w-8 md:h-8">
-              <Image
-                src="/location-ping.png"
-                alt="Asia"
-                width={32}
-                height={32}
-                className="w-full h-full"
-                unoptimized
-              />
-            </div>
-
-            {/* Africa */}
-            <div className="absolute top-[50%] left-[52%] w-6 h-6 md:w-8 md:h-8">
-              <Image
-                src="/location-ping.png"
-                alt="Africa"
-                width={32}
-                height={32}
-                className="w-full h-full"
-                unoptimized
-              />
-            </div>
-
-            {/* Asia/Oceania */}
-            <div className="absolute top-[62%] left-[83%] sm:top-[70%] sm:left-[85%] w-6 h-6 md:w-8 md:h-8">
-              <Image
-                src="/location-ping.png"
-                alt="Asia and Oceania"
-                width={32}
-                height={32}
-                className="w-full h-full"
-                unoptimized
-              />
-            </div>
           </div>
         </div>
       </div>

@@ -302,96 +302,111 @@ export default function ProductPage({ params }: PageProps) {
         <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12 mt-8">
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Left: Promotional Text */}
-            <div className="flex flex-col justify-center">
-              <h3 className="text-2xl md:text-3xl font-bold text-primary mb-4">
-                You&apos;re one step closer<br />
-                to achieving <span className="text-green-medium">your goal!</span>
-              </h3>
-              <p className="text-primary font-normal text-sm leading-6">
-                GREENEX, we help our customers increase sales and lower costs while offering reasonable pricing, volume flexibility, and fast delivery.
-              </p>
+            {/* Left: Promotional Text with Decoration */}
+            <div className="relative flex flex-col justify-center">
+              {/* Decoration Image - Behind Text */}
+              <div className="absolute -left-8 md:-left-12 lg:-left-16 top-1/2 -translate-y-1/2 w-full h-auto pointer-events-none">
+                <Image
+                  src="/decoration3.png"
+                  alt=""
+                  width={600}
+                  height={600}
+                  className="w-full h-auto object-contain"
+                />
+              </div>
+
+              <div className="relative z-10">
+                <h3 className="text-2xl md:text-3xl font-bold text-primary mb-4">
+                  You&apos;re one step closer<br />
+                  to achieving <span className="text-green-medium">your goal!</span>
+                </h3>
+                <p className="text-primary font-normal text-sm leading-6">
+                  GREENEX, we help our customers increase sales and lower costs while offering reasonable pricing, volume flexibility, and fast delivery.
+                </p>
+              </div>
             </div>
 
-            {/* Right: Form */}
-            <form className="space-y-4">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div>
-                  <label className="block text-sm font-medium text-primary mb-1">Name*</label>
-                  <input
-                    type="text"
-                    placeholder="John"
-                    className="w-full px-4 py-2 border-b-2 border-primary bg-transparent focus:outline-none focus:border-green-medium"
-                  />
+            {/* Right: Form with Secondary Background */}
+            <div className="bg-secondary/20 border-2 border-secondary/60 rounded-3xl p-4 md:p-8">
+              <form className="space-y-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div>
+                    <label className="block text-sm font-medium text-primary mb-2">Name*</label>
+                    <input
+                      type="text"
+                      placeholder="John"
+                      className="w-full px-0 py-2 border-b-2 border-primary bg-transparent focus:outline-none focus:border-green-medium placeholder:text-primary/40"
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-primary mb-2">Phone*</label>
+                    <input
+                      type="tel"
+                      placeholder="+381 23 4567891"
+                      className="w-full px-0 py-2 border-b-2 border-primary bg-transparent focus:outline-none focus:border-green-medium placeholder:text-primary/40"
+                    />
+                  </div>
                 </div>
-                <div>
-                  <label className="block text-sm font-medium text-primary mb-1">Phone*</label>
-                  <input
-                    type="tel"
-                    placeholder="+381 23 4567891"
-                    className="w-full px-4 py-2 border-b-2 border-primary bg-transparent focus:outline-none focus:border-green-medium"
-                  />
-                </div>
-              </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div>
-                  <label className="block text-sm font-medium text-primary mb-1">Email*</label>
-                  <input
-                    type="email"
-                    placeholder="john@gmail.com"
-                    className="w-full px-4 py-2 border-b-2 border-primary bg-transparent focus:outline-none focus:border-green-medium"
-                  />
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div>
+                    <label className="block text-sm font-medium text-primary mb-2">Email*</label>
+                    <input
+                      type="email"
+                      placeholder="john@gmail.com"
+                      className="w-full px-0 py-2 border-b-2 border-primary bg-transparent focus:outline-none focus:border-green-medium placeholder:text-primary/40"
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-primary mb-2">Country*</label>
+                    <input
+                      type="text"
+                      placeholder="Serbia"
+                      className="w-full px-0 py-2 border-b-2 border-primary bg-transparent focus:outline-none focus:border-green-medium placeholder:text-primary/40"
+                    />
+                  </div>
                 </div>
-                <div>
-                  <label className="block text-sm font-medium text-primary mb-1">Country*</label>
-                  <input
-                    type="text"
-                    placeholder="Serbia"
-                    className="w-full px-4 py-2 border-b-2 border-primary bg-transparent focus:outline-none focus:border-green-medium"
-                  />
-                </div>
-              </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div>
-                  <label className="block text-sm font-medium text-primary mb-1">Company name</label>
-                  <input
-                    type="text"
-                    placeholder="Name of the Company"
-                    className="w-full px-4 py-2 border-b-2 border-primary bg-transparent focus:outline-none focus:border-green-medium"
-                  />
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div>
+                    <label className="block text-sm font-medium text-primary mb-2">Company name</label>
+                    <input
+                      type="text"
+                      placeholder="Name of the Company"
+                      className="w-full px-0 py-2 border-b-2 border-primary bg-transparent focus:outline-none focus:border-green-medium placeholder:text-primary/40"
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-primary mb-2">Company Profile*</label>
+                    <select className="w-full px-0 py-2 border-b-2 border-primary bg-transparent focus:outline-none focus:border-green-medium text-primary/40">
+                      <option value="">Type</option>
+                      <option value="manufacturer">Manufacturer</option>
+                      <option value="distributor">Distributor</option>
+                      <option value="retailer">Retailer</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
                 </div>
+
                 <div>
-                  <label className="block text-sm font-medium text-primary mb-1">Company Profile*</label>
-                  <select className="w-full px-4 py-2 border-b-2 border-primary bg-transparent focus:outline-none focus:border-green-medium">
-                    <option value="">Type</option>
-                    <option value="manufacturer">Manufacturer</option>
-                    <option value="distributor">Distributor</option>
-                    <option value="retailer">Retailer</option>
-                    <option value="other">Other</option>
-                  </select>
+                  <label className="block text-sm font-medium text-primary mb-2">Message</label>
+                  <textarea
+                    rows={2}
+                    placeholder="My message..."
+                    className="w-full px-0 py-2 border-b-2 border-primary bg-transparent focus:outline-none focus:border-green-medium resize-none placeholder:text-primary/40"
+                  ></textarea>
                 </div>
-              </div>
 
-              <div>
-                <label className="block text-sm font-medium text-primary mb-1">Message</label>
-                <textarea
-                  rows={4}
-                  placeholder="My message..."
-                  className="w-full px-4 py-2 border-b-2 border-primary bg-transparent focus:outline-none focus:border-green-medium resize-none"
-                ></textarea>
-              </div>
-
-              <div className="flex justify-end">
-                <button
-                  type="submit"
-                  className="px-12 py-3 bg-primary text-white rounded-lg font-medium hover:bg-green-medium transition-colors"
-                >
-                  Send
-                </button>
-              </div>
-            </form>
+                <div className="flex justify-end pt-2">
+                  <button
+                    type="submit"
+                    className="px-12 py-3 bg-primary text-secondary rounded-lg font-medium hover:bg-green-medium transition-colors"
+                  >
+                    Send
+                  </button>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </section>
