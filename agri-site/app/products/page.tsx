@@ -32,11 +32,21 @@ function ProductsContent() {
   const [selectedMarket, setSelectedMarket] = useState<string>(marketParam || 'All');
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [currentPage, setCurrentPage] = useState<number>(1);
+  // Start with 12 for both SSR and client to avoid hydration mismatch
+  const [productsPerPage, setProductsPerPage] = useState<number>(12);
+  const [isMounted, setIsMounted] = useState<boolean>(false);
 
   // Ref for smooth scrolling to top of products section
   const productsTopRef = useRef<HTMLDivElement>(null);
 
-  const PRODUCTS_PER_PAGE = 12;
+  // After mount, update products per page based on screen size
+  useEffect(() => {
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    setIsMounted(true);
+    // sm breakpoint in Tailwind is 640px
+    const newProductsPerPage = window.innerWidth < 640 ? 6 : 12;
+    setProductsPerPage(newProductsPerPage);
+  }, []);
 
   // Update URL when filters change
   useEffect(() => {
@@ -117,9 +127,9 @@ function ProductsContent() {
   });
 
   // Calculate pagination
-  const totalPages = Math.ceil(filteredProducts.length / PRODUCTS_PER_PAGE);
-  const startIndex = (currentPage - 1) * PRODUCTS_PER_PAGE;
-  const endIndex = startIndex + PRODUCTS_PER_PAGE;
+  const totalPages = Math.ceil(filteredProducts.length / productsPerPage);
+  const startIndex = (currentPage - 1) * productsPerPage;
+  const endIndex = startIndex + productsPerPage;
   const paginatedProducts = filteredProducts.slice(startIndex, endIndex);
 
   // Reset to page 1 when filters change
@@ -314,13 +324,14 @@ function ProductsContent() {
             <button
               onClick={() => setCurrentPage(prev => Math.max(prev - 1, 1))}
               disabled={currentPage === 1}
-              className="px-4 py-2 rounded-lg text-sm font-medium transition-colors disabled:opacity-50 disabled:cursor-not-allowed bg-white text-primary border border-primary/20 hover:bg-primary/5 disabled:hover:bg-white"
+              className="px-3 sm:px-4 py-2 rounded-lg text-sm font-medium transition-colors disabled:opacity-50 disabled:cursor-not-allowed bg-white text-primary border border-primary/20 hover:bg-primary/5 disabled:hover:bg-white"
             >
-              Previous
+              <span className="hidden sm:inline">Previous</span>
+              <span className="sm:hidden">Prev</span>
             </button>
 
-            {/* Page Numbers */}
-            <div className="flex gap-2">
+            {/* Page Numbers - Hidden on small screens */}
+            <div className="hidden sm:flex gap-2">
               {Array.from({ length: totalPages }, (_, i) => i + 1).map(page => (
                 <button
                   key={page}
@@ -336,11 +347,16 @@ function ProductsContent() {
               ))}
             </div>
 
+            {/* Current Page Indicator - Visible only on small screens */}
+            <div className="sm:hidden px-4 py-2 text-sm font-medium text-primary">
+              Page {currentPage} of {totalPages}
+            </div>
+
             {/* Next Button */}
             <button
               onClick={() => setCurrentPage(prev => Math.min(prev + 1, totalPages))}
               disabled={currentPage === totalPages}
-              className="px-4 py-2 rounded-lg text-sm font-medium transition-colors disabled:opacity-50 disabled:cursor-not-allowed bg-white text-primary border border-primary/20 hover:bg-primary/5 disabled:hover:bg-white"
+              className="px-3 sm:px-4 py-2 rounded-lg text-sm font-medium transition-colors disabled:opacity-50 disabled:cursor-not-allowed bg-white text-primary border border-primary/20 hover:bg-primary/5 disabled:hover:bg-white"
             >
               Next
             </button>
