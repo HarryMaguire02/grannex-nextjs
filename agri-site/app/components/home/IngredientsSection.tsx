@@ -65,20 +65,29 @@ export default function IngredientsSection() {
         </h2>
 
         {/* Tabs */}
-        <div className="border-2 border-primary rounded-xl p-1 mb-8 flex flex-wrap gap-2 justify-center lg:justify-between">
-          {tabs.map((tab) => (
-            <button
-              key={tab}
-              onClick={() => setActiveTab(tab)}
-              className={`px-6 py-2 text-sm font-medium transition-all rounded-lg ${
-                activeTab === tab
-                  ? 'bg-primary text-white'
-                  : 'bg-transparent text-primary hover:bg-primary/10'
-              }`}
-            >
-              {tab}
-            </button>
-          ))}
+        <div className="border-2 border-primary rounded-xl p-1 mb-8">
+          <div className="
+            flex gap-2
+            overflow-x-auto
+            whitespace-nowrap
+            scrollbar-hide
+            sm:justify-center
+            lg:justify-between
+          ">
+            {tabs.map((tab) => (
+              <button
+                key={tab}
+                onClick={() => setActiveTab(tab)}
+                className={`shrink-0 px-6 py-2 text-sm font-medium transition-all rounded-lg ${
+                  activeTab === tab
+                    ? 'bg-primary text-white'
+                    : 'bg-transparent text-primary hover:bg-primary/10'
+                }`}
+              >
+                {tab}
+              </button>
+            ))}
+          </div>
         </div>
 
         {/* Content */}

@@ -189,61 +189,64 @@ function ProductsContent() {
         {/* Filters and Search Row */}
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-8">
           {/* Filters Container */}
-          <div className="flex flex-wrap items-center gap-4">
+          <div className="flex flex-wrap items-center gap-2">
             <div className="text-sm font-medium text-primary">Filter by:</div>
-
-            <select
-              value={selectedIndustry}
-              onChange={(e) => handleFilterChange(setSelectedIndustry, e.target.value)}
-              className={`pl-4 py-2 border-0 rounded-lg text-sm font-normal text-primary cursor-pointer transition-colors ${
-                selectedIndustry !== 'All'
-                  ? 'bg-green-light/30 ring-2 ring-green-medium'
-                  : 'bg-white hover:bg-primary/5'
-              }`}
-            >
-              {industries.map(industry => (
-                <option key={industry} value={industry}>
-                  {industry === 'All' ? 'Industry' : industry}
-                </option>
-              ))}
-            </select>
-
-            <select
-              value={selectedMarket}
-              onChange={(e) => handleFilterChange(setSelectedMarket, e.target.value)}
-              className={`pl-4 py-2 border-0 rounded-lg text-sm font-normal text-primary cursor-pointer transition-colors ${
-                selectedMarket !== 'All'
-                  ? 'bg-green-light/30 ring-2 ring-green-medium'
-                  : 'bg-white hover:bg-primary/5'
-              }`}
-            >
-              {markets.map(market => (
-                <option key={market.value} value={market.value}>
-                  {market.label}
-                </option>
-              ))}
-            </select>
-
-            {hasActiveFilters && (
-              <button
-                onClick={handleReset}
-                className="p-2 text-primary/60 hover:text-red-600 hover:bg-red-50 rounded-lg transition-colors"
-                title="Clear all filters"
+            <div className='flex flex-column flex-wrap gap-2'>
+              <select
+                value={selectedIndustry}
+                onChange={(e) => handleFilterChange(setSelectedIndustry, e.target.value)}
+                className={`w-45 h-9 p-1 border border-primary/20 rounded-lg text-sm font-normal text-primary cursor-pointer transition-colors ${
+                  selectedIndustry !== 'All'
+                    ? 'bg-green-light/30 ring-2 ring-green-medium'
+                    : 'bg-white hover:bg-primary/5'
+                }`}
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
+                {industries.map(industry => (
+                  <option key={industry} value={industry}>
+                    {industry === 'All' ? 'Industry' : industry}
+                  </option>
+                ))}
+              </select>
+              <div className='flex flex-nowrap gap-2'>
+                <select
+                  value={selectedMarket}
+                  onChange={(e) => handleFilterChange(setSelectedMarket, e.target.value)}
+                  className={`w-45 p-1 border border-primary/20 rounded-lg text-sm font-normal text-primary cursor-pointer transition-colors ${
+                    selectedMarket !== 'All'
+                      ? 'bg-green-light/30 ring-2 ring-green-medium'
+                      : 'bg-white hover:bg-primary/5'
+                  }`}
                 >
-                  <path
-                    fillRule="evenodd"
-                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              </button>
-            )}
+                  {markets.map(market => (
+                    <option key={market.value} value={market.value}>
+                      {market.label}
+                    </option>
+                  ))}
+                </select>
+
+                {hasActiveFilters && (
+                  <button
+                    onClick={handleReset}
+                    className="p-2 text-primary/60 hover:text-red-600 hover:bg-red-50 rounded-lg transition-colors"
+                    title="Clear all filters"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-5 w-5"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  </button>
+                )}
+              </div>
+              
+            </div>
           </div>
 
           {/* Search Container */}
@@ -256,7 +259,7 @@ function ProductsContent() {
                 setSearchQuery(e.target.value);
                 setCurrentPage(1);
               }}
-              className="pl-10 pr-10 py-2 border border-primary/20 rounded-lg text-sm font-normal text-primary bg-white focus:outline-none focus:border-green-medium focus:ring-1 focus:ring-green-medium w-full md:w-64"
+              className="pl-10 pr-10 py-2 border border-primary/20 rounded-lg text-sm font-normal text-primary bg-white focus:outline-none focus:border-green-medium focus:ring-1 focus:ring-green-medium w-full md:w-50"
             />
             <svg
               className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-primary/60"
