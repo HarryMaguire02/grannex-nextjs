@@ -99,7 +99,7 @@ export default function Header() {
                           handleContactClick();
                           closeMobileMenu();
                         }}
-                        className="py-3 px-4 rounded-lg text-base font-medium transition-colors text-primary hover:bg-secondary text-center"
+                        className="py-3 px-4 rounded-lg text-base font-medium transition-colors text-primary hover:bg-white/30 text-center"
                       >
                         {link.label}
                       </button>

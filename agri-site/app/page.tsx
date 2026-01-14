@@ -10,6 +10,22 @@ export default function Home() {
       {/* Hero Section */}
       <HeroSection />
 
+      {/* Ingredients Section */}
+      <IngredientsSection />
+
+      {/* Divider */}
+      <div className="max-w-content mx-auto px-12 md:px-16 lg:px-20">
+        <hr className="border-t-[3px] border-secondary/30" />
+      </div>
+
+      {/* Products Section */}
+      <ProductsSection />
+
+      {/* Divider */}
+      <div className="max-w-content mx-auto px-12 md:px-16 lg:px-20">
+        <hr className="border-t-[3px] border-secondary/30" />
+      </div>
+      
       {/* About Section */}
       <AboutSection />
 
@@ -21,21 +37,6 @@ export default function Home() {
       {/* Supply Chain Management Section */}
       <SupplyChainSection />
 
-      {/* Divider */}
-      <div className="max-w-content mx-auto px-12 md:px-16 lg:px-20">
-        <hr className="border-t-[3px] border-secondary/30" />
-      </div>
-
-      {/* Ingredients Section */}
-      <IngredientsSection />
-
-      {/* Divider */}
-      <div className="max-w-content mx-auto px-12 md:px-16 lg:px-20">
-        <hr className="border-t-[3px] border-secondary/30" />
-      </div>
-
-      {/* Products Section */}
-      <ProductsSection />
     </div>
   );
 }
