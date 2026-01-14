@@ -201,15 +201,15 @@ export default function ProductPage({ params }: PageProps) {
       <section>
         <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12">
           {/* Hero Content */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 lg:gap-12">
             {/* Left: Product Image */}
-            <div className="relative w-full aspect-4/3 rounded-2xl overflow-hidden">
+            <div className="relative w-full aspect-4/5  rounded-2xl overflow-hidden">
               <Image
                 src={product.image}
                 alt={product.name}
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
-                className="object-cover"
+                className="object-contain"
                 priority
               />
             </div>
@@ -228,13 +228,13 @@ export default function ProductPage({ params }: PageProps) {
               <div className="flex flex-col sm:flex-row gap-4">
                 <button
                   onClick={() => scrollToSection('specifications')}
-                  className="flex-1 px-8 py-3 bg-primary text-secondary rounded-lg font-medium hover:bg-green-medium transition-colors"
+                  className="flex-1 px-2 md:px-8 py-3 bg-primary text-secondary text-sm md:text-lg rounded-lg font-medium hover:bg-green-medium transition-colors"
                 >
                   Product Specifications
                 </button>
                 <button
                   onClick={() => scrollToSection('enquiry')}
-                  className="flex-1 px-8 py-3 bg-primary text-secondary rounded-lg font-medium hover:bg-green-medium transition-colors"
+                  className="flex-1 px-2 md:px-8 py-3 bg-primary text-secondary text-sm md:text-lg rounded-lg font-medium hover:bg-green-medium transition-colors"
                 >
                   Make an enquiry
                 </button>

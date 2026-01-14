@@ -18,6 +18,7 @@ const navLinks = [
 export default function Header() {
   const [isContactPopupOpen, setIsContactPopupOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
   const pathname = usePathname();
 
   const handleContactClick = () => {
@@ -34,7 +35,11 @@ export default function Header() {
 
   return (
     <>
-      <header className="w-full">
+      <header
+        className={`w-full ${isMobileMenuOpen || isHovered ? 'bg-white' : ''}`}
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+      >
         <div className="border-b border-gray-100">
           <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12">
             {/* Top row with Logo and Hamburger/Close button */}

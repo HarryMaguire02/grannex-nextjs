@@ -28,24 +28,22 @@ function ProductsContent() {
   const industryParam = searchParams.get('industry');
 
   const [selectedIndustry, setSelectedIndustry] = useState<string>(industryParam || 'All');
-  // Initialize with URL parameter if available, otherwise 'All'
   const [selectedMarket, setSelectedMarket] = useState<string>(marketParam || 'All');
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [currentPage, setCurrentPage] = useState<number>(1);
-  // Start with 12 for both SSR and client to avoid hydration mismatch
   const [productsPerPage, setProductsPerPage] = useState<number>(12);
-  const [isMounted, setIsMounted] = useState<boolean>(false);
 
-  // Ref for smooth scrolling to top of products section
-  const productsTopRef = useRef<HTMLDivElement>(null);
+  const isInitialMount = useRef(true);
 
   // After mount, update products per page based on screen size
   useEffect(() => {
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    setIsMounted(true);
-    // sm breakpoint in Tailwind is 640px
-    const newProductsPerPage = window.innerWidth < 640 ? 6 : 12;
-    setProductsPerPage(newProductsPerPage);
+    const updateProductsPerPage = () => {
+      const newProductsPerPage = window.innerWidth < 640 ? 6 : 12;
+      setProductsPerPage(newProductsPerPage);
+    };
+
+    // Defer to avoid synchronous setState warning in React 19
+    requestAnimationFrame(updateProductsPerPage);
   }, []);
 
   // Update URL when filters change
@@ -70,14 +68,17 @@ function ProductsContent() {
     router.replace(newUrl, { scroll: false });
   }, [selectedMarket, selectedIndustry, router]);
 
-  // Smooth scroll to top when page changes
+  // Smooth scroll to top when page changes (skip on initial mount)
   useEffect(() => {
-    if (productsTopRef.current) {
-      productsTopRef.current.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-      });
+    if (isInitialMount.current) {
+      isInitialMount.current = false;
+      return;
     }
+
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
   }, [currentPage]);
 
   const products = productsData as Product[];
@@ -151,7 +152,7 @@ function ProductsContent() {
   return (
     <div className="bg-white">
       {/* Breadcrumb */}
-      <div ref={productsTopRef} className="max-w-content mx-auto px-6 sm:px-8 lg:px-12 py-6">
+      <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12 py-6">
         <nav className="text-sm text-primary" aria-label="Breadcrumb">
           <Link href="/" className="hover:text-green-medium transition-colors">
             Home

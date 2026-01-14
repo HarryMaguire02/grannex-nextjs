@@ -192,7 +192,6 @@ export async function POST(request: NextRequest) {
         </body>
         </html>
       `,
-      replyTo: email, // Allow direct reply to the sender
     });
 
     if (error) {
