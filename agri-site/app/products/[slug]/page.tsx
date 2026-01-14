@@ -35,6 +35,19 @@ export default function ProductPage({ params }: PageProps) {
   const product = products.find((p) => p.slug === slug);
   const [isExporting, setIsExporting] = useState(false);
 
+  // Form state
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    country: '',
+    company: '',
+    companyProfile: '',
+    message: '',
+  });
+  const [formStatus, setFormStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+  const [errorMessage, setErrorMessage] = useState('');
+
   if (!product) {
     return <NotFound />;
   }
@@ -50,6 +63,69 @@ export default function ProductPage({ params }: PageProps) {
         top: offsetPosition,
         behavior: 'smooth'
       });
+    }
+  };
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({ ...prev, [name]: value }));
+    // Clear error when user starts typing
+    if (formStatus === 'error') {
+      setFormStatus('idle');
+      setErrorMessage('');
+    }
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setFormStatus('loading');
+    setErrorMessage('');
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          country: formData.country,
+          company: formData.company,
+          companyProfile: formData.companyProfile,
+          message: formData.message,
+          productName: product.name,
+          productSlug: product.slug,
+        }),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Failed to send message');
+      }
+
+      setFormStatus('success');
+      // Reset form
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        country: '',
+        company: '',
+        companyProfile: '',
+        message: '',
+      });
+
+      // Reset success message after 5 seconds
+      setTimeout(() => {
+        setFormStatus('idle');
+      }, 5000);
+
+    } catch (error) {
+      setFormStatus('error');
+      setErrorMessage(error instanceof Error ? error.message : 'An error occurred. Please try again.');
     }
   };
 
@@ -328,13 +404,17 @@ export default function ProductPage({ params }: PageProps) {
 
             {/* Right: Form with Secondary Background */}
             <div className="bg-secondary/20 border-2 border-secondary/60 rounded-3xl p-4 md:p-8">
-              <form className="space-y-6">
+              <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label className="block text-sm font-medium text-primary mb-2">Name*</label>
                     <input
                       type="text"
+                      name="name"
+                      value={formData.name}
+                      onChange={handleInputChange}
                       placeholder="John"
+                      required
                       className="w-full px-0 py-2 border-b-2 border-primary bg-transparent focus:outline-none focus:border-green-medium placeholder:text-primary/40"
                     />
                   </div>
@@ -342,7 +422,11 @@ export default function ProductPage({ params }: PageProps) {
                     <label className="block text-sm font-medium text-primary mb-2">Phone*</label>
                     <input
                       type="tel"
+                      name="phone"
+                      value={formData.phone}
+                      onChange={handleInputChange}
                       placeholder="+381 23 4567891"
+                      required
                       className="w-full px-0 py-2 border-b-2 border-primary bg-transparent focus:outline-none focus:border-green-medium placeholder:text-primary/40"
                     />
                   </div>
@@ -353,7 +437,11 @@ export default function ProductPage({ params }: PageProps) {
                     <label className="block text-sm font-medium text-primary mb-2">Email*</label>
                     <input
                       type="email"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleInputChange}
                       placeholder="john@gmail.com"
+                      required
                       className="w-full px-0 py-2 border-b-2 border-primary bg-transparent focus:outline-none focus:border-green-medium placeholder:text-primary/40"
                     />
                   </div>
@@ -361,7 +449,11 @@ export default function ProductPage({ params }: PageProps) {
                     <label className="block text-sm font-medium text-primary mb-2">Country*</label>
                     <input
                       type="text"
+                      name="country"
+                      value={formData.country}
+                      onChange={handleInputChange}
                       placeholder="Serbia"
+                      required
                       className="w-full px-0 py-2 border-b-2 border-primary bg-transparent focus:outline-none focus:border-green-medium placeholder:text-primary/40"
                     />
                   </div>
@@ -372,18 +464,27 @@ export default function ProductPage({ params }: PageProps) {
                     <label className="block text-sm font-medium text-primary mb-2">Company name</label>
                     <input
                       type="text"
+                      name="company"
+                      value={formData.company}
+                      onChange={handleInputChange}
                       placeholder="Name of the Company"
                       className="w-full px-0 py-2 border-b-2 border-primary bg-transparent focus:outline-none focus:border-green-medium placeholder:text-primary/40"
                     />
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-primary mb-2">Company Profile*</label>
-                    <select className="w-full px-0 py-2 border-b-2 border-primary bg-transparent focus:outline-none focus:border-green-medium text-primary/40">
+                    <select
+                      name="companyProfile"
+                      value={formData.companyProfile}
+                      onChange={handleInputChange}
+                      required
+                      className="w-full px-0 py-2 border-b-2 border-primary bg-transparent focus:outline-none focus:border-green-medium text-primary"
+                    >
                       <option value="">Type</option>
-                      <option value="manufacturer">Manufacturer</option>
-                      <option value="distributor">Distributor</option>
-                      <option value="retailer">Retailer</option>
-                      <option value="other">Other</option>
+                      <option value="Manufacturer">Manufacturer</option>
+                      <option value="Distributor">Distributor</option>
+                      <option value="Retailer">Retailer</option>
+                      <option value="Other">Other</option>
                     </select>
                   </div>
                 </div>
@@ -391,18 +492,36 @@ export default function ProductPage({ params }: PageProps) {
                 <div>
                   <label className="block text-sm font-medium text-primary mb-2">Message</label>
                   <textarea
+                    name="message"
+                    value={formData.message}
+                    onChange={handleInputChange}
                     rows={2}
                     placeholder="My message..."
                     className="w-full px-0 py-2 border-b-2 border-primary bg-transparent focus:outline-none focus:border-green-medium resize-none placeholder:text-primary/40"
                   ></textarea>
                 </div>
 
+                {/* Success Message */}
+                {formStatus === 'success' && (
+                  <div className="p-4 bg-green-light/30 border border-green-medium rounded-lg text-primary text-sm">
+                    ✓ Your enquiry has been sent successfully! We&apos;ll get back to you soon.
+                  </div>
+                )}
+
+                {/* Error Message */}
+                {formStatus === 'error' && (
+                  <div className="p-4 bg-red-50 border border-red-500 rounded-lg text-red-600 text-sm">
+                    {errorMessage}
+                  </div>
+                )}
+
                 <div className="flex justify-end pt-2">
                   <button
                     type="submit"
-                    className="px-12 py-3 bg-primary text-secondary rounded-lg font-medium hover:bg-green-medium transition-colors"
+                    disabled={formStatus === 'loading'}
+                    className="px-12 py-3 bg-primary text-secondary rounded-lg font-medium hover:bg-green-medium transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                   >
-                    Send
+                    {formStatus === 'loading' ? 'Sending...' : 'Send'}
                   </button>
                 </div>
               </form>
