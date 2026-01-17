@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import Image from 'next/image';
 
 const tabs = [
@@ -53,6 +53,36 @@ const tabContent: Record<string, { title: string; description: string; image: st
 
 export default function IngredientsSection() {
   const [activeTab, setActiveTab] = useState('Oils&Fats');
+  const [canScrollLeft, setCanScrollLeft] = useState(false);
+  const [canScrollRight, setCanScrollRight] = useState(false);
+  const tabsContainerRef = useRef<HTMLDivElement>(null);
+
+  const checkScrollPosition = () => {
+    const container = tabsContainerRef.current;
+    if (container) {
+      setCanScrollLeft(container.scrollLeft > 0);
+      setCanScrollRight(
+        container.scrollLeft < container.scrollWidth - container.clientWidth - 1
+      );
+    }
+  };
+
+  useEffect(() => {
+    checkScrollPosition();
+    window.addEventListener('resize', checkScrollPosition);
+    return () => window.removeEventListener('resize', checkScrollPosition);
+  }, []);
+
+  const scroll = (direction: 'left' | 'right') => {
+    const container = tabsContainerRef.current;
+    if (container) {
+      const scrollAmount = 150;
+      container.scrollBy({
+        left: direction === 'left' ? -scrollAmount : scrollAmount,
+        behavior: 'smooth',
+      });
+    }
+  };
 
   const content = tabContent[activeTab];
 
@@ -65,28 +95,60 @@ export default function IngredientsSection() {
         </h2>
 
         {/* Tabs */}
-        <div className="border-2 border-primary rounded-xl p-1 mb-8">
-          <div className="
-            flex gap-2
-            overflow-x-auto
-            whitespace-nowrap
-            scrollbar-hide
-            sm:justify-center
-            lg:justify-between
-          ">
-            {tabs.map((tab) => (
-              <button
-                key={tab}
-                onClick={() => setActiveTab(tab)}
-                className={`shrink-0 px-6 py-2 text-sm font-medium transition-all rounded-lg ${
-                  activeTab === tab
-                    ? 'bg-primary text-white'
-                    : 'bg-transparent text-primary hover:bg-primary/10'
-                }`}
-              >
-                {tab}
-              </button>
-            ))}
+        <div className="relative mb-8">
+          {/* Left Arrow - visible on small screens when can scroll left */}
+          {canScrollLeft && (
+            <button
+              onClick={() => scroll('left')}
+              className="absolute left-1 top-1/2 -translate-y-1/2 z-10 sm:hidden w-8 h-8 flex items-center justify-center bg-white/90 rounded-full shadow-md"
+              aria-label="Scroll left"
+            >
+              <svg className="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+              </svg>
+            </button>
+          )}
+
+          {/* Right Arrow - visible on small screens when can scroll right */}
+          {canScrollRight && (
+            <button
+              onClick={() => scroll('right')}
+              className="absolute right-1 top-1/2 -translate-y-1/2 z-10 sm:hidden w-8 h-8 flex items-center justify-center bg-white/90 rounded-full shadow-md"
+              aria-label="Scroll right"
+            >
+              <svg className="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+          )}
+
+          <div className="border-2 border-primary rounded-xl p-1">
+            <div
+              ref={tabsContainerRef}
+              onScroll={checkScrollPosition}
+              className="
+                flex gap-2
+                overflow-x-auto
+                whitespace-nowrap
+                scrollbar-hide
+                sm:justify-center
+                lg:justify-between
+              "
+            >
+              {tabs.map((tab) => (
+                <button
+                  key={tab}
+                  onClick={() => setActiveTab(tab)}
+                  className={`shrink-0 px-6 py-2 text-sm font-medium transition-all rounded-lg ${
+                    activeTab === tab
+                      ? 'bg-primary text-white'
+                      : 'bg-transparent text-primary hover:bg-primary/10'
+                  }`}
+                >
+                  {tab}
+                </button>
+              ))}
+            </div>
           </div>
         </div>
 
