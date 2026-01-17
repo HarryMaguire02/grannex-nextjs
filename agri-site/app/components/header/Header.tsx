@@ -50,10 +50,9 @@ export default function Header() {
                   src="/grannexLogo.png"
                   alt="Grannex International Logo"
                   width={200}
-                  height={60}
+                  height={66}
                   className="h-10 md:h-12 w-auto"
                   priority
-                  unoptimized
                 />
               </Link>
 
