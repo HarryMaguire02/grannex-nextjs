@@ -5,10 +5,16 @@ export default function HeroSection() {
   return (
     <section className="relative h-150 sm:h-125 lg:h-150">
       {/* Background Image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: 'url(/hero-banner.png)' }}
+      <Image
+        src="/hero-banner.png"
+        alt="Agricultural field background"
+        fill
+        priority
+        className="object-cover object-center sm:object-center"
       />
+
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black/20" />
 
       {/* Content */}
       <div className="relative max-w-content mx-auto px-6 sm:px-8 lg:px-12 h-full flex flex-col justify-between pt-16 md:pt-20 lg:pt-24 pb-8 md:pb-12">
