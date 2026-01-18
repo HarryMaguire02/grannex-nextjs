@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function HeroSection() {
   return (
-    <section className="relative h-150 sm:h-125 lg:h-150">
+    <section className="relative h-112.5 sm:h-125 lg:h-150">
       {/* Background Image */}
       <Image
         src="/hero-banner.png"
@@ -32,8 +32,8 @@ export default function HeroSection() {
         </div>
 
         {/* Category Cards */}
-        <div className="flex justify-center sm:block">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 justify-items-center sm:justify-items-stretch bg-primary rounded-2xl overflow-hidden h-auto w-56 sm:w-full">
+        <div className="w-full">
+          <div className="grid grid-cols-2 md:grid-cols-4 bg-primary rounded-2xl overflow-hidden">
             {[
               { title: 'Oils and fats', icon: '/oils-and-fats.svg', market: 'oils-and-fats' },
               { title: 'Food ingredients', icon: '/food-ingredients.svg', market: 'food-ingredients' },
@@ -43,42 +43,34 @@ export default function HeroSection() {
               <Link
                 key={category.title}
                 href={`/products?market=${encodeURIComponent(category.market)}`}
-                className=" text-secondary w-2/3 sm:w-full sm:px-15 md:p-3 lg:p-5 hover:bg-green-medium transition-colors cursor-pointer group flex items-center justify-left sm:justify-center gap-2 md:gap-3 relative min-h-17.5"
+                className="text-secondary p-3 md:p-4 lg:p-5 hover:bg-green-medium transition-colors cursor-pointer flex flex-col md:flex-row items-center justify-center gap-2 md:gap-3 relative min-h-20 md:min-h-17.5"
                 aria-label={`View ${category.title} products`}
               >
-                <div className="flex items-center shrink-0">
+                <div className="flex items-center justify-center shrink-0">
                   <Image
                     src={category.icon}
                     alt={category.title}
                     width={56}
                     height={56}
                     className="h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 lg:h-14 lg:w-14 object-contain"
-                    />
+                  />
                 </div>
-                <h3 className="text-sm sm:text-base md:text-sm lg:text-base font-light leading-tight md:leading-5 text-left">{category.title}</h3>
+                <h3 className="text-xs sm:text-sm md:text-sm lg:text-base font-light leading-tight text-center md:text-left">{category.title}</h3>
 
-                {/* Vertical divider between columns */}
-                {/* For 1-col layout (< sm): no vertical dividers */}
-                {/* For 2-col layout (sm to md): show right border on items 0 and 2 */}
-                {/* For 4-col layout (>= md): show right border on items 0, 1, and 2 */}
-                {index === 0 && (
-                  <div className="absolute right-0 top-1/2 -translate-y-1/2 h-2/3 w-px bg-secondary hidden sm:block"></div>
+                {/* Vertical divider - right side of left column items */}
+                {/* 2-col (< md): items 0 and 2 get right border */}
+                {/* 4-col (>= md): items 0, 1, 2 get right border */}
+                {(index === 0 || index === 2) && (
+                  <div className="absolute right-0 top-1/2 -translate-y-1/2 h-2/3 w-px bg-secondary md:hidden"></div>
                 )}
-                {index === 1 && (
+                {index < 3 && (
                   <div className="absolute right-0 top-1/2 -translate-y-1/2 h-2/3 w-px bg-secondary hidden md:block"></div>
                 )}
-                {index === 2 && (
-                  <div className="absolute right-0 top-1/2 -translate-y-1/2 h-2/3 w-px bg-secondary hidden sm:block"></div>
-                )}
 
-                {/* Horizontal divider between rows */}
-                {/* For 1-col layout (< sm): show top border on items 1, 2, 3 */}
-                {/* For 2-col layout (sm to md): show top border on items 2 and 3 */}
-                {index >= 1 && (
-                  <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-px bg-secondary sm:hidden"></div>
-                )}
-                {(index === 2 || index === 3) && (
-                  <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-px bg-secondary hidden sm:block md:hidden"></div>
+                {/* Horizontal divider - bottom of top row items */}
+                {/* 2-col (< md): items 0 and 1 get bottom border */}
+                {(index === 0 || index === 1) && (
+                  <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-4/5 h-px bg-secondary md:hidden"></div>
                 )}
               </Link>
             ))}

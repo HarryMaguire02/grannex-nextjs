@@ -12,6 +12,7 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://grannexcy.com'),
   title: "Grannex International - Leading Global Agriculture Commodities Trading",
   description: "Grannex International is a leading global agriculture commodities trading and brokerage firm. We supply quality agricultural ingredients including proteins, starches, sweeteners, oils, animal feed and aqua feed.",
   keywords: ["agriculture", "commodities trading", "animal feed", "aqua feed", "proteins", "starches", "vegetable oils", "food ingredients"],
@@ -21,10 +22,30 @@ export const metadata: Metadata = {
     description: "Quality agricultural ingredients, secure global delivery. Leading supplier of proteins, starches, sweeteners, and oils.",
     type: "website",
     locale: "en_US",
+    images: [
+      {
+        url: '/logo-sharing.png',
+        alt: 'Grannex International',
+      },
+    ],
   },
   robots: {
     index: true,
     follow: true,
+  },
+};
+
+const organizationSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'Grannex International',
+  description: 'Leading global agriculture commodities trading and brokerage firm.',
+  url: process.env.NEXT_PUBLIC_SITE_URL || 'https://grannexcy.com',
+  logo: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://grannexcy.com'}/grannexLogo.png`,
+  contactPoint: {
+    '@type': 'ContactPoint',
+    contactType: 'customer service',
+    availableLanguage: ['English'],
   },
 };
 
@@ -35,6 +56,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="h-full" data-scroll-behavior="smooth">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+      </head>
       <body
         className={`${roboto.variable} antialiased flex flex-col min-h-full`}
       >

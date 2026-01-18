@@ -59,7 +59,6 @@ export default function SupplyChainSection() {
                   width={256}
                   height={256}
                   className="h-10 w-10 xs:h-12 xs:w-12 sm:h-16 sm:w-16 md:h-20 md:w-20 lg:h-24 lg:w-24 xl:h-32 xl:w-32 object-contain"
-                  unoptimized
                 />
               </div>
             ) : (

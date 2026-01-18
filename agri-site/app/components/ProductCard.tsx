@@ -1,8 +1,5 @@
-'use client';
-
 import Image from 'next/image';
 import Link from 'next/link';
-import { useState } from 'react';
 
 type ProductCardProps = {
   slug: string;
@@ -12,21 +9,13 @@ type ProductCardProps = {
 };
 
 export default function ProductCard({ slug, name, image, info }: ProductCardProps) {
-  const [isHovered, setIsHovered] = useState(false);
-
   return (
     <Link
       href={`/products/${slug}`}
-      className="group cursor-pointer max-w-xs mx-auto w-full overflow-hidden rounded-2xl h-65 md:h-70 lg:h-75 flex flex-col"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
+      className="group cursor-pointer max-w-60 md:max-w-72 mx-auto w-full overflow-hidden rounded-2xl flex flex-col bg-secondary h-80 md:h-96"
     >
-      {/* Product Image - shrinks on hover */}
-      <div
-        className={`relative w-full overflow-hidden transition-all duration-500 ease-in-out ${
-          isHovered ? 'h-[50%]' : 'h-[80%]'
-        }`}
-      >
+      {/* Product Image - shrinks to 75% on hover */}
+      <div className="relative w-full flex-1 transition-all duration-500 ease-in-out group-hover:flex-[3]">
         <Image
           src={image}
           alt={name}
@@ -36,27 +25,19 @@ export default function ProductCard({ slug, name, image, info }: ProductCardProp
         />
       </div>
 
-      {/* Product Info - expands on hover */}
-      <div
-        className={`bg-secondary transition-all duration-500 ease-in-out flex flex-col ${
-          isHovered ? 'h-[50%] p-4' : 'h-[20%] p-3 justify-center items-center'
-        }`}
-      >
+      {/* Product Info - expands to 25% on hover */}
+      <div className="p-3 flex flex-col flex-none transition-all duration-500 ease-in-out group-hover:flex-1">
         {/* Product Name */}
-        <h3 className={`text-primary font-semibold leading-tight transition-all duration-500 ${
-          isHovered ? 'text-base mb-2' : 'text-sm text-center'
-        }`}>
+        <h3 className="text-primary font-semibold text-sm leading-tight text-center group-hover:text-left transition-all duration-300">
           {name}
         </h3>
 
         {/* Product Description - only visible on hover */}
-        <div className={`overflow-hidden transition-all duration-500 ease-in-out ${
-          isHovered ? 'opacity-100 max-h-40' : 'opacity-0 max-h-0'
-        }`}>
-          <p className="text-primary font-normal text-sm leading-4 line-clamp-3 lg:line-clamp-4">
+        <div className="overflow-hidden opacity-0 max-h-0 group-hover:opacity-100 group-hover:max-h-40 transition-all duration-500 ease-in-out">
+          <p className="text-primary font-normal text-sm leading-4 line-clamp-3 mt-2">
             {info}
           </p>
-          <span className="text-green-medium font-medium text-sm">Read more</span>
+          <span className="text-green-medium font-medium text-sm mt-1 inline-block">Read more</span>
         </div>
       </div>
     </Link>
