@@ -2,7 +2,7 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Purchase Conditions - Grannex International",
+  title: "Purchase Conditions - Grannex LTD",
   description: "General Conditions of Purchase for Grannex Ltd - Procurement Standards.",
 };
 

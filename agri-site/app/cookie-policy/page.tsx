@@ -2,7 +2,7 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Cookie Policy - Grannex International",
+  title: "Cookie Policy - Grannex LTD",
   description: "Grannex Ltd Cookie Policy - Information about how we use cookies on our website.",
 };
 

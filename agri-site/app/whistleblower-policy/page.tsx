@@ -2,7 +2,7 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Whistleblower Policy - Grannex International",
+  title: "Whistleblower Policy - Grannex LTD",
   description: "Grannex Ltd Whistleblowing & Integrity Policy - Reporting breaches with confidentiality and protection.",
 };
 

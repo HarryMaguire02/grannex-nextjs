@@ -21,7 +21,7 @@ export default function HeroSection() {
         {/* Hero Text - Left Aligned, Max 50% Width */}
         <div className="max-w-xl lg:max-w-2xl text-center md:text-left mx-auto md:mx-0">
           <h1 className="mb-4 sm:mb-6">
-            <span className="text-primary font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl leading-tight">Grannex International</span>{' '}
+            <span className="text-primary font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl leading-tight">Grannex LTD</span>{' '}
             <span className="text-white font-normal text-lg sm:text-xl md:text-2xl lg:text-3xl leading-relaxed">
               is a leading global company in the trading and brokerage of agricultural commodities.
             </span>

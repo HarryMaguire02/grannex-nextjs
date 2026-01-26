@@ -48,7 +48,7 @@ export default function Header() {
               <Link href="/" className="flex items-center">
                 <Image
                   src="/grannexLogo.png"
-                  alt="Grannex International Logo"
+                  alt="Grannex LTD Logo"
                   width={200}
                   height={66}
                   className="h-10 md:h-12 w-auto"

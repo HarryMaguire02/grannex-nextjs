@@ -67,7 +67,7 @@ export default function ContactPopup({ isOpen, onClose }: ContactPopupProps) {
             <div className="p-6 rounded-lg inline-block self-start">
               <Image
                 src="/grannexLogo.png"
-                alt="Grannex International"
+                alt="Grannex LTD"
                 width={320}
                 height={96}
                 className="h-20 md:h-24"
@@ -105,7 +105,7 @@ export default function ContactPopup({ isOpen, onClose }: ContactPopupProps) {
                 <h3 className="text-lg font-semibold text-primary mb-3">Follow us!</h3>
                 <div className="flex gap-4">
                   <Link
-                    href="https://www.facebook.com/grannex_international"
+                    href="https://www.facebook.com/grannex_ltd"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 text-primary hover:text-green-medium transition-colors"
@@ -121,7 +121,7 @@ export default function ContactPopup({ isOpen, onClose }: ContactPopupProps) {
                   </Link>
 
                   <Link
-                    href="https://www.linkedin.com/company/grannex-international"
+                    href="https://www.linkedin.com/company/grannex-ltd"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 text-primary hover:text-green-medium transition-colors"

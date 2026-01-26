@@ -42,16 +42,16 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   if (!product) {
     return {
-      title: 'Product Not Found - Grannex International',
+      title: 'Product Not Found - Grannex LTD',
     };
   }
 
   return {
-    title: `${product.name} - Grannex International`,
+    title: `${product.name} - Grannex LTD`,
     description: product.info,
     keywords: [product.name, product.marketLabel, ...product.industry],
     openGraph: {
-      title: `${product.name} - Grannex International`,
+      title: `${product.name} - Grannex LTD`,
       description: product.info,
       type: 'website',
       images: [

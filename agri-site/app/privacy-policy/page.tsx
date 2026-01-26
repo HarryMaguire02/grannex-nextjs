@@ -2,7 +2,7 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Privacy Policy - Grannex International",
+  title: "Privacy Policy - Grannex LTD",
   description: "Grannex Ltd Privacy & Data Protection Policy - GDPR compliance and data protection information.",
 };
 

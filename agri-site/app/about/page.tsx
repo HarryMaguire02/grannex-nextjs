@@ -3,8 +3,8 @@ import type { Metadata } from 'next';
 import AboutSection from '../components/home/AboutSection';
 
 export const metadata: Metadata = {
-  title: "About Us - Grannex International",
-  description: "GRANNEX INTERNATIONAL is a leading global agriculture commodities trading and brokerage firm. Learn about our global supply chain management and agricultural expertise.",
+  title: "About Us - Grannex LTD",
+  description: "Grannex LTD is a leading global agriculture commodities trading and brokerage firm. Learn about our global supply chain management and agricultural expertise.",
 };
 
 export default function AboutPage() {

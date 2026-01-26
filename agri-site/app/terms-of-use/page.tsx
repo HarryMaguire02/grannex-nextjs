@@ -2,7 +2,7 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Terms of Use - Grannex International",
+  title: "Terms of Use - Grannex LTD",
   description: "Grannex Ltd Website Terms of Use - Information about using our website and legal terms.",
 };
 

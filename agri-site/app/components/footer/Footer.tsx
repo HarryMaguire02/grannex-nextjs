@@ -13,7 +13,7 @@ export default function Footer() {
             <div className="flex items-center">
               <Image
                 src="/grannexLogoFooter.png"
-                alt="Grannex International Logo"
+                alt="Grannex LTD Logo"
                 width={320}
                 height={96}
                 className="h-20 md:h-24 lg:h-28 w-auto"
@@ -47,7 +47,7 @@ export default function Footer() {
                 <h3 className="text-lg font-semibold mb-4">Follow us!</h3>
                 <div className="flex gap-4">
                   <Link
-                    href="https://www.linkedin.com/company/grannex-international"
+                    href="https://www.linkedin.com/company/grannex-ltd"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hover:opacity-80 transition-opacity"
@@ -63,7 +63,7 @@ export default function Footer() {
                   </Link>
 
                   <Link
-                    href="https://www.facebook.com/grannex_international"
+                    href="https://www.facebook.com/grannex_ltd"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hover:opacity-80 transition-opacity"
@@ -115,7 +115,7 @@ export default function Footer() {
 
               {/* Copyright */}
               <div className="flex justify-center text-xs text-white">
-                <p>Grannex International All Rights Reserved</p>
+                <p>Grannex LTD All Rights Reserved</p>
               </div>
 
             </div>

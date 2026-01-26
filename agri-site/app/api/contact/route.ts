@@ -105,7 +105,7 @@ export async function POST(request: NextRequest) {
                   <!-- Logo Header -->
                   <tr>
                     <td style="background-color: #ffffff; padding: 30px 40px; text-align: center; border-bottom: 3px solid #315748;">
-                      <img src="${siteUrl}/grannexLogo.png" alt="Grannex International" style="max-width: 200px; height: auto;" />
+                      <img src="${siteUrl}/grannexLogo.png" alt="Grannex LTD" style="max-width: 200px; height: auto;" />
                     </td>
                   </tr>
 
@@ -177,10 +177,10 @@ export async function POST(request: NextRequest) {
                   <tr>
                     <td style="background-color: #f9f9f9; padding: 20px 40px; text-align: center; border-top: 1px solid #e0e0e0;">
                       <p style="margin: 0; color: #666; font-size: 12px; line-height: 1.5;">
-                        This email was sent from the Grannex International website ${productName ? 'product enquiry' : 'contact'} form.
+                        This email was sent from the Grannex LTD website ${productName ? 'product enquiry' : 'contact'} form.
                       </p>
                       <p style="margin: 10px 0 0 0; color: #999; font-size: 11px;">
-                        © ${new Date().getFullYear()} Grannex International. All rights reserved.
+                        © ${new Date().getFullYear()} Grannex LTD. All rights reserved.
                       </p>
                     </td>
                   </tr>
