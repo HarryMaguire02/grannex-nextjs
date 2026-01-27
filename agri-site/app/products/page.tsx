@@ -83,22 +83,22 @@ function ProductsContent() {
 
   const products = productsData as Product[];
 
-  // Static industry options
+  // Static industry options with value-label pairs
   const industries = [
-    'All',
-    'Agriculture',
-    'Animal Feed',
-    'Aquaculture',
-    'Bakery',
-    'Confectionery',
-    'Cosmetics',
-    'Dietary Supplements',
-    'Food & Beverage',
-    'Milling',
-    'Pet Food',
-    'Pharmaceuticals',
-    'Sports Nutrition',
-    'Technical & Industrial'
+    { value: 'All', label: 'Industry' },
+    { value: 'agriculture', label: 'Agriculture' },
+    { value: 'animal-feed', label: 'Animal Feed' },
+    { value: 'aquaculture', label: 'Aquaculture' },
+    { value: 'bakery', label: 'Bakery' },
+    { value: 'confectionery', label: 'Confectionery' },
+    { value: 'cosmetics', label: 'Cosmetics' },
+    { value: 'dietary-supplements', label: 'Dietary Supplements' },
+    { value: 'food-and-beverage', label: 'Food & Beverage' },
+    { value: 'milling', label: 'Milling' },
+    { value: 'pet-food', label: 'Pet Food' },
+    { value: 'pharmaceuticals', label: 'Pharmaceuticals' },
+    { value: 'sports-nutrition', label: 'Sports Nutrition' },
+    { value: 'technical-and-industrial', label: 'Technical & Industrial' }
   ];
 
   // Static market options with value-label pairs
@@ -121,7 +121,8 @@ function ProductsContent() {
     if (!product.isActive) return false;
 
     // Filter by industry (handle trailing periods in data, e.g. "Pharmaceuticals.")
-    const matchesIndustry = selectedIndustry === 'All' || product.industry.some(ind => ind.replace(/\.$/, '') === selectedIndustry);
+    const selectedIndustryLabel = industries.find(i => i.value === selectedIndustry)?.label;
+    const matchesIndustry = selectedIndustry === 'All' || product.industry.some(ind => ind.replace(/\.$/, '') === selectedIndustryLabel);
 
     // Filter by market (handle compound markets like "millingcrushing-aquaculture")
     const matchesMarket = selectedMarket === 'All' || product.market.includes(selectedMarket);
@@ -181,7 +182,7 @@ function ProductsContent() {
         </nav>
       </div>
 
-      <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12 pb-8 sm:pb-10 md:pb-12 lg:pb-16">
+      <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12">
         {/* Title */}
         <h1 className="text-3xl md:text-4xl font-bold text-primary mb-6 md:mb-8">
           Our products
@@ -226,22 +227,6 @@ function ProductsContent() {
             {/* Two selects in a row */}
             <div className="flex flex-wrap gap-2 w-full lg:w-auto">
               <select
-                value={selectedIndustry}
-                onChange={(e) => handleFilterChange(setSelectedIndustry, e.target.value)}
-                className={`flex-1 lg:flex-initial p-2 border border-primary/20 rounded-lg text-sm font-normal text-primary cursor-pointer transition-colors ${
-                  selectedIndustry !== 'All'
-                    ? 'bg-green-light/30 ring-2 ring-green-medium'
-                    : 'bg-white hover:bg-primary/5'
-                }`}
-              >
-                {industries.map(industry => (
-                  <option key={industry} value={industry}>
-                    {industry === 'All' ? 'Industry' : industry}
-                  </option>
-                ))}
-              </select>
-
-              <select
                 value={selectedMarket}
                 onChange={(e) => handleFilterChange(setSelectedMarket, e.target.value)}
                 className={`flex-1 lg:flex-initial p-2 border border-primary/20 rounded-lg text-sm font-normal text-primary cursor-pointer transition-colors ${
@@ -253,6 +238,22 @@ function ProductsContent() {
                 {markets.map(market => (
                   <option key={market.value} value={market.value}>
                     {market.label}
+                  </option>
+                ))}
+              </select>
+
+              <select
+                value={selectedIndustry}
+                onChange={(e) => handleFilterChange(setSelectedIndustry, e.target.value)}
+                className={`flex-1 lg:flex-initial p-2 border border-primary/20 rounded-lg text-sm font-normal text-primary cursor-pointer transition-colors ${
+                  selectedIndustry !== 'All'
+                    ? 'bg-green-light/30 ring-2 ring-green-medium'
+                    : 'bg-white hover:bg-primary/5'
+                }`}
+              >
+                {industries.map(industry => (
+                  <option key={industry.value} value={industry.value}>
+                    {industry.label}
                   </option>
                 ))}
               </select>
@@ -351,7 +352,7 @@ function ProductsContent() {
 
         {/* Pagination */}
         {totalPages > 1 && (
-          <div className="flex justify-center items-center gap-2 mt-8">
+          <div className="flex justify-center items-center gap-2 my-8">
             {/* Previous Button */}
             <button
               onClick={() => setCurrentPage(prev => Math.max(prev - 1, 1))}

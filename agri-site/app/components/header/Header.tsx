@@ -8,9 +8,9 @@ import Navigation from './Navigation';
 import ContactPopup from '../ContactPopup';
 
 const navLinks = [
+  { href: '/', label: 'Home' },
   { href: '/products', label: 'Products' },
   { href: '/logistics', label: 'Logistics' },
-  { href: '/', label: 'Home' },
   { href: '/about', label: 'About us' },
   { href: '#', label: 'Contact us', isContactButton: true },
 ];

@@ -249,7 +249,7 @@
       "Melting point:31–35°C",
       "Unsaponifiable matter:0.35%"
     ],
-    "pdfSpecification": "9-Cocoa Butter.pdf",
+    "pdfSpecification": "9-CocoaButter.pdf",
     "industry": [
       "Food & Beverage",
       "Pet Food",
@@ -1252,7 +1252,7 @@
   {
     "slug": "poultry-meal",
     "name": "Poultry Meal",
-    "image": "/45-Poultry Meal.png",
+    "image": "/45-PoultryMeal.png",
     "market": "aquaculture",
     "marketLabel": "Aquaculture",
     "info": "Poultry meal is produced from the rendering of clean parts of poultry carcasses. it is a concentrated animal protein.",
@@ -1416,7 +1416,7 @@
   {
     "slug": "poultry-by-product-meal",
     "name": "Poultry By-Product Meal",
-    "image": "/51-Poultry By-Product Meal.png",
+    "image": "/51-PoultryBy-ProductMeal.png",
     "market": "animal-protein",
     "marketLabel": "Animal Protein",
     "info": "This is produced from rendered clean parts of poultry. It provides a balanced source of animal protein and minerals.",
@@ -1444,7 +1444,7 @@
   {
     "slug": "hydrolyzed-feather-meal",
     "name": "Hydrolyzed Feather Meal",
-    "image": "/52-Hydrolyzed Feather Meal.png",
+    "image": "/52-HydrolyzedFeatherMeal.png",
     "market": "animal-protein",
     "marketLabel": "Animal Protein",
     "info": "This is produced by treating poultry feathers with heat and pressure. The process makes the keratin protein digestible.",

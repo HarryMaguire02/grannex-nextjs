@@ -35,14 +35,14 @@ export default function HeroSection() {
         <div className="w-full">
           <div className="grid grid-cols-2 md:grid-cols-4 bg-primary rounded-2xl overflow-hidden">
             {[
-              { title: 'Oils and fats', icon: '/oils-and-fats.svg', market: 'oils-and-fats' },
-              { title: 'Food ingredients', icon: '/food-ingredients.svg', market: 'food-ingredients' },
-              { title: 'Animal feeds ingredients', icon: '/animal-feeds-ingredients.svg', market: 'animal-feed-ingredients' },
-              { title: 'Aqua feeds ingredients', icon: '/aqua-feeds-ingredients.svg', market: 'aqua-feeds-ingredients' },
+              { title: 'Oils and fats', icon: '/oils-and-fats.svg', filter: 'market', value: 'oils-and-fats' },
+              { title: 'Food ingredients', icon: '/food-ingredients.svg', filter: 'industry', value: 'food-and-beverage' },
+              { title: 'Animal feeds ingredients', icon: '/animal-feeds-ingredients.svg', filter: 'industry', value: 'animal-feed' },
+              { title: 'Aqua feeds ingredients', icon: '/aqua-feeds-ingredients.svg', filter: 'industry', value: 'aquaculture' },
             ].map((category, index) => (
               <Link
                 key={category.title}
-                href={`/products?market=${encodeURIComponent(category.market)}`}
+                href={`/products?${category.filter}=${encodeURIComponent(category.value)}`}
                 className="text-secondary p-3 md:p-4 lg:p-5 hover:bg-green-medium transition-colors cursor-pointer flex flex-col md:flex-row items-center justify-center gap-2 md:gap-3 relative min-h-20 md:min-h-17.5"
                 aria-label={`View ${category.title} products`}
               >

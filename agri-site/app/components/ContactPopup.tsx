@@ -94,7 +94,7 @@ export default function ContactPopup({ isOpen, onClose }: ContactPopupProps) {
                   <h3 className="text-lg font-semibold text-primary mb-3">Contact Person</h3>
                   <div className="space-y-2 text-sm text-primary">
                     <p>Vlado Šaranović</p>
-                    <p>vsaranovic@grannexcy.com</p>
+                    <p>vsaranovic@grannex.com</p>
                     <p>+381 631077708</p>
                   </div>
                 </div>

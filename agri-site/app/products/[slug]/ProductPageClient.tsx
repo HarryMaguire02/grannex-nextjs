@@ -130,19 +130,21 @@ export default function ProductPageClient({ product }: ProductPageClientProps) {
         <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 lg:gap-12">
             {/* Left: Product Image */}
-            <div className="relative w-full aspect-4/5 rounded-2xl overflow-hidden">
-              <Image
-                src={product.image}
-                alt={product.name}
-                fill
-                sizes="(max-width: 1024px) 100vw, 50vw"
-                className="object-contain"
-                priority
-              />
+            <div className="flex items-center justify-center">
+              <div className="relative w-full max-w-[293] aspect-[293/361] rounded-2xl overflow-hidden">
+                <Image
+                  src={product.image}
+                  alt={product.name}
+                  fill
+                  sizes="293px"
+                  className="object-cover"
+                  priority
+                />
+              </div>
             </div>
 
             {/* Right: Product Info */}
-            <div className="flex flex-col justify-center">
+            <div className="flex flex-col">
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-6">
                 {product.name}
               </h1>

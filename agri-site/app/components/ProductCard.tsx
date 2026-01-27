@@ -12,10 +12,10 @@ export default function ProductCard({ slug, name, image, info }: ProductCardProp
   return (
     <Link
       href={`/products/${slug}`}
-      className="group cursor-pointer max-w-60 md:max-w-72 mx-auto w-full overflow-hidden rounded-2xl flex flex-col bg-secondary h-80 md:h-96"
+      className="group cursor-pointer max-w-60 md:max-w-72 mx-auto w-full overflow-hidden rounded-2xl flex flex-col bg-secondary h-80 md:h-96 shadow-sm"
     >
       {/* Product Image - shrinks to 75% on hover */}
-      <div className="relative w-full flex-1 transition-all duration-500 ease-in-out group-hover:flex-[3]">
+      <div className="relative w-full flex-1 transition-all duration-500 ease-in-out group-hover:flex-3">
         <Image
           src={image}
           alt={name}

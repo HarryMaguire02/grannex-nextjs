@@ -37,7 +37,7 @@ export default function Footer() {
                 <h3 className="text-lg font-semibold mb-4">Contact Person</h3>
                 <div className="space-y-3 text-sm">
                   <p>Vlado Šaranović</p>
-                  <p>vsaranovic@grannexcy.com</p>
+                  <p>vsaranovic@grannex.com</p>
                   <p>+381 631077708</p>
                 </div>
               </div>
