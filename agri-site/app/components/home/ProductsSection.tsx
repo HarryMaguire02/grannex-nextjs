@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import productsData from '@/data/products.json';
+import productsData from '@/data/productsv2.json';
 import ProductCard from '@/app/components/ProductCard';
 
 type Product = {

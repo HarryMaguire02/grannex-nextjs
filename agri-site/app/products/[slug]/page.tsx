@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import productsData from '@/data/products.json';
+import productsData from '@/data/productsv2.json';
 import ProductPageClient from './ProductPageClient';
 
 type Product = {

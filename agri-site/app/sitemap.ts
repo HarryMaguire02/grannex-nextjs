@@ -1,5 +1,5 @@
 import type { MetadataRoute } from 'next';
-import products from '@/data/products.json';
+import products from '@/data/productsv2.json';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://grannexcy.com';

@@ -1,0 +1,1915 @@
+[
+  {
+    "slug": "sunflower-oil",
+    "name": "Sunflower Oil",
+    "image": "/1-SunflowerOil.png",
+    "market": "oils-and-fats",
+    "marketLabel": "Oils and fats",
+    "info": "Sunflower oil is a non-volatile oil compressed from the seeds of the sunflower plant. It is primarily composed of linoleic and oleic acids.",
+    "description": "Sunflower oil is a premium energy source characterized by its high Vitamin E content and unsaturated fats. It provides a stable source of digestible fat that is easily incorporated into liquid feed systems while promoting skin health and a shiny coat in animals.",
+    "application": "Energy for poultry/swine; horse skin/coat health supplement.",
+    "packing": "Bulk, IBC Containers, Bottled (1l, 3l, 5l, 20l and other)",
+    "specification": [
+      "FFA (as oleic acid):0.1%",
+      "Refractive index (25°C):1.4719 – 1.4740",
+      "Lovibond Color (5 ¼” cell):Max 1.50",
+      "Peroxide value (As meq O2/Kg):2.0",
+      "Unsaponificable matter:1.00%",
+      "Flavor:Slight characteristic",
+      "Aspect:limpid at 25°C",
+      "Cold test:limpid after 5 hours",
+      "BHA:75-100ppm",
+      "BHT:75-100ppm",
+      "Citric acid:40-50ppm"
+    ],
+    "pdfSpecification": "1-Sunflower Oil.pdf",
+    "industry": [
+      "Food & Beverage",
+      "Pet Food",
+      "Animal Feed",
+      "Cosmetics",
+      "Technical & Industrial."
+    ],
+    "isActive": true,
+    "isFeatured": false
+  },
+  {
+    "slug": "corn-oil",
+    "name": "Corn Oil",
+    "image": "/2-CornOil.png",
+    "market": "oils-and-fats",
+    "marketLabel": "Oils and fats",
+    "info": "Corn oil is a refined vegetable oil extracted from the germ of the maize kernel. It is a rich source of linoleic acid and natural tocopherols.",
+    "description": "Corn oil is a high-quality energy source characterized by exceptional palatability and antioxidant levels. It is used to improve the skin and coat condition of pets and horses while providing dense calories through a high metabolic energy profile.",
+    "application": "Premium energy source; improves skin health and palatability in pets.",
+    "packing": "Bulk, IBC Containers, Bottled (1l, 3l, 5l, 20l and other)",
+    "specification": [
+      "FFA (as oleic acid):2%",
+      "Linolenic acid (c 18:3):2%",
+      "Palmitic acid (c 16:0):9 – 14",
+      "Refractive index at 40°c:1,4653 – 1,468",
+      "Iodine value:115 – 121",
+      "Moisture and Volatile matter:0.4%",
+      "Saponification value:188 – 195",
+      "Unsaponifiable matter:2%",
+      "Peroxide value (wheeler) (meq o2/kg.):20",
+      "Phosphorus:200ppm",
+      "Sediment:1%",
+      "Colour lovibond (Basis yellow 50 – cell 25.4 cm):Red Max 6.50"
+    ],
+    "pdfSpecification": "2-Corn Oil.pdf",
+    "industry": [
+      "Food & Beverage",
+      "Pet Food",
+      "Animal Feed",
+      "Technical & Industrial."
+    ],
+    "isActive": true,
+    "isFeatured": false
+  },
+  {
+    "slug": "canolarapeseed-oil",
+    "name": "Canola/Rapeseed Oil",
+    "image": "/3-CanolaRapeseedOil.png",
+    "market": "oils-and-fats",
+    "marketLabel": "Oils and fats",
+    "info": "This vegetable oil is extracted from the seeds of the rape plant. It features a balanced fatty acid profile and low levels of erucic acid.",
+    "description": "Rape oil is a versatile energy supplement providing high metabolizable energy for all livestock. It acts as an excellent carrier for fat-soluble nutrients and improves the physical texture of both mash and pelleted feeds.",
+    "application": "General energy source; dust suppressant for mash and pelleted feeds.",
+    "packing": "Bulk, IBC Containers, Bottled (1l, 3l, 5l, 20l and other)",
+    "specification": [
+      "FFA (as oleic acid):1.75%",
+      "Moisture, Volatile Matter and Impurities:0.40%",
+      "Lecithin (expressed as Phosphorus):300ppm",
+      "Sand / Silica:1.00%",
+      "Erucic Acid:2.00%"
+    ],
+    "pdfSpecification": "3-Canola/Rapeseed Oil.pdf",
+    "industry": [
+      "Food & Beverage",
+      "Animal Feed",
+      "Technical & Industrial."
+    ],
+    "isActive": true,
+    "isFeatured": false
+  },
+  {
+    "slug": "soyabean-seed-oil",
+    "name": "Soyabean seed Oil",
+    "image": "/4-SoyabeanSeedOil.png",
+    "market": "oils-and-fats",
+    "marketLabel": "Oils and fats",
+    "info": "Soyabean oil is a refined vegetable oil extracted from whole soybeans. It is rich in polyunsaturated fats and essential linoleic acid.",
+    "description": "Soyabean oil is a concentrated liquid energy source that provides essential fatty acids for animal health. It is frequently used in feed mills to improve pellet quality and serves as a highly effective dust suppressant during processing.",
+    "application": "High-energy liquid feed; dust control in mills; essential fatty acid source.",
+    "packing": "Bulk, IBC Containers, Bottled (1l, 3l, 5l, 20l and other)",
+    "specification": [
+      "FFA (as oleic with a molecular weight of 282):1.00%",
+      "Moisture and Volatile Matter:0.20%",
+      "Impurities (insoluble in petroleum ether):0.10%",
+      "Sediment (Gardner Break Test):0.10%",
+      "Lecithin (expressed as phosphorous):0.02%",
+      "Colour (Lovibond cell 1 inch):50 yellow plus 5 red",
+      "Flash point:250ºF (121ºC)",
+      "Unsaponifiable Matter (test as per n.s.p.a.):1.50%"
+    ],
+    "pdfSpecification": "4-Soyabean seed Oil.pdf",
+    "industry": [
+      "Food & Beverage",
+      "Pet Food",
+      "Animal Feed",
+      "Cosmetics",
+      "Technical & Industrial."
+    ],
+    "isActive": true,
+    "isFeatured": false
+  },
+  {
+    "slug": "palm-oil",
+    "name": "Palm Oil",
+    "image": "/5-PalmOil.png",
+    "market": "oils-and-fats",
+    "marketLabel": "Oils and fats",
+    "info": "Palm oil is a semi-solid vegetable fat extracted from the fruit of the oil palm. It is a natural source of both saturated and unsaturated fats.",
+    "description": "Palm oil is a heat-stable energy source that provides high levels of bypass fat for dairy cattle. It helps increase milk fat production and serves as an economical energy booster for swine diets due to its dense caloric profile.",
+    "application": "Dairy bypass fat (milk fat boost); economical swine energy source.",
+    "packing": "Bulk, IBC Containers",
+    "specification": [
+      "FFA (as palmitic):5%",
+      "M&I:0.5%",
+      "IV (Wijs):51 – 55"
+    ],
+    "pdfSpecification": "5-Palm Oil.pdf",
+    "industry": [
+      "Food & Beverage",
+      "Pet Food",
+      "Animal Feed",
+      "Cosmetics",
+      "Technical & Industrial."
+    ],
+    "isActive": true,
+    "isFeatured": false
+  },
+  {
+    "slug": "palm-olein",
+    "name": "Palm Olein",
+    "image": "/6-Palm Olein.png",
+    "market": "oils-and-fats",
+    "marketLabel": "Oils and fats",
+    "info": "Palm olein is the liquid fraction obtained by the fractionation of palm oil after crystallization at controlled temperatures.",
+    "description": "Palm olein is characterized by its high stability against oxidation and its liquid state at room temperature. It serves as a consistent energy source in liquid feed applications and is a primary ingredient in high-stability frying and baking fats.",
+    "application": "Cooking oil base; high-stability frying fat; industrial soap production.",
+    "packing": "Bulk, IBC Containers, Bottled (1l, 3l, 5l, 20l and other)",
+    "specification": [
+      "FFA (as palmitic):0.1%",
+      "M&I:0.1%",
+      "IV (Wijs):56 min",
+      "Melting point:24°C max",
+      "Cloud point:10°C max"
+    ],
+    "pdfSpecification": "6-Palm Olein.pdf",
+    "industry": [
+      "Food & Beverage",
+      "Pet Food",
+      "Animal Feed",
+      "Cosmetics",
+      "Technical & Industrial."
+    ],
+    "isActive": true,
+    "isFeatured": false
+  },
+  {
+    "slug": "olive-oil",
+    "name": "Olive Oil",
+    "image": "/7-OliveOil.png",
+    "market": "oils-and-fats",
+    "marketLabel": "Oils and fats",
+    "info": "Olive oil is a liquid fat obtained from whole olives, the fruit of the Olea europaea tree. It is rich in oleic acid and antioxidants.",
+    "description": "Olive oil is a premium culinary and nutritional fat characterized by its high digestibility and heart-healthy lipid profile. It provides natural antioxidants that support cellular health and is used as a functional ingredient in premium pet and human foods.",
+    "application": "Premium culinary fat; skin hydration in cosmetics; heart-healthy supplement.",
+    "packing": "Bulk, IBC Containers, Bottled (1l, 3l, 5l, 20l and other)",
+    "specification": [
+      "FFA (as oleic):0.8% max",
+      "Peroxide value:20 meq O2/kg",
+      "Saturated fatty acids:14%",
+      "Monounsaturated fatty acids:73%",
+      "Polyunsaturated fatty acids:11%"
+    ],
+    "pdfSpecification": "7-Olive Oil.pdf",
+    "industry": [
+      "Food & Beverage",
+      "Pet Food",
+      "Animal Feed",
+      "Cosmetics."
+    ],
+    "isActive": true,
+    "isFeatured": false
+  },
+  {
+    "slug": "coconut-oil",
+    "name": "Coconut Oil",
+    "image": "/8-CoconutOil.png",
+    "market": "oils-and-fats",
+    "marketLabel": "Oils and fats",
+    "info": "Coconut oil is an edible oil extracted from the kernel or meat of mature coconuts. it is uniquely high in medium-chain triglycerides (MCTs).",
+    "description": "Coconut oil is a quick-energy fat source characterized by its rapid absorption and metabolic efficiency. It supports immune health and serves as a high-performance energy booster in specialized pet and animal nutrition.",
+    "application": "Quick-energy MCT source for pets; moisturizing agent in skincare.",
+    "packing": "Bulk, IBC Containers, Bottled (1l, 3l, 5l, 20l and other)",
+    "specification": [
+      "FFA (as lauric):0.1%",
+      "M&I:0.1%",
+      "IV (Wijs):7–11",
+      "Saponification value:250–264",
+      "Melting point:24–26°C"
+    ],
+    "pdfSpecification": "8-Coconut Oil.pdf",
+    "industry": [
+      "Food & Beverage",
+      "Pet Food",
+      "Animal Feed",
+      "Cosmetics."
+    ],
+    "isActive": true,
+    "isFeatured": false
+  },
+  {
+    "slug": "cocoa-butter",
+    "name": "Cocoa Butter",
+    "image": "/9-CocoaButter.png",
+    "market": "oils-and-fats",
+    "marketLabel": "Oils and fats",
+    "info": "Cocoa butter is a pale-yellow, edible fat extracted from the cocoa bean. it is a solid vegetable fat with a high melting point.",
+    "description": "Cocoa butter is a specialty fat characterized by its unique texture-forming properties and stability in confectionery applications. It acts as a moisture barrier and texturizer in high-end bakery products and specialized nutritional treats.",
+    "application": "Texture agent for chocolate/bakery; skin-softening base for lotions.",
+    "packing": "Bulk, Big Bag 1MT, Bag 25kg",
+    "specification": [
+      "FFA (as oleic):1.75% max",
+      "IV (Wijs):33–42",
+      "Saponification value:188–198",
+      "Melting point:31–35°C",
+      "Unsaponifiable matter:0.35%"
+    ],
+    "pdfSpecification": "9-Cocoa Butter.pdf",
+    "industry": [
+      "Food & Beverage",
+      "Pet Food",
+      "Animal Feed",
+      "Cosmetics."
+    ],
+    "isActive": true,
+    "isFeatured": false
+  },
+  {
+    "slug": "butter",
+    "name": "Butter",
+    "image": "/10-Butter.png",
+    "market": "oils-and-fats",
+    "marketLabel": "Oils and fats",
+    "info": "Butter is a concentrated dairy fat produced by churning fresh cream. It is primarily composed of milk fat, water, and milk solids, typically containing a minimum of 80-82% fat.",
+    "description": "Butter is a premium, natural dairy fat prized for its rich flavor profile and superior functional properties in baking and confectionery. It provides a unique mouthfeel and aromatic complexity, while acting as a highly palatable and digestible energy source rich in fat-soluble vitamins.",
+    "application": "Flavor enhancer for bakery; gourmet pet treats; high-calorie nutritional base.",
+    "packing": "Bulk, Big Bag 1MT, Bag 25kg",
+    "specification": [
+      "Dry matter:84.0%",
+      "Crude protein:0.85%",
+      "Crude fat:81.1%",
+      "Crude fibre:0%",
+      "Carbohydrate:0.06%",
+      "Ash:1.5%",
+      "Gross energy:30.5 MJ/kg DM"
+    ],
+    "pdfSpecification": "10-Butter.pdf",
+    "industry": [
+      "Food & Beverage",
+      "Bakery",
+      "Pet Food",
+      "Confectionery"
+    ],
+    "isActive": true,
+    "isFeatured": false
+  },
+  {
+    "slug": "shortening-36-39",
+    "name": "Shortening 36-39",
+    "image": "/11-Shortening36-39.png",
+    "market": "oils-and-fats",
+    "marketLabel": "Oils and fats",
+    "info": "Shortening is a semi-solid fat produced from vegetable oils through hydrogenation or interesterification. it features a specific melting range of 36-39°C.",
+    "description": "Shortening 36-39 is a functional fat characterized by its ability to provide structural stability and \"shortness\" to baked goods. It is essential for producing high-quality pastry crusts, cream fillings, and stabilized bakery structures.",
+    "application": "Solid fat for high-quality pastry crusts; cream fillings; bakery stability.",
+    "packing": "Bulk, Big Bag 1MT, Bag 25kg",
+    "specification": [
+      "FFA (as oleic):0.05%",
+      "Moisture:0.05%",
+      "Iodine value:48–54",
+      "Peroxide value:1.0 meq O2/kg",
+      "Slip melting point:36–39°C"
+    ],
+    "pdfSpecification": "11-Shortening 36-39.pdf",
+    "industry": [
+      "Food & Beverage",
+      "Pet Food",
+      "Animal Feed",
+      "Cosmetics."
+    ],
+    "isActive": true,
+    "isFeatured": false
+  },
+  {
+    "slug": "margarine",
+    "name": "Margarine",
+    "image": "/12-Margarine.png",
+    "market": "oils-and-fats",
+    "marketLabel": "Oils and fats",
+    "info": "Margarine is an emulsion of vegetable fats and water. It is designed to mimic the functional properties of dairy butter.",
+    "description": "Margarine is a versatile baking fat characterized by its consistent texture and cost-effective energy delivery. It is used as a foundational ingredient in large-scale baking to improve crumb structure and provide essential lipids.",
+    "application": "Cost-effective butter alternative for large-scale baking and spreads.",
+    "packing": "Bulk, Big Bag 1MT, Bag 25kg",
+    "specification": [
+      "Fat content:80%",
+      "Moisture:16.5%",
+      "Salt:1.5%",
+      "Vitamin A:2000 IU/100g",
+      "Vitamin D3:200 IU/100g",
+      "Melting point:34–36°C"
+    ],
+    "pdfSpecification": "12-Margarine.pdf",
+    "industry": [
+      "Food & Beverage",
+      "Pet Food",
+      "Animal Feed",
+      "Cosmetics."
+    ],
+    "isActive": true,
+    "isFeatured": false
+  },
+  {
+    "slug": "l-lysine",
+    "name": "L-Lysine",
+    "image": "/13-L-Lysine.png",
+    "market": "nutritional-additives",
+    "marketLabel": "Nutritional Additives",
+    "info": "L-Lysine is an essential amino acid produced via fermentation. It is the first limiting amino acid in most grain-based swine diets.",
+    "description": "L-Lysine is a building block for protein characterized by its ability to maximize lean muscle growth and feed conversion efficiency. It is a critical additive for balancing the amino acid profiles of corn and wheat-based diets in poultry and swine.",
+    "application": "Limiting amino acid for muscle growth; improves feed efficiency.",
+    "packing": "Bulk, Big Bag 1MT, Bag 25kg",
+    "specification": [
+      "Assay (L-Lysine HCl):98.5% min",
+      "Specific rotation:+18.0° to +21.5°",
+      "Loss on drying:1.0% max",
+      "Residue on ignition:0.3% max",
+      "Ammonium:0.04% max"
+    ],
+    "pdfSpecification": "13-L-Lysine.pdf",
+    "industry": [
+      "Food & Beverage",
+      "Pet Food",
+      "Animal Feed",
+      "Pharmaceuticals."
+    ],
+    "isActive": true,
+    "isFeatured": false
+  },
+  {
+    "slug": "dl-methionine",
+    "name": "DL-Methionine",
+    "image": "/14-DL-Methionine.png",
+    "market": "nutritional-additives",
+    "marketLabel": "Nutritional Additives",
+    "info": "DL-Methionine is a sulfur-containing amino acid essential for growth. It is the first limiting amino acid in poultry diets.",
+    "description": "DL-Methionine is characterized by its vital role in protein deposition, liver health, and feather development. It acts as a methyl donor to support metabolic performance and is essential for achieving optimal growth in aquaculture and poultry.",
+    "application": "Essential for poultry feathering; muscle development in fish/shrimp.",
+    "packing": "Bulk, Big Bag 1MT, Bag 25kg",
+    "specification": [
+      "Assay:99.0% min",
+      "Moisture:0.5% max",
+      "Ash:0.5% max",
+      "pH (10% solution):5.4–6.1",
+      "Heavy metals (as Pb):10 ppm max"
+    ],
+    "pdfSpecification": "14-DL-Methionine.pdf",
+    "industry": [
+      "Pet Food",
+      "Animal Feed",
+      "Aquaculture",
+      "Pharmaceuticals."
+    ],
+    "isActive": true,
+    "isFeatured": false
+  },
+  {
+    "slug": "l-threonine",
+    "name": "L-Threonine",
+    "image": "/15-L-Threonine.png",
+    "market": "nutritional-additives",
+    "marketLabel": "Nutritional Additives",
+    "info": "L-Threonine is an essential amino acid produced via the fermentation of plant-based raw materials.",
+    "description": "L-Threonine is an amino acid characterized by its essential role in gut health and the production of intestinal mucin. It optimizes protein utilization and is critical for maintaining the structural integrity of the digestive tract in livestock.",
+    "application": "Supports gut health and mucin production; optimizes low-protein diets.",
+    "packing": "Bulk, Big Bag 1MT, Bag 25kg",
+    "specification": [
+      "Assay:98.5% min",
+      "Specific rotation:−26.0° to −29.0°",
+      "Loss on drying:1.0% max",
+      "Residue on ignition:0.5% max",
+      "Iron:20 ppm max"
+    ],
+    "pdfSpecification": "15-L-Threonine.pdf",
+    "industry": [
+      "Food & Beverage",
+      "Pet Food",
+      "Animal Feed",
+      "Pharmaceuticals."
+    ],
+    "isActive": true,
+    "isFeatured": false
+  },
+  {
+    "slug": "l-tryptophan",
+    "name": "L-Tryptophan",
+    "image": "/16-L-Tryptophan.png",
+    "market": "nutritional-additives",
+    "marketLabel": "Nutritional Additives",
+    "info": "L-Tryptophan is an essential amino acid and a direct precursor to the neurotransmitter serotonin.",
+    "description": "L-Tryptophan is characterized by its role in regulating behavior, sleep, and stress responses in animals. It acts as a natural calming agent in pet food and specialty feeds, helping to manage aggression and promote overall neurological well-being.",
+    "application": "Precursor to serotonin; calming agent for stressed pets and livestock.",
+    "packing": "Bulk, Big Bag 1MT, Bag 25kg",
+    "specification": [
+      "Assay:98.5% min",
+      "Specific rotation:−30.0° to −33.0°",
+      "Loss on drying:1.0% max",
+      "Residue on ignition:0.2% max",
+      "pH:5.5–7.0"
+    ],
+    "pdfSpecification": "16-L-Tryptophan.pdf",
+    "industry": [
+      "Food & Beverage",
+      "Pet Food",
+      "Animal Feed",
+      "Pharmaceuticals."
+    ],
+    "isActive": true,
+    "isFeatured": false
+  },
+  {
+    "slug": "l-valine",
+    "name": "L-Valine",
+    "image": "/17-L-Valine.png",
+    "market": "nutritional-additives",
+    "marketLabel": "Nutritional Additives",
+    "info": "L-Valine is a branched-chain amino acid (BCAA) produced through fermentation. It is essential for muscle tissue repair.",
+    "description": "L-Valine is characterized by its support for muscle metabolism and nitrogen balance in high-yield livestock. It provides a steady energy source for muscle cells and is necessary for reaching peak growth performance in modern swine and poultry genetics.",
+    "application": "BCAA for muscle metabolism; supports high-growth animal diets.",
+    "packing": "Bulk, Big Bag 1MT, Bag 25kg",
+    "specification": [
+      "Assay:98.5% min",
+      "Specific rotation:+26.5° to +29.0°",
+      "Loss on drying:0.3% max",
+      "Residue on ignition:0.1% max",
+      "Iron:10 ppm max"
+    ],
+    "pdfSpecification": "17-L-Valine.pdf",
+    "industry": [
+      "Food & Beverage",
+      "Pet Food",
+      "Animal Feed",
+      "Pharmaceuticals."
+    ],
+    "isActive": true,
+    "isFeatured": false
+  },
+  {
+    "slug": "l-arginine",
+    "name": "L-Arginine",
+    "image": "/18-L-Arginine.png",
+    "market": "nutritional-additives",
+    "marketLabel": "Nutritional Additives",
+    "info": "L-Arginine is a semi-essential amino acid that serves as a precursor to nitric oxide. It is produced through fermentation.",
+    "description": "L-Arginine is characterized by its role in ammonia detoxification and cardiovascular health. It is a mandatory nutrient for feline metabolic health and supports immune response and efficient tissue repair in all animal species.",
+    "application": "Promotes nitric oxide production; essential for feline ammonia detox.",
+    "packing": "Bulk, Big Bag 1MT, Bag 25kg",
+    "specification": [
+      "Assay:98.5% min",
+      "Specific rotation:+26.3° to +27.7°",
+      "Loss on drying:0.5% max",
+      "Residue on ignition:0.1% max",
+      "Chloride:0.02% max"
+    ],
+    "pdfSpecification": "18-L-Arginine.pdf",
+    "industry": [
+      "Food & Beverage",
+      "Pet Food",
+      "Animal Feed",
+      "Pharmaceuticals",
+      "Cosmetics."
+    ],
+    "isActive": true,
+    "isFeatured": false
+  },
+  {
+    "slug": "taurine",
+    "name": "Taurine",
+    "image": "/19-Taurine.png",
+    "market": "nutritional-additives",
+    "marketLabel": "Nutritional Additives",
+    "info": "Taurine is an organic acid containing sulfur. It is essential for cats and found in high concentrations in animal tissues.",
+    "description": "Taurine is a critical nutrient characterized by its role in heart function, vision health, and bile acid production. It is a mandatory additive for feline nutrition and is used in premium dog foods to support cardiac stability and metabolic efficiency.",
+    "application": "Mandatory feline heart/vision health; energy metabolism in humans.",
+    "packing": "Bulk, Big Bag 1MT, Bag 25kg",
+    "specification": [
+      "Assay:98.5% min",
+      "Loss on drying:0.4% max",
+      "Residue on ignition:0.1% max",
+      "Chloride:0.01% max",
+      "Sulfate:0.01% max"
+    ],
+    "pdfSpecification": "19-Taurine.pdf",
+    "industry": [
+      "Food & Beverage",
+      "Pet Food",
+      "Animal Feed",
+      "Pharmaceuticals",
+      "Cosmetics."
+    ],
+    "isActive": true,
+    "isFeatured": false
+  },
+  {
+    "slug": "white-beet-sugar",
+    "name": "White Beet Sugar",
+    "image": "/20-WhiteBeetSugar.png",
+    "market": "sweeteners",
+    "marketLabel": "Sweeteners",
+    "info": "White beet sugar is a high-purity sucrose extracted from sugar beets. It is a refined, crystalline carbohydrate.",
+    "description": "White beet sugar is a clean energy source characterized by its instant digestibility and neutral taste profile. It enhances the palatability of specialized feeds and provides the quick glucose necessary for recovery or high-growth metabolic phases.",
+    "application": "Pure sucrose for baking; energy source and natural feed attractant.",
+    "packing": "Bulk, Big Bag 1MT, Bag 25kg",
+    "specification": [
+      "Polarization:99.7% min",
+      "Moisture:0.04% max",
+      "Ash content:0.04% max",
+      "Color:Max 45 ICUMSA units",
+      "Invert sugar:0.04% max"
+    ],
+    "pdfSpecification": "20-White Beet Sugar.pdf",
+    "industry": [
+      "Food & Beverage",
+      "Bakery",
+      "Confectionery",
+      "Animal Feed."
+    ],
+    "isActive": true,
+    "isFeatured": false
+  },
+  {
+    "slug": "crystaline-fructose",
+    "name": "Crystaline Fructose",
+    "image": "/21-CrystalineFructose.png",
+    "market": "sweeteners",
+    "marketLabel": "Sweeteners",
+    "info": "Crystalline fructose is a monosaccharide in solid form. It is extracted from corn or sugar sources through controlled crystallization.",
+    "description": "Crystalline fructose is characterized by its high sweetening index and ability to provide efficient energy without high glycemic spikes. It acts as a moisture-retaining agent and humectant, extending the shelf life of moist pet foods and bakery items.",
+    "application": "High-intensity sweetener; low glycemic index for wellness foods.",
+    "packing": "Bulk, Big Bag 1MT, Bag 25kg",
+    "specification": [
+      "Appearenc:white crystals",
+      "Moisture:0.5%",
+      "Fructose assay:98%",
+      "Taste:Sweet",
+      "Residue on ignition (Ash):0.1%",
+      "SO2:Depends on origin"
+    ],
+    "pdfSpecification": "21-Crystaline Fructose.pdf",
+    "industry": [
+      "Food & Beverage",
+      "Pet Food",
+      "Pharmaceuticals",
+      "Sports Nutrition."
+    ],
+    "isActive": true,
+    "isFeatured": false
+  },
+  {
+    "slug": "maltodextrins",
+    "name": "Maltodextrins",
+    "image": "/22-Maltodextrins.png",
+    "market": "sweeteners",
+    "marketLabel": "Sweeteners",
+    "info": "Maltodextrins are polysaccharides produced by the partial hydrolysis of starch. They consist of D-glucose units.",
+    "description": "Maltodextrins are easily digestible complex carbohydrates characterized by low sweetness and high solubility. They serve as stable energy sources in milk replacers and act as neutral carriers for micro-ingredients like vitamins and minerals.",
+    "application": "Carrier for micro-ingredients; energy source in milk replacers.",
+    "packing": "Bulk, Big Bag 1MT, Bag 25kg",
+    "specification": [
+      "Appearance:white or light yellow powder",
+      "pH:4.0-6.5",
+      "Moisture:6.0% max",
+      "Dextrose Equivalent (DE):5-20",
+      "Ash:0.5% max",
+      "SO2:max 10mg/kg"
+    ],
+    "pdfSpecification": "22-Maltodextrins.pdf",
+    "industry": [
+      "Food & Beverage",
+      "Pet Food",
+      "Animal Feed",
+      "Cosmetics",
+      "Technical & Industrial."
+    ],
+    "isActive": true,
+    "isFeatured": false
+  },
+  {
+    "slug": "glucose-fructose-sirups",
+    "name": "Glucose Fructose Sirups",
+    "image": "/23-GlucoseFructoseSirups.png",
+    "market": "sweeteners",
+    "marketLabel": "Sweeteners",
+    "info": "These are blended liquid sweeteners obtained from the hydrolysis of starch. They contain both glucose and fructose.",
+    "description": "Glucose fructose syrups are characterized by their functional sweetness and ability to enhance product texture and browning. They provide an economical, liquid energy source that integrates easily into large-scale industrial feed and food production.",
+    "application": "Liquid sweetener; improves moisture retention in baked goods.",
+    "packing": "Bulk, IBC Containers",
+    "specification": [
+      "Type:DE 28 to DE 66",
+      "Procent solids:78-84%",
+      "pH:4.0-5.0",
+      "Viscosity:Higher in low DE",
+      "Sweetness:Increases with DE",
+      "Function:Prevents crystallization and provides body"
+    ],
+    "pdfSpecification": "23-Glucose Fructose Sirups.pdf",
+    "industry": [
+      "Food & Beverage",
+      "Bakery",
+      "Pet Food",
+      "Animal Feed",
+      "Technical & Industrial."
+    ],
+    "isActive": true,
+    "isFeatured": false
+  },
+  {
+    "slug": "high-fructose-corn-syrup",
+    "name": "High Fructose Corn Syrup",
+    "image": "/24-HighFructoseCornSyrup.png",
+    "market": "sweeteners",
+    "marketLabel": "Sweeteners",
+    "info": "HFCS is a liquid sweetener produced by enzymatically converting glucose in corn syrup into fructose.",
+    "description": "HFCS is characterized by its high stability and fermentability in industrial processes. It helps maintain moisture in baked goods and provides a consistent energy source for liquid feeds while improving final product flavor and color.",
+    "application": "Fermentable sweetener for soft drinks and large-scale bakery production.",
+    "packing": "Bulk, IBC Containers",
+    "specification": [
+      "Appearance:white crystals",
+      "Moisture:0.5%",
+      "Fructose assay:98%",
+      "Taste:Sweet",
+      "Residue on ignition (Ash):0.1%",
+      "SO2:Depends on origin"
+    ],
+    "pdfSpecification": "24-High Fructose Corn Syrup.pdf",
+    "industry": [
+      "Food & Beverage",
+      "Bakery",
+      "Confectionery",
+      "Technical & Industrial."
+    ],
+    "isActive": true,
+    "isFeatured": false
+  },
+  {
+    "slug": "honey",
+    "name": "Honey",
+    "image": "/25-Honey.png",
+    "market": "sweeteners",
+    "marketLabel": "Sweeteners",
+    "info": "Honey is a natural sweet substance produced by honeybees. It contains a complex mixture of sugars, enzymes, and minerals.",
+    "description": "Honey is a natural humectant characterized by its antimicrobial properties and unique flavor profile. It provides a \"clean-label\" energy source that supports immune health and serves as a premium attractant in specialty pet and animal treats.",
+    "application": "Natural humectant; clean-label sweetener with antioxidant properties.",
+    "packing": "Bulk, IBC Containers, Bottled (1l, 3l, 5l, 20l and other)",
+    "specification": [
+      "Moisture:max 20%",
+      "Fructose:min 38%",
+      "Glucose:min 31%",
+      "Sucrose:max 5%",
+      "Ash:max 0.6%",
+      "pH:3.4–6.1"
+    ],
+    "pdfSpecification": "25-Honey.pdf",
+    "industry": [
+      "Food & Beverage",
+      "Bakery",
+      "Pet Food",
+      "Cosmetics",
+      "Pharmaceuticals."
+    ],
+    "isActive": true,
+    "isFeatured": false
+  },
+  {
+    "slug": "molasses",
+    "name": "Molasses",
+    "image": "/26-Molasses.png",
+    "market": "sweeteners",
+    "marketLabel": "Sweeteners",
+    "info": "Molasses is a thick, dark syrup byproduct resulting from the sugar refining process. It is exceptionally rich in minerals.",
+    "description": "Molasses is a highly palatable attractant characterized by its ability to act as a natural binder for feed pellets. It provides a concentrated source of energy and minerals like iron and calcium to stimulate intake in livestock.",
+    "application": "Pellet binder; mineral-rich attractant for cattle and ruminant feed.",
+    "packing": "Bulk, IBC Containers",
+    "specification": [
+      "Total Sugar (as Invert):min 46.0%",
+      "Brix:min 79.5°",
+      "Specific Gravity:1.40 min",
+      "Ash:max 10.0%",
+      "pH:5.0–6.0"
+    ],
+    "pdfSpecification": "26-Molasses.pdf",
+    "industry": [
+      "Animal Feed",
+      "Food & Beverage",
+      "Agriculture",
+      "Technical & Industrial."
+    ],
+    "isActive": true,
+    "isFeatured": false
+  },
+  {
+    "slug": "stevia",
+    "name": "Stevia",
+    "image": "/27-Stevia.png",
+    "market": "sweeteners",
+    "marketLabel": "Sweeteners",
+    "info": "Stevia is a natural, zero-calorie sweetener extracted from the leaves of the Stevia rebaudiana plant.",
+    "description": "Stevia is characterized by its high-intensity sweetness and lack of caloric impact. It provides a plant-based alternative to sugar for wellness diets and is heat-stable, making it suitable for both cold and baked applications.",
+    "application": "Natural zero-calorie sweetener; heat-stable for diet-friendly foods.",
+    "packing": "Bulk, Big Bag 1MT, Bag 25kg",
+    "specification": [
+      "Appearance:white powder",
+      "Assay:min 95% total steviol glycosides",
+      "Loss on drying:max 5.0%",
+      "Ash:max 1.0%",
+      "pH:4.5–7.0",
+      "Taste:intense sweetness"
+    ],
+    "pdfSpecification": "27-Stevia.pdf",
+    "industry": [
+      "Food & Beverage",
+      "Pharmaceuticals",
+      "Cosmetics",
+      "Dietary Supplements."
+    ],
+    "isActive": true,
+    "isFeatured": false
+  },
+  {
+    "slug": "aspartame",
+    "name": "Aspartame",
+    "image": "/28-Aspartame.png",
+    "market": "sweeteners",
+    "marketLabel": "Sweeteners",
+    "info": "Aspartame is a low-calorie artificial sweetener. It is a methyl ester of the aspartic acid/phenylalanine dipeptide.",
+    "description": "Aspartame is characterized by its clean sweet taste and is approximately 200 times sweeter than sucrose. It allows for significant calorie reduction in specialized \"diet\" formulations while maintaining a consumer-preferred flavor profile.",
+    "application": "High-intensity calorie reducer for beverages and pharma syrups.",
+    "packing": "Bulk, Big Bag 1MT, Bag 25kg",
+    "specification": [
+      "Appearance:white crystalline powder",
+      "Assay:98.0–102.0%",
+      "Loss on drying:max 4.5%",
+      "Residue on ignition:max 0.2%",
+      "Specific rotation:+14.5° to +16.5°",
+      "pH:4.5–6.0"
+    ],
+    "pdfSpecification": "28-Aspartame.pdf",
+    "industry": [
+      "Food & Beverage",
+      "Pharmaceuticals",
+      "Cosmetics."
+    ],
+    "isActive": true,
+    "isFeatured": false
+  },
+  {
+    "slug": "wheat-starch",
+    "name": "Wheat Starch",
+    "image": "/29-Wheat Starch.png",
+    "market": "starches",
+    "marketLabel": "Starches",
+    "info": "Wheat starch is a carbohydrate extracted from wheat flour through a washing process that separates it from the gluten.",
+    "description": "Wheat starch is a refined energy source characterized by high swelling capacity and gel-forming properties. It serves as a reliable thickener and binder in milk replacers, providing the necessary starch-based energy for young animals.",
+    "application": "Binder for feed pellets; thickener in milk replacers; carrier for additives.",
+    "packing": "Bulk, Big Bag 1MT, Bag 25kg",
+    "specification": [
+      "Appearanc:tasteless white powder",
+      "Ash:0.25%",
+      "Protein:0.35%",
+      "Moisture:14%",
+      "pH:5.0-7.5",
+      "SO2:20mg/kg"
+    ],
+    "pdfSpecification": "29-Wheat Starch.pdf",
+    "industry": [
+      "Food & Beverage",
+      "Bakery",
+      "Pet Food",
+      "Animal Feed",
+      "Technical & Industrial."
+    ],
+    "isActive": true,
+    "isFeatured": false
+  },
+  {
+    "slug": "corn-starch",
+    "name": "Corn Starch",
+    "image": "/30-Corn Starch.png",
+    "market": "starches",
+    "marketLabel": "Starches",
+    "info": "Corn starch is extracted from the endosperm of the maize kernel. It is a highly pure carbohydrate powder.",
+    "description": "Corn starch is a highly digestible energy source characterized by its ability to form stable, opaque gels. It acts as a versatile texturizer and thickener in animal feed and food, and serves as a neutral carrier for various micro-additives.",
+    "application": "Thickener for gravies; paper sizing; energy for young animals.",
+    "packing": "Bulk, Big Bag 1MT, Bag 25kg",
+    "specification": [
+      "Appearenc:white or light yellow shadow",
+      "Ash:0.3%",
+      "Protein:0.50%",
+      "Fat:0.20%",
+      "Moisture:14%",
+      "pH:4.5-6.5",
+      "SO2:30mg/kg"
+    ],
+    "pdfSpecification": "30-Corn Starch.pdf",
+    "industry": [
+      "Food & Beverage",
+      "Pet Food",
+      "Animal Feed",
+      "Technical & Industrial."
+    ],
+    "isActive": true,
+    "isFeatured": false
+  },
+  {
+    "slug": "potato-starch",
+    "name": "Potato Starch",
+    "image": "/31-Potato Starch.png",
+    "market": "starches",
+    "marketLabel": "Starches",
+    "info": "Potato starch is extracted from potato tubers. It features large granules that provide unique rheological properties.",
+    "description": "Potato starch is characterized by its exceptional water absorption and superior binding strength. It forms clear, high-viscosity gels with a neutral taste, making it an essential gluten-free binder for the meat, pet food, and textile industries.",
+    "application": "Gluten-free thickener; high-binding strength for meat and pet food.",
+    "packing": "Bulk, Big Bag 1MT, Bag 25kg",
+    "specification": [
+      "Appearenc:white powder",
+      "Neutral taste and odour:unique texture",
+      "Ash:0.5%",
+      "Viscosity:min 1350 BU",
+      "Moisture:20.5%",
+      "pH:6.0-8.0",
+      "SO2:10mg/kg"
+    ],
+    "pdfSpecification": "31-Potato Starch.pdf",
+    "industry": [
+      "Food & Beverage",
+      "Pet Food",
+      "Animal Feed",
+      "Technical & Industrial."
+    ],
+    "isActive": true,
+    "isFeatured": false
+  },
+  {
+    "slug": "tapioca-starch",
+    "name": "Tapioca Starch",
+    "image": "/32-Tapioca Starch.png",
+    "market": "starches",
+    "marketLabel": "Starches",
+    "info": "Tapioca starch is extracted from the roots of the cassava plant. It is a naturally gluten-free carbohydrate.",
+    "description": "Tapioca starch is characterized by its high viscosity and excellent freeze-thaw stability. It creates an elastic texture that is ideal for binding fish feed pellets and providing smooth consistency in wet pet food formulations.",
+    "application": "Excellent freeze-thaw stability; binder in fish and shrimp pellets.",
+    "packing": "Bulk, Big Bag 1MT, Bag 25kg",
+    "specification": [
+      "Appearenc:white powder",
+      "Slightly sweet taste:no discernible smell",
+      "Starch:85%",
+      "Ash:0.20%",
+      "Moisture:14%",
+      "pH:5.0-7.0",
+      "HCN:<10 ppm",
+      "SO2:30mg/kg"
+    ],
+    "pdfSpecification": "32-Tapioca Starch.pdf",
+    "industry": [
+      "Food & Beverage",
+      "Pet Food",
+      "Animal Feed",
+      "Aquaculture",
+      "Technical & Industrial."
+    ],
+    "isActive": true,
+    "isFeatured": false
+  },
+  {
+    "slug": "rice-starch",
+    "name": "Rice Starch",
+    "image": "/33-RiceStarch.png",
+    "market": "starches",
+    "marketLabel": "Starches",
+    "info": "Rice starch is extracted from rice grains. It has the smallest granule size of all commercial starches.",
+    "description": "Rice starch is a hypoallergenic carbohydrate characterized by its exceptional digestibility and smooth texture. It is the ideal energy source for baby foods and sensitive pet diets where a gentle, creamy mouthfeel is required.",
+    "application": "Hypoallergenic thickener; baby food base; smoothing agent in powders.",
+    "packing": "Bulk, Big Bag 1MT, Bag 25kg",
+    "specification": [
+      "Appearance:fine white powder",
+      "Starch content:min 98%",
+      "Moisture:max 12%",
+      "Ash:max 0.2%",
+      "Protein:max 0.5%",
+      "pH:5.5–7.5",
+      "SO2:max 10mg/kg"
+    ],
+    "pdfSpecification": "33-Rice Starch.pdf",
+    "industry": [
+      "Food & Beverage",
+      "Pet Food",
+      "Animal Feed",
+      "Aquaculture",
+      "Technical & Industrial."
+    ],
+    "isActive": true,
+    "isFeatured": false
+  },
+  {
+    "slug": "soyabean-meal-46",
+    "name": "Soyabean Meal 46%",
+    "image": "/34-SoyabeanMeal46.png",
+    "market": "millingcrushing",
+    "marketLabel": "Milling/Crushing",
+    "info": "Soyabean meal is the byproduct of oil extraction from soybeans. It is a high-protein feed ingredient.",
+    "description": "Soyabean meal 46% is the primary protein foundation for livestock, characterized by a complete amino acid profile. It supports rapid muscle development in poultry and swine and is a highly reliable source of digestible lysine.",
+    "application": "Primary high-protein base for poultry, swine, and dairy diets.",
+    "packing": "Bulk, Big Bag 1MT, Bag 25kg",
+    "specification": [
+      "Dry matter:88.0%",
+      "Crude protein:46.0%",
+      "Ether extract:1.5%",
+      "Crude fibre:3.5%",
+      "Ash:6.0%",
+      "Gross energy:18.8 MJ/kg DM"
+    ],
+    "pdfSpecification": "34-Soyabean Meal 46%.pdf",
+    "industry": [
+      "Animal Feed",
+      "Agriculture."
+    ],
+    "isActive": true,
+    "isFeatured": false
+  },
+  {
+    "slug": "soypro",
+    "name": "SoyPro",
+    "image": "/35-SoyPro.png",
+    "market": "millingcrushing-aquaculture",
+    "marketLabel": "Milling/Crushing, Aquaculture",
+    "info": "SoyPro is a specialized soy protein product designed for maximum nutrient density and reduced anti-nutritional factors.",
+    "description": "SoyPro is a highly digestible protein source characterized by its ability to bridge the nutritional gap during animal weaning. It provides concentrated protein that is easy on the digestive tract, ensuring optimal growth in piglets and calves.",
+    "application": "Specialized high-protein concentrate for weaning piglets and calves.",
+    "packing": "Bulk, Big Bag 1MT, Bag 25kg",
+    "specification": [
+      "Crude protein (dry basis):min 65.0%",
+      "Moisture:max 8.0%",
+      "Crude fat:max 1.0%",
+      "Crude fibre:max 4.5%",
+      "Ash:max 7.0%",
+      "pH:6.5–7.5"
+    ],
+    "pdfSpecification": "35-SoyPro.pdf",
+    "industry": [
+      "Food & Beverage",
+      "Pet Food",
+      "Animal Feed",
+      "Aquaculture."
+    ],
+    "isActive": true,
+    "isFeatured": false
+  },
+  {
+    "slug": "sunflower-meal-36",
+    "name": "Sunflower Meal 36%",
+    "image": "/36-SunflowerMeal36.png",
+    "market": "millingcrushing",
+    "marketLabel": "Milling/Crushing",
+    "info": "Sunflower meal is the byproduct of sunflower seed oil extraction. It is a source of both protein and fiber.",
+    "description": "Sunflower meal is a balanced feed ingredient characterized by high fiber content and quality plant protein. It is used as a safe and effective energy supplement for ruminant and poultry diets where additional vegetable fiber is needed.",
+    "application": "Fiber-rich protein source for ruminant feed and livestock rations.",
+    "packing": "Bulk, Big Bag 1MT, Bag 25kg",
+    "specification": [
+      "Dry matter:90.0%",
+      "Crude protein:36.0%",
+      "Ether extract:1.5%",
+      "Crude fibre:12.0%",
+      "Ash:6.5%",
+      "Gross energy:19.1 MJ/kg DM"
+    ],
+    "pdfSpecification": "36-Sunflower Meal 36%.pdf",
+    "industry": [
+      "Animal Feed",
+      "Agriculture."
+    ],
+    "isActive": true,
+    "isFeatured": false
+  },
+  {
+    "slug": "canolarapeseed-meal",
+    "name": "Canola/Rapeseed Meal",
+    "image": "/37-CanolaRapeseedMeal.png",
+    "market": "millingcrushing",
+    "marketLabel": "Milling/Crushing",
+    "info": "This is the protein-rich residue from oil extraction of canola/rape seeds. It features a high protein density.",
+    "description": "Canola meal is an excellent protein source characterized by high levels of methionine and sulfur amino acids. It supports efficient milk production in dairy cattle and provides balanced growth in swine and poultry rations.",
+    "application": "Balanced amino acid profile for dairy cattle and swine production.",
+    "packing": "Bulk, Big Bag 1MT, Bag 25kg",
+    "specification": [
+      "Dry matter:89.0%",
+      "Crude protein:35.0%",
+      "Ether extract:2.0%",
+      "Crude fibre:11.5%",
+      "Ash:7.0%",
+      "Glucosinolates:max 20 µmol/g",
+      "Gross energy:19.5 MJ/kg DM"
+    ],
+    "pdfSpecification": "37-Canola/Rapeseed Meal.pdf",
+    "industry": [
+      "Animal Feed",
+      "Agriculture."
+    ],
+    "isActive": true,
+    "isFeatured": false
+  },
+  {
+    "slug": "corn-gluten-meal",
+    "name": "Corn Gluten Meal",
+    "image": "/38-CornGlutenMeal.png",
+    "market": "millingcrushing-aquaculture-concentrates",
+    "marketLabel": "Milling/Crushing, Aquaculture, Concentrates",
+    "info": "Corn gluten meal is a concentrated protein byproduct of the wet-milling process. It is a dried residue after starch removal.",
+    "description": "Corn gluten meal is a nutrient-dense ingredient characterized by high protein levels and natural pigments. It provides a clean energy source and natural xanthophylls for the pigmentation of poultry skin and fish products.",
+    "application": "High-protein maize by-product; natural pigmentation for poultry/fish.",
+    "packing": "Bulk, Big Bag 1MT, Bag 25kg",
+    "specification": [
+      "Dry matter:90%",
+      "Crude protein:67.2%",
+      "Crude Fiber:1.2%",
+      "NDF:4.1%",
+      "ADF:1.6",
+      "Lignin:0.3%",
+      "Ether exctract:2.9%",
+      "Ash:2.1%",
+      "Starch:17.6%",
+      "Sugars:0.5%",
+      "Gross energy:23.1MJ/kg"
+    ],
+    "pdfSpecification": "38-Corn Gluten Meal.pdf",
+    "industry": [
+      "Animal Feed",
+      "Pet Food",
+      "Aquaculture."
+    ],
+    "isActive": true,
+    "isFeatured": false
+  },
+  {
+    "slug": "wheat-gluten",
+    "name": "Wheat Gluten",
+    "image": "/39-Wheat Gluten.png",
+    "market": "millingcrushing-aquaculture-concentrates",
+    "marketLabel": "Milling/Crushing, Aquaculture, Concentrates",
+    "info": "Wheat gluten is a plant protein derived from wheat flour. It is composed of gliadin and glutenin.",
+    "description": "Vital wheat gluten is a natural vegetable protein characterized by its high viscoelasticity and ability to bind water. It improves the texture and volume of baked goods and acts as a strong binder in high-performance aquafeeds and pet foods.",
+    "application": "Enhances dough elasticity; meat binder; high-protein aquafeed.",
+    "packing": "Bulk, Big Bag 1MT, Bag 25kg",
+    "specification": [
+      "Appearance:Creamy light yellow powder",
+      "Odour:Neutral",
+      "Moisture:10% max",
+      "Protein:75% min (DS)",
+      "Ash:1.5% max",
+      "Fat:2.5% max",
+      "Waterbinding capacity:150% min"
+    ],
+    "pdfSpecification": "39-Wheat Gluten.pdf",
+    "industry": [
+      "Milling",
+      "Food & Beverage",
+      "Bakery",
+      "Pasta",
+      "Pet Food",
+      "Animal Feed",
+      "Cosmetics",
+      "Technical & Industrial."
+    ],
+    "isActive": true,
+    "isFeatured": false
+  },
+  {
+    "slug": "sugar-beet-pellets",
+    "name": "Sugar Beet Pellets",
+    "image": "/40-SugarBeetPellets.png",
+    "market": "millingcrushing",
+    "marketLabel": "Milling/Crushing",
+    "info": "These are compressed, dried sugar beet pulp residues. They are a dense source of digestible fiber and pectin.",
+    "description": "Sugar beet pellets are characterized by slow-release energy and excellent support for digestive health. They help stabilize the intestinal environment in ruminants and horses, providing energy without the risks of starch-based grains.",
+    "application": "Digestible fiber for horses and cattle; energy without starch peaks.",
+    "packing": "Bulk, Big Bag 1MT, Bag 25kg",
+    "specification": [
+      "Dry matter:88.8%",
+      "Crude protein:8.9%",
+      "Crude fibre:19.4%",
+      "Ether extract:0.9%",
+      "Ash:7.1%",
+      "Insoluble ash:1.5%",
+      "Neutral detergent fibre:47.1%",
+      "Acid detergent fibre:23.8%",
+      "Lignin:2.7%",
+      "Starch (polarimetry):0.9%",
+      "Total sugars:7.8%",
+      "Gross energy:17.1 MJ/kg DM"
+    ],
+    "pdfSpecification": "40-Sugar Beet Pellets.pdf",
+    "industry": [
+      "Animal Feed",
+      "Technical & Industrial."
+    ],
+    "isActive": true,
+    "isFeatured": false
+  },
+  {
+    "slug": "corn-ddgs",
+    "name": "Corn DDGS",
+    "image": "/41-CornDDGS.png",
+    "market": "millingcrushing",
+    "marketLabel": "Milling/Crushing",
+    "info": "Corn DDGS (Dried Distillers Grains with Solubles) is a byproduct of the maize-to-ethanol fermentation process.",
+    "description": "Corn DDGS is a nutrient-dense ingredient characterized by high levels of energy, protein, and bioavailable phosphorus. It serves as a cost-effective energy supplement that maximizes the efficiency of dairy and beef cattle production.",
+    "application": "Nutrient-dense energy/protein source for beef and dairy cattle.",
+    "packing": "Bulk, Big Bag 1MT, Bag 25kg",
+    "specification": [
+      "Dry matter:88.0%",
+      "Crude protein:27.0%",
+      "Ether extract:9.0%",
+      "Crude fibre:7.0%",
+      "Ash:4.5%",
+      "Gross energy:20.1 MJ/kg DM"
+    ],
+    "pdfSpecification": "41-Corn DDGS.pdf",
+    "industry": [
+      "Animal Feed",
+      "Agriculture",
+      "Technical & Industrial."
+    ],
+    "isActive": true,
+    "isFeatured": false
+  },
+  {
+    "slug": "wheat-middlings",
+    "name": "Wheat Middlings",
+    "image": "/42-WheatMiddlings.png",
+    "market": "millingcrushing",
+    "marketLabel": "Milling/Crushing",
+    "info": "Wheat middlings are byproducts of the wheat milling process, consisting of fine particles of bran, germ, and flour.",
+    "description": "Wheat middlings are a versatile feed ingredient characterized by balanced energy and fiber content. They provide an economical base for livestock rations and act as an effective binder in the manufacturing of pelleted feeds.",
+    "application": "Multi-purpose feed ingredient; provides balanced energy and fiber.",
+    "packing": "Bulk, Big Bag 1MT, Bag 25kg",
+    "specification": [
+      "Dry matter:89.0%",
+      "Crude protein:15.5%",
+      "Ether extract:3.5%",
+      "Crude fibre:8.5%",
+      "Starch:25.0%",
+      "Ash:5.0%",
+      "Gross energy:18.2 MJ/kg DM"
+    ],
+    "pdfSpecification": "42-Wheat Middlings.pdf",
+    "industry": [
+      "Animal Feed",
+      "Agriculture",
+      "Technical & Industrial."
+    ],
+    "isActive": true,
+    "isFeatured": false
+  },
+  {
+    "slug": "fish-meal",
+    "name": "Fish Meal",
+    "image": "/43-Fish Meal.png",
+    "market": "aquaculture-animal-protein",
+    "marketLabel": "Aquaculture, Animal Protein",
+    "info": "Fish meal is a nutrient-dense powder made from cooked and dried fish. It is a complete protein source.",
+    "description": "Fish meal is a premium protein characterized by an optimal amino acid profile and high Omega-3 content. It provides essential nutrients that boost immune response and growth rates in aquaculture and young livestock weaning diets.",
+    "application": "Optimal marine protein; crucial for fish/shrimp growth and immunity.",
+    "packing": "Bulk, Big Bag 1MT, Bag 25kg",
+    "specification": [
+      "Dry matter:92.1%",
+      "Crude protein:75.4%",
+      "Ether extract, HCl hydrolysis:11.0%",
+      "Ash:13.6%",
+      "Gross energy:21.9 MJ/kg DM"
+    ],
+    "pdfSpecification": "43-Fish Meal.pdf",
+    "industry": [
+      "Pet Food",
+      "Animal Feed",
+      "Aquaculture."
+    ],
+    "isActive": true,
+    "isFeatured": false
+  },
+  {
+    "slug": "fish-oilsalmon-oil",
+    "name": "Fish Oil/Salmon Oil",
+    "image": "/44-FishOilSalmonOil.png",
+    "market": "aquaculture",
+    "marketLabel": "Aquaculture",
+    "info": "These are lipids extracted from oily fish. They are rich in EPA and DHA polyunsaturated fatty acids.",
+    "description": "Fish oil is a premium energy source characterized by high levels of essential Omega-3 fatty acids. It promotes brain health, cardiovascular stability, and healthy skin and coats in pets, aquaculture, and high-performance animals.",
+    "application": "Essential Omega-3 (EPA/DHA); skin/coat supplement; brain health.",
+    "packing": "Bulk, IBC Containers, Bottled (1l, 3l, 5l, 20l and other)",
+    "specification": [
+      "Appearance:light yellow",
+      "Taste:mild taste",
+      "Saturated fatty acids:21 g",
+      "Polyunsaturated fatty acids:16 g",
+      "Monounsaturated fatty acids:57 g",
+      "Cholesterol:766 mg"
+    ],
+    "pdfSpecification": "44-Fish Oil/Salmon Oil.pdf",
+    "industry": [
+      "Food & Beverage",
+      "Pet Food",
+      "Animal Feed",
+      "Aquaculture",
+      "Pharmaceuticals",
+      "Cosmetics."
+    ],
+    "isActive": true,
+    "isFeatured": false
+  },
+  {
+    "slug": "poultry-meal",
+    "name": "Poultry Meal",
+    "image": "/45-Poultry Meal.png",
+    "market": "aquaculture",
+    "marketLabel": "Aquaculture",
+    "info": "Poultry meal is produced from the rendering of clean parts of poultry carcasses. it is a concentrated animal protein.",
+    "description": "Poultry meal is a high-quality protein characterized by high digestibility and rich mineral content. It supports muscle development and provides the density of nutrition required for premium pet kibble and high-growth poultry feed.",
+    "application": "High-quality carnivore protein; base for premium pet kibble.",
+    "packing": "Bulk, Big Bag 1MT, Bag 25kg",
+    "specification": [
+      "Dry matter:93.7%",
+      "Crude protein:82.2%",
+      "Ether extract:11.2%",
+      "Ash:5.1%",
+      "Calcium:15.0g",
+      "Phosphorus:6.1g",
+      "TMEn polutry:14.8MJ/kg"
+    ],
+    "pdfSpecification": "45-Poultry Meal.pdf",
+    "industry": [
+      "Pet Food",
+      "Animal Feed",
+      "Aquaculture",
+      "Agriculture."
+    ],
+    "isActive": true,
+    "isFeatured": false
+  },
+  {
+    "slug": "blood-meal",
+    "name": "Blood Meal",
+    "image": "/46-BloodMeal.png",
+    "market": "aquaculture-animal-protein",
+    "marketLabel": "Aquaculture, Animal Protein",
+    "info": "Blood meal is a high-protein powder produced from dried animal blood. It is a concentrated source of lysine and iron.",
+    "description": "Blood meal is characterized by its exceptionally high protein content, often exceeding 80%. It is used in precise quantities to balance protein density and provide a bioavailable nitrogen source in organic agriculture and high-yield feed.",
+    "application": "Highly concentrated protein; iron-rich nitrogen source for organic fertilizer.",
+    "packing": "Bulk, Big Bag 1MT, Bag 25kg",
+    "specification": [
+      "Appearance:dark red/brown powder",
+      "Dry matter:92.0%",
+      "Crude protein:85.0%",
+      "Ether extract:1.0%",
+      "Ash:3.0%",
+      "Lysine:min 7.0%"
+    ],
+    "pdfSpecification": "46-Blood Meal.pdf",
+    "industry": [
+      "Animal Feed",
+      "Aquaculture",
+      "Agriculture."
+    ],
+    "isActive": true,
+    "isFeatured": false
+  },
+  {
+    "slug": "soy-protein-concentrate",
+    "name": "Soy Protein Concentrate",
+    "image": "/47-SoyProteinConcentrate.png",
+    "market": "concentrates",
+    "marketLabel": "Concentrates",
+    "info": "This refined soy product has soluble carbohydrates removed. It contains at least 70% protein.",
+    "description": "Soy protein concentrate is characterized by high digestibility and reduced anti-nutritional factors. It is the ideal protein source for young calves and aquaculture where high nutrient intake without digestive upset is critical.",
+    "application": "Highly digestible protein for sensitive digestive systems (piglets/aqua).",
+    "packing": "Bulk, Big Bag 1MT, Bag 25kg",
+    "specification": [
+      "Protein: 60% min",
+      "Water: 8% max",
+      "Fat:max 0.5%",
+      "Fiber: 5% max",
+      "Ash: 7% max"
+    ],
+    "pdfSpecification": "47-Soy Protein Concentrate.pdf",
+    "industry": [
+      "Food & Beverage",
+      "Pet Food",
+      "Animal Feed",
+      "Aquaculture."
+    ],
+    "isActive": true,
+    "isFeatured": false
+  },
+  {
+    "slug": "pea-protein",
+    "name": "Pea Protein",
+    "image": "/48-PeaProtein.png",
+    "market": "concentrates",
+    "marketLabel": "Concentrates",
+    "info": "Pea protein is extracted from yellow peas. It is a plant-based, hypoallergenic protein source.",
+    "description": "Pea protein is characterized by its excellent amino acid profile and high bioavailability. It is a preferred plant protein for sensitive pet diets as it is free from common allergens like gluten and soy, supporting lean muscle growth.",
+    "application": "Plant-based, allergen-friendly protein for humans and companion pets.",
+    "packing": "Bulk, Big Bag 1MT, Bag 25kg",
+    "specification": [
+      "Crude protein (dry basis):min 80.0%",
+      "Moisture:max 8.0%",
+      "Crude fat:max 4.0%",
+      "Ash:max 6.0%",
+      "pH:6.5–8.5"
+    ],
+    "pdfSpecification": "48-Pea Protein.pdf",
+    "industry": [
+      "Food & Beverage",
+      "Pet Food",
+      "Animal Feed",
+      "Aquaculture."
+    ],
+    "isActive": true,
+    "isFeatured": false
+  },
+  {
+    "slug": "potato-protein",
+    "name": "Potato Protein",
+    "image": "/49-PotatoProtein.png",
+    "market": "concentrates",
+    "marketLabel": "Concentrates",
+    "info": "This is a concentrated protein byproduct of potato starch production. it is exceptionally rich in essential amino acids.",
+    "description": "Potato protein is a premium vegetable protein characterized by a high biological value that rivals animal sources. It supports rapid growth and development in young piglets and aquaculture species due to its superior digestibility.",
+    "application": "High biological value protein; excellent for young animal weaning diets.",
+    "packing": "Bulk, Big Bag 1MT, Bag 25kg",
+    "specification": [
+      "Crude protein (dry basis):min 75.0%",
+      "Moisture:max 10.0%",
+      "Crude fat:max 1.5%",
+      "Ash:max 2.0%",
+      "Glycoalkaloids:max 150 mg/kg"
+    ],
+    "pdfSpecification": "49-Potato Protein.pdf",
+    "industry": [
+      "Food & Beverage",
+      "Pet Food",
+      "Animal Feed",
+      "Aquaculture."
+    ],
+    "isActive": true,
+    "isFeatured": false
+  },
+  {
+    "slug": "rice-protein",
+    "name": "Rice Protein",
+    "image": "/50-RiceProtein.png",
+    "market": "concentrates",
+    "marketLabel": "Concentrates",
+    "info": "Rice protein is derived from whole rice grains. It is a gentle, highly digestible plant protein source.",
+    "description": "Rice protein is characterized by its hypoallergenic properties and smooth integration into specialty wellness diets. It provides a balanced source of protein for individuals and animals with dietary sensitivities while supporting tissue repair.",
+    "application": "Gentle, hypoallergenic protein for specialty diets and supplements.",
+    "packing": "Bulk, Big Bag 1MT, Bag 25kg",
+    "specification": [
+      "Crude protein (dry basis):min 80.0%",
+      "Moisture:max 6.0%",
+      "Crude fat:max 5.0%",
+      "Ash:max 4.0%",
+      "pH:6.0–8.0"
+    ],
+    "pdfSpecification": "50-Rice Protein.pdf",
+    "industry": [
+      "Food & Beverage",
+      "Pet Food",
+      "Animal Feed",
+      "Aquaculture."
+    ],
+    "isActive": true,
+    "isFeatured": false
+  },
+  {
+    "slug": "poultry-by-product-meal",
+    "name": "Poultry By-Product Meal",
+    "image": "/51-Poultry By-Product Meal.png",
+    "market": "animal-protein",
+    "marketLabel": "Animal Protein",
+    "info": "This is produced from rendered clean parts of poultry. It provides a balanced source of animal protein and minerals.",
+    "description": "Poultry by-product meal is characterized by its high energy density and balanced amino acid profile. It is a cost-effective solution for providing the animal protein levels needed in standard carnivore and poultry diets.",
+    "application": "Cost-effective animal protein; utilized in standard poultry and pet feed.",
+    "packing": "Bulk, Big Bag 1MT, Bag 25kg",
+    "specification": [
+      "Crude protein:min 65.0%",
+      "Ether extract:max 12.0%",
+      "Moisture:max 10.0%",
+      "Ash:max 15.0%",
+      "Calcium:max 4.0%",
+      "Phosphorus:min 2.0%"
+    ],
+    "pdfSpecification": "51-Poultry By-Product Meal.pdf",
+    "industry": [
+      "Pet Food",
+      "Animal Feed",
+      "Aquaculture",
+      "Agriculture."
+    ],
+    "isActive": true,
+    "isFeatured": false
+  },
+  {
+    "slug": "hydrolyzed-feather-meal",
+    "name": "Hydrolyzed Feather Meal",
+    "image": "/52-Hydrolyzed Feather Meal.png",
+    "market": "animal-protein",
+    "marketLabel": "Animal Protein",
+    "info": "This is produced by treating poultry feathers with heat and pressure. The process makes the keratin protein digestible.",
+    "description": "Feather meal is a sustainable, high-protein ingredient characterized by its ability to cost-effectively balance rations. It provides essential nitrogen for ruminants and poultry, helping to maximize weight gain in livestock.",
+    "application": "Sustainable high-protein source; supports high-performance ruminant feed.",
+    "packing": "Bulk, Big Bag 1MT, Bag 25kg",
+    "specification": [
+      "Dry matter:92.1%",
+      "Crude protein:85.7%",
+      "Crude fibre:0.9%",
+      "NDF:55.8%",
+      "ADF:6.5%",
+      "Lignin:5.5%",
+      "Ether extract:6.7%",
+      "Ether extract, HCl hydrolysis:9.5%",
+      "Ash:5.5%",
+      "Total sugars:0.3%",
+      "Gross energy:23.5 MJ/kg DM"
+    ],
+    "pdfSpecification": "52-Hydrolyzed Feather Meal.pdf",
+    "industry": [
+      "Animal Feed",
+      "Aquaculture",
+      "Agriculture."
+    ],
+    "isActive": true,
+    "isFeatured": false
+  },
+  {
+    "slug": "insect-meal",
+    "name": "Insect Meal",
+    "image": "/53-InsectMeal.png",
+    "market": "animal-protein",
+    "marketLabel": "Animal Protein",
+    "info": "Insect meal is a sustainable protein powder made from farm-raised insects. it is a natural, novel protein source.",
+    "description": "Insect meal is characterized by high biological value and a hypoallergenic nature. It mimics the natural diet of many species and supports immune health and digestive stability in premium pet food and aquaculture diets.",
+    "application": "Sustainable, hypoallergenic protein; mimics natural wild animal diets.",
+    "packing": "Bulk, Big Bag 1MT, Bag 25kg",
+    "specification": [
+      "Appearance:brown powder",
+      "Dry matter:95.0%",
+      "Crude protein:55.0%",
+      "Ether extract:15.0%",
+      "Crude fibre:7.0%",
+      "Ash:5.5%"
+    ],
+    "pdfSpecification": "53-Insect Meal.pdf",
+    "industry": [
+      "Pet Food",
+      "Animal Feed",
+      "Aquaculture."
+    ],
+    "isActive": true,
+    "isFeatured": false
+  },
+  {
+    "slug": "meat-and-bone-meal",
+    "name": "Meat and Bone Meal",
+    "image": "/54-MeatandBoneMeal.png",
+    "market": "animal-protein",
+    "marketLabel": "Animal Protein",
+    "info": "This rendered product is made from mammalian tissues. It is a rich source of animal protein and minerals.",
+    "description": "Meat and bone meal is characterized by high levels of bioavailable calcium and phosphorus. It provides a concentrated source of animal protein to support rapid skeletal and muscle growth in non-ruminant livestock.",
+    "application": "High-calcium mineral and protein source for non-ruminant livestock.",
+    "packing": "Bulk, Big Bag 1MT, Bag 25kg",
+    "specification": [
+      "Crude protein:min 50.0%",
+      "Ether extract:max 12.0%",
+      "Moisture:max 10.0%",
+      "Ash:max 30.0%",
+      "Calcium:min 8.0%",
+      "Phosphorus:min 4.0%"
+    ],
+    "pdfSpecification": "54-Meat and Bone Meal.pdf",
+    "industry": [
+      "Animal Feed",
+      "Aquaculture",
+      "Agriculture."
+    ],
+    "isActive": true,
+    "isFeatured": false
+  },
+  {
+    "slug": "krill-meal",
+    "name": "Krill Meal",
+    "image": "/55-KrillMeal.png",
+    "market": "animal-protein",
+    "marketLabel": "Animal Protein",
+    "info": "Krill meal is a specialized marine protein made from Antarctic krill. It is rich in phospholipids and astaxanthin.",
+    "description": "Krill meal is characterized by its role as a powerful feed attractant that stimulates intake. It supports health and coloration in aquaculture and is a premium ingredient for enhancing the nutrient density of specialty pet foods.",
+    "application": "Premium attractant; high in phospholipids and natural astaxanthin.",
+    "packing": "Bulk, Big Bag 1MT, Bag 25kg",
+    "specification": [
+      "Crude protein:min 58.0%",
+      "Ether extract:min 20.0%",
+      "Moisture:max 8.0%",
+      "Ash:max 13.0%",
+      "Astaxanthin:min 150 mg/kg"
+    ],
+    "pdfSpecification": "55-Krill Meal.pdf",
+    "industry": [
+      "Pet Food",
+      "Animal Feed",
+      "Aquaculture."
+    ],
+    "isActive": true,
+    "isFeatured": false
+  },
+  {
+    "slug": "choline-chloride",
+    "name": "Choline Chloride",
+    "image": "/56-CholineChloride.png",
+    "market": "vitamin",
+    "marketLabel": "Vitamin",
+    "info": "This is an essential B-complex vitamin produced synthetically. It is a vital nutrient for liver and metabolic health.",
+    "description": "Choline chloride is characterized by its role in fat metabolism and preventing fatty liver syndrome. It supports nervous system function and is a critical additive for poultry, swine, and aquaculture to ensure optimal productivity.",
+    "application": "Essential B-vitamin for fat metabolism and nervous system health.",
+    "packing": "Bulk, Big Bag 1MT, Bag 25kg",
+    "specification": [
+      "Appearance:brownish granules",
+      "Assay:min 60.0%",
+      "Moisture:max 2.0%",
+      "Particle size:90% through 20 mesh"
+    ],
+    "pdfSpecification": "56-Choline Chloride.pdf",
+    "industry": [
+      "Food & Beverage",
+      "Pet Food",
+      "Animal Feed",
+      "Pharmaceuticals",
+      "Cosmetics."
+    ],
+    "isActive": true,
+    "isFeatured": false
+  },
+  {
+    "slug": "vitamin-c",
+    "name": "Vitamin C",
+    "image": "/57-VitaminC.png",
+    "market": "vitamin",
+    "marketLabel": "Vitamin",
+    "info": "Ascorbic acid is a powerful water-soluble antioxidant. It is essential for many biological processes.",
+    "description": "Vitamin C is characterized by its support for the immune system and collagen production. It helps animals manage environmental stress and promotes rapid tissue repair and healing in high-performance environments.",
+    "application": "Powerful antioxidant; immune system support; collagen synthesis.",
+    "packing": "Bulk, Big Bag 1MT, Bag 25kg",
+    "specification": [
+      "Appearance:white crystalline powder",
+      "Assay:min 99.0%",
+      "Loss on drying:max 0.1%",
+      "Residue on ignition:max 0.1%",
+      "pH:2.1–2.6"
+    ],
+    "pdfSpecification": "57-Vitamin C.pdf",
+    "industry": [
+      "Food & Beverage",
+      "Pet Food",
+      "Animal Feed",
+      "Pharmaceuticals",
+      "Cosmetics."
+    ],
+    "isActive": true,
+    "isFeatured": false
+  },
+  {
+    "slug": "inositol",
+    "name": "Inositol",
+    "image": "/58-Inositol.png",
+    "market": "vitamin",
+    "marketLabel": "Vitamin",
+    "info": "Inositol is a carbocyclic sugar involved in cellular signaling. It is a vital nutrient for cell membrane health.",
+    "description": "Inositol is characterized by its role in lipid metabolism and brain function. It supports the healthy growth of cell membranes and is essential for the efficient processing of fats by the liver to maintain metabolic wellness.",
+    "application": "Cellular signaling agent; supports fat metabolism and brain health.",
+    "packing": "Bulk, Big Bag 1MT, Bag 25kg",
+    "specification": [
+      "Appearance:white crystalline powder",
+      "Assay:min 98.0%",
+      "Melting point:224–227°C",
+      "Loss on drying:max 0.5%",
+      "Residue on ignition:max 0.1%"
+    ],
+    "pdfSpecification": "58-Inositol.pdf",
+    "industry": [
+      "Food & Beverage",
+      "Pet Food",
+      "Animal Feed",
+      "Pharmaceuticals",
+      "Cosmetics."
+    ],
+    "isActive": true,
+    "isFeatured": false
+  },
+  {
+    "slug": "vitamin-e",
+    "name": "Vitamin E",
+    "image": "/59-VitaminE.png",
+    "market": "vitamin",
+    "marketLabel": "Vitamin",
+    "info": "Vitamin E is a fat-soluble vitamin with strong antioxidant properties. It is essential for protecting cell membranes.",
+    "description": "Vitamin E is characterized by its ability to protect tissues from oxidative damage. It supports immune health, reproductive performance, and skin condition while extending the shelf life of finished feed products.",
+    "application": "Protects cells from oxidative stress; skin and coat health maintenance.",
+    "packing": "Bulk, Big Bag 1MT, Bag 25kg",
+    "specification": [
+      "Assay:min 50.0% (500 IU/g)",
+      "Appearance:white to off-white powder",
+      "Loss on drying:max 5.0%",
+      "Bulk density:0.45–0.60 g/ml"
+    ],
+    "pdfSpecification": "59-Vitamin E.pdf",
+    "industry": [
+      "Food & Beverage",
+      "Pet Food",
+      "Animal Feed",
+      "Pharmaceuticals",
+      "Cosmetics."
+    ],
+    "isActive": true,
+    "isFeatured": false
+  },
+  {
+    "slug": "niacin-b3",
+    "name": "Niacin (B3)",
+    "image": "/60-Niacin(B3).png",
+    "market": "vitamin",
+    "marketLabel": "Vitamin",
+    "info": "Niacin is a water-soluble B-vitamin essential for energy production. It is a critical nutrient for all animal species.",
+    "description": "Niacin is characterized by its role in the metabolism of proteins, fats, and carbohydrates. It promotes healthy skin, stable digestive function, and efficient energy conversion in high-performance livestock.",
+    "application": "Vital for energy metabolism; skin integrity; prevents pellagra.",
+    "packing": "Bulk, Big Bag 1MT, Bag 25kg",
+    "specification": [
+      "Appearance:white crystalline powder",
+      "Assay:min 99.0%",
+      "Loss on drying:max 1.0%",
+      "Residue on ignition:max 0.1%"
+    ],
+    "pdfSpecification": "60-Niacin (B3).pdf",
+    "industry": [
+      "Food & Beverage",
+      "Pet Food",
+      "Animal Feed",
+      "Pharmaceuticals",
+      "Cosmetics."
+    ],
+    "isActive": true,
+    "isFeatured": false
+  },
+  {
+    "slug": "pantothenic-acid-b5",
+    "name": "Pantothenic Acid (B5)",
+    "image": "/61-PantothenicAcid(B5).png",
+    "market": "vitamin",
+    "marketLabel": "Vitamin",
+    "info": "Pantothenic acid is a water-soluble vitamin required for coenzyme synthesis. It is vital for energy metabolism.",
+    "description": "Vitamin B5 is characterized by its essential role in energy conversion and hormone synthesis. It supports adrenal gland health and immune response, serving as an indispensable additive for maintaining metabolic balance.",
+    "application": "Coenzyme A component; essential for fatty acid and energy production.",
+    "packing": "Bulk, Big Bag 1MT, Bag 25kg",
+    "specification": [
+      "Appearance:white powder",
+      "Assay:min 98.0%",
+      "Calcium content:8.2–8.6%",
+      "Specific rotation:+25.0° to +28.5°",
+      "Loss on drying:max 5.0%"
+    ],
+    "pdfSpecification": "61-Pantothenic Acid (B5).pdf",
+    "industry": [
+      "Food & Beverage",
+      "Pet Food",
+      "Animal Feed",
+      "Pharmaceuticals",
+      "Cosmetics."
+    ],
+    "isActive": true,
+    "isFeatured": false
+  },
+  {
+    "slug": "vitamin-a-d3-k3",
+    "name": "Vitamin A, D3, K3",
+    "image": "/62-VitaminAD3K3.png",
+    "market": "vitamin",
+    "marketLabel": "Vitamin",
+    "info": "This is a combined supplement of fat-soluble vitamins. It supports structural and systemic health.",
+    "description": "This vitamin complex is characterized by its combined support for vision, bone formation, and blood coagulation. Vitamin A supports immunity, D3 ensures calcium absorption, and K3 is vital for proper vascular health.",
+    "application": "Combined support for vision, bone density, and blood coagulation.",
+    "packing": "Bulk, Big Bag 1MT, Bag 25kg",
+    "specification": [
+      "A:1,000,000 IU/g",
+      "D3:200,000 IU/g",
+      "K3 (MSB):min 50.0%",
+      "Stability:coated/stabilized for feed use"
+    ],
+    "pdfSpecification": "62-Vitamin A, D3, K3.pdf",
+    "industry": [
+      "Food & Beverage",
+      "Pet Food",
+      "Animal Feed",
+      "Pharmaceuticals",
+      "Cosmetics."
+    ],
+    "isActive": true,
+    "isFeatured": false
+  },
+  {
+    "slug": "vitamin-b1-b2-b6",
+    "name": "Vitamin B1, B2, B6",
+    "image": "/63-VitaminB1B2B6.png",
+    "market": "vitamin",
+    "marketLabel": "Vitamin",
+    "info": "This is a blend of water-soluble B-vitamins. They are critical for neurological and metabolic stability.",
+    "description": "This B-vitamin group is characterized by its role in converting food into metabolic energy. They support muscle coordination, red blood cell health, and efficient protein metabolism during periods of rapid growth.",
+    "application": "Critical for nervous system function and efficient energy conversion.",
+    "packing": "Bulk, Big Bag 1MT, Bag 25kg",
+    "specification": [
+      "B1 (Mononitrate):min 98.0%",
+      "B2 (Riboflavin):min 80.0%",
+      "B6 (Pyridoxine HCl):min 98.0%"
+    ],
+    "pdfSpecification": "63-Vitamin B1, B2, B6.pdf",
+    "industry": [
+      "Food & Beverage",
+      "Pet Food",
+      "Animal Feed",
+      "Pharmaceuticals",
+      "Cosmetics."
+    ],
+    "isActive": true,
+    "isFeatured": false
+  },
+  {
+    "slug": "folic-acid-b9",
+    "name": "Folic Acid (B9)",
+    "image": "/64-FolicAcid(B9).png",
+    "market": "vitamin",
+    "marketLabel": "Vitamin",
+    "info": "Folic acid is a B-vitamin essential for cell division and DNA synthesis. It is critical for rapid growth.",
+    "description": "Folic acid is characterized by its role in red blood cell formation and tissue growth. It is essential for reproductive health and supports fetal development in gestating animals to ensure healthy offspring.",
+    "application": "Supports cell division; critical for fetal development and heart health.",
+    "packing": "Bulk, Big Bag 1MT, Bag 25kg",
+    "specification": [
+      "Appearance:yellow or orange crystalline powder",
+      "Assay:min 95.0%",
+      "Water content:max 8.5%",
+      "Residue on ignition:max 0.3%"
+    ],
+    "pdfSpecification": "64-Folic Acid (B9).pdf",
+    "industry": [
+      "Food & Beverage",
+      "Pet Food",
+      "Animal Feed",
+      "Pharmaceuticals",
+      "Cosmetics."
+    ],
+    "isActive": true,
+    "isFeatured": false
+  },
+  {
+    "slug": "biotin-h",
+    "name": "Biotin (H)",
+    "image": "/65-Biotin(H).png",
+    "market": "vitamin",
+    "marketLabel": "Vitamin",
+    "info": "Biotin is a B-vitamin involved in keratin synthesis. It is essential for the health of skin, hair, and hooves.",
+    "description": "Biotin is characterized by its ability to improve the structural integrity of hooves and feathers. It supports fat and protein metabolism, promoting a healthy skin condition and long-term physical wellness in livestock.",
+    "application": "Enhances hoof integrity in horses; supports healthy skin, hair, and nails.",
+    "packing": "Bulk, Big Bag 1MT, Bag 25kg",
+    "specification": [
+      "Assay:min 2.0% (feed grade) or 98.0% (pure)",
+      "Appearance:white to off-white powder",
+      "Loss on drying:max 1.0%"
+    ],
+    "pdfSpecification": "65-Biotin (H).pdf",
+    "industry": [
+      "Food & Beverage",
+      "Pet Food",
+      "Animal Feed",
+      "Pharmaceuticals",
+      "Cosmetics."
+    ],
+    "isActive": true,
+    "isFeatured": false
+  },
+  {
+    "slug": "vitamin-b12",
+    "name": "Vitamin B12",
+    "image": "/66-VitaminB12.png",
+    "market": "vitamin",
+    "marketLabel": "Vitamin",
+    "info": "Vitamin B12 is required for neurological function and blood health. It is produced through fermentation.",
+    "description": "Vitamin B12 is characterized by its role in red blood cell production and DNA synthesis. It supports healthy nervous system function and peak metabolic efficiency across all animal species.",
+    "application": "Vital for red blood cell formation and neurological health.",
+    "packing": "Bulk, Big Bag 1MT, Bag 25kg",
+    "specification": [
+      "Assay:min 1.0% (feed grade carrier) or 98.0% (pure)",
+      "Appearance:dark red powder",
+      "Loss on drying:max 12.0%"
+    ],
+    "pdfSpecification": "66-Vitamin B12.pdf",
+    "industry": [
+      "Food & Beverage",
+      "Pet Food",
+      "Animal Feed",
+      "Pharmaceuticals",
+      "Cosmetics."
+    ],
+    "isActive": true,
+    "isFeatured": false
+  },
+  {
+    "slug": "fiberz",
+    "name": "FiberZ",
+    "image": "/67-FiberZ.png",
+    "market": "fibers",
+    "marketLabel": "Fibers",
+    "info": "FiberZ is a functional dietary fiber source. It is composed primarily of insoluble plant fibers.",
+    "description": "FiberZ is characterized by its ability to support intestinal motility and regular transit. It promotes satiety in pet weight management and prevents constipation in gestating sows by providing essential non-caloric Bulk.",
+    "application": "Intestinal motility; weight management; prevents constipation in sows.",
+    "packing": "Bulk, Big Bag 1MT, Bag 25kg",
+    "specification": [
+      "Appearance:Powdery",
+      "Color:Light yellow, cream",
+      "Moisture content:max 10%",
+      "pH:3-4",
+      "Solubility:92-100%",
+      "Total fiber content:min. 50-60%",
+      "Whiteness:84-89",
+      "Total plate count (30°C):max 10000 CFU/g",
+      "Lead (Pb):max 1 mg/kg",
+      "Arsenic (As):max 1 mg/kg."
+    ],
+    "pdfSpecification": "67-FiberZ.pdf",
+    "industry": [
+      "Food & Beverage",
+      "Pet Food",
+      "Animal Feed."
+    ],
+    "isActive": true,
+    "isFeatured": false
+  },
+  {
+    "slug": "fiberx",
+    "name": "FiberX",
+    "image": "/68-FiberX.png",
+    "market": "fibers",
+    "marketLabel": "Fibers",
+    "info": "FiberX is a functional insoluble fiber product. it is designed for maximum digestive support.",
+    "description": "FiberX is characterized by high purity and the ability to promote smooth intestinal transit. It supports weight management and improves gut stability in sensitive species, managing diet density and overall well-being.",
+    "application": "Intestinal motility; weight management; prevents constipation in sows.",
+    "packing": "Bulk, Big Bag 1MT, Bag 25kg",
+    "specification": [
+      "Appearance:Powdery",
+      "Color:Light yellow, cream",
+      "Moisture content:max 10%",
+      "pH:3-4",
+      "Solubility:92-100%",
+      "Total fiber content:min. 50-60%",
+      "Whiteness:84-89",
+      "Total plate count (30°C):max 10000 CFU/g",
+      "Lead (Pb):max 1 mg/kg",
+      "Arsenic (As):max 1 mg/kg."
+    ],
+    "pdfSpecification": "68-FiberX.pdf",
+    "industry": [
+      "Food & Beverage",
+      "Pet Food",
+      "Animal Feed."
+    ],
+    "isActive": true,
+    "isFeatured": false
+  }
+]
