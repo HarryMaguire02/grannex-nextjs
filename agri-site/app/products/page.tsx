@@ -90,34 +90,41 @@ function ProductsContent() {
     'Animal Feed',
     'Aquaculture',
     'Bakery',
+    'Confectionery',
     'Cosmetics',
+    'Dietary Supplements',
     'Food & Beverage',
     'Milling',
-    'Pasta',
     'Pet Food',
+    'Pharmaceuticals',
+    'Sports Nutrition',
     'Technical & Industrial'
   ];
 
   // Static market options with value-label pairs
   const markets = [
     { value: 'All', label: 'Market' },
-    { value: 'animal-feed-ingredients', label: 'Animal feed ingredients' },
-    { value: 'aqua-feeds-ingredients', label: 'Aqua feeds ingredients' },
-    { value: 'food-ingredients', label: 'Food ingredients' },
     { value: 'oils-and-fats', label: 'Oils and fats' },
-    { value: 'sweetners', label: 'Sweeteners' },
-    { value: 'other', label: 'Other' }
+    { value: 'nutritional-additives', label: 'Nutritional Additives' },
+    { value: 'sweeteners', label: 'Sweeteners' },
+    { value: 'starches', label: 'Starches' },
+    { value: 'millingcrushing', label: 'Milling/Crushing' },
+    { value: 'aquaculture', label: 'Aquaculture' },
+    { value: 'concentrates', label: 'Concentrates' },
+    { value: 'animal-protein', label: 'Animal Protein' },
+    { value: 'vitamin', label: 'Vitamin' },
+    { value: 'fibers', label: 'Fibers' }
   ];
 
   // Filter products by industry, market, and search query
   const filteredProducts = products.filter(product => {
     if (!product.isActive) return false;
 
-    // Filter by industry
-    const matchesIndustry = selectedIndustry === 'All' || product.industry.includes(selectedIndustry);
+    // Filter by industry (handle trailing periods in data, e.g. "Pharmaceuticals.")
+    const matchesIndustry = selectedIndustry === 'All' || product.industry.some(ind => ind.replace(/\.$/, '') === selectedIndustry);
 
-    // Filter by market
-    const matchesMarket = selectedMarket === 'All' || product.market === selectedMarket;
+    // Filter by market (handle compound markets like "millingcrushing-aquaculture")
+    const matchesMarket = selectedMarket === 'All' || product.market.includes(selectedMarket);
 
     // Filter by search query (search in name)
     const matchesSearch = searchQuery === '' ||

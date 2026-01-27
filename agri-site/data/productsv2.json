@@ -31,7 +31,7 @@
       "Technical & Industrial."
     ],
     "isActive": true,
-    "isFeatured": false
+    "isFeatured": true
   },
   {
     "slug": "corn-oil",
@@ -84,7 +84,7 @@
       "Sand / Silica:1.00%",
       "Erucic Acid:2.00%"
     ],
-    "pdfSpecification": "3-Canola/Rapeseed Oil.pdf",
+    "pdfSpecification": "3-CanolaRapeseed Oil.pdf",
     "industry": [
       "Food & Beverage",
       "Animal Feed",
@@ -1104,7 +1104,7 @@
       "Technical & Industrial."
     ],
     "isActive": true,
-    "isFeatured": false
+    "isFeatured": true
   },
   {
     "slug": "sugar-beet-pellets",
@@ -1217,7 +1217,7 @@
       "Aquaculture."
     ],
     "isActive": true,
-    "isFeatured": false
+    "isFeatured": true
   },
   {
     "slug": "fish-oilsalmon-oil",
@@ -1879,7 +1879,7 @@
       "Animal Feed."
     ],
     "isActive": true,
-    "isFeatured": false
+    "isFeatured": true
   },
   {
     "slug": "fiberx",

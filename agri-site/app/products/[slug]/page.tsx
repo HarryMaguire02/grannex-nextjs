@@ -16,6 +16,7 @@ type Product = {
   industry: string[];
   isActive: boolean;
   image: string;
+  pdfSpecification: string;
 };
 
 type PageProps = {

@@ -17,6 +17,7 @@ type Product = {
   industry: string[];
   isActive: boolean;
   image: string;
+  pdfSpecification: string;
 };
 
 type ProductPageClientProps = {
@@ -267,9 +268,8 @@ export default function ProductPageClient({ product }: ProductPageClientProps) {
                 Full specification ranges are available in the technical datasheet.
               </p>
               <div>
-                {/* TODO: Replace with product-specific PDFs when available: /pdf/${product.slug}.pdf */}
                 <a
-                  href="/pdf/Refined-sunflower-oil.pdf"
+                  href={`/pdf/${product.pdfSpecification}`}
                   download
                   className="inline-block px-8 py-3 bg-primary text-secondary rounded-lg font-medium hover:bg-green-medium transition-colors"
                 >
