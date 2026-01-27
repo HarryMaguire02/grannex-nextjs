@@ -153,7 +153,7 @@
   {
     "slug": "palm-olein",
     "name": "Palm Olein",
-    "image": "/6-Palm Olein.png",
+    "image": "/6-PalmOlein.png",
     "market": "oils-and-fats",
     "marketLabel": "Oils and fats",
     "info": "Palm olein is the liquid fraction obtained by the fractionation of palm oil after crystallization at controlled temperatures.",
@@ -789,7 +789,7 @@
   {
     "slug": "wheat-starch",
     "name": "Wheat Starch",
-    "image": "/29-Wheat Starch.png",
+    "image": "/29-WheatStarch.png",
     "market": "starches",
     "marketLabel": "Starches",
     "info": "Wheat starch is a carbohydrate extracted from wheat flour through a washing process that separates it from the gluten.",
@@ -818,7 +818,7 @@
   {
     "slug": "corn-starch",
     "name": "Corn Starch",
-    "image": "/30-Corn Starch.png",
+    "image": "/30-CornStarch.png",
     "market": "starches",
     "marketLabel": "Starches",
     "info": "Corn starch is extracted from the endosperm of the maize kernel. It is a highly pure carbohydrate powder.",
@@ -847,7 +847,7 @@
   {
     "slug": "potato-starch",
     "name": "Potato Starch",
-    "image": "/31-Potato Starch.png",
+    "image": "/31-PotatoStarch.png",
     "market": "starches",
     "marketLabel": "Starches",
     "info": "Potato starch is extracted from potato tubers. It features large granules that provide unique rheological properties.",
@@ -876,7 +876,7 @@
   {
     "slug": "tapioca-starch",
     "name": "Tapioca Starch",
-    "image": "/32-Tapioca Starch.png",
+    "image": "/32-TapiocaStarch.png",
     "market": "starches",
     "marketLabel": "Starches",
     "info": "Tapioca starch is extracted from the roots of the cassava plant. It is a naturally gluten-free carbohydrate.",
@@ -1076,7 +1076,7 @@
   {
     "slug": "wheat-gluten",
     "name": "Wheat Gluten",
-    "image": "/39-Wheat Gluten.png",
+    "image": "/39-WheatGluten.png",
     "market": "millingcrushing-aquaculture-concentrates",
     "marketLabel": "Milling/Crushing, Aquaculture, Concentrates",
     "info": "Wheat gluten is a plant protein derived from wheat flour. It is composed of gliadin and glutenin.",
@@ -1196,7 +1196,7 @@
   {
     "slug": "fish-meal",
     "name": "Fish Meal",
-    "image": "/43-Fish Meal.png",
+    "image": "/43-FishMeal.png",
     "market": "aquaculture-animal-protein",
     "marketLabel": "Aquaculture, Animal Protein",
     "info": "Fish meal is a nutrient-dense powder made from cooked and dried fish. It is a complete protein source.",
