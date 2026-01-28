@@ -231,13 +231,13 @@ export default function IngredientsAndProductsSection() {
 
             {/* Right Side - Image */}
             <div className="flex justify-center lg:justify-end">
-              <div className="relative w-full max-w-sm aspect-[5/4]">
+              <div className="relative w-full max-w-md h-60 md:h-64 flex items-center justify-center">
                 <Image
                   src={content.image}
                   alt={content.title}
-                  fill
-                  sizes="(max-width: 1024px) 100vw, 448px"
-                  className="object-cover rounded-lg"
+                  width={500}
+                  height={400}
+                  className="max-w-full max-h-full object-contain"
                 />
               </div>
             </div>
