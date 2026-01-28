@@ -69,9 +69,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
 
   // Dynamic product pages
-  const productPages: MetadataRoute.Sitemap = products
-    .filter((product) => product.isActive)
-    .map((product) => ({
+  const productPages: MetadataRoute.Sitemap = products.map((product) => ({
       url: `${baseUrl}/products/${product.slug}`,
       lastModified: new Date(),
       changeFrequency: 'monthly' as const,

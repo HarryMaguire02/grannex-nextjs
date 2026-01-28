@@ -20,15 +20,15 @@ export default function HeroSection() {
       <div className="relative max-w-content mx-auto px-6 sm:px-8 lg:px-12 h-full flex flex-col justify-between pt-16 md:pt-20 lg:pt-24 pb-8 md:pb-12">
         {/* Hero Text - Left Aligned, Max 50% Width */}
         <div className="max-w-xl lg:max-w-2xl text-center md:text-left mx-auto md:mx-0">
-          <h1 className="mb-4 sm:mb-6">
+          <p className="mb-4 sm:mb-6 text-lg sm:text-xl md:text-2xl text-white font-bold leading-relaxed">
+            Trust in the power of reliable  ingredients
+          </p>
+          <h1>
             <span className="text-primary font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl leading-tight">Grannex LTD</span>{' '}
             <span className="text-white font-normal text-lg sm:text-xl md:text-2xl lg:text-3xl leading-relaxed">
-              is a leading global company in the trading and brokerage of agricultural commodities.
+              a major player in the mediation and trade of agricultural raw materials, bridging global markets with specialized commodity trading solutions.
             </span>
           </h1>
-          <p className="text-lg sm:text-xl md:text-2xl text-white font-bold leading-relaxed">
-            Trust in the power of reliable feed materials.
-          </p>
         </div>
 
         {/* Category Cards */}
@@ -38,7 +38,7 @@ export default function HeroSection() {
               { title: 'Oils and fats', icon: '/oils-and-fats.svg', filter: 'market', value: 'oils-and-fats' },
               { title: 'Food ingredients', icon: '/food-ingredients.svg', filter: 'industry', value: 'food-and-beverage' },
               { title: 'Animal feeds ingredients', icon: '/animal-feeds-ingredients.svg', filter: 'industry', value: 'animal-feed' },
-              { title: 'Aqua feeds ingredients', icon: '/aqua-feeds-ingredients.svg', filter: 'industry', value: 'aquaculture' },
+              { title: 'Aqua feeds ingredients', icon: '/aqua-feeds-ingredients.svg', filter: 'market', value: 'aquaculture' },
             ].map((category, index) => (
               <Link
                 key={category.title}

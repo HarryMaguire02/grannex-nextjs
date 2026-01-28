@@ -14,7 +14,6 @@ type Product = {
   packing: string;
   specification: string[];
   industry: string[];
-  isActive: boolean;
   image: string;
   pdfSpecification: string;
 };
@@ -28,11 +27,9 @@ type PageProps = {
 // Generate static params for all products (enables static generation)
 export async function generateStaticParams() {
   const products = productsData as Product[];
-  return products
-    .filter((product) => product.isActive)
-    .map((product) => ({
-      slug: product.slug,
-    }));
+  return products.map((product) => ({
+    slug: product.slug,
+  }));
 }
 
 // Generate dynamic metadata for each product

@@ -17,7 +17,6 @@ type Product = {
   packing: string;
   specification: string[];
   industry: string[];
-  isActive: boolean;
   image: string;
 };
 
@@ -118,8 +117,6 @@ function ProductsContent() {
 
   // Filter products by industry, market, and search query
   const filteredProducts = products.filter(product => {
-    if (!product.isActive) return false;
-
     // Filter by industry (handle trailing periods in data, e.g. "Pharmaceuticals.")
     const selectedIndustryLabel = industries.find(i => i.value === selectedIndustry)?.label;
     const matchesIndustry = selectedIndustry === 'All' || product.industry.some(ind => ind.replace(/\.$/, '') === selectedIndustryLabel);

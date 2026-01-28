@@ -15,7 +15,6 @@ type Product = {
   packing: string;
   specification: string[];
   industry: string[];
-  isActive: boolean;
   image: string;
   pdfSpecification: string;
 };

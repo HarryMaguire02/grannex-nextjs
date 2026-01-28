@@ -8,7 +8,7 @@
     "info": "Sunflower oil is a non-volatile oil compressed from the seeds of the sunflower plant. It is primarily composed of linoleic and oleic acids.",
     "description": "Sunflower oil is a premium energy source characterized by its high Vitamin E content and unsaturated fats. It provides a stable source of digestible fat that is easily incorporated into liquid feed systems while promoting skin health and a shiny coat in animals.",
     "application": "Energy for poultry/swine; horse skin/coat health supplement.",
-    "packing": "Bulk, IBC Containers, Bottled (1l, 3l, 5l, 20l and other)",
+    "packing": "PET-bottles: 500ml, 900ml, 1L, 2L, 3L, 5L; HDPE Jerry Cans: 20L, 25L; Can-in-Box: 15L, 20L; Bulk: Tank Containers (22-23 MT), Flexi Tank (22-23 MT)",
     "specification": [
       "FFA (as oleic acid):0.1%",
       "Refractive index (25°C):1.4719 – 1.4740",
@@ -29,9 +29,7 @@
       "Animal Feed",
       "Cosmetics",
       "Technical & Industrial."
-    ],
-    "isActive": true,
-    "isFeatured": true
+    ]
   },
   {
     "slug": "corn-oil",
@@ -42,7 +40,7 @@
     "info": "Corn oil is a refined vegetable oil extracted from the germ of the maize kernel. It is a rich source of linoleic acid and natural tocopherols.",
     "description": "Corn oil is a high-quality energy source characterized by exceptional palatability and antioxidant levels. It is used to improve the skin and coat condition of pets and horses while providing dense calories through a high metabolic energy profile.",
     "application": "Premium energy source; improves skin health and palatability in pets.",
-    "packing": "Bulk, IBC Containers, Bottled (1l, 3l, 5l, 20l and other)",
+    "packing": "PET-bottles: 500ml, 900ml, 1L, 2L, 3L, 5L; HDPE Jerry Cans: 20L, 25L; Can-in-Box: 15L, 20L; Bulk: Tank Containers (22-23 MT), Flexi Tank (22-23 MT)",
     "specification": [
       "FFA (as oleic acid):2%",
       "Linolenic acid (c 18:3):2%",
@@ -63,9 +61,7 @@
       "Pet Food",
       "Animal Feed",
       "Technical & Industrial."
-    ],
-    "isActive": true,
-    "isFeatured": false
+    ]
   },
   {
     "slug": "canolarapeseed-oil",
@@ -76,7 +72,7 @@
     "info": "This vegetable oil is extracted from the seeds of the rape plant. It features a balanced fatty acid profile and low levels of erucic acid.",
     "description": "Rape oil is a versatile energy supplement providing high metabolizable energy for all livestock. It acts as an excellent carrier for fat-soluble nutrients and improves the physical texture of both mash and pelleted feeds.",
     "application": "General energy source; dust suppressant for mash and pelleted feeds.",
-    "packing": "Bulk, IBC Containers, Bottled (1l, 3l, 5l, 20l and other)",
+    "packing": "PET-bottles: 500ml, 900ml, 1L, 2L, 3L, 5L; HDPE Jerry Cans: 20L, 25L; Can-in-Box: 15L, 20L; Bulk: Tank Containers (22-23 MT), Flexi Tank (22-23 MT)",
     "specification": [
       "FFA (as oleic acid):1.75%",
       "Moisture, Volatile Matter and Impurities:0.40%",
@@ -89,9 +85,7 @@
       "Food & Beverage",
       "Animal Feed",
       "Technical & Industrial."
-    ],
-    "isActive": true,
-    "isFeatured": false
+    ]
   },
   {
     "slug": "soyabean-seed-oil",
@@ -102,7 +96,7 @@
     "info": "Soyabean oil is a refined vegetable oil extracted from whole soybeans. It is rich in polyunsaturated fats and essential linoleic acid.",
     "description": "Soyabean oil is a concentrated liquid energy source that provides essential fatty acids for animal health. It is frequently used in feed mills to improve pellet quality and serves as a highly effective dust suppressant during processing.",
     "application": "High-energy liquid feed; dust control in mills; essential fatty acid source.",
-    "packing": "Bulk, IBC Containers, Bottled (1l, 3l, 5l, 20l and other)",
+    "packing": "PET-bottles: 500ml, 900ml, 1L, 2L, 3L, 5L; HDPE Jerry Cans: 20L, 25L; Can-in-Box: 15L, 20L; Bulk: Tank Containers (22-23 MT), Flexi Tank (22-23 MT)",
     "specification": [
       "FFA (as oleic with a molecular weight of 282):1.00%",
       "Moisture and Volatile Matter:0.20%",
@@ -120,9 +114,7 @@
       "Animal Feed",
       "Cosmetics",
       "Technical & Industrial."
-    ],
-    "isActive": true,
-    "isFeatured": false
+    ]
   },
   {
     "slug": "palm-oil",
@@ -133,7 +125,7 @@
     "info": "Palm oil is a semi-solid vegetable fat extracted from the fruit of the oil palm. It is a natural source of both saturated and unsaturated fats.",
     "description": "Palm oil is a heat-stable energy source that provides high levels of bypass fat for dairy cattle. It helps increase milk fat production and serves as an economical energy booster for swine diets due to its dense caloric profile.",
     "application": "Dairy bypass fat (milk fat boost); economical swine energy source.",
-    "packing": "Bulk, IBC Containers",
+    "packing": "PET-bottles: 500ml, 900ml, 1L, 2L, 3L, 5L; HDPE Jerry Cans: 20L, 25L; Can-in-Box: 15L, 20L; Bulk: Tank Containers (22-23 MT), Flexi Tank (22-23 MT)",
     "specification": [
       "FFA (as palmitic):5%",
       "M&I:0.5%",
@@ -146,9 +138,7 @@
       "Animal Feed",
       "Cosmetics",
       "Technical & Industrial."
-    ],
-    "isActive": true,
-    "isFeatured": false
+    ]
   },
   {
     "slug": "palm-olein",
@@ -174,9 +164,7 @@
       "Animal Feed",
       "Cosmetics",
       "Technical & Industrial."
-    ],
-    "isActive": true,
-    "isFeatured": false
+    ]
   },
   {
     "slug": "olive-oil",
@@ -187,7 +175,7 @@
     "info": "Olive oil is a liquid fat obtained from whole olives, the fruit of the Olea europaea tree. It is rich in oleic acid and antioxidants.",
     "description": "Olive oil is a premium culinary and nutritional fat characterized by its high digestibility and heart-healthy lipid profile. It provides natural antioxidants that support cellular health and is used as a functional ingredient in premium pet and human foods.",
     "application": "Premium culinary fat; skin hydration in cosmetics; heart-healthy supplement.",
-    "packing": "Bulk, IBC Containers, Bottled (1l, 3l, 5l, 20l and other)",
+    "packing": "PET-bottles: 500ml, 900ml, 1L, 2L, 3L, 5L; HDPE Jerry Cans: 20L, 25L; Can-in-Box: 15L, 20L; Bulk: Tank Containers (22-23 MT), Flexi Tank (22-23 MT)",
     "specification": [
       "FFA (as oleic):0.8% max",
       "Peroxide value:20 meq O2/kg",
@@ -201,9 +189,7 @@
       "Pet Food",
       "Animal Feed",
       "Cosmetics."
-    ],
-    "isActive": true,
-    "isFeatured": false
+    ]
   },
   {
     "slug": "coconut-oil",
@@ -228,9 +214,7 @@
       "Pet Food",
       "Animal Feed",
       "Cosmetics."
-    ],
-    "isActive": true,
-    "isFeatured": false
+    ]
   },
   {
     "slug": "cocoa-butter",
@@ -255,9 +239,7 @@
       "Pet Food",
       "Animal Feed",
       "Cosmetics."
-    ],
-    "isActive": true,
-    "isFeatured": false
+    ]
   },
   {
     "slug": "butter",
@@ -284,9 +266,7 @@
       "Bakery",
       "Pet Food",
       "Confectionery"
-    ],
-    "isActive": true,
-    "isFeatured": false
+    ]
   },
   {
     "slug": "shortening-36-39",
@@ -311,9 +291,7 @@
       "Pet Food",
       "Animal Feed",
       "Cosmetics."
-    ],
-    "isActive": true,
-    "isFeatured": false
+    ]
   },
   {
     "slug": "margarine",
@@ -339,9 +317,7 @@
       "Pet Food",
       "Animal Feed",
       "Cosmetics."
-    ],
-    "isActive": true,
-    "isFeatured": false
+    ]
   },
   {
     "slug": "l-lysine",
@@ -366,9 +342,7 @@
       "Pet Food",
       "Animal Feed",
       "Pharmaceuticals."
-    ],
-    "isActive": true,
-    "isFeatured": false
+    ]
   },
   {
     "slug": "dl-methionine",
@@ -393,9 +367,7 @@
       "Animal Feed",
       "Aquaculture",
       "Pharmaceuticals."
-    ],
-    "isActive": true,
-    "isFeatured": false
+    ]
   },
   {
     "slug": "l-threonine",
@@ -420,9 +392,7 @@
       "Pet Food",
       "Animal Feed",
       "Pharmaceuticals."
-    ],
-    "isActive": true,
-    "isFeatured": false
+    ]
   },
   {
     "slug": "l-tryptophan",
@@ -447,9 +417,7 @@
       "Pet Food",
       "Animal Feed",
       "Pharmaceuticals."
-    ],
-    "isActive": true,
-    "isFeatured": false
+    ]
   },
   {
     "slug": "l-valine",
@@ -474,9 +442,7 @@
       "Pet Food",
       "Animal Feed",
       "Pharmaceuticals."
-    ],
-    "isActive": true,
-    "isFeatured": false
+    ]
   },
   {
     "slug": "l-arginine",
@@ -502,9 +468,7 @@
       "Animal Feed",
       "Pharmaceuticals",
       "Cosmetics."
-    ],
-    "isActive": true,
-    "isFeatured": false
+    ]
   },
   {
     "slug": "taurine",
@@ -530,9 +494,7 @@
       "Animal Feed",
       "Pharmaceuticals",
       "Cosmetics."
-    ],
-    "isActive": true,
-    "isFeatured": false
+    ]
   },
   {
     "slug": "white-beet-sugar",
@@ -557,9 +519,7 @@
       "Bakery",
       "Confectionery",
       "Animal Feed."
-    ],
-    "isActive": true,
-    "isFeatured": false
+    ]
   },
   {
     "slug": "crystaline-fructose",
@@ -585,9 +545,7 @@
       "Pet Food",
       "Pharmaceuticals",
       "Sports Nutrition."
-    ],
-    "isActive": true,
-    "isFeatured": false
+    ]
   },
   {
     "slug": "maltodextrins",
@@ -614,9 +572,7 @@
       "Animal Feed",
       "Cosmetics",
       "Technical & Industrial."
-    ],
-    "isActive": true,
-    "isFeatured": false
+    ]
   },
   {
     "slug": "glucose-fructose-sirups",
@@ -643,9 +599,7 @@
       "Pet Food",
       "Animal Feed",
       "Technical & Industrial."
-    ],
-    "isActive": true,
-    "isFeatured": false
+    ]
   },
   {
     "slug": "high-fructose-corn-syrup",
@@ -671,9 +625,7 @@
       "Bakery",
       "Confectionery",
       "Technical & Industrial."
-    ],
-    "isActive": true,
-    "isFeatured": false
+    ]
   },
   {
     "slug": "honey",
@@ -700,9 +652,7 @@
       "Pet Food",
       "Cosmetics",
       "Pharmaceuticals."
-    ],
-    "isActive": true,
-    "isFeatured": false
+    ]
   },
   {
     "slug": "molasses",
@@ -727,9 +677,7 @@
       "Food & Beverage",
       "Agriculture",
       "Technical & Industrial."
-    ],
-    "isActive": true,
-    "isFeatured": false
+    ]
   },
   {
     "slug": "stevia",
@@ -755,9 +703,7 @@
       "Pharmaceuticals",
       "Cosmetics",
       "Dietary Supplements."
-    ],
-    "isActive": true,
-    "isFeatured": false
+    ]
   },
   {
     "slug": "aspartame",
@@ -782,9 +728,7 @@
       "Food & Beverage",
       "Pharmaceuticals",
       "Cosmetics."
-    ],
-    "isActive": true,
-    "isFeatured": false
+    ]
   },
   {
     "slug": "wheat-starch",
@@ -811,9 +755,7 @@
       "Pet Food",
       "Animal Feed",
       "Technical & Industrial."
-    ],
-    "isActive": true,
-    "isFeatured": false
+    ]
   },
   {
     "slug": "corn-starch",
@@ -840,9 +782,7 @@
       "Pet Food",
       "Animal Feed",
       "Technical & Industrial."
-    ],
-    "isActive": true,
-    "isFeatured": false
+    ]
   },
   {
     "slug": "potato-starch",
@@ -869,9 +809,7 @@
       "Pet Food",
       "Animal Feed",
       "Technical & Industrial."
-    ],
-    "isActive": true,
-    "isFeatured": false
+    ]
   },
   {
     "slug": "tapioca-starch",
@@ -900,9 +838,7 @@
       "Animal Feed",
       "Aquaculture",
       "Technical & Industrial."
-    ],
-    "isActive": true,
-    "isFeatured": false
+    ]
   },
   {
     "slug": "rice-starch",
@@ -930,9 +866,7 @@
       "Animal Feed",
       "Aquaculture",
       "Technical & Industrial."
-    ],
-    "isActive": true,
-    "isFeatured": false
+    ]
   },
   {
     "slug": "soyabean-meal-46",
@@ -956,9 +890,7 @@
     "industry": [
       "Animal Feed",
       "Agriculture."
-    ],
-    "isActive": true,
-    "isFeatured": false
+    ]
   },
   {
     "slug": "soypro",
@@ -984,9 +916,7 @@
       "Pet Food",
       "Animal Feed",
       "Aquaculture."
-    ],
-    "isActive": true,
-    "isFeatured": false
+    ]
   },
   {
     "slug": "sunflower-meal-36",
@@ -1010,9 +940,7 @@
     "industry": [
       "Animal Feed",
       "Agriculture."
-    ],
-    "isActive": true,
-    "isFeatured": false
+    ]
   },
   {
     "slug": "canolarapeseed-meal",
@@ -1037,9 +965,7 @@
     "industry": [
       "Animal Feed",
       "Agriculture."
-    ],
-    "isActive": true,
-    "isFeatured": false
+    ]
   },
   {
     "slug": "corn-gluten-meal",
@@ -1069,9 +995,7 @@
       "Animal Feed",
       "Pet Food",
       "Aquaculture."
-    ],
-    "isActive": true,
-    "isFeatured": false
+    ]
   },
   {
     "slug": "wheat-gluten",
@@ -1102,9 +1026,7 @@
       "Animal Feed",
       "Cosmetics",
       "Technical & Industrial."
-    ],
-    "isActive": true,
-    "isFeatured": true
+    ]
   },
   {
     "slug": "sugar-beet-pellets",
@@ -1134,9 +1056,7 @@
     "industry": [
       "Animal Feed",
       "Technical & Industrial."
-    ],
-    "isActive": true,
-    "isFeatured": false
+    ]
   },
   {
     "slug": "corn-ddgs",
@@ -1161,9 +1081,7 @@
       "Animal Feed",
       "Agriculture",
       "Technical & Industrial."
-    ],
-    "isActive": true,
-    "isFeatured": false
+    ]
   },
   {
     "slug": "wheat-middlings",
@@ -1189,9 +1107,7 @@
       "Animal Feed",
       "Agriculture",
       "Technical & Industrial."
-    ],
-    "isActive": true,
-    "isFeatured": false
+    ]
   },
   {
     "slug": "fish-meal",
@@ -1215,9 +1131,7 @@
       "Pet Food",
       "Animal Feed",
       "Aquaculture."
-    ],
-    "isActive": true,
-    "isFeatured": true
+    ]
   },
   {
     "slug": "fish-oilsalmon-oil",
@@ -1245,9 +1159,7 @@
       "Aquaculture",
       "Pharmaceuticals",
       "Cosmetics."
-    ],
-    "isActive": true,
-    "isFeatured": false
+    ]
   },
   {
     "slug": "poultry-meal",
@@ -1274,9 +1186,7 @@
       "Animal Feed",
       "Aquaculture",
       "Agriculture."
-    ],
-    "isActive": true,
-    "isFeatured": false
+    ]
   },
   {
     "slug": "blood-meal",
@@ -1301,9 +1211,7 @@
       "Animal Feed",
       "Aquaculture",
       "Agriculture."
-    ],
-    "isActive": true,
-    "isFeatured": false
+    ]
   },
   {
     "slug": "soy-protein-concentrate",
@@ -1328,9 +1236,7 @@
       "Pet Food",
       "Animal Feed",
       "Aquaculture."
-    ],
-    "isActive": true,
-    "isFeatured": false
+    ]
   },
   {
     "slug": "pea-protein",
@@ -1355,9 +1261,7 @@
       "Pet Food",
       "Animal Feed",
       "Aquaculture."
-    ],
-    "isActive": true,
-    "isFeatured": false
+    ]
   },
   {
     "slug": "potato-protein",
@@ -1382,9 +1286,7 @@
       "Pet Food",
       "Animal Feed",
       "Aquaculture."
-    ],
-    "isActive": true,
-    "isFeatured": false
+    ]
   },
   {
     "slug": "rice-protein",
@@ -1409,9 +1311,7 @@
       "Pet Food",
       "Animal Feed",
       "Aquaculture."
-    ],
-    "isActive": true,
-    "isFeatured": false
+    ]
   },
   {
     "slug": "poultry-by-product-meal",
@@ -1437,9 +1337,7 @@
       "Animal Feed",
       "Aquaculture",
       "Agriculture."
-    ],
-    "isActive": true,
-    "isFeatured": false
+    ]
   },
   {
     "slug": "hydrolyzed-feather-meal",
@@ -1469,9 +1367,7 @@
       "Animal Feed",
       "Aquaculture",
       "Agriculture."
-    ],
-    "isActive": true,
-    "isFeatured": false
+    ]
   },
   {
     "slug": "insect-meal",
@@ -1496,9 +1392,7 @@
       "Pet Food",
       "Animal Feed",
       "Aquaculture."
-    ],
-    "isActive": true,
-    "isFeatured": false
+    ]
   },
   {
     "slug": "meat-and-bone-meal",
@@ -1523,9 +1417,7 @@
       "Animal Feed",
       "Aquaculture",
       "Agriculture."
-    ],
-    "isActive": true,
-    "isFeatured": false
+    ]
   },
   {
     "slug": "krill-meal",
@@ -1549,9 +1441,7 @@
       "Pet Food",
       "Animal Feed",
       "Aquaculture."
-    ],
-    "isActive": true,
-    "isFeatured": false
+    ]
   },
   {
     "slug": "choline-chloride",
@@ -1576,9 +1466,7 @@
       "Animal Feed",
       "Pharmaceuticals",
       "Cosmetics."
-    ],
-    "isActive": true,
-    "isFeatured": false
+    ]
   },
   {
     "slug": "vitamin-c",
@@ -1604,9 +1492,7 @@
       "Animal Feed",
       "Pharmaceuticals",
       "Cosmetics."
-    ],
-    "isActive": true,
-    "isFeatured": false
+    ]
   },
   {
     "slug": "inositol",
@@ -1632,9 +1518,7 @@
       "Animal Feed",
       "Pharmaceuticals",
       "Cosmetics."
-    ],
-    "isActive": true,
-    "isFeatured": false
+    ]
   },
   {
     "slug": "vitamin-e",
@@ -1659,9 +1543,7 @@
       "Animal Feed",
       "Pharmaceuticals",
       "Cosmetics."
-    ],
-    "isActive": true,
-    "isFeatured": false
+    ]
   },
   {
     "slug": "niacin-b3",
@@ -1686,9 +1568,7 @@
       "Animal Feed",
       "Pharmaceuticals",
       "Cosmetics."
-    ],
-    "isActive": true,
-    "isFeatured": false
+    ]
   },
   {
     "slug": "pantothenic-acid-b5",
@@ -1714,9 +1594,7 @@
       "Animal Feed",
       "Pharmaceuticals",
       "Cosmetics."
-    ],
-    "isActive": true,
-    "isFeatured": false
+    ]
   },
   {
     "slug": "vitamin-a-d3-k3",
@@ -1741,9 +1619,7 @@
       "Animal Feed",
       "Pharmaceuticals",
       "Cosmetics."
-    ],
-    "isActive": true,
-    "isFeatured": false
+    ]
   },
   {
     "slug": "vitamin-b1-b2-b6",
@@ -1767,9 +1643,7 @@
       "Animal Feed",
       "Pharmaceuticals",
       "Cosmetics."
-    ],
-    "isActive": true,
-    "isFeatured": false
+    ]
   },
   {
     "slug": "folic-acid-b9",
@@ -1794,9 +1668,7 @@
       "Animal Feed",
       "Pharmaceuticals",
       "Cosmetics."
-    ],
-    "isActive": true,
-    "isFeatured": false
+    ]
   },
   {
     "slug": "biotin-h",
@@ -1820,9 +1692,7 @@
       "Animal Feed",
       "Pharmaceuticals",
       "Cosmetics."
-    ],
-    "isActive": true,
-    "isFeatured": false
+    ]
   },
   {
     "slug": "vitamin-b12",
@@ -1846,9 +1716,7 @@
       "Animal Feed",
       "Pharmaceuticals",
       "Cosmetics."
-    ],
-    "isActive": true,
-    "isFeatured": false
+    ]
   },
   {
     "slug": "fiberz",
@@ -1877,9 +1745,7 @@
       "Food & Beverage",
       "Pet Food",
       "Animal Feed."
-    ],
-    "isActive": true,
-    "isFeatured": true
+    ]
   },
   {
     "slug": "fiberx",
@@ -1908,8 +1774,6 @@
       "Food & Beverage",
       "Pet Food",
       "Animal Feed."
-    ],
-    "isActive": true,
-    "isFeatured": false
+    ]
   }
 ]
