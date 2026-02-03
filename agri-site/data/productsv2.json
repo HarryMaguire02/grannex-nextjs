@@ -320,6 +320,31 @@
     ]
   },
   {
+    "slug": "mayonnaise",
+    "name": "Mayonnaise",
+    "image": "/84-Mayonnaise.jpeg",
+    "market": "oils-and-fats",
+    "marketLabel": "Oils and fats",
+    "info": "Mayonnaise is a thick, creamy cold sauce or dressing commonly used as a condiment. It is a stable emulsion of vegetable oil, egg yolk, and an acid (vinegar or lemon juice), often enhanced with seasonings.",
+    "description": "This premium emulsion is characterized by its smooth texture, rich mouthfeel, and high stability. It provides a concentrated source of fats and flavor, serving as a foundational ingredient that improves the consistency and palatability of various food and specialty pet products.",
+    "application": "Base for dressings and sauces; flavor and texture enhancer for gourmet pet foods; high-energy condiment for the food service sector.",
+    "packing": "Jar: 1kg; Tube: 500g; Bucket: 5kg; Bulk: Containers",
+    "specification": [
+      "Appearance:creamy white to pale yellow",
+      "Texture:thick, smooth emulsion",
+      "Fat content:min 70-80%",
+      "Moisture:max 15-20%",
+      "Acidity (as acetic acid):0.3-0.5%",
+      "pH:3.5-4.5",
+      "Cholesterol:approx 60-70 mg/100g"
+    ],
+    "pdfSpecification": "84-Mayonnaise.pdf",
+    "industry": [
+      "Food & Beverage",
+      "Pet Food"
+    ]
+  },
+  {
     "slug": "l-lysine",
     "name": "L-Lysine",
     "image": "/13-L-Lysine.png",

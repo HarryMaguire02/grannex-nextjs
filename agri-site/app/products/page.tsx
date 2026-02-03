@@ -5,6 +5,21 @@ import { useSearchParams, useRouter } from 'next/navigation';
 import Link from 'next/link';
 import productsData from '@/data/productsv2.json';
 import ProductCard from '@/app/components/ProductCard';
+import MultiSelect from '@/app/components/inputs/MultiSelect';
+
+// Static market options
+const markets = [
+  { value: 'oils-and-fats', label: 'Oils and fats' },
+  { value: 'nutritional-additives', label: 'Nutritional Additives' },
+  { value: 'sweeteners', label: 'Sweeteners' },
+  { value: 'starches', label: 'Starches' },
+  { value: 'millingcrushing', label: 'Milling/Crushing' },
+  { value: 'aquaculture', label: 'Aquaculture' },
+  { value: 'concentrates', label: 'Concentrates' },
+  { value: 'animal-protein', label: 'Animal Protein' },
+  { value: 'vitamin', label: 'Vitamin' },
+  { value: 'fibers', label: 'Fibers' }
+];
 
 type Product = {
   slug: string;
@@ -24,10 +39,10 @@ function ProductsContent() {
   const searchParams = useSearchParams();
   const router = useRouter();
   const marketParam = searchParams.get('market');
-  const industryParam = searchParams.get('industry');
 
-  const [selectedIndustry, setSelectedIndustry] = useState<string>(industryParam || 'All');
-  const [selectedMarket, setSelectedMarket] = useState<string>(marketParam || 'All');
+  // Parse market param - can be comma-separated for multiple values
+  const initialMarkets = marketParam ? marketParam.split(',') : [];
+  const [selectedMarkets, setSelectedMarkets] = useState<string[]>(initialMarkets);
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [currentPage, setCurrentPage] = useState<number>(1);
   const [productsPerPage, setProductsPerPage] = useState<number>(12);
@@ -49,14 +64,9 @@ function ProductsContent() {
   useEffect(() => {
     const params = new URLSearchParams();
 
-    // Add market param if not 'All'
-    if (selectedMarket !== 'All') {
-      params.set('market', selectedMarket);
-    }
-
-    // Add industry param if not 'All'
-    if (selectedIndustry !== 'All') {
-      params.set('industry', selectedIndustry);
+    // Add market param if any markets selected
+    if (selectedMarkets.length > 0) {
+      params.set('market', selectedMarkets.join(','));
     }
 
     // Build the URL
@@ -65,7 +75,7 @@ function ProductsContent() {
 
     // Update URL without adding to history (so back button doesn't go through every filter change)
     router.replace(newUrl, { scroll: false });
-  }, [selectedMarket, selectedIndustry, router]);
+  }, [selectedMarkets, router]);
 
   // Smooth scroll to top when page changes (skip on initial mount)
   useEffect(() => {
@@ -82,54 +92,17 @@ function ProductsContent() {
 
   const products = productsData as Product[];
 
-  // Static industry options with value-label pairs
-  const industries = [
-    { value: 'All', label: 'Industry' },
-    { value: 'agriculture', label: 'Agriculture' },
-    { value: 'animal-feed', label: 'Animal Feed' },
-    { value: 'aquaculture', label: 'Aquaculture' },
-    { value: 'bakery', label: 'Bakery' },
-    { value: 'confectionery', label: 'Confectionery' },
-    { value: 'cosmetics', label: 'Cosmetics' },
-    { value: 'dietary-supplements', label: 'Dietary Supplements' },
-    { value: 'food-and-beverage', label: 'Food & Beverage' },
-    { value: 'milling', label: 'Milling' },
-    { value: 'pet-food', label: 'Pet Food' },
-    { value: 'pharmaceuticals', label: 'Pharmaceuticals' },
-    { value: 'sports-nutrition', label: 'Sports Nutrition' },
-    { value: 'technical-and-industrial', label: 'Technical & Industrial' }
-  ];
-
-  // Static market options with value-label pairs
-  const markets = [
-    { value: 'All', label: 'Market' },
-    { value: 'oils-and-fats', label: 'Oils and fats' },
-    { value: 'nutritional-additives', label: 'Nutritional Additives' },
-    { value: 'sweeteners', label: 'Sweeteners' },
-    { value: 'starches', label: 'Starches' },
-    { value: 'millingcrushing', label: 'Milling/Crushing' },
-    { value: 'aquaculture', label: 'Aquaculture' },
-    { value: 'concentrates', label: 'Concentrates' },
-    { value: 'animal-protein', label: 'Animal Protein' },
-    { value: 'vitamin', label: 'Vitamin' },
-    { value: 'fibers', label: 'Fibers' }
-  ];
-
-  // Filter products by industry, market, and search query
+  // Filter products by market and search query
   const filteredProducts = products.filter(product => {
-    // Filter by industry (handle trailing periods in data, e.g. "Pharmaceuticals.")
-    const selectedIndustryLabel = industries.find(i => i.value === selectedIndustry)?.label;
-    const matchesIndustry = selectedIndustry === 'All' || product.industry.some(ind => ind.replace(/\.$/, '') === selectedIndustryLabel);
-
     // Filter by market (handle compound markets like "millingcrushing-aquaculture")
-    const matchesMarket = selectedMarket === 'All' || product.market.includes(selectedMarket);
+    const matchesMarket = selectedMarkets.length === 0 || selectedMarkets.some(market => product.market.includes(market));
 
     // Filter by search query (search in name)
     const matchesSearch = searchQuery === '' ||
       product.name.toLowerCase().includes(searchQuery.toLowerCase());
 
     // Product must match all filters
-    return matchesIndustry && matchesMarket && matchesSearch;
+    return matchesMarket && matchesSearch;
   });
 
   // Calculate pagination
@@ -138,21 +111,17 @@ function ProductsContent() {
   const endIndex = startIndex + productsPerPage;
   const paginatedProducts = filteredProducts.slice(startIndex, endIndex);
 
-  // Reset to page 1 when filters change
-  const handleFilterChange = (setter: (value: string) => void, value: string) => {
-    setter(value);
+  // Handle market selection change
+  const handleMarketChange = (values: string[]) => {
+    setSelectedMarkets(values);
     setCurrentPage(1);
   };
 
-  // Reset filters only (search has its own clear button)
-  const handleReset = () => {
-    setSelectedIndustry('All');
-    setSelectedMarket('All');
+  // Reset market filter
+  const handleMarketClear = () => {
+    setSelectedMarkets([]);
     setCurrentPage(1);
   };
-
-  // Check if any filters are active (excluding search since it has its own clear button)
-  const hasActiveFilters = selectedIndustry !== 'All' || selectedMarket !== 'All';
 
   return (
     <div className="bg-white">
@@ -163,14 +132,16 @@ function ProductsContent() {
             Home
           </Link>
           <span className="mx-2">/</span>
-          {selectedMarket !== 'All' ? (
+          {selectedMarkets.length > 0 ? (
             <>
               <Link href="/products" className="hover:text-green-medium transition-colors">
                 Products
               </Link>
               <span className="mx-2">/</span>
               <span className="font-medium">
-                {markets.find(m => m.value === selectedMarket)?.label || selectedMarket}
+                {selectedMarkets.length === 1
+                  ? markets.find(m => m.value === selectedMarkets[0])?.label
+                  : `${selectedMarkets.length} markets`}
               </span>
             </>
           ) : (
@@ -186,98 +157,25 @@ function ProductsContent() {
         </h1>
 
         {/* Description */}
-        <p className="text-primary font-normal text-sm leading-4 text-justify mb-8 w-full">
+        <p className="text-primary font-normal text-sm sm:text-base leading-relaxed mb-8 max-w-3xl">
           We offer a broad portfolio of products, commodities, and ingredients serving the human food,
           aquaculture, and animal feed industries. Our range includes oilseeds, vegetable oils, and related
           agricultural products sourced from multiple origins to meet diverse market and customer requirements.
         </p>
 
         {/* Filters and Search Row */}
-        <div className="flex flex-wrap items-center gap-2 mb-8">
-          
-            {/* Filter by text - Full width on small screens, auto on large */}
-            <div className="flex items-center justify-between w-full lg:w-auto lg:justify-start gap-2">
-              <div className="text-sm font-medium text-primary">Filter by:</div>
-                {hasActiveFilters && (
-                  <button
-                    onClick={handleReset}
-                    className="lg:hidden flex items-center gap-1 px-2 py-2 text-sm text-primary/60 hover:text-red-600 hover:bg-red-50 rounded-lg transition-colors"
-                    title="Clear all filters"
-                  >
-                    <span>Clear filters</span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-4 w-4"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                  </button>
-                )}
-            </div>
+        <div className="flex flex-col sm:flex-row sm:items-center gap-4 mb-8">
+          {/* Market multi-select */}
+          <MultiSelect
+            options={markets}
+            selected={selectedMarkets}
+            onChange={handleMarketChange}
+            onClear={handleMarketClear}
+            placeholder="Select market"
+          />
 
-            {/* Two selects in a row */}
-            <div className="flex flex-wrap gap-2 w-full lg:w-auto">
-              <select
-                value={selectedMarket}
-                onChange={(e) => handleFilterChange(setSelectedMarket, e.target.value)}
-                className={`flex-1 lg:flex-initial p-2 border border-primary/20 rounded-lg text-sm font-normal text-primary cursor-pointer transition-colors ${
-                  selectedMarket !== 'All'
-                    ? 'bg-green-light/30 ring-2 ring-green-medium'
-                    : 'bg-white hover:bg-primary/5'
-                }`}
-              >
-                {markets.map(market => (
-                  <option key={market.value} value={market.value}>
-                    {market.label}
-                  </option>
-                ))}
-              </select>
-
-              <select
-                value={selectedIndustry}
-                onChange={(e) => handleFilterChange(setSelectedIndustry, e.target.value)}
-                className={`flex-1 lg:flex-initial p-2 border border-primary/20 rounded-lg text-sm font-normal text-primary cursor-pointer transition-colors ${
-                  selectedIndustry !== 'All'
-                    ? 'bg-green-light/30 ring-2 ring-green-medium'
-                    : 'bg-white hover:bg-primary/5'
-                }`}
-              >
-                {industries.map(industry => (
-                  <option key={industry.value} value={industry.value}>
-                    {industry.label}
-                  </option>
-                ))}
-              </select>
-            </div>
-            {/* Clear button - Hidden on small, visible on large */}
-            {hasActiveFilters && (
-              <button
-                onClick={handleReset}
-                className="hidden lg:block p-2 text-primary/60 hover:text-red-600 hover:bg-red-50 rounded-lg transition-colors"
-                title="Clear all filters"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              </button>
-            )}   
-          {/* Search - Full width on small, auto on large */}
-          <div className="relative w-full lg:w-64 lg:ml-auto">
+          {/* Search input */}
+          <div className="relative w-full sm:w-64">
             <input
               type="text"
               placeholder="Search products..."
@@ -286,7 +184,7 @@ function ProductsContent() {
                 setSearchQuery(e.target.value);
                 setCurrentPage(1);
               }}
-              className="px-10 py-2 border border-primary/20 rounded-lg text-sm font-normal text-primary bg-white focus:outline-none focus:border-green-medium focus:ring-1 focus:ring-green-medium w-full"
+              className="px-10 py-2.5 border border-primary/20 rounded-lg text-sm font-normal text-primary bg-white focus:outline-none focus:border-green-medium focus:ring-1 focus:ring-green-medium w-full"
             />
             <svg
               className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-primary/60"
@@ -328,7 +226,7 @@ function ProductsContent() {
         </div>
 
         {/* Product Grid */}
-        <div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-8">
+        <div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6 mb-8">
           {paginatedProducts.map((product) => (
             <ProductCard
               key={product.slug}
@@ -342,14 +240,23 @@ function ProductsContent() {
 
         {/* No results message */}
         {filteredProducts.length === 0 && (
-          <div className="text-center py-12">
-            <p className="text-primary text-lg">No products found matching your filters.</p>
+          <div className="text-center py-12 sm:py-16">
+            <p className="text-primary text-base sm:text-lg">No products found matching your criteria.</p>
+            <button
+              onClick={() => {
+                handleMarketClear();
+                setSearchQuery('');
+              }}
+              className="mt-4 text-sm text-green-medium hover:text-primary underline transition-colors"
+            >
+              Clear all filters
+            </button>
           </div>
         )}
 
         {/* Pagination */}
         {totalPages > 1 && (
-          <div className="flex justify-center items-center gap-2 my-8">
+          <div className="flex justify-center items-center gap-2 sm:gap-3 my-8 pb-4">
             {/* Previous Button */}
             <button
               onClick={() => setCurrentPage(prev => Math.max(prev - 1, 1))}

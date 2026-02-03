@@ -130,7 +130,7 @@ export default function ProductPageClient({ product }: ProductPageClientProps) {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 lg:gap-12">
             {/* Left: Product Image */}
             <div className="flex items-center justify-center">
-              <div className="relative w-full max-w-[293] aspect-[293/361] rounded-2xl overflow-hidden">
+              <div className="relative w-full  aspect-4/5 rounded-2xl overflow-hidden">
                 <Image
                   src={product.image}
                   alt={product.name}
