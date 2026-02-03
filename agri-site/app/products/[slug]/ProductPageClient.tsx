@@ -4,6 +4,11 @@ import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
+type ProductPdf = {
+  name: string;
+  url: string;
+};
+
 type Product = {
   slug: string;
   name: string;
@@ -16,7 +21,7 @@ type Product = {
   specification: string[];
   industry: string[];
   image: string;
-  pdfSpecification: string;
+  pdfs: ProductPdf[];
 };
 
 type ProductPageClientProps = {
@@ -268,17 +273,20 @@ export default function ProductPageClient({ product }: ProductPageClientProps) {
               <p className="text-primary font-normal text-sm leading-6 mb-6">
                 Full specification ranges are available in the technical datasheet.
               </p>
-              <div>
-                <a
-                  href={`/pdf/${product.pdfSpecification}`}
-                  download
-                  className="inline-block px-8 py-3 bg-primary text-secondary rounded-lg font-medium hover:bg-green-medium transition-colors"
-                >
-                  Product specification
-                </a>
+              <div className="flex flex-col gap-3 text-center xs:max-w-2/3">
+                {product.pdfs.map((pdf, index) => (
+                  <a
+                    key={index}
+                    href={`/pdf/${pdf.url}`}
+                    download
+                    className="px-8 py-3 bg-primary text-secondary rounded-lg font-medium hover:bg-green-medium transition-colors text-center"
+                  >
+                    {pdf.name}
+                  </a>
+                ))}
               </div>
               {/* Decoration SVG - Right Side */}
-              <div className="absolute -right-12 lg:-right-20 top-1/2 -translate-y-1/2 w-32 h-32 md:w-48 md:h-48 lg:w-64 lg:h-64 pointer-events-none">
+              <div className="hidden sm:block absolute -right-12 lg:-right-20 top-1/2 -translate-y-1/2 w-32 h-32 md:w-48 md:h-48 lg:w-64 lg:h-64 pointer-events-none">
                 <Image
                   src="/decoration2.png"
                   alt=""
@@ -304,7 +312,7 @@ export default function ProductPageClient({ product }: ProductPageClientProps) {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Left: Promotional Text with Decoration */}
             <div className="relative flex flex-col justify-center">
-              <div className="absolute -left-8 md:-left-12 lg:-left-16 top-1/2 -translate-y-1/2 w-full h-auto pointer-events-none">
+              <div className="block xs:hidden lg:block absolute -left-8 md:-left-12 lg:-left-16 top-1/2 -translate-y-1/2 w-full h-auto pointer-events-none">
                 <Image
                   src="/decoration3.png"
                   alt=""

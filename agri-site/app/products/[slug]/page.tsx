@@ -3,6 +3,11 @@ import { notFound } from 'next/navigation';
 import productsData from '@/data/productsv2.json';
 import ProductPageClient from './ProductPageClient';
 
+type ProductPdf = {
+  name: string;
+  url: string;
+};
+
 type Product = {
   slug: string;
   name: string;
@@ -15,7 +20,7 @@ type Product = {
   specification: string[];
   industry: string[];
   image: string;
-  pdfSpecification: string;
+  pdfs: ProductPdf[];
 };
 
 type PageProps = {
