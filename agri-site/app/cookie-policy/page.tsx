@@ -39,7 +39,7 @@ export default function CookiePolicyPage() {
           <section>
             <h3 className="text-lg font-bold text-primary mb-3">Strictly Necessary Cookies</h3>
             <p className="text-primary font-normal text-sm leading-6 text-justify">
-              Essential for the website's basic functionality and security.
+              Essential for the website&apos;s basic functionality and security.
             </p>
           </section>
 
@@ -53,7 +53,7 @@ export default function CookiePolicyPage() {
           <section>
             <h3 className="text-lg font-bold text-primary mb-3">Management</h3>
             <p className="text-primary font-normal text-sm leading-6 text-justify">
-              You may withdraw your consent or manage your cookie preferences at any time via your browser settings or our website's consent banner.
+              You may withdraw your consent or manage your cookie preferences at any time via your browser settings or our website&apos;s consent banner.
             </p>
           </section>
 

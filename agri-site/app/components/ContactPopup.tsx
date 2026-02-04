@@ -33,7 +33,7 @@ export default function ContactPopup({ isOpen, onClose }: ContactPopupProps) {
     <div
       className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50"
       onClick={onClose}
-    > 
+    >
       <div
         className="relative bg-white rounded-2xl shadow-2xl max-w-4xl w-full overflow-hidden"
         onClick={(e) => e.stopPropagation()}
@@ -82,10 +82,11 @@ export default function ContactPopup({ isOpen, onClose }: ContactPopupProps) {
                 <div>
                   <h3 className="text-lg font-semibold text-primary mb-3">Contact</h3>
                   <div className="space-y-2 text-sm text-primary">
-                    <p>
-                      Dimitri Stavrou 1 Street Nicosia Cyprus</p>
-                    <p>info@grannex.com</p>
+                    <p>Dimitri Stavrou 1 Street Nicosia Cyprus</p>
+                    <p>execution@grannexcy.com</p>
                     <p>+30 6984614171</p>
+                    <p className="pt-2">Director - Sotiris K. Mavropanos</p>
+                    <p>smavropanos@grannexcy.com</p>
                   </div>
                 </div>
 
@@ -94,7 +95,7 @@ export default function ContactPopup({ isOpen, onClose }: ContactPopupProps) {
                   <h3 className="text-lg font-semibold text-primary mb-3">Contact Person</h3>
                   <div className="space-y-2 text-sm text-primary">
                     <p>Vlado Šaranović</p>
-                    <p>vsaranovic@grannex.com</p>
+                    <p>vsaranovic@grannexcy.com</p>
                     <p>+381 631077708</p>
                   </div>
                 </div>
