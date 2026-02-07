@@ -83,8 +83,8 @@ export async function POST(request: NextRequest) {
     const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://grannexcy.com';
 
     const { data, error } = await resend.emails.send({
-      from: 'onboarding@resend.dev', // For testing - change to 'noreply@grannex.com' after domain verification
-      to: process.env.CONTACT_EMAIL || 'grannexinfo@gmail.com',
+      from: 'noreply@info.grannexcy.com', 
+      to: process.env.CONTACT_EMAIL || 'vsaranovic@grannexcy.com',
       subject: productName
         ? `Product Enquiry: ${productName} - from ${name}`
         : `New Contact Form Submission from ${name}`,
