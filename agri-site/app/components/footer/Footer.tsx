@@ -27,10 +27,10 @@ export default function Footer() {
                 <h3 className="text-lg font-semibold mb-4">Contact</h3>
                 <div className="space-y-3 text-sm">
                   <p>Dimitri Stavrou 1 Street Nicosia Cyprus</p>
-                  <p>execution@grannexcy.com</p>
+                  <p>info@grannex.com</p>
                   <p>+30 6984614171</p>
                   <p className="pt-2">Director - Sotiris K. Mavropanos</p>
-                  <p>smavropanos@grannexcy.com</p>
+                  <p>smavropanos@grannex.com</p>
                 </div>
               </div>
 
@@ -39,7 +39,7 @@ export default function Footer() {
                 <h3 className="text-lg font-semibold mb-4">Contact Person</h3>
                 <div className="space-y-3 text-sm">
                   <p>Vlado Šaranović</p>
-                  <p>vsaranovic@grannexcy.com</p>
+                  <p>vsaranovic@grannex.com</p>
                   <p>+381 631077708</p>
                 </div>
               </div>

@@ -80,11 +80,11 @@ export async function POST(request: NextRequest) {
     }
 
     // Send email using Resend
-    const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://grannexcy.com';
+    const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://grannex.com';
 
     const { data, error } = await resend.emails.send({
-      from: 'noreply@info.grannexcy.com', 
-      to: process.env.CONTACT_EMAIL || 'vsaranovic@grannexcy.com',
+      from: process.env.EMAIL_FROM || 'noreply@info.grannex.com',
+      to: process.env.CONTACT_EMAIL || 'vsaranovic@grannex.com',
       subject: productName
         ? `Product Enquiry: ${productName} - from ${name}`
         : `New Contact Form Submission from ${name}`,
