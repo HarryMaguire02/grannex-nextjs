@@ -2,17 +2,17 @@ import Image from 'next/image';
 
 export default function LogisticsHero() {
   const chartData = [
-    { year: '2019', value: 85, label: '85K T' },
-    { year: '2020', value: 120, label: '120K T' },
-    { year: '2021', value: 180, label: '180K T' },
-    { year: '2022', value: 245, label: '245K T' },
-    { year: '2023', value: 385, label: '385K T' },
-    { year: '2024', value: 500, label: '500K T' },
-    { year: '2025', value: 550, label: '550K T' },
+    { year: '2019', value: 85, label: '8.5K T' },
+    { year: '2020', value: 120, label: '12K T' },
+    { year: '2021', value: 180, label: '18K T' },
+    { year: '2022', value: 245, label: '24.5K T' },
+    { year: '2023', value: 385, label: '38.5K T' },
+    { year: '2024', value: 500, label: '50K T' },
+    { year: '2025', value: 550, label: '55K T' },
   ];
 
   // Fixed Y-axis labels for cleaner appearance
-  const yAxisLabels = ['500K T', '400K T', '300K T', '200K T', '100K T'];
+  const yAxisLabels = ['50K T', '40K T', '30K T', '20K T', '10K T'];
   const yAxisSteps = yAxisLabels.length;
   const chartMaxValue = 500;
 

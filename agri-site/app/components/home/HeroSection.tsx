@@ -21,7 +21,7 @@ export default function HeroSection() {
         {/* Hero Text - Left Aligned, Max 50% Width */}
         <div className="max-w-xl lg:max-w-2xl text-center md:text-left mx-auto md:mx-0">
           <p className="mb-4 sm:mb-6 text-lg sm:text-xl md:text-2xl text-white font-bold leading-relaxed">
-            Trust in the power of reliable  ingredients
+            Trust in the power of reliable materials
           </p>
           <h1>
             <span className="text-primary font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl leading-tight">Grannex LTD</span>{' '}
@@ -36,7 +36,7 @@ export default function HeroSection() {
           <div className="grid grid-cols-2 md:grid-cols-4 bg-primary rounded-2xl overflow-hidden">
             {[
               { title: 'Oils and fats', icon: '/oils-and-fats.svg', markets: ['oils-and-fats'] },
-              { title: 'Food ingredients', icon: '/food-ingredients.svg', markets: ['starches', 'sweeteners', 'millingcrushing', 'fibers', 'vitamin'] },
+              { title: 'Foods ingredients', icon: '/food-ingredients.svg', markets: ['starches', 'sweeteners', 'millingcrushing', 'fibers', 'vitamin'] },
               { title: 'Animal feeds ingredients', icon: '/animal-feeds-ingredients.svg', markets: ['animal-protein', 'concentrates', 'vitamin'] },
               { title: 'Aqua feeds ingredients', icon: '/aqua-feeds-ingredients.svg', markets: ['aquaculture', 'nutritional-additives'] },
             ].map((category, index) => (

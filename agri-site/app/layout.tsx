@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://grannex.com'),
   title: "Grannex LTD - Leading Global Agriculture Commodities Trading",
   description: "Grannex LTD is a leading global agriculture commodities trading and brokerage firm. We supply quality agricultural ingredients including proteins, starches, sweeteners, oils, animal feed and aqua feed.",
-  keywords: ["agriculture", "commodities trading", "animal feed", "aqua feed", "proteins", "starches", "vegetable oils", "food ingredients"],
+  keywords: ["agriculture", "commodities trading", "animal feed", "aqua feed", "proteins", "starches", "vegetable oils", "foods ingredients"],
   authors: [{ name: "Grannex LTD" }],
   openGraph: {
     title: "Grannex LTD - Leading Global Agriculture Commodities Trading",

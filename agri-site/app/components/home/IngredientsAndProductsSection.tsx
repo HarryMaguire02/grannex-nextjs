@@ -50,7 +50,7 @@ const tabContent: Record<string, { title: string; description: string; image: st
   'Oils&Fats': {
     title: 'Oils&Fats',
     description: 'Our range of premium Oils & Fats provides essential, high-density energy sources for a variety of industrial and nutritional applications. From refined vegetable oils like Soybean and Sunflower to specialized rendered fats like Poultry Fat, our products are selected for their purity, stable fatty acid profiles, and high metabolizable energy. Whether used as a palatability enhancer in pet food, a dust suppressant in feed mills, or a key ingredient in technical manufacturing, our fats ensure optimal performance and quality consistency.',
-    image: '/oils.png',
+    image: '/oils-v2.png',
   },
   'Starches': {
     title: 'Starches',

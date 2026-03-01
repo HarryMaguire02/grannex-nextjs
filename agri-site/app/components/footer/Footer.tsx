@@ -12,11 +12,11 @@ export default function Footer() {
             {/* Logo Section */}
             <div className="flex items-center">
               <Image
-                src="/grannexLogoFooter.png"
+                src="/grannexLogoFooter-v2.png"
                 alt="Grannex LTD Logo"
                 width={320}
-                height={96}
-                className="h-20 md:h-24 lg:h-28 w-auto"
+                height={128}
+                className="h-24 md:h-26 lg:h-30 w-auto"
               />
             </div>
 

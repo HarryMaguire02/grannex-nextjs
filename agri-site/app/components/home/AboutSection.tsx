@@ -24,7 +24,7 @@ export default function AboutSection({ showSubtitle = true, showPadding = true }
             />
           </div>
 
-          <h3 className="font-bold text-2xl leading-8 uppercase text-primary mb-6">Trust in the power of reliable ingredients</h3>
+          <h3 className="font-bold text-2xl leading-8 uppercase text-primary mb-6">Trust in the power of reliable materials</h3>
           <div className="space-y-4 text-primary font-normal text-sm leading-4 text-justify">
             <p>
               <strong>Grannex LTD</strong> a major player in the mediation and trade of agricultural raw materials, bridging global markets with specialized commodity trading solutions.
