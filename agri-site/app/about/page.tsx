@@ -5,6 +5,18 @@ import AboutSection from '../components/home/AboutSection';
 export const metadata: Metadata = {
   title: "About Us - Grannex LTD",
   description: "Grannex LTD is a leading global agriculture commodities trading and brokerage firm. Learn about our global supply chain management and agricultural expertise.",
+  openGraph: {
+    title: 'About Us - Grannex LTD',
+    description: 'Learn about Grannex LTD — a leading global agriculture commodities trading and brokerage firm.',
+    type: 'website',
+    images: [{ url: '/logo-sharing.png', width: 1225, height: 560, alt: 'Grannex LTD' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'About Us - Grannex LTD',
+    description: 'Learn about Grannex LTD — a leading global agriculture commodities trading and brokerage firm.',
+    images: ['/logo-sharing.png'],
+  },
 };
 
 export default function AboutPage() {

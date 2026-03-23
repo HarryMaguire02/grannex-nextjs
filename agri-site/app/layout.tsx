@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 import ScrollHeader from "./components/header/ScrollHeader";
 import Footer from "./components/footer/Footer";
@@ -25,9 +27,17 @@ export const metadata: Metadata = {
     images: [
       {
         url: '/logo-sharing.png',
+        width: 1225,
+        height: 560,
         alt: 'Grannex LTD',
       },
     ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Grannex LTD - Leading Global Agriculture Commodities Trading',
+    description: 'Quality agricultural ingredients, secure global delivery. Leading supplier of proteins, starches, sweeteners, and oils.',
+    images: ['/logo-sharing.png'],
   },
   robots: {
     index: true,
@@ -70,6 +80,8 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );

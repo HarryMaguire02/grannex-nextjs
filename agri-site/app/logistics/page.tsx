@@ -1,7 +1,25 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import LogisticsHero from '../components/logistics/LogisticsHero';
 import WorldMapSection from '../components/logistics/WorldMapSection';
 import SupplyChainSection from '../components/home/SupplyChainSection';
+
+export const metadata: Metadata = {
+  title: 'Global Logistics & Supply Chain - Grannex LTD',
+  description: 'Grannex LTD provides end-to-end logistics and supply chain management for agricultural commodities. Secure, reliable delivery worldwide.',
+  openGraph: {
+    title: 'Global Logistics & Supply Chain - Grannex LTD',
+    description: 'End-to-end logistics and supply chain management for agricultural commodities.',
+    type: 'website',
+    images: [{ url: '/logo-sharing.png', width: 1225, height: 560, alt: 'Grannex LTD Logistics' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Global Logistics & Supply Chain - Grannex LTD',
+    description: 'End-to-end logistics and supply chain management for agricultural commodities.',
+    images: ['/logo-sharing.png'],
+  },
+};
 
 export default function LogisticsPage() {
   return (

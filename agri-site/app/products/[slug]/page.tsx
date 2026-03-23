@@ -64,6 +64,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
         },
       ],
     },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${product.name} - Grannex LTD`,
+      description: product.info,
+      images: [product.image],
+    },
   };
 }
 

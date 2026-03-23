@@ -263,36 +263,6 @@
     ]
   },
   {
-    "slug": "coconut-oil",
-    "name": "Coconut Oil",
-    "image": "/8-CoconutOil.png",
-    "market": "oils-and-fats",
-    "marketLabel": "Oils and fats",
-    "info": "Coconut oil is an edible oil extracted from the kernel or meat of mature coconuts. it is uniquely high in medium-chain triglycerides (MCTs).",
-    "description": "Coconut oil is a quick-energy fat source characterized by its rapid absorption and metabolic efficiency. It supports immune health and serves as a high-performance energy booster in specialized pet and animal nutrition.",
-    "application": "Quick-energy MCT source for pets; moisturizing agent in skincare.",
-    "packing": "Bulk, IBC Containers, Bottled (1l, 3l, 5l, 20l and other)",
-    "specification": [
-      "FFA (as lauric):0.1%",
-      "M&I:0.1%",
-      "IV (Wijs):7–11",
-      "Saponification value:250–264",
-      "Melting point:24–26°C"
-    ],
-    "industry": [
-      "Food & Beverage",
-      "Pet Food",
-      "Animal Feed",
-      "Cosmetics."
-    ],
-    "pdfs": [
-      {
-        "name": "Product specification",
-        "url": "8-Coconut Oil.pdf"
-      }
-    ]
-  },
-  {
     "slug": "cocoa-butter",
     "name": "Cocoa Butter",
     "image": "/9-CocoaButter.png",
@@ -2179,6 +2149,40 @@
       {
         "name": "Product specification",
         "url": "68-FiberX.pdf"
+      }
+    ]
+  },
+  {
+    "slug": "used-cooking-oil",
+    "name": "Used Cooking Oil (UCO)",
+    "image": "/83-UCO-oil.png",
+    "market": "oils-and-fats",
+    "marketLabel": "Oils and fats",
+    "info": "Used Cooking Oil (UCO) is a high-energy lipid source recovered from the food service and processing industries. After undergoing a rigorous collection and refining process—including heating, filtration, and dehydration—it is transformed into a consistent, calorie-dense raw material.",
+    "description": "Used Cooking Oil is a refined secondary fat product that has been processed to remove food particles, moisture, and impurities. It is a viscous, dark-amber liquid that provides a concentrated source of metabolizable energy. In the feed and technical industries, UCO is valued for its high caloric density and its ability to reduce dust during feed milling. To ensure quality, the oil is monitored for Free Fatty Acids (FFA), Moisture, and Insolubles (MIU), and is often stabilized with antioxidants to maintain shelf life and prevent rancidity during storage.",
+    "application": "Biofuel production (Biodiesel/FAME, Renewable Diesel/HVO); energy booster in poultry, swine, and ruminant feed; dust control in feed mills; base oil for biodegradable greases and industrial soaps; raw material for oleochemicals in detergents and coatings.",
+    "packing": "Bulk, Flexitanks, IBC Containers",
+    "specification": [
+      "FFA (as oleic):Max 5.0%",
+      "M&I:Max 1.0–2.0%",
+      "IV (Wijs):75–120 g I₂/100g",
+      "Saponification value:185–195 mg KOH/g",
+      "Insoluble impurities:Max 0.02%",
+      "Sulphur content:Max 50 ppm",
+      "Calorific value:~9,000–9,500 kcal/kg",
+      "Appearance:Dark brown to amber liquid"
+    ],
+    "industry": [
+      "Food & Beverage",
+      "Pet Food",
+      "Animal Feed",
+      "Cosmetics",
+      "Technical & Industrial."
+    ],
+    "pdfs": [
+      {
+        "name": "Product specification",
+        "url": "83-UCO-oil.pdf"
       }
     ]
   }
