@@ -24,26 +24,24 @@ const tabs = [
   'Oils&Fats',
   'Nutritional Additives',
   'Sweeteners',
-  'Starches',
+  'Starches&Fibers',
   'Milling/Crushing',
   'Aquaculture',
   'Concentrates',
   'Animal Protein',
-  'Vitamin',
-  'Fibers',
+  'Vitamin'
 ];
 
-const tabToMarket: Record<string, string> = {
-  'Oils&Fats': 'oils-and-fats',
-  'Nutritional Additives': 'nutritional-additives',
-  'Sweeteners': 'sweeteners',
-  'Starches': 'starches',
-  'Milling/Crushing': 'millingcrushing',
-  'Aquaculture': 'aquaculture',
-  'Concentrates': 'concentrates',
-  'Animal Protein': 'animal-protein',
-  'Vitamin': 'vitamin',
-  'Fibers': 'fibers',
+const tabToMarket: Record<string, string[]> = {
+  'Oils&Fats': ['oils-and-fats'],
+  'Nutritional Additives': ['nutritional-additives'],
+  'Sweeteners': ['sweeteners'],
+  'Starches&Fibers': ['starches', 'fibers'],
+  'Milling/Crushing': ['millingcrushing'],
+  'Aquaculture': ['aquaculture'],
+  'Concentrates': ['concentrates'],
+  'Animal Protein': ['animal-protein'],
+  'Vitamin': ['vitamin']
 };
 
 const tabContent: Record<string, { title: string; description: string; image: string }> = {
@@ -52,20 +50,15 @@ const tabContent: Record<string, { title: string; description: string; image: st
     description: 'Our range of premium Oils & Fats provides essential, high-density energy sources for a variety of industrial and nutritional applications. From refined vegetable oils like Soybean and Sunflower to specialized rendered fats like Poultry Fat, our products are selected for their purity, stable fatty acid profiles, and high metabolizable energy. Whether used as a palatability enhancer in pet food, a dust suppressant in feed mills, or a key ingredient in technical manufacturing, our fats ensure optimal performance and quality consistency.',
     image: '/oils-v2.png',
   },
-  'Starches': {
-    title: 'Starches',
-    description: 'Our Starches category provides versatile, high-quality carbohydrate solutions that serve as fundamental building blocks across the food processing and industrial sectors. We supply native and modified starches derived from corn, wheat, tapioca, and potato, each selected for specific functional properties including binding, thickening, gelling, and texturizing. These ingredients are indispensable for manufacturers in the Food & Beverage, Paper, Textile, and Animal Feed industries seeking consistent viscosity, stability, and process reliability.',
+  'Starches&Fibers': {
+    title: 'Starches&Fibers',
+    description: 'Our Starches category provides versatile, high-quality carbohydrate solutions that serve as fundamental building blocks across the food processing and industrial sectors. We supply native and modified starches derived from corn, wheat, tapioca, and potato, each selected for specific functional properties including binding, thickening, gelling, and texturizing. These ingredients are indispensable for manufacturers in the Food & Beverage, Paper, Textile, and Animal Feed industries seeking consistent viscosity, stability, and process reliability.\nOur Fiber category offers essential functional solutions designed to support digestive health and metabolic efficiency across both human and animal nutrition. We provide a variety of specialized dietary fibers, including high-performance cellulose-based products and nutrient-dense Sugar Beet Pulp, which are engineered to improve intestinal motility and promote a healthy gut microbiome.',
     image: '/starches.png',
   },
   'Sweeteners': {
     title: 'Sweeteners',
     description: 'Our Sweeteners category offers a comprehensive range of caloric and non-nutritive solutions designed for superior taste, functional performance, and immediate energy delivery. From high-purity Glucose Syrups and Dextrose to natural Sucrose, we provide versatile sweetening agents that serve critical roles in the Food & Beverage, Pharmaceutical, and Animal Feed industries. These products are essential for enhancing flavor profiles, improving moisture retention, and acting as powerful attractants to increase feed intake in livestock.',
     image: '/sweeteners.png',
-  },
-  'Fibers': {
-    title: 'Fibers',
-    description: 'Our Fiber category offers essential functional solutions designed to support digestive health and metabolic efficiency across both human and animal nutrition. We provide a variety of specialized dietary fibers, including high-performance cellulose-based products and nutrient-dense Sugar Beet Pulp, which are engineered to improve intestinal motility and promote a healthy gut microbiome. These products serve as critical ingredients for clean-label formulations, providing the necessary structural and nutritional benefits required for modern feed and food applications.',
-    image: '/additives.png',
   },
   'Animal Protein': {
     title: 'Animal Protein',
@@ -136,10 +129,19 @@ export default function IngredientsAndProductsSection() {
 
   // Filter products by selected market
   const products = productsData as Product[];
-  const marketKey = tabToMarket[activeTab];
-  const filteredProducts = products
-    .filter(product => product.market.includes(marketKey))
-    .slice(0, 4);
+  const marketKeys = tabToMarket[activeTab];
+  let filteredProducts: Product[];
+  if (marketKeys.length > 1) {
+    // For combined tabs (e.g. Starches&Fibers), take equal products from each market
+    const perMarket = Math.floor(4 / marketKeys.length);
+    filteredProducts = marketKeys.flatMap(key =>
+      products.filter(p => p.market === key).slice(0, perMarket)
+    );
+  } else {
+    filteredProducts = products
+      .filter(product => product.market === marketKeys[0])
+      .slice(0, 4);
+  }
 
   return (
     <>
@@ -148,7 +150,7 @@ export default function IngredientsAndProductsSection() {
         <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12">
           {/* Title */}
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6 md:mb-8">
-            Ingredients
+            Materials
           </h2>
 
           {/* Tabs - scrollable with arrows on mobile */}
@@ -226,7 +228,7 @@ export default function IngredientsAndProductsSection() {
             {/* Left Side - Text */}
             <div>
               <h3 className="text-2xl font-bold text-primary mb-4">{content.title}</h3>
-              <p className="text-primary font-normal text-sm leading-4 text-justify">{content.description}</p>
+              <p className="text-primary font-normal text-sm leading-4 text-justify whitespace-pre-line">{content.description}</p>
             </div>
 
             {/* Right Side - Image */}
