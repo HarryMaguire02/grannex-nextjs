@@ -205,12 +205,12 @@ export default function IngredientsAndProductsSection() {
           {/* Tabs - 2 rows x 5 columns grid on sm and up */}
           <div className="hidden sm:block mb-8">
             <div className="border-2 border-primary rounded-xl p-1">
-              <div className="grid grid-cols-5 gap-2">
+              <div className="flex flex-wrap justify-center gap-2">
                 {tabs.map((tab) => (
                   <button
                     key={tab}
                     onClick={() => setActiveTab(tab)}
-                    className={`px-2 py-2 text-sm font-medium transition-all rounded-lg text-center ${
+                    className={`w-[calc(20%-0.4rem)] px-2 py-2 text-sm font-medium transition-all rounded-lg text-center ${
                       activeTab === tab
                         ? 'bg-primary text-white'
                         : 'bg-transparent text-primary hover:bg-primary/10'
