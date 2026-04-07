@@ -446,6 +446,14 @@ export default function ProductPageClient({ product }: ProductPageClientProps) {
                   </div>
                 )}
 
+                <p className="text-xs text-primary/70 leading-5">
+                  By submitting this form you agree to our{' '}
+                  <Link href="/privacy-policy" className="text-green-medium hover:underline">
+                    Privacy Policy
+                  </Link>
+                  . We use the details you provide solely to respond to your enquiry.
+                </p>
+
                 <div className="flex justify-end pt-2">
                   <button
                     type="submit"
