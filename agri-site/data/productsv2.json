@@ -2,7 +2,7 @@
     {
     "slug": "sunflower-oil",
     "name": "Sunflower Oil",
-    "image": "/85-SunflowerOilRetail.png",
+    "image": "/85-SunflowerOil.png",
     "market": "oils-and-fats",
     "marketLabel": "Oils and fats",
     "info": "Sunflower oil is a non-volatile oil compressed from the seeds of the sunflower plant. It is primarily composed of linoleic and oleic acids.",
@@ -47,7 +47,7 @@
   {
     "slug": "canolarapeseed-oil",
     "name": "Canola/Rapeseed Oil",
-    "image": "/91-CanolaRapeseedOilRetail.png",
+    "image": "/91-CanolaRapeseedOil.png",
     "market": "oils-and-fats",
     "marketLabel": "Oils and fats",
     "info": "This vegetable oil is extracted from the seeds of the rape plant. It features a balanced fatty acid profile and low levels of erucic acid.",
@@ -82,13 +82,13 @@
     ]
   },
   {
-    "slug": "soyabean-seed-oil",
-    "name": "Soyabean seed Oil",
-    "image": "/88-SoyabeanSeedOilRetail.png",
+    "slug": "soybean-seed-oil",
+    "name": "Soybean seed Oil",
+    "image": "/88-SoybeanSeedOil.png",
     "market": "oils-and-fats",
     "marketLabel": "Oils and fats",
-    "info": "Soyabean oil is a refined vegetable oil extracted from whole soybeans. It is rich in polyunsaturated fats and essential linoleic acid.",
-    "description": "Soyabean oil is a concentrated liquid energy source that provides essential fatty acids for animal health. It is frequently used in feed mills to improve pellet quality and serves as a highly effective dust suppressant during processing.",
+    "info": "Soybean oil is a refined vegetable oil extracted from whole soybeans. It is rich in polyunsaturated fats and essential linoleic acid.",
+    "description": "Soybean oil is a concentrated liquid energy source that provides essential fatty acids for animal health. It is frequently used in feed mills to improve pellet quality and serves as a highly effective dust suppressant during processing.",
     "application": "High-energy liquid feed; dust control in mills; essential fatty acid source.",
     "packing": "Packing Options: Bulk: Tank Containers (22-23 MT), Flexi Tank (22-23 MT)",
     "specification": [
@@ -111,18 +111,18 @@
     "pdfs": [
       {
         "name": "Product specification - crude",
-        "url": "4-Soyabean seed Oil.pdf"
+        "url": "4-Soybean seed Oil.pdf"
       },
       {
         "name": "Product specification - refined",
-        "url": "78-RefinedSoyabeanOil.pdf"
+        "url": "78-RefinedSoybeanOil.pdf"
       }
     ]
   },
   {
     "slug": "corn-oil",
     "name": "Corn Oil",
-    "image": "/87-CornOilRetail.png",
+    "image": "/87-CornOil.png",
     "market": "oils-and-fats",
     "marketLabel": "Oils and fats",
     "info": "Corn oil is a refined vegetable oil extracted from the germ of the maize kernel. It is a rich source of linoleic acid and natural tocopherols.",
@@ -163,7 +163,7 @@
   {
     "slug": "olive-oil",
     "name": "Olive Oil",
-    "image": "/90-OliveOilRetail.png",
+    "image": "/90-OliveOil.png",
     "market": "oils-and-fats",
     "marketLabel": "Oils and fats",
     "info": "Olive oil is a liquid fat obtained from whole olives, the fruit of the Olea europaea tree. It is rich in oleic acid and antioxidants.",
@@ -201,7 +201,7 @@
     {
     "slug": "palm-oil",
     "name": "Palm Oil",
-    "image": "/86-PalmOilRetail.png",
+    "image": "/86-PalmOil.png",
     "market": "oils-and-fats",
     "marketLabel": "Oils and fats",
     "info": "Palm oil is a semi-solid vegetable fat extracted from the fruit of the oil palm. It is a natural source of both saturated and unsaturated fats.",
@@ -234,7 +234,7 @@
     {
     "slug": "palm-olein",
     "name": "Palm Olein",
-    "image": "/89-PalmOleinRetail.png",
+    "image": "/89-PalmOlein.png",
     "market": "oils-and-fats",
     "marketLabel": "Oils and fats",
     "info": "Palm olein is the liquid fraction obtained by the fractionation of palm oil after crystallization at controlled temperatures.",
@@ -265,7 +265,7 @@
   {
     "slug": "sunflower-oil-retail",
     "name": "Sunflower Oil",
-    "image": "/1-SunflowerOil.png",
+    "image": "/1-SunflowerOil-retail.png",
     "market": "oils-and-fats",
     "marketLabel": "Oils and fats",
     "info": "Sunflower oil is a non-volatile oil compressed from the seeds of the sunflower plant. It is primarily composed of linoleic and oleic acids.",
@@ -310,7 +310,7 @@
   {
     "slug": "canolarapeseed-oil-retail",
     "name": "Canola/Rapeseed Oil",
-    "image": "/3-CanolaRapeseedOil.png",
+    "image": "/3-CanolaRapeseedOil-retail.png",
     "market": "oils-and-fats",
     "marketLabel": "Oils and fats",
     "info": "This vegetable oil is extracted from the seeds of the rape plant. It features a balanced fatty acid profile and low levels of erucic acid.",
@@ -345,13 +345,13 @@
     ]
   },
   {
-    "slug": "soyabean-seed-oil-retail",
-    "name": "Soyabean seed Oil",
-    "image": "/4-SoyabeanSeedOil.png",
+    "slug": "soybean-seed-oil-retail",
+    "name": "Soybean seed Oil",
+    "image": "/4-SoybeanSeedOil-retail.png",
     "market": "oils-and-fats",
     "marketLabel": "Oils and fats",
-    "info": "Soyabean oil is a refined vegetable oil extracted from whole soybeans. It is rich in polyunsaturated fats and essential linoleic acid.",
-    "description": "Soyabean oil is a concentrated liquid energy source that provides essential fatty acids for animal health. It is frequently used in feed mills to improve pellet quality and serves as a highly effective dust suppressant during processing.",
+    "info": "Soybean oil is a refined vegetable oil extracted from whole soybeans. It is rich in polyunsaturated fats and essential linoleic acid.",
+    "description": "Soybean oil is a concentrated liquid energy source that provides essential fatty acids for animal health. It is frequently used in feed mills to improve pellet quality and serves as a highly effective dust suppressant during processing.",
     "application": "High-energy liquid feed; dust control in mills; essential fatty acid source.",
     "packing": "PET-bottles: 500ml, 900ml, 1L, 2L, 3L, 5L; HDPE Jerry Cans: 20L, 25L; Can-in-Box: 15L, 20L",
     "specification": [
@@ -374,18 +374,18 @@
     "pdfs": [
       {
         "name": "Product specification - crude",
-        "url": "4-Soyabean seed Oil.pdf"
+        "url": "4-Soybean seed Oil.pdf"
       },
       {
         "name": "Product specification - refined",
-        "url": "78-RefinedSoyabeanOil.pdf"
+        "url": "78-RefinedSoybeanOil.pdf"
       }
     ]
   },
   {
     "slug": "corn-oil-retail",
     "name": "Corn Oil",
-    "image": "/2-CornOil.png",
+    "image": "/2-CornOil-retail.png",
     "market": "oils-and-fats",
     "marketLabel": "Oils and fats",
     "info": "Corn oil is a refined vegetable oil extracted from the germ of the maize kernel. It is a rich source of linoleic acid and natural tocopherols.",
@@ -426,7 +426,7 @@
   {
     "slug": "olive-oil-retail",
     "name": "Olive Oil",
-    "image": "/7-OliveOil.png",
+    "image": "/7-OliveOil-retail.png",
     "market": "oils-and-fats",
     "marketLabel": "Oils and fats",
     "info": "Olive oil is a liquid fat obtained from whole olives, the fruit of the Olea europaea tree. It is rich in oleic acid and antioxidants.",
@@ -1269,13 +1269,13 @@
     ]
   },
   {
-    "slug": "soyabean-meal-46",
-    "name": "Soyabean Meal 46%",
-    "image": "/34-SoyabeanMeal46.png",
+    "slug": "soybean-meal-46",
+    "name": "Soybean Meal 46%",
+    "image": "/34-SoybeanMeal46.png",
     "market": "millingcrushing",
     "marketLabel": "Milling/Crushing",
-    "info": "Soyabean meal is the byproduct of oil extraction from soybeans. It is a high-protein feed ingredient.",
-    "description": "Soyabean meal 46% is the primary protein foundation for livestock, characterized by a complete amino acid profile. It supports rapid muscle development in poultry and swine and is a highly reliable source of digestible lysine.",
+    "info": "Soybean meal is the byproduct of oil extraction from soybeans. It is a high-protein feed ingredient.",
+    "description": "Soybean meal 46% is the primary protein foundation for livestock, characterized by a complete amino acid profile. It supports rapid muscle development in poultry and swine and is a highly reliable source of digestible lysine.",
     "application": "Primary high-protein base for poultry, swine, and dairy diets.",
     "packing": "Bulk, Big Bag 1MT, Bag 25kg",
     "specification": [
@@ -1293,7 +1293,7 @@
     "pdfs": [
       {
         "name": "Product specification",
-        "url": "34-Soyabean Meal 46%.pdf"
+        "url": "34-Soybean Meal 46%.pdf"
       }
     ]
   },
