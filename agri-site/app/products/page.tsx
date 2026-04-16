@@ -39,12 +39,15 @@ function ProductsContent() {
   const searchParams = useSearchParams();
   const router = useRouter();
   const marketParam = searchParams.get('market');
+  const searchParam = searchParams.get('search');
+  const pageParam = searchParams.get('page');
 
   // Parse market param - can be comma-separated for multiple values
   const initialMarkets = marketParam ? marketParam.split(',') : [];
+  const initialPage = pageParam ? Math.max(1, parseInt(pageParam, 10) || 1) : 1;
   const [selectedMarkets, setSelectedMarkets] = useState<string[]>(initialMarkets);
-  const [searchQuery, setSearchQuery] = useState<string>('');
-  const [currentPage, setCurrentPage] = useState<number>(1);
+  const [searchQuery, setSearchQuery] = useState<string>(searchParam ?? '');
+  const [currentPage, setCurrentPage] = useState<number>(initialPage);
   const [productsPerPage, setProductsPerPage] = useState<number>(12);
 
   const isInitialMount = useRef(true);
@@ -69,13 +72,21 @@ function ProductsContent() {
       params.set('market', selectedMarkets.join(','));
     }
 
+    if (searchQuery) {
+      params.set('search', searchQuery);
+    }
+
+    if (currentPage > 1) {
+      params.set('page', String(currentPage));
+    }
+
     // Build the URL
     const queryString = params.toString();
     const newUrl = queryString ? `/products?${queryString}` : '/products';
 
     // Update URL without adding to history (so back button doesn't go through every filter change)
     router.replace(newUrl, { scroll: false });
-  }, [selectedMarkets, router]);
+  }, [selectedMarkets, searchQuery, currentPage, router]);
 
   // Smooth scroll to top when page changes (skip on initial mount)
   useEffect(() => {
