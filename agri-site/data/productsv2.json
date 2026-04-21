@@ -1,5 +1,5 @@
 [
-    {
+  {
     "slug": "sunflower-oil",
     "name": "Sunflower Oil",
     "image": "/85-SunflowerOil.png",
@@ -22,13 +22,7 @@
       "BHT:75-100ppm",
       "Citric acid:40-50ppm"
     ],
-    "industry": [
-      "Food & Beverage",
-      "Pet Food",
-      "Animal Feed",
-      "Cosmetics",
-      "Technical & Industrial."
-    ],
+    "industry": ["oils-and-fats"],
     "pdfs": [
       {
         "name": "Product specification - crude",
@@ -61,11 +55,7 @@
       "Sand / Silica:1.00%",
       "Erucic Acid:2.00%"
     ],
-    "industry": [
-      "Food & Beverage",
-      "Animal Feed",
-      "Technical & Industrial."
-    ],
+    "industry": ["oils-and-fats"],
     "pdfs": [
       {
         "name": "Product specification - crude",
@@ -101,13 +91,7 @@
       "Flash point:250ºF (121ºC)",
       "Unsaponifiable Matter (test as per n.s.p.a.):1.50%"
     ],
-    "industry": [
-      "Food & Beverage",
-      "Pet Food",
-      "Animal Feed",
-      "Cosmetics",
-      "Technical & Industrial."
-    ],
+    "industry": ["oils-and-fats"],
     "pdfs": [
       {
         "name": "Product specification - crude",
@@ -143,12 +127,7 @@
       "Sediment:1%",
       "Colour lovibond (Basis yellow 50 – cell 25.4 cm):Red Max 6.50"
     ],
-    "industry": [
-      "Food & Beverage",
-      "Pet Food",
-      "Animal Feed",
-      "Technical & Industrial."
-    ],
+    "industry": ["oils-and-fats"],
     "pdfs": [
       {
         "name": "Product specification - crude",
@@ -177,12 +156,7 @@
       "Monounsaturated fatty acids:73%",
       "Polyunsaturated fatty acids:11%"
     ],
-    "industry": [
-      "Food & Beverage",
-      "Pet Food",
-      "Animal Feed",
-      "Cosmetics."
-    ],
+    "industry": ["oils-and-fats"],
     "pdfs": [
       {
         "name": "Product specification - refined",
@@ -213,13 +187,7 @@
       "M&I:0.5%",
       "IV (Wijs):51 – 55"
     ],
-    "industry": [
-      "Food & Beverage",
-      "Pet Food",
-      "Animal Feed",
-      "Cosmetics",
-      "Technical & Industrial."
-    ],
+    "industry": ["oils-and-fats"],
     "pdfs": [
       {
         "name": "Product specification - crude",
@@ -248,13 +216,7 @@
       "Melting point:24°C max",
       "Cloud point:10°C max"
     ],
-    "industry": [
-      "Food & Beverage",
-      "Pet Food",
-      "Animal Feed",
-      "Cosmetics",
-      "Technical & Industrial."
-    ],
+    "industry": ["oils-and-fats"],
     "pdfs": [
       {
         "name": "Product specification",
@@ -285,13 +247,7 @@
       "BHT:75-100ppm",
       "Citric acid:40-50ppm"
     ],
-    "industry": [
-      "Food & Beverage",
-      "Pet Food",
-      "Animal Feed",
-      "Cosmetics",
-      "Technical & Industrial."
-    ],
+    "industry": ["oils-and-fats"],
     "pdfs": [
       {
         "name": "Product specification - crude",
@@ -324,11 +280,7 @@
       "Sand / Silica:1.00%",
       "Erucic Acid:2.00%"
     ],
-    "industry": [
-      "Food & Beverage",
-      "Animal Feed",
-      "Technical & Industrial."
-    ],
+    "industry": ["oils-and-fats"],
     "pdfs": [
       {
         "name": "Product specification - crude",
@@ -364,13 +316,7 @@
       "Flash point:250ºF (121ºC)",
       "Unsaponifiable Matter (test as per n.s.p.a.):1.50%"
     ],
-    "industry": [
-      "Food & Beverage",
-      "Pet Food",
-      "Animal Feed",
-      "Cosmetics",
-      "Technical & Industrial."
-    ],
+    "industry": ["oils-and-fats"],
     "pdfs": [
       {
         "name": "Product specification - crude",
@@ -406,12 +352,7 @@
       "Sediment:1%",
       "Colour lovibond (Basis yellow 50 – cell 25.4 cm):Red Max 6.50"
     ],
-    "industry": [
-      "Food & Beverage",
-      "Pet Food",
-      "Animal Feed",
-      "Technical & Industrial."
-    ],
+    "industry": ["oils-and-fats"],
     "pdfs": [
       {
         "name": "Product specification - crude",
@@ -440,12 +381,7 @@
       "Monounsaturated fatty acids:73%",
       "Polyunsaturated fatty acids:11%"
     ],
-    "industry": [
-      "Food & Beverage",
-      "Pet Food",
-      "Animal Feed",
-      "Cosmetics."
-    ],
+    "industry": ["oils-and-fats"],
     "pdfs": [
       {
         "name": "Product specification - refined",
@@ -478,12 +414,7 @@
       "Melting point:31–35°C",
       "Unsaponifiable matter:0.35%"
     ],
-    "industry": [
-      "Food & Beverage",
-      "Pet Food",
-      "Animal Feed",
-      "Cosmetics."
-    ],
+    "industry": ["oils-and-fats", "food-materials"],
     "pdfs": [
       {
         "name": "Product specification",
@@ -510,12 +441,7 @@
       "Ash:1.5%",
       "Gross energy:30.5 MJ/kg DM"
     ],
-    "industry": [
-      "Food & Beverage",
-      "Bakery",
-      "Pet Food",
-      "Confectionery"
-    ],
+    "industry": ["oils-and-fats", "food-materials"],
     "pdfs": [
       {
         "name": "Product specification",
@@ -540,12 +466,7 @@
       "Peroxide value:1.0 meq O2/kg",
       "Slip melting point:36–39°C"
     ],
-    "industry": [
-      "Food & Beverage",
-      "Pet Food",
-      "Animal Feed",
-      "Cosmetics."
-    ],
+    "industry": ["oils-and-fats", "food-materials"],
     "pdfs": [
       {
         "name": "Product specification",
@@ -571,12 +492,7 @@
       "Vitamin D3:200 IU/100g",
       "Melting point:34–36°C"
     ],
-    "industry": [
-      "Food & Beverage",
-      "Pet Food",
-      "Animal Feed",
-      "Cosmetics."
-    ],
+    "industry": ["oils-and-fats", "food-materials"],
     "pdfs": [
       {
         "name": "Product specification",
@@ -603,10 +519,7 @@
       "pH:3.5-4.5",
       "Cholesterol:approx 60-70 mg/100g"
     ],
-    "industry": [
-      "Food & Beverage",
-      "Pet Food"
-    ],
+    "industry": ["food-materials"],
     "pdfs": [
       {
         "name": "Product specification",
@@ -631,12 +544,7 @@
       "Residue on ignition:0.3% max",
       "Ammonium:0.04% max"
     ],
-    "industry": [
-      "Food & Beverage",
-      "Pet Food",
-      "Animal Feed",
-      "Pharmaceuticals."
-    ],
+    "industry": ["animal-feeds-materials", "aqua-feeds-materials"],
     "pdfs": [
       {
         "name": "Product specification",
@@ -661,12 +569,7 @@
       "pH (10% solution):5.4–6.1",
       "Heavy metals (as Pb):10 ppm max"
     ],
-    "industry": [
-      "Pet Food",
-      "Animal Feed",
-      "Aquaculture",
-      "Pharmaceuticals."
-    ],
+    "industry": ["animal-feeds-materials", "aqua-feeds-materials"],
     "pdfs": [
       {
         "name": "Product specification",
@@ -691,12 +594,7 @@
       "Residue on ignition:0.5% max",
       "Iron:20 ppm max"
     ],
-    "industry": [
-      "Food & Beverage",
-      "Pet Food",
-      "Animal Feed",
-      "Pharmaceuticals."
-    ],
+    "industry": ["animal-feeds-materials", "aqua-feeds-materials"],
     "pdfs": [
       {
         "name": "Product specification",
@@ -721,12 +619,7 @@
       "Residue on ignition:0.2% max",
       "pH:5.5–7.0"
     ],
-    "industry": [
-      "Food & Beverage",
-      "Pet Food",
-      "Animal Feed",
-      "Pharmaceuticals."
-    ],
+    "industry": ["animal-feeds-materials", "aqua-feeds-materials"],
     "pdfs": [
       {
         "name": "Product specification",
@@ -751,12 +644,7 @@
       "Residue on ignition:0.1% max",
       "Iron:10 ppm max"
     ],
-    "industry": [
-      "Food & Beverage",
-      "Pet Food",
-      "Animal Feed",
-      "Pharmaceuticals."
-    ],
+    "industry": ["animal-feeds-materials", "aqua-feeds-materials"],
     "pdfs": [
       {
         "name": "Product specification",
@@ -781,13 +669,7 @@
       "Residue on ignition:0.1% max",
       "Chloride:0.02% max"
     ],
-    "industry": [
-      "Food & Beverage",
-      "Pet Food",
-      "Animal Feed",
-      "Pharmaceuticals",
-      "Cosmetics."
-    ],
+    "industry": ["animal-feeds-materials", "aqua-feeds-materials"],
     "pdfs": [
       {
         "name": "Product specification",
@@ -812,13 +694,7 @@
       "Chloride:0.01% max",
       "Sulfate:0.01% max"
     ],
-    "industry": [
-      "Food & Beverage",
-      "Pet Food",
-      "Animal Feed",
-      "Pharmaceuticals",
-      "Cosmetics."
-    ],
+    "industry": ["animal-feeds-materials", "food-materials"],
     "pdfs": [
       {
         "name": "Product specification",
@@ -843,12 +719,7 @@
       "Color:Max 45 ICUMSA units",
       "Invert sugar:0.04% max"
     ],
-    "industry": [
-      "Food & Beverage",
-      "Bakery",
-      "Confectionery",
-      "Animal Feed."
-    ],
+    "industry": ["animal-feeds-materials", "food-materials"],
     "pdfs": [
       {
         "name": "Product specification",
@@ -874,12 +745,7 @@
       "Residue on ignition (Ash):0.1%",
       "SO2:Depends on origin"
     ],
-    "industry": [
-      "Food & Beverage",
-      "Pet Food",
-      "Pharmaceuticals",
-      "Sports Nutrition."
-    ],
+    "industry": ["food-materials"],
     "pdfs": [
       {
         "name": "Product specification",
@@ -905,13 +771,7 @@
       "Ash:0.5% max",
       "SO2:max 10mg/kg"
     ],
-    "industry": [
-      "Food & Beverage",
-      "Pet Food",
-      "Animal Feed",
-      "Cosmetics",
-      "Technical & Industrial."
-    ],
+    "industry": ["animal-feeds-materials", "food-materials"],
     "pdfs": [
       {
         "name": "Product specification",
@@ -937,13 +797,7 @@
       "Sweetness:Increases with DE",
       "Function:Prevents crystallization and provides body"
     ],
-    "industry": [
-      "Food & Beverage",
-      "Bakery",
-      "Pet Food",
-      "Animal Feed",
-      "Technical & Industrial."
-    ],
+    "industry": ["food-materials"],
     "pdfs": [
       {
         "name": "Product specification",
@@ -969,12 +823,7 @@
       "Residue on ignition (Ash):0.1%",
       "SO2:Depends on origin"
     ],
-    "industry": [
-      "Food & Beverage",
-      "Bakery",
-      "Confectionery",
-      "Technical & Industrial."
-    ],
+    "industry": ["food-materials"],
     "pdfs": [
       {
         "name": "Product specification",
@@ -1000,13 +849,7 @@
       "Ash:max 0.6%",
       "pH:3.4–6.1"
     ],
-    "industry": [
-      "Food & Beverage",
-      "Bakery",
-      "Pet Food",
-      "Cosmetics",
-      "Pharmaceuticals."
-    ],
+    "industry": ["food-materials", "animal-feeds-materials"],
     "pdfs": [
       {
         "name": "Product specification",
@@ -1031,12 +874,7 @@
       "Ash:max 10.0%",
       "pH:5.0–6.0"
     ],
-    "industry": [
-      "Animal Feed",
-      "Food & Beverage",
-      "Agriculture",
-      "Technical & Industrial."
-    ],
+    "industry": ["animal-feeds-materials"],
     "pdfs": [
       {
         "name": "Product specification",
@@ -1062,12 +900,7 @@
       "pH:4.5–7.0",
       "Taste:intense sweetness"
     ],
-    "industry": [
-      "Food & Beverage",
-      "Pharmaceuticals",
-      "Cosmetics",
-      "Dietary Supplements."
-    ],
+    "industry": ["food-materials"],
     "pdfs": [
       {
         "name": "Product specification",
@@ -1093,11 +926,7 @@
       "Specific rotation:+14.5° to +16.5°",
       "pH:4.5–6.0"
     ],
-    "industry": [
-      "Food & Beverage",
-      "Pharmaceuticals",
-      "Cosmetics."
-    ],
+    "industry": ["food-materials"],
     "pdfs": [
       {
         "name": "Product specification",
@@ -1123,13 +952,7 @@
       "pH:5.0-7.5",
       "SO2:20mg/kg"
     ],
-    "industry": [
-      "Food & Beverage",
-      "Bakery",
-      "Pet Food",
-      "Animal Feed",
-      "Technical & Industrial."
-    ],
+    "industry": ["animal-feeds-materials", "food-materials"],
     "pdfs": [
       {
         "name": "Product specification",
@@ -1156,12 +979,7 @@
       "pH:4.5-6.5",
       "SO2:30mg/kg"
     ],
-    "industry": [
-      "Food & Beverage",
-      "Pet Food",
-      "Animal Feed",
-      "Technical & Industrial."
-    ],
+    "industry": ["animal-feeds-materials", "food-materials"],
     "pdfs": [
       {
         "name": "Product specification",
@@ -1188,12 +1006,7 @@
       "pH:6.0-8.0",
       "SO2:10mg/kg"
     ],
-    "industry": [
-      "Food & Beverage",
-      "Pet Food",
-      "Animal Feed",
-      "Technical & Industrial."
-    ],
+    "industry": ["animal-feeds-materials", "food-materials"],
     "pdfs": [
       {
         "name": "Product specification",
@@ -1221,13 +1034,7 @@
       "HCN:<10 ppm",
       "SO2:30mg/kg"
     ],
-    "industry": [
-      "Food & Beverage",
-      "Pet Food",
-      "Animal Feed",
-      "Aquaculture",
-      "Technical & Industrial."
-    ],
+    "industry": ["food-materials", "aqua-feeds-materials"],
     "pdfs": [
       {
         "name": "Product specification",
@@ -1254,13 +1061,7 @@
       "pH:5.5–7.5",
       "SO2:max 10mg/kg"
     ],
-    "industry": [
-      "Food & Beverage",
-      "Pet Food",
-      "Animal Feed",
-      "Aquaculture",
-      "Technical & Industrial."
-    ],
+    "industry": ["food-materials"],
     "pdfs": [
       {
         "name": "Product specification",
@@ -1286,10 +1087,7 @@
       "Ash:6.0%",
       "Gross energy:18.8 MJ/kg DM"
     ],
-    "industry": [
-      "Animal Feed",
-      "Agriculture."
-    ],
+    "industry": ["animal-feeds-materials"],
     "pdfs": [
       {
         "name": "Product specification",
@@ -1315,12 +1113,7 @@
       "Ash:max 7.0%",
       "pH:6.5–7.5"
     ],
-    "industry": [
-      "Food & Beverage",
-      "Pet Food",
-      "Animal Feed",
-      "Aquaculture."
-    ],
+    "industry": ["animal-feeds-materials"],
     "pdfs": [
       {
         "name": "Product specification",
@@ -1346,10 +1139,7 @@
       "Ash:6.5%",
       "Gross energy:19.1 MJ/kg DM"
     ],
-    "industry": [
-      "Animal Feed",
-      "Agriculture."
-    ],
+    "industry": ["animal-feeds-materials"],
     "pdfs": [
       {
         "name": "Product specification",
@@ -1376,10 +1166,7 @@
       "Glucosinolates:max 20 µmol/g",
       "Gross energy:19.5 MJ/kg DM"
     ],
-    "industry": [
-      "Animal Feed",
-      "Agriculture."
-    ],
+    "industry": ["animal-feeds-materials"],
     "pdfs": [
       {
         "name": "Product specification",
@@ -1410,11 +1197,7 @@
       "Sugars:0.5%",
       "Gross energy:23.1MJ/kg"
     ],
-    "industry": [
-      "Animal Feed",
-      "Pet Food",
-      "Aquaculture."
-    ],
+    "industry": ["animal-feeds-materials", "aqua-feeds-materials"],
     "pdfs": [
       {
         "name": "Product specification",
@@ -1441,16 +1224,7 @@
       "Fat:2.5% max",
       "Waterbinding capacity:150% min"
     ],
-    "industry": [
-      "Milling",
-      "Food & Beverage",
-      "Bakery",
-      "Pasta",
-      "Pet Food",
-      "Animal Feed",
-      "Cosmetics",
-      "Technical & Industrial."
-    ],
+    "industry": ["animal-feeds-materials", "aqua-feeds-materials"],
     "pdfs": [
       {
         "name": "Product specification",
@@ -1482,10 +1256,7 @@
       "Total sugars:7.8%",
       "Gross energy:17.1 MJ/kg DM"
     ],
-    "industry": [
-      "Animal Feed",
-      "Technical & Industrial."
-    ],
+    "industry": ["animal-feeds-materials"],
     "pdfs": [
       {
         "name": "Product specification",
@@ -1511,11 +1282,7 @@
       "Ash:4.5%",
       "Gross energy:20.1 MJ/kg DM"
     ],
-    "industry": [
-      "Animal Feed",
-      "Agriculture",
-      "Technical & Industrial."
-    ],
+    "industry": ["animal-feeds-materials"],
     "pdfs": [
       {
         "name": "Product specification",
@@ -1542,11 +1309,7 @@
       "Ash:5.0%",
       "Gross energy:18.2 MJ/kg DM"
     ],
-    "industry": [
-      "Animal Feed",
-      "Agriculture",
-      "Technical & Industrial."
-    ],
+    "industry": ["animal-feeds-materials"],
     "pdfs": [
       {
         "name": "Product specification",
@@ -1571,11 +1334,7 @@
       "Ash:13.6%",
       "Gross energy:21.9 MJ/kg DM"
     ],
-    "industry": [
-      "Pet Food",
-      "Animal Feed",
-      "Aquaculture."
-    ],
+    "industry": ["animal-feeds-materials", "aqua-feeds-materials"],
     "pdfs": [
       {
         "name": "Product specification",
@@ -1601,14 +1360,7 @@
       "Monounsaturated fatty acids:57 g",
       "Cholesterol:766 mg"
     ],
-    "industry": [
-      "Food & Beverage",
-      "Pet Food",
-      "Animal Feed",
-      "Aquaculture",
-      "Pharmaceuticals",
-      "Cosmetics."
-    ],
+    "industry": ["animal-feeds-materials", "aqua-feeds-materials"],
     "pdfs": [
       {
         "name": "Product specification",
@@ -1635,12 +1387,7 @@
       "Phosphorus:6.1g",
       "TMEn polutry:14.8MJ/kg"
     ],
-    "industry": [
-      "Pet Food",
-      "Animal Feed",
-      "Aquaculture",
-      "Agriculture."
-    ],
+    "industry": ["animal-feeds-materials"],
     "pdfs": [
       {
         "name": "Product specification",
@@ -1666,11 +1413,7 @@
       "Ash:3.0%",
       "Lysine:min 7.0%"
     ],
-    "industry": [
-      "Animal Feed",
-      "Aquaculture",
-      "Agriculture."
-    ],
+    "industry": ["animal-feeds-materials"],
     "pdfs": [
       {
         "name": "Product specification",
@@ -1695,12 +1438,7 @@
       "Fiber: 5% max",
       "Ash: 7% max"
     ],
-    "industry": [
-      "Food & Beverage",
-      "Pet Food",
-      "Animal Feed",
-      "Aquaculture."
-    ],
+    "industry": ["animal-feeds-materials", "aqua-feeds-materials"],
     "pdfs": [
       {
         "name": "Product specification",
@@ -1725,12 +1463,7 @@
       "Ash:max 6.0%",
       "pH:6.5–8.5"
     ],
-    "industry": [
-      "Food & Beverage",
-      "Pet Food",
-      "Animal Feed",
-      "Aquaculture."
-    ],
+    "industry": ["food-materials", "aqua-feeds-materials"],
     "pdfs": [
       {
         "name": "Product specification",
@@ -1755,12 +1488,7 @@
       "Ash:max 2.0%",
       "Glycoalkaloids:max 150 mg/kg"
     ],
-    "industry": [
-      "Food & Beverage",
-      "Pet Food",
-      "Animal Feed",
-      "Aquaculture."
-    ],
+    "industry": ["animal-feeds-materials", "aqua-feeds-materials"],
     "pdfs": [
       {
         "name": "Product specification",
@@ -1785,12 +1513,7 @@
       "Ash:max 4.0%",
       "pH:6.0–8.0"
     ],
-    "industry": [
-      "Food & Beverage",
-      "Pet Food",
-      "Animal Feed",
-      "Aquaculture."
-    ],
+    "industry": ["food-materials", "animal-feeds-materials"],
     "pdfs": [
       {
         "name": "Product specification",
@@ -1816,12 +1539,7 @@
       "Calcium:max 4.0%",
       "Phosphorus:min 2.0%"
     ],
-    "industry": [
-      "Pet Food",
-      "Animal Feed",
-      "Aquaculture",
-      "Agriculture."
-    ],
+    "industry": ["animal-feeds-materials"],
     "pdfs": [
       {
         "name": "Product specification",
@@ -1852,11 +1570,7 @@
       "Total sugars:0.3%",
       "Gross energy:23.5 MJ/kg DM"
     ],
-    "industry": [
-      "Animal Feed",
-      "Aquaculture",
-      "Agriculture."
-    ],
+    "industry": ["animal-feeds-materials"],
     "pdfs": [
       {
         "name": "Product specification",
@@ -1882,11 +1596,7 @@
       "Crude fibre:7.0%",
       "Ash:5.5%"
     ],
-    "industry": [
-      "Pet Food",
-      "Animal Feed",
-      "Aquaculture."
-    ],
+    "industry": ["animal-feeds-materials", "aqua-feeds-materials"],
     "pdfs": [
       {
         "name": "Product specification",
@@ -1912,11 +1622,7 @@
       "Calcium:min 8.0%",
       "Phosphorus:min 4.0%"
     ],
-    "industry": [
-      "Animal Feed",
-      "Aquaculture",
-      "Agriculture."
-    ],
+    "industry": ["animal-feeds-materials"],
     "pdfs": [
       {
         "name": "Product specification",
@@ -1941,11 +1647,7 @@
       "Ash:max 13.0%",
       "Astaxanthin:min 150 mg/kg"
     ],
-    "industry": [
-      "Pet Food",
-      "Animal Feed",
-      "Aquaculture."
-    ],
+    "industry": ["aqua-feeds-materials"],
     "pdfs": [
       {
         "name": "Product specification",
@@ -1969,13 +1671,7 @@
       "Moisture:max 2.0%",
       "Particle size:90% through 20 mesh"
     ],
-    "industry": [
-      "Food & Beverage",
-      "Pet Food",
-      "Animal Feed",
-      "Pharmaceuticals",
-      "Cosmetics."
-    ],
+    "industry": ["animal-feeds-materials", "aqua-feeds-materials"],
     "pdfs": [
       {
         "name": "Product specification",
@@ -2000,13 +1696,7 @@
       "Residue on ignition:max 0.1%",
       "pH:2.1–2.6"
     ],
-    "industry": [
-      "Food & Beverage",
-      "Pet Food",
-      "Animal Feed",
-      "Pharmaceuticals",
-      "Cosmetics."
-    ],
+    "industry": ["food-materials", "animal-feeds-materials", "aqua-feeds-materials"],
     "pdfs": [
       {
         "name": "Product specification",
@@ -2031,13 +1721,7 @@
       "Loss on drying:max 0.5%",
       "Residue on ignition:max 0.1%"
     ],
-    "industry": [
-      "Food & Beverage",
-      "Pet Food",
-      "Animal Feed",
-      "Pharmaceuticals",
-      "Cosmetics."
-    ],
+    "industry": ["animal-feeds-materials", "aqua-feeds-materials"],
     "pdfs": [
       {
         "name": "Product specification",
@@ -2061,13 +1745,7 @@
       "Loss on drying:max 5.0%",
       "Bulk density:0.45–0.60 g/ml"
     ],
-    "industry": [
-      "Food & Beverage",
-      "Pet Food",
-      "Animal Feed",
-      "Pharmaceuticals",
-      "Cosmetics."
-    ],
+    "industry": ["food-materials", "animal-feeds-materials"],
     "pdfs": [
       {
         "name": "Product specification",
@@ -2091,13 +1769,7 @@
       "Loss on drying:max 1.0%",
       "Residue on ignition:max 0.1%"
     ],
-    "industry": [
-      "Food & Beverage",
-      "Pet Food",
-      "Animal Feed",
-      "Pharmaceuticals",
-      "Cosmetics."
-    ],
+    "industry": ["food-materials","animal-feeds-materials"],
     "pdfs": [
       {
         "name": "Product specification",
@@ -2122,13 +1794,7 @@
       "Specific rotation:+25.0° to +28.5°",
       "Loss on drying:max 5.0%"
     ],
-    "industry": [
-      "Food & Beverage",
-      "Pet Food",
-      "Animal Feed",
-      "Pharmaceuticals",
-      "Cosmetics."
-    ],
+    "industry": ["animal-feeds-materials", "aqua-feeds-materials"],
     "pdfs": [
       {
         "name": "Product specification",
@@ -2152,13 +1818,7 @@
       "K3 (MSB):min 50.0%",
       "Stability:coated/stabilized for feed use"
     ],
-    "industry": [
-      "Food & Beverage",
-      "Pet Food",
-      "Animal Feed",
-      "Pharmaceuticals",
-      "Cosmetics."
-    ],
+    "industry": ["animal-feeds-materials"],
     "pdfs": [
       {
         "name": "Product specification",
@@ -2181,13 +1841,7 @@
       "B2 (Riboflavin):min 80.0%",
       "B6 (Pyridoxine HCl):min 98.0%"
     ],
-    "industry": [
-      "Food & Beverage",
-      "Pet Food",
-      "Animal Feed",
-      "Pharmaceuticals",
-      "Cosmetics."
-    ],
+    "industry": ["animal-feeds-materials"],
     "pdfs": [
       {
         "name": "Product specification",
@@ -2211,13 +1865,7 @@
       "Water content:max 8.5%",
       "Residue on ignition:max 0.3%"
     ],
-    "industry": [
-      "Food & Beverage",
-      "Pet Food",
-      "Animal Feed",
-      "Pharmaceuticals",
-      "Cosmetics."
-    ],
+    "industry": ["food-materials", "animal-feeds-materials"],
     "pdfs": [
       {
         "name": "Product specification",
@@ -2240,13 +1888,7 @@
       "Appearance:white to off-white powder",
       "Loss on drying:max 1.0%"
     ],
-    "industry": [
-      "Food & Beverage",
-      "Pet Food",
-      "Animal Feed",
-      "Pharmaceuticals",
-      "Cosmetics."
-    ],
+    "industry": ["animal-feeds-materials"],
     "pdfs": [
       {
         "name": "Product specification",
@@ -2269,13 +1911,7 @@
       "Appearance:dark red powder",
       "Loss on drying:max 12.0%"
     ],
-    "industry": [
-      "Food & Beverage",
-      "Pet Food",
-      "Animal Feed",
-      "Pharmaceuticals",
-      "Cosmetics."
-    ],
+    "industry": ["animal-feeds-materials"],
     "pdfs": [
       {
         "name": "Product specification",
@@ -2305,11 +1941,7 @@
       "Lead (Pb):max 1 mg/kg",
       "Arsenic (As):max 1 mg/kg."
     ],
-    "industry": [
-      "Food & Beverage",
-      "Pet Food",
-      "Animal Feed."
-    ],
+    "industry": ["food-materials", "animal-feeds-materials"],
     "pdfs": [
       {
         "name": "Product specification",
@@ -2339,11 +1971,7 @@
       "Lead (Pb):max 1 mg/kg",
       "Arsenic (As):max 1 mg/kg."
     ],
-    "industry": [
-      "Food & Beverage",
-      "Pet Food",
-      "Animal Feed."
-    ],
+    "industry": ["food-materials", "animal-feeds-materials"],
     "pdfs": [
       {
         "name": "Product specification",
@@ -2371,13 +1999,7 @@
       "Calorific value:~9,000–9,500 kcal/kg",
       "Appearance:Dark brown to amber liquid"
     ],
-    "industry": [
-      "Food & Beverage",
-      "Pet Food",
-      "Animal Feed",
-      "Cosmetics",
-      "Technical & Industrial."
-    ],
+    "industry": ["oils-and-fats","animal-feeds-materials"],
     "pdfs": [
       {
         "name": "Product specification",
