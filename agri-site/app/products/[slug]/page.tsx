@@ -3,6 +3,13 @@ import { notFound } from 'next/navigation';
 import productsData from '@/data/productsv2.json';
 import ProductPageClient from './ProductPageClient';
 
+const industryLabels: Record<string, string> = {
+  'oils-and-fats': 'Oils and fats',
+  'food-materials': 'Foods materials',
+  'animal-feeds-materials': 'Animal feeds materials',
+  'aqua-feeds-materials': 'Aqua feeds materials',
+};
+
 type ProductPdf = {
   name: string;
   url: string;
@@ -52,7 +59,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title: `${product.name} - Grannex LTD`,
     description: product.info,
-    keywords: [product.name, product.marketLabel, ...product.industry],
+    keywords: [product.name, product.marketLabel, ...product.industry.map(slug => industryLabels[slug] ?? slug)],
     openGraph: {
       title: `${product.name} - Grannex LTD`,
       description: product.info,

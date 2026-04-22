@@ -21,6 +21,15 @@ const markets = [
   { value: 'fibers', label: 'Fibers' }
 ];
 
+// Website-category locks. When ?industry=<slug> is present in the URL, the page
+// title and filter are constrained to that category; it cannot be toggled from the UI.
+const industryLabels: Record<string, string> = {
+  'oils-and-fats': 'Oils and fats',
+  'food-materials': 'Foods materials',
+  'animal-feeds-materials': 'Animal feeds materials',
+  'aqua-feeds-materials': 'Aqua feeds materials',
+};
+
 type Product = {
   slug: string;
   name: string;
@@ -41,6 +50,10 @@ function ProductsContent() {
   const marketParam = searchParams.get('market');
   const searchParam = searchParams.get('search');
   const pageParam = searchParams.get('page');
+  const industryParam = searchParams.get('industry');
+
+  // Accept only known industry slugs; unknown values fall back to unlocked view.
+  const lockedIndustry = industryParam && industryParam in industryLabels ? industryParam : null;
 
   // Parse market param - can be comma-separated for multiple values
   const initialMarkets = marketParam ? marketParam.split(',') : [];
@@ -67,6 +80,11 @@ function ProductsContent() {
   useEffect(() => {
     const params = new URLSearchParams();
 
+    // Preserve the industry lock across every filter interaction.
+    if (lockedIndustry) {
+      params.set('industry', lockedIndustry);
+    }
+
     // Add market param if any markets selected
     if (selectedMarkets.length > 0) {
       params.set('market', selectedMarkets.join(','));
@@ -86,7 +104,7 @@ function ProductsContent() {
 
     // Update URL without adding to history (so back button doesn't go through every filter change)
     router.replace(newUrl, { scroll: false });
-  }, [selectedMarkets, searchQuery, currentPage, router]);
+  }, [lockedIndustry, selectedMarkets, searchQuery, currentPage, router]);
 
   // Smooth scroll to top when page changes (skip on initial mount)
   useEffect(() => {
@@ -103,8 +121,11 @@ function ProductsContent() {
 
   const products = productsData as Product[];
 
-  // Filter products by market and search query
+  // Filter products by locked industry, market, and search query
   const filteredProducts = products.filter(product => {
+    // Industry lock (URL-driven; takes precedence over UI filters)
+    const matchesIndustry = !lockedIndustry || product.industry.includes(lockedIndustry);
+
     // Filter by market (handle compound markets like "millingcrushing-aquaculture")
     const matchesMarket = selectedMarkets.length === 0 || selectedMarkets.some(market => product.market.includes(market));
 
@@ -113,7 +134,7 @@ function ProductsContent() {
       product.name.toLowerCase().includes(searchQuery.toLowerCase());
 
     // Product must match all filters
-    return matchesMarket && matchesSearch;
+    return matchesIndustry && matchesMarket && matchesSearch;
   });
 
   // Calculate pagination
@@ -143,7 +164,15 @@ function ProductsContent() {
             Home
           </Link>
           <span className="mx-2">/</span>
-          {selectedMarkets.length > 0 ? (
+          {lockedIndustry ? (
+            <>
+              <Link href="/products" className="hover:text-green-medium transition-colors">
+                Products
+              </Link>
+              <span className="mx-2">/</span>
+              <span className="font-medium">{industryLabels[lockedIndustry]}</span>
+            </>
+          ) : selectedMarkets.length > 0 ? (
             <>
               <Link href="/products" className="hover:text-green-medium transition-colors">
                 Products
@@ -164,7 +193,7 @@ function ProductsContent() {
       <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12">
         {/* Title */}
         <h1 className="text-3xl md:text-4xl font-bold text-primary mb-6 md:mb-8">
-          Our products
+          {lockedIndustry ? `Our Products - ${industryLabels[lockedIndustry]}` : 'Our products'}
         </h1>
 
         {/* Description */}

@@ -35,14 +35,14 @@ export default function HeroSection() {
         <div className="w-full">
           <div className="grid grid-cols-2 md:grid-cols-4 bg-primary rounded-2xl overflow-hidden">
             {[
-              { title: 'Oils and fats', icon: '/oils-and-fats.svg', markets: ['oils-and-fats'] },
-              { title: 'Foods materials', icon: '/food-ingredients.svg', markets: ['starches', 'sweeteners', 'millingcrushing', 'fibers', 'vitamin'] },
-              { title: 'Animal feeds materials', icon: '/animal-feeds-ingredients.svg', markets: ['animal-protein', 'concentrates', 'vitamin'] },
-              { title: 'Aqua feeds materials', icon: '/aqua-feeds-ingredients.svg', markets: ['aquaculture', 'nutritional-additives'] },
+              { title: 'Oils and fats', icon: '/oils-and-fats.svg', industry: 'oils-and-fats' },
+              { title: 'Foods materials', icon: '/food-ingredients.svg', industry: 'food-materials' },
+              { title: 'Animal feeds materials', icon: '/animal-feeds-ingredients.svg', industry: 'animal-feeds-materials' },
+              { title: 'Aqua feeds materials', icon: '/aqua-feeds-ingredients.svg', industry: 'aqua-feeds-materials' },
             ].map((category, index) => (
               <Link
                 key={category.title}
-                href={`/products?market=${category.markets.join(',')}`}
+                href={`/products?industry=${category.industry}`}
                 className="text-secondary p-3 md:p-4 lg:p-5 hover:bg-green-medium transition-colors cursor-pointer flex flex-col md:flex-row items-center justify-center gap-2 md:gap-3 relative min-h-20 md:min-h-17.5"
                 aria-label={`View ${category.title} products`}
               >
