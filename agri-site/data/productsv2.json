@@ -2006,5 +2006,118 @@
         "url": "83-UCO-oil.pdf"
       }
     ]
+  },
+  {
+    "slug": "white-wheat-dextrin",
+    "name": "White Wheat Dextrin",
+    "image": "/92-WhiteWheatDextrin.png",
+    "market": "dextrins",
+    "marketLabel": "Dextrins",
+    "info": "White wheat dextrin is a fine powder of white to light cream color produced by acid-thermal decomposition of wheat starch. It is partially soluble in water and functions as a thickener, adhesive, carrier, and binding agent.",
+    "description": "White wheat dextrin is a versatile modified starch with partially soluble properties, making it an ideal multifunctional additive for both food and industrial applications. In the food industry it acts as a thickener, adhesive, and binding agent without interfering with the taste of the final product. In non-food sectors it provides excellent stabilizing, filling, and adhesive performance.",
+    "application": "Food industry: meat products (adhesion & coloring of battered/fried products), confectionery (thickener), dairy products (thickener), pharmaceuticals (binding agent); Industrial: paper & cardboard, adhesive, textile, chemical, construction, mining.",
+    "packing": "25 kg white kraft bags with PE layer (1,000 kg/pallet, stretch-wrapped); 1,000 kg PP bags",
+    "specification": [
+      "Functional class: Modified Starch E 1400",
+      "Color: White-cream",
+      "Appearance: Powdery",
+      "Moisture: max 10%",
+      "Acidity: max 40 °AC",
+      "Solubility: 30–55%",
+      "DE value: max 10",
+      "Synthetic dyes: None",
+      "Bacteria (30°C): max 10,000 CFU/g",
+      "Enterobacteriaceae: max 100 CFU/g",
+      "Yeasts & Molds: max 1,000 CFU/g",
+      "E. coli: Negative /g",
+      "Salmonella: Negative /25g",
+      "Lead (Pb): max 1 mg/kg",
+      "Arsenic (As): max 1 mg/kg",
+      "Shelf life: 12 months",
+      "GMO-free: Yes",
+      "Allergen: May contain traces of gluten",
+      "Certifications: HACCP, ISO 9001:2015, IFS v08, Halal, Kosher"
+    ],
+    "industry": ["food-materials"],
+    "pdfs": [
+      {
+        "name": "Product specification",
+        "url": "92-WhiteWheatDextrin.pdf"
+      }
+    ]
+  },
+  {
+    "slug": "yellow-wheat-dextrin",
+    "name": "Yellow Wheat Dextrin",
+    "image": "/93-YellowWheatDextrin.png",
+    "market": "dextrins",
+    "marketLabel": "Dextrins",
+    "info": "Yellow wheat dextrin is a fine powder of yellow color produced by acid-thermal decomposition of wheat starch. It is completely soluble in water and exhibits strong adhesive properties, functioning as an adhesive, thickener, color enhancer, carrier, and binding agent.",
+    "description": "Yellow wheat dextrin is a fully water-soluble modified starch renowned for its pronounced adhesive strength and carrier properties. Its complete solubility (92–100%) makes it ideal as a carrier in powder products such as spice mixes, instant soups, and drinks. In meat and confectionery applications it provides excellent adhesion and coloring enhancement without altering the taste of the final product.",
+    "application": "Food industry: meat products (adhesion & coloring of battered/fried products), confectionery (thickener), dairy products (thickener), pharmaceuticals (binding agent), powder carrier (spice mixes, instant soups, drinks); Industrial: paper & cardboard, adhesive, textile, chemical, construction, pyrotechnic, foundry, wood, grinding stone.",
+    "packing": "25 kg white kraft bags with PE layer (1,000 kg/pallet, stretch-wrapped); 1,000 kg PP bags",
+    "specification": [
+      "Functional class: Modified Starch E 1400",
+      "Color: Yellow",
+      "Appearance: Powdery",
+      "Moisture: max 10%",
+      "Acidity: max 80 °AC",
+      "Solubility: 92–100%",
+      "DE value: max 10",
+      "Synthetic dyes: None",
+      "Bacteria (30°C): max 10,000 CFU/g",
+      "Enterobacteriaceae: max 100 CFU/g",
+      "Yeasts & Molds: max 1,000 CFU/g",
+      "E. coli: Negative /g",
+      "Salmonella: Negative /25g",
+      "Lead (Pb): max 1 mg/kg",
+      "Arsenic (As): max 1 mg/kg",
+      "Shelf life: 12 months",
+      "GMO-free: Yes",
+      "Allergen: May contain traces of gluten",
+      "Certifications: HACCP, ISO 9001:2015, IFS v08, Halal, Kosher"
+    ],
+    "industry": ["food-materials"],
+    "pdfs": [
+      {
+        "name": "Food yellow dextrin",
+        "url": "93-FoodYellowDextrin.pdf"
+      },
+      {
+        "name": "Technical yellow dextrin",
+        "url": "93-TechnicalYellowDextrin.pdf"
+      }
+    ]
+  },
+  {
+    "slug": "blue-wheat-dextrin",
+    "name": "Blue Wheat Dextrin",
+    "image": "/94-BlueWheatDextrin.png",
+    "market": "dextrins",
+    "marketLabel": "Dextrins",
+    "info": "Blue wheat dextrin is a fine powder of white color with a blue reflection produced by acid-thermal decomposition of wheat starch. It is partially soluble in water and functions as a spread, adhesive, and thickener for technical and industrial applications.",
+    "description": "Blue wheat dextrin is a technical-grade modified starch designed primarily for industrial use. Its characteristic blue reflection distinguishes it visually from other dextrin grades. With a solubility range of 55–90% and strong adhesive and spreading properties, it is widely used across paper, textile, paint, building materials, and adhesive manufacturing industries.",
+    "application": "Industrial: paper industry (spread), textile industry (thickener for printing pastes), paint industry, building materials industry, production of adhesives for tube windings.",
+    "packing": "25 kg white kraft bags with PE layer (1,000 kg/pallet, stretch-wrapped); 1,000 kg PP bags",
+    "specification": [
+      "Color: White with blue reflection",
+      "Appearance: Powdery",
+      "Moisture: max 10%",
+      "Acidity: max 50 °AC",
+      "Solubility: 55–90%",
+      "DE value: max 10",
+      "Synthetic dyes: None",
+      "Shelf life: 12 months",
+      "GMO-free: Yes",
+      "Allergen: May contain traces of gluten",
+      "Certifications: HACCP, ISO 9001:2015, IFS v08, Halal, Kosher"
+    ],
+    "industry": ["food-materials"],
+    "pdfs": [
+      {
+        "name": "Product specification",
+        "url": "94-BlueWheatDextrin.pdf"
+      }
+    ]
   }
 ]

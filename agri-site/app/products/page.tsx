@@ -18,7 +18,8 @@ const markets = [
   { value: 'concentrates', label: 'Concentrates' },
   { value: 'animal-protein', label: 'Animal Protein' },
   { value: 'vitamin', label: 'Vitamin' },
-  { value: 'fibers', label: 'Fibers' }
+  { value: 'fibers', label: 'Fibers' },
+  { value: 'dextrins', label: 'Dextrins' },
 ];
 
 // Website-category locks. When ?industry=<slug> is present in the URL, the page
