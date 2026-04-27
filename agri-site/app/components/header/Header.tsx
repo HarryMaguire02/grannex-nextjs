@@ -9,6 +9,7 @@ import ContactPopup from '../ContactPopup';
 
 const navLinks = [
   { href: '/', label: 'Home' },
+  { href: '/retail', label: 'Retail' },
   { href: '/products', label: 'Products' },
   { href: '/logistics', label: 'Logistics' },
   { href: '/about', label: 'About us' },
