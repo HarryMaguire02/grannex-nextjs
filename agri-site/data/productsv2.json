@@ -346,7 +346,7 @@
       "pH:3.5-4.5",
       "Cholesterol:approx 60-70 mg/100g"
     ],
-    "industry": ["food-materials"],
+    "industry": ["oils-and-fats","food-materials"],
     "pdfs": [
       {
         "name": "Product specification",
