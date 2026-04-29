@@ -8,7 +8,7 @@
     "info": "Sunflower oil is a non-volatile oil compressed from the seeds of the sunflower plant. It is primarily composed of linoleic and oleic acids.",
     "description": "Sunflower oil is a premium energy source characterized by its high Vitamin E content and unsaturated fats. It provides a stable source of digestible fat that is easily incorporated into liquid feed systems while promoting skin health and a shiny coat in animals.",
     "application": "Energy for poultry/swine; horse skin/coat health supplement.",
-    "packing": "Packing Options: Bulk: Tank Containers (22-23 MT), Flexi Tank (22-23 MT)",
+    "packing": "Bulk: Tank Containers (22-23 MT), Flexi Tank (22-23 MT)",
     "specification": [
       "FFA (as oleic acid):0.1%",
       "Refractive index (25°C):1.4719 – 1.4740",
@@ -47,7 +47,7 @@
     "info": "This vegetable oil is extracted from the seeds of the rape plant. It features a balanced fatty acid profile and low levels of erucic acid.",
     "description": "Rape oil is a versatile energy supplement providing high metabolizable energy for all livestock. It acts as an excellent carrier for fat-soluble nutrients and improves the physical texture of both mash and pelleted feeds.",
     "application": "General energy source; dust suppressant for mash and pelleted feeds.",
-    "packing": "Packing Options: Bulk: Tank Containers (22-23 MT), Flexi Tank (22-23 MT)",
+    "packing": "Bulk: Tank Containers (22-23 MT), Flexi Tank (22-23 MT)",
     "specification": [
       "FFA (as oleic acid):1.75%",
       "Moisture, Volatile Matter and Impurities:0.40%",
@@ -80,7 +80,7 @@
     "info": "Soybean oil is a refined vegetable oil extracted from whole soybeans. It is rich in polyunsaturated fats and essential linoleic acid.",
     "description": "Soybean oil is a concentrated liquid energy source that provides essential fatty acids for animal health. It is frequently used in feed mills to improve pellet quality and serves as a highly effective dust suppressant during processing.",
     "application": "High-energy liquid feed; dust control in mills; essential fatty acid source.",
-    "packing": "Packing Options: Bulk: Tank Containers (22-23 MT), Flexi Tank (22-23 MT)",
+    "packing": "Bulk: Tank Containers (22-23 MT), Flexi Tank (22-23 MT)",
     "specification": [
       "FFA (as oleic with a molecular weight of 282):1.00%",
       "Moisture and Volatile Matter:0.20%",
@@ -112,7 +112,7 @@
     "info": "Corn oil is a refined vegetable oil extracted from the germ of the maize kernel. It is a rich source of linoleic acid and natural tocopherols.",
     "description": "Corn oil is a high-quality energy source characterized by exceptional palatability and antioxidant levels. It is used to improve the skin and coat condition of pets and horses while providing dense calories through a high metabolic energy profile.",
     "application": "Premium energy source; improves skin health and palatability in pets.",
-    "packing": "Packing Options: Bulk: Tank Containers (22-23 MT), Flexi Tank (22-23 MT)",
+    "packing": "Bulk: Tank Containers (22-23 MT), Flexi Tank (22-23 MT)",
     "specification": [
       "FFA (as oleic acid):2%",
       "Linolenic acid (c 18:3):2%",
@@ -148,7 +148,7 @@
     "info": "Olive oil is a liquid fat obtained from whole olives, the fruit of the Olea europaea tree. It is rich in oleic acid and antioxidants.",
     "description": "Olive oil is a premium culinary and nutritional fat characterized by its high digestibility and heart-healthy lipid profile. It provides natural antioxidants that support cellular health and is used as a functional ingredient in premium pet and human foods.",
     "application": "Premium culinary fat; skin hydration in cosmetics; heart-healthy supplement.",
-    "packing": "Packing Options: Bulk: Tank Containers (22-23 MT), Flexi Tank (22-23 MT)",
+    "packing": "Bulk: Tank Containers (22-23 MT), Flexi Tank (22-23 MT)",
     "specification": [
       "FFA (as oleic):0.8% max",
       "Peroxide value:20 meq O2/kg",
@@ -163,7 +163,7 @@
         "url": "81-RefinedOliveOil.pdf"
       },
       {
-        "name": "Product specification - virgin",
+        "name": "Product specification - virginF",
         "url": "81-VirginOliveOil.pdf"
       },
       {
@@ -175,13 +175,13 @@
     {
     "slug": "palm-oil",
     "name": "Palm Oil",
-    "image": "/86-PalmOil.png",
+    "image": "/89-PalmOlein.png",
     "market": "oils-and-fats",
     "marketLabel": "Oils and fats",
     "info": "Palm oil is a semi-solid vegetable fat extracted from the fruit of the oil palm. It is a natural source of both saturated and unsaturated fats.",
     "description": "Palm oil is a heat-stable energy source that provides high levels of bypass fat for dairy cattle. It helps increase milk fat production and serves as an economical energy booster for swine diets due to its dense caloric profile.",
     "application": "Dairy bypass fat (milk fat boost); economical swine energy source.",
-    "packing": "PET-bottles: 500ml, 900ml, 1L, 2L, 3L, 5L; HDPE Jerry Cans: 20L, 25L; Can-in-Box: 15L, 20L; Bulk: Tank Containers (22-23 MT), Flexi Tank (22-23 MT)",
+    "packing": "Bulk: Tank Containers (22-23 MT), Flexi Tank (22-23 MT)",
     "specification": [
       "FFA (as palmitic):5%",
       "M&I:0.5%",
@@ -225,179 +225,6 @@
     ]
   },
   {
-    "slug": "sunflower-oil-retail",
-    "name": "Sunflower Oil",
-    "image": "/1-SunflowerOil-retail.png",
-    "market": "oils-and-fats",
-    "marketLabel": "Oils and fats",
-    "info": "Sunflower oil is a non-volatile oil compressed from the seeds of the sunflower plant. It is primarily composed of linoleic and oleic acids.",
-    "description": "Sunflower oil is a premium energy source characterized by its high Vitamin E content and unsaturated fats. It provides a stable source of digestible fat that is easily incorporated into liquid feed systems while promoting skin health and a shiny coat in animals.",
-    "application": "Energy for poultry/swine; horse skin/coat health supplement.",
-    "packing": "PET-bottles: 500ml, 900ml, 1L, 2L, 3L, 5L; HDPE Jerry Cans: 20L, 25L; Can-in-Box: 15L, 20L",
-    "specification": [
-      "FFA (as oleic acid):0.1%",
-      "Refractive index (25°C):1.4719 – 1.4740",
-      "Lovibond Color (5 ¼” cell):Max 1.50",
-      "Peroxide value (As meq O2/Kg):2.0",
-      "Unsaponificable matter:1.00%",
-      "Flavor:Slight characteristic",
-      "Aspect:limpid at 25°C",
-      "Cold test:limpid after 5 hours",
-      "BHA:75-100ppm",
-      "BHT:75-100ppm",
-      "Citric acid:40-50ppm"
-    ],
-    "industry": ["oils-and-fats"],
-    "pdfs": [
-      {
-        "name": "Product specification - crude",
-        "url": "1-Sunflower Oil.pdf"
-      },
-      {
-        "name": "Product specification - refined",
-        "url": "70-RefinedSunflowerOil.pdf"
-      },
-      {
-        "name": "Product specification - high oleic",
-        "url": "71-HighOleicSunflowerOil.pdf"
-      }
-    ]
-  },
-  {
-    "slug": "canolarapeseed-oil-retail",
-    "name": "Canola/Rapeseed Oil",
-    "image": "/3-CanolaRapeseedOil-retail.png",
-    "market": "oils-and-fats",
-    "marketLabel": "Oils and fats",
-    "info": "This vegetable oil is extracted from the seeds of the rape plant. It features a balanced fatty acid profile and low levels of erucic acid.",
-    "description": "Rape oil is a versatile energy supplement providing high metabolizable energy for all livestock. It acts as an excellent carrier for fat-soluble nutrients and improves the physical texture of both mash and pelleted feeds.",
-    "application": "General energy source; dust suppressant for mash and pelleted feeds.",
-    "packing": "PET-bottles: 500ml, 900ml, 1L, 2L, 3L, 5L; HDPE Jerry Cans: 20L, 25L; Can-in-Box: 15L, 20L",
-    "specification": [
-      "FFA (as oleic acid):1.75%",
-      "Moisture, Volatile Matter and Impurities:0.40%",
-      "Lecithin (expressed as Phosphorus):300ppm",
-      "Sand / Silica:1.00%",
-      "Erucic Acid:2.00%"
-    ],
-    "industry": ["oils-and-fats"],
-    "pdfs": [
-      {
-        "name": "Product specification - crude",
-        "url": "3-CanolaRapeseed Oil.pdf"
-      },
-      {
-        "name": "Product specification - refined",
-        "url": "75-RefinedCanolaRapeseedOil.pdf"
-      },
-      {
-        "name": "Product specification - high oleic",
-        "url": "76-HighOleicCanolaRapeseedOil.pdf"
-      }
-    ]
-  },
-  {
-    "slug": "soybean-seed-oil-retail",
-    "name": "Soybean seed Oil",
-    "image": "/4-SoybeanSeedOil-retail.png",
-    "market": "oils-and-fats",
-    "marketLabel": "Oils and fats",
-    "info": "Soybean oil is a refined vegetable oil extracted from whole soybeans. It is rich in polyunsaturated fats and essential linoleic acid.",
-    "description": "Soybean oil is a concentrated liquid energy source that provides essential fatty acids for animal health. It is frequently used in feed mills to improve pellet quality and serves as a highly effective dust suppressant during processing.",
-    "application": "High-energy liquid feed; dust control in mills; essential fatty acid source.",
-    "packing": "PET-bottles: 500ml, 900ml, 1L, 2L, 3L, 5L; HDPE Jerry Cans: 20L, 25L; Can-in-Box: 15L, 20L",
-    "specification": [
-      "FFA (as oleic with a molecular weight of 282):1.00%",
-      "Moisture and Volatile Matter:0.20%",
-      "Impurities (insoluble in petroleum ether):0.10%",
-      "Sediment (Gardner Break Test):0.10%",
-      "Lecithin (expressed as phosphorous):0.02%",
-      "Colour (Lovibond cell 1 inch):50 yellow plus 5 red",
-      "Flash point:250ºF (121ºC)",
-      "Unsaponifiable Matter (test as per n.s.p.a.):1.50%"
-    ],
-    "industry": ["oils-and-fats"],
-    "pdfs": [
-      {
-        "name": "Product specification - crude",
-        "url": "4-Soybean seed Oil.pdf"
-      },
-      {
-        "name": "Product specification - refined",
-        "url": "78-RefinedSoybeanOil.pdf"
-      }
-    ]
-  },
-  {
-    "slug": "corn-oil-retail",
-    "name": "Corn Oil",
-    "image": "/2-CornOil-retail.png",
-    "market": "oils-and-fats",
-    "marketLabel": "Oils and fats",
-    "info": "Corn oil is a refined vegetable oil extracted from the germ of the maize kernel. It is a rich source of linoleic acid and natural tocopherols.",
-    "description": "Corn oil is a high-quality energy source characterized by exceptional palatability and antioxidant levels. It is used to improve the skin and coat condition of pets and horses while providing dense calories through a high metabolic energy profile.",
-    "application": "Premium energy source; improves skin health and palatability in pets.",
-    "packing": "PET-bottles: 500ml, 900ml, 1L, 2L, 3L, 5L; HDPE Jerry Cans: 20L, 25L; Can-in-Box: 15L, 20L",
-    "specification": [
-      "FFA (as oleic acid):2%",
-      "Linolenic acid (c 18:3):2%",
-      "Palmitic acid (c 16:0):9 – 14",
-      "Refractive index at 40°c:1,4653 – 1,468",
-      "Iodine value:115 – 121",
-      "Moisture and Volatile matter:0.4%",
-      "Saponification value:188 – 195",
-      "Unsaponifiable matter:2%",
-      "Peroxide value (wheeler) (meq o2/kg.):20",
-      "Phosphorus:200ppm",
-      "Sediment:1%",
-      "Colour lovibond (Basis yellow 50 – cell 25.4 cm):Red Max 6.50"
-    ],
-    "industry": ["oils-and-fats"],
-    "pdfs": [
-      {
-        "name": "Product specification - crude",
-        "url": "2-Corn Oil.pdf"
-      },
-      {
-        "name": "Product specification - refined",
-        "url": "73-RefinedCornOil.pdf"
-      }
-    ]
-  },
-  {
-    "slug": "olive-oil-retail",
-    "name": "Olive Oil",
-    "image": "/7-OliveOil-retail.png",
-    "market": "oils-and-fats",
-    "marketLabel": "Oils and fats",
-    "info": "Olive oil is a liquid fat obtained from whole olives, the fruit of the Olea europaea tree. It is rich in oleic acid and antioxidants.",
-    "description": "Olive oil is a premium culinary and nutritional fat characterized by its high digestibility and heart-healthy lipid profile. It provides natural antioxidants that support cellular health and is used as a functional ingredient in premium pet and human foods.",
-    "application": "Premium culinary fat; skin hydration in cosmetics; heart-healthy supplement.",
-    "packing": "PET-bottles: 500ml, 900ml, 1L, 2L, 3L, 5L; HDPE Jerry Cans: 20L, 25L; Can-in-Box: 15L, 20L",
-    "specification": [
-      "FFA (as oleic):0.8% max",
-      "Peroxide value:20 meq O2/kg",
-      "Saturated fatty acids:14%",
-      "Monounsaturated fatty acids:73%",
-      "Polyunsaturated fatty acids:11%"
-    ],
-    "industry": ["oils-and-fats"],
-    "pdfs": [
-      {
-        "name": "Product specification - refined",
-        "url": "81-RefinedOliveOil.pdf"
-      },
-      {
-        "name": "Product specification - virgin",
-        "url": "81-VirginOliveOil.pdf"
-      },
-      {
-        "name": "Product specification - extra virgin",
-        "url": "82-ExtraVirginOliveOil.pdf"
-      }
-    ]
-  },
-  {
     "slug": "cocoa-butter",
     "name": "Cocoa Butter",
     "image": "/9-CocoaButter.png",
@@ -425,7 +252,7 @@
   {
     "slug": "butter",
     "name": "Butter",
-    "image": "/10-Butter.png",
+    "image": "/10-Butter-v2.png",
     "market": "oils-and-fats",
     "marketLabel": "Oils and fats",
     "info": "Butter is a concentrated dairy fat produced by churning fresh cream. It is primarily composed of milk fat, water, and milk solids, typically containing a minimum of 80-82% fat.",
@@ -452,7 +279,7 @@
   {
     "slug": "shortening-36-39",
     "name": "Shortening 36-39",
-    "image": "/11-Shortening36-39.png",
+    "image": "/11-Shortening36-39-v2.png",
     "market": "oils-and-fats",
     "marketLabel": "Oils and fats",
     "info": "Shortening is a semi-solid fat produced from vegetable oils through hydrogenation or interesterification. it features a specific melting range of 36-39°C.",
@@ -477,7 +304,7 @@
   {
     "slug": "margarine",
     "name": "Margarine",
-    "image": "/12-Margarine.png",
+    "image": "/12-Margarine-v2.png",
     "market": "oils-and-fats",
     "marketLabel": "Oils and fats",
     "info": "Margarine is an emulsion of vegetable fats and water. It is designed to mimic the functional properties of dairy butter.",
