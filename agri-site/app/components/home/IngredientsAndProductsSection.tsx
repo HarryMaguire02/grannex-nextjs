@@ -29,7 +29,8 @@ const tabs = [
   'Aquaculture',
   'Concentrates',
   'Animal Protein',
-  'Vitamin'
+  'Vitamin',
+  'Dextrin'
 ];
 
 const tabToMarket: Record<string, string[]> = {
@@ -41,7 +42,8 @@ const tabToMarket: Record<string, string[]> = {
   'Aquaculture': ['aquaculture'],
   'Concentrates': ['concentrates'],
   'Animal Protein': ['animal-protein'],
-  'Vitamin': ['vitamin']
+  'Vitamin': ['vitamin'],
+  'Dextrin': ['dextrins']
 };
 
 const tabContent: Record<string, { title: string; description: string; image: string }> = {
@@ -89,6 +91,11 @@ const tabContent: Record<string, { title: string; description: string; image: st
     title: 'Vitamin',
     description: 'Our Vitamin category supplies essential micronutrient solutions critical for maintaining optimal health, productivity, and reproductive performance in livestock and aquaculture. We offer a comprehensive range of fat-soluble and water-soluble vitamins, including Vitamin A, D3, E, and B-complex variants, sourced from trusted manufacturers and delivered in stable, bioavailable forms. These products are fundamental components of any balanced feed program, supporting bone development, immune function, and metabolic efficiency.',
     image: '/vitamins.png',
+  },
+  'Dextrin': {
+    title: 'Dextrin',
+    description: 'Dextrins are functional starch-based ingredients used for binding, thickening, stabilization, and adhesion. Suitable for food, feed, and industrial applications, they provide reliable performance in bakery, confectionery, instant products, powdered blends, paper, adhesives, textiles, construction, and other technical industries.',
+    image: '/dextrins.png',
   },
 };
 
