@@ -147,14 +147,14 @@ export default function ProductPageClient({ product }: ProductPageClientProps) {
               </div>
             </div>
 
-            {/* Right: Product Info */}
+            {/* Right: Product Description */}
             <div className="flex flex-col">
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-6">
                 {product.name}
               </h1>
 
               <p className="text-primary font-normal text-sm leading-6 text-justify mb-8">
-                {product.info}
+                {product.description}
               </p>
 
               {/* CTA Buttons */}
@@ -187,11 +187,11 @@ export default function ProductPageClient({ product }: ProductPageClientProps) {
         </div>
         <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12 mt-8">
           <div className="grid grid-cols-1 md:grid-cols-3">
-            {/* Description */}
+            {/* Info */}
             <div className="px-6 md:pl-0 md:pr-8 pb-6 md:py-0 border-b md:border-b-0 md:border-r border-primary/80">
-              <h3 className="text-xl font-bold text-primary mb-4">Description</h3>
+              <h3 className="text-xl font-bold text-primary mb-4">Info</h3>
               <p className="text-primary font-normal text-sm leading-6 text-justify">
-                {product.description}
+                {product.info}
               </p>
             </div>
 

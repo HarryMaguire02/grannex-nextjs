@@ -271,7 +271,7 @@ export default function IngredientsAndProductsSection() {
               Our products
             </h2>
             <Link
-              href="/products"
+              href={`/products?market=${tabToMarket[activeTab].join(',')}`}
               className="px-6 py-2 md:px-8 md:py-3 bg-primary text-white rounded-lg font-medium hover:bg-green-medium transition-colors text-sm md:text-base"
             >
               View Products
