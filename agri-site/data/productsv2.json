@@ -241,7 +241,7 @@
       "Melting point:31–35°C",
       "Unsaponifiable matter:0.35%"
     ],
-    "industry": ["oils-and-fats", "food-materials"],
+    "industry": ["food-materials"],
     "pdfs": [
       {
         "name": "Product specification",
@@ -268,7 +268,7 @@
       "Ash:1.5%",
       "Gross energy:30.5 MJ/kg DM"
     ],
-    "industry": ["oils-and-fats", "food-materials"],
+    "industry": ["food-materials"],
     "pdfs": [
       {
         "name": "Product specification",
@@ -293,7 +293,7 @@
       "Peroxide value:1.0 meq O2/kg",
       "Slip melting point:36–39°C"
     ],
-    "industry": ["oils-and-fats", "food-materials"],
+    "industry": ["food-materials"],
     "pdfs": [
       {
         "name": "Product specification",
@@ -319,7 +319,7 @@
       "Vitamin D3:200 IU/100g",
       "Melting point:34–36°C"
     ],
-    "industry": ["oils-and-fats", "food-materials"],
+    "industry": ["food-materials"],
     "pdfs": [
       {
         "name": "Product specification",
@@ -346,7 +346,7 @@
       "pH:3.5-4.5",
       "Cholesterol:approx 60-70 mg/100g"
     ],
-    "industry": ["oils-and-fats","food-materials"],
+    "industry": ["food-materials"],
     "pdfs": [
       {
         "name": "Product specification",
@@ -1826,7 +1826,7 @@
       "Calorific value:~9,000–9,500 kcal/kg",
       "Appearance:Dark brown to amber liquid"
     ],
-    "industry": ["oils-and-fats","animal-feeds-materials"],
+    "industry": ["animal-feeds-materials"],
     "pdfs": [
       {
         "name": "Product specification",

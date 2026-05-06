@@ -30,7 +30,7 @@ export default function HeroSection() {
       <div className="absolute inset-0 bg-black/20" />
 
       {/* Content */}
-      <div className="relative max-w-content mx-auto px-6 sm:px-8 lg:px-12 h-full flex flex-col justify-between pt-16 md:pt-20 lg:pt-24 pb-8 md:pb-12">
+      <div className="relative max-w-content mx-auto px-6 sm:px-8 lg:px-12 h-full flex flex-col justify-between pt-16 md:pt-20 lg:pt-24 pb-8 md:pb-16">
         {/* Hero Text - Left Aligned, Max 50% Width */}
         <div className="max-w-xl lg:max-w-2xl text-center md:text-left mx-auto md:mx-0">
           <p className="mb-4 sm:mb-6 text-lg sm:text-xl md:text-2xl text-white font-bold leading-relaxed">
@@ -80,7 +80,7 @@ export default function HeroSection() {
           </div>
 
           {/* Industrial categories grid */}
-          <div className="grid grid-cols-3 bg-primary rounded-2xl overflow-hidden">
+          <div className="grid grid-cols-3 md:w-3/4 md:mx-auto bg-primary rounded-2xl overflow-hidden">
             {industrialCategories.map((category, index) => (
               <Link
                 key={category.title}
