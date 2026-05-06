@@ -8,6 +8,9 @@ const industryLabels: Record<string, string> = {
   'food-materials': 'Foods materials',
   'animal-feeds-materials': 'Animal feeds materials',
   'aqua-feeds-materials': 'Aqua feeds materials',
+  'biofuel-feedstock': 'Biofuel Feedstock',
+  'saf-feedstock': 'SAF Feedstock',
+  'oleochemical-applications': 'Oleochemical Applications',
 };
 
 type ProductPdf = {
@@ -59,7 +62,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title: `${product.name} - Grannex LTD`,
     description: product.info,
-    keywords: [product.name, product.marketLabel, ...product.industry.map(slug => industryLabels[slug] ?? slug)],
+    keywords: [product.name, product.marketLabel, ...product.industry.map(slug => industryLabels[slug] ?? slug)].filter(k => k !== ''),
     openGraph: {
       title: `${product.name} - Grannex LTD`,
       description: product.info,

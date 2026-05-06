@@ -1,9 +1,22 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
+const primaryCategories = [
+  { title: 'Oils and fats', icon: '/oils-and-fats.svg', industry: 'oils-and-fats' },
+  { title: 'Foods materials', icon: '/food-ingredients.svg', industry: 'food-materials' },
+  { title: 'Animal feeds materials', icon: '/animal-feeds-ingredients.svg', industry: 'animal-feeds-materials' },
+  { title: 'Aqua feeds materials', icon: '/aqua-feeds-ingredients.svg', industry: 'aqua-feeds-materials' },
+];
+
+const industrialCategories = [
+  { title: 'Oleochemical Ingredients', icon: '/oleochemicals.png', industry: 'oleochemical-applications' },
+  { title: 'Biofuel Feedstock', icon: '/biofuel-feedstock.png', industry: 'biofuel-feedstock' },
+  { title: 'SAF Feedstock', icon: '/SAF-feedstock.png', industry: 'saf-feedstock' },
+];
+
 export default function HeroSection() {
   return (
-    <section className="relative h-112.5 sm:h-125 lg:h-150">
+    <section className="relative h-150 lg:h-175">
       {/* Background Image */}
       <Image
         src="/hero-banner.png"
@@ -32,14 +45,10 @@ export default function HeroSection() {
         </div>
 
         {/* Category Cards */}
-        <div className="w-full">
+        <div className="w-full flex flex-col gap-2">
+          {/* Primary industries grid */}
           <div className="grid grid-cols-2 md:grid-cols-4 bg-primary rounded-2xl overflow-hidden">
-            {[
-              { title: 'Oils and fats', icon: '/oils-and-fats.svg', industry: 'oils-and-fats' },
-              { title: 'Foods materials', icon: '/food-ingredients.svg', industry: 'food-materials' },
-              { title: 'Animal feeds materials', icon: '/animal-feeds-ingredients.svg', industry: 'animal-feeds-materials' },
-              { title: 'Aqua feeds materials', icon: '/aqua-feeds-ingredients.svg', industry: 'aqua-feeds-materials' },
-            ].map((category, index) => (
+            {primaryCategories.map((category, index) => (
               <Link
                 key={category.title}
                 href={`/products?industry=${category.industry}`}
@@ -57,20 +66,41 @@ export default function HeroSection() {
                 </div>
                 <h3 className="text-xs sm:text-sm md:text-sm lg:text-base font-light leading-tight text-center md:text-left">{category.title}</h3>
 
-                {/* Vertical divider - right side of left column items */}
-                {/* 2-col (< md): items 0 and 2 get right border */}
-                {/* 4-col (>= md): items 0, 1, 2 get right border */}
                 {(index === 0 || index === 2) && (
-                  <div className="absolute right-0 top-1/2 -translate-y-1/2 h-2/3 w-px bg-secondary md:hidden"></div>
+                  <div className="absolute right-0 top-1/2 -translate-y-1/2 h-2/3 w-px bg-secondary md:hidden" />
                 )}
                 {index < 3 && (
-                  <div className="absolute right-0 top-1/2 -translate-y-1/2 h-2/3 w-px bg-secondary hidden md:block"></div>
+                  <div className="absolute right-0 top-1/2 -translate-y-1/2 h-2/3 w-px bg-secondary hidden md:block" />
                 )}
-
-                {/* Horizontal divider - bottom of top row items */}
-                {/* 2-col (< md): items 0 and 1 get bottom border */}
                 {(index === 0 || index === 1) && (
-                  <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-4/5 h-px bg-secondary md:hidden"></div>
+                  <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-4/5 h-px bg-secondary md:hidden" />
+                )}
+              </Link>
+            ))}
+          </div>
+
+          {/* Industrial categories grid */}
+          <div className="grid grid-cols-3 bg-primary rounded-2xl overflow-hidden">
+            {industrialCategories.map((category, index) => (
+              <Link
+                key={category.title}
+                href={`/products?industry=${category.industry}`}
+                className="text-secondary p-3 md:p-4 lg:p-5 hover:bg-green-medium transition-colors cursor-pointer flex flex-col md:flex-row items-center justify-center gap-2 md:gap-3 relative min-h-20 md:min-h-17.5"
+                aria-label={`View ${category.title} products`}
+              >
+                <div className="flex items-center justify-center shrink-0">
+                  <Image
+                    src={category.icon}
+                    alt={category.title}
+                    width={56}
+                    height={56}
+                    className="h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 lg:h-14 lg:w-14 object-contain"
+                  />
+                </div>
+                <h3 className="text-xs sm:text-sm md:text-sm lg:text-base font-light leading-tight text-center md:text-left">{category.title}</h3>
+
+                {index < 2 && (
+                  <div className="absolute right-0 top-1/2 -translate-y-1/2 h-2/3 w-px bg-secondary" />
                 )}
               </Link>
             ))}

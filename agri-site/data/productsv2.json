@@ -1946,5 +1946,276 @@
         "url": "94-BlueWheatDextrin.pdf"
       }
     ]
+  },
+  {
+    "slug": "glycerins-raw-refined",
+    "name": "Glycerins - Raw and Refined",
+    "image": "/95-GlycerinsRawRefined.png",
+    "market": "",
+    "marketLabel": "",
+    "info": "Glycerin is a polyol compound derived as a co-product of biodiesel production and fat splitting. It exists in both crude (raw) and purified (refined) grades.",
+    "description": "Raw glycerin is an economical energy source used in ruminant and swine diets to replace grain-based energy. Refined glycerin (min 99.5% purity) is a high-purity, versatile humectant used as a functional ingredient in cosmetics, pharmaceuticals, and technical applications including oleochemical synthesis.",
+    "application": "Energy co-product in animal feed; humectant in cosmetics/pharma; raw material for alkyd resins and polyols in oleochemical applications.",
+    "packing": "Bulk, IBC Containers, Flexitanks",
+    "specification": [
+      "Raw glycerin: Glycerol content: min 80%",
+      "Moisture: max 5% ", 
+      "Methanol: max 0.2%",
+      "Ash: max 5%",
+      "pH: 5–8",
+      "Refined glycerin: Assay: min 99.5%",
+      "Moisture: max 0.5%", 
+      "Ash: max 0.002%", 
+      "Color (Hazen): max 10", 
+      "Odour: odourless"
+    ],
+    "industry": ["oleochemical-applications"],
+    "pdfs": [
+      {
+        "name": "Coming soon",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "slug": "bovine-fats",
+    "name": "Bovine Fats",
+    "image": "/96-BovineFats.png",
+    "market": "",
+    "marketLabel": "",
+    "info": "Bovine fat is a rendered animal fat derived from cattle tissues. It is a rich source of saturated and monounsaturated fatty acids.",
+    "description": "Bovine fat is a versatile raw material for the oleochemical industry, characterized by its high tallow content and consistent fatty acid profile. It serves as a feedstock for the production of fatty acids, fatty alcohols, soaps, and lubricants through saponification and splitting processes.",
+    "application": "Feedstock for fatty acid and fatty alcohol production; base for industrial soaps, lubricants, and candles; raw material for surfactant and detergent manufacturing.",
+    "packing": "Bulk, Flexitanks, IBC Containers",
+    "specification": [
+      "FFA (as oleic): max 5.0%",
+      "M&I: max 1.0%",
+      "IV (Wijs): 35–50",
+      "Saponification value: 193–202 mg KOH/g",
+      "Titre: 38–46°C",
+      "Appearance: solid to semi-solid, light yellow to white"
+    ],
+    "industry": ["oleochemical-applications", "biofuel-feedstock"],
+    "pdfs": [
+      {
+        "name": "Coming soon",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "slug": "pork-fats",
+    "name": "Pork Fats",
+    "image": "/97-PorkFats.png",
+    "market": "",
+    "marketLabel": "",
+    "info": "Pork fat (lard) is a rendered fat derived from porcine adipose tissue. It has a distinctive fatty acid profile high in oleic acid.",
+    "description": "Pork fat is a raw material for oleochemical applications characterized by its softer texture and high oleic acid content compared to bovine tallow. It is processed through splitting and hydrogenation to produce fatty acids and derivatives used in soap, cosmetics, and industrial lubricant manufacturing.",
+    "application": "Oleochemical feedstock for soap and detergent production; precursor for fatty acids used in cosmetics and personal care; industrial lubricant and release agent base.",
+    "packing": "Bulk, Flexitanks, IBC Containers",
+    "specification": [
+      "FFA (as oleic): max 3.0%",
+      "M&I: max 1.0%",
+      "IV (Wijs): 50–70",
+      "Saponification value: 192–203 mg KOH/g",
+      "Titre: 30–40°C",
+      "Appearance: soft solid to semi-liquid, white to cream"
+    ],
+    "industry": ["oleochemical-applications", "biofuel-feedstock"],
+    "pdfs": [
+      {
+        "name": "Coming soon",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "slug": "mixed-animal-fats",
+    "name": "Mixed Animal Fats",
+    "image": "/98-MixedAnimalFats.png",
+    "market": "",
+    "marketLabel": "",
+    "info": "Mixed animal fats are a blend of rendered animal-origin lipids from various species. They serve as a cost-effective biofuel feedstock.",
+    "description": "Mixed animal fats are a high-energy, multi-origin lipid blend characterized by their suitability as a feedstock for Hydrotreated Vegetable Oil (HVO) and Fatty Acid Methyl Ester (FAME) biodiesel production. They are classified under Annex IX of the EU Renewable Energy Directive (RED II) and qualify for double-counting toward renewable fuel targets.",
+    "application": "Primary feedstock for HVO (Renewable Diesel) and FAME (Biodiesel) production; contributes to RED II compliance and double-counting renewable energy targets.",
+    "packing": "Bulk, Flexitanks, IBC Containers",
+    "specification": [
+      "FFA (as oleic): max 10.0%",
+      "M&I: max 2.0%",
+      "IV (Wijs): 50–90",
+      "Saponification value: 190–200 mg KOH/g",
+      "Sulphur: max 100 ppm",
+      "Calorific value: ~9,000 kcal/kg",
+      "Appearance: dark liquid to semi-solid"
+    ],
+    "industry": ["biofuel-feedstock"],
+    "pdfs": [
+      {
+        "name": "Coming soon",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "slug": "poultry-fats",
+    "name": "Poultry Fats",
+    "image": "/99-PoultryFats.png",
+    "market": "",
+    "marketLabel": "",
+    "info": "Poultry fat is a rendered fat from chicken, turkey, and duck processing. It is an Annex IX advanced biofuel feedstock under EU RED II.",
+    "description": "Poultry fat is a biofuel feedstock characterized by a relatively high unsaturated fatty acid content and eligibility for double-counting under RED II. Its lower titre point makes it more fluid at ambient temperatures, facilitating easier handling and processing into HVO and FAME.",
+    "application": "Advanced biofuel feedstock for HVO/FAME; Annex IX double-counting eligible; cold-climate handling advantage due to low titre.",
+    "packing": "Bulk, Flexitanks, IBC Containers",
+    "specification": [
+      "FFA (as oleic): max 5.0%",
+      "M&I: max 1.0%",
+      "IV (Wijs): 60–90",
+      "Saponification value: 190–200 mg KOH/g",
+      "Sulphur: max 50 ppm",
+      "Calorific value: ~9,000 kcal/kg",
+      "Titre: 25–35°C"
+    ],
+    "industry": ["biofuel-feedstock"],
+    "pdfs": [
+      {
+        "name": "Coming soon",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "slug": "fatty-acids",
+    "name": "Fatty Acids",
+    "image": "/100-FattyAcids.png",
+    "market": "",
+    "marketLabel": "",
+    "info": "Fatty acids for biofuel are free fatty acid streams derived from fat splitting, distillation, or refining. They are a direct feedstock for FAME and HVO production.",
+    "description": "Technical-grade fatty acids are characterized by their high free fatty acid content and suitability for direct transesterification into biodiesel. They originate from palm, tallow, or mixed vegetable/animal oil refining and provide a cost-effective route to renewable fuel production.",
+    "application": "Direct feedstock for FAME biodiesel (acid-catalyzed esterification); pre-treatment feed for HVO units; chemical intermediate for lubricants and plasticizers.",
+    "packing": "Bulk, Flexitanks, IBC Containers",
+    "specification": [
+      "FFA content: min 95%",
+      "Moisture: max 0.5%",
+      "IV (Wijs): varies by origin (20–120)",
+      "Saponification value: 185–210 mg KOH/g",
+      "Sulphur: max 50 ppm",
+      "Colour: varies (1–10 Gardner)",
+      "Appearance: liquid to semi-solid"
+    ],
+    "industry": ["biofuel-feedstock"],
+    "pdfs": [
+      {
+        "name": "Coming soon",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "slug": "distillers-corn-oil",
+    "name": "Distillers Corn Oil (DCO)",
+    "image": "/101-DistillersCornOil.png",
+    "market": "",
+    "marketLabel": "",
+    "info": "Distillers Corn Oil (DCO) is a co-product extracted from the thin stillage of corn ethanol production. It is a polyunsaturated oil rich in linoleic acid.",
+    "description": "DCO is characterized by its dual role as a biofuel feedstock and a high-energy animal feed ingredient. It qualifies as an Annex IX feedstock under EU RED II for double-counting toward advanced biofuel targets, offering competitive GHG savings. In feed applications, it delivers elevated metabolizable energy levels.",
+    "application": "Advanced biofuel feedstock (HVO/FAME) with RED II Annex IX eligibility; high-energy feed supplement for poultry and swine; corn ethanol biorefinery by-product.",
+    "packing": "Bulk, Flexitanks, IBC Containers",
+    "specification": [
+      "FFA (as oleic): max 10.0%",
+      "Moisture & Insolubles: max 2.0%",
+      "IV (Wijs): 110–130",
+      "Phosphorus: max 500 ppm",
+      "Sulphur: max 50 ppm",
+      "Calorific value: ~9,000 kcal/kg",
+      "Appearance: dark amber to brown liquid"
+    ],
+    "industry": ["biofuel-feedstock"],
+    "pdfs": [
+      {
+        "name": "Coming soon",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "slug": "palm-fatty-acid-distillate",
+    "name": "Palm Fatty Acid Distillate (PFAD)",
+    "image": "/102-PFAD.png",
+    "market": "",
+    "marketLabel": "",
+    "info": "Palm Fatty Acid Distillate (PFAD) is a byproduct of palm oil refining. It is a mixture of free fatty acids, glycerides, and minor components collected during physical refining.",
+    "description": "PFAD is a cost-effective SAF and biofuel feedstock characterized by its high free fatty acid content and palm origin. Under the CORSIA and RED III frameworks, PFAD from certified sustainable sources qualifies as a SAF feedstock, providing significant lifecycle GHG reductions compared to fossil jet fuel.",
+    "application": "SAF feedstock via HEFA pathway; FAME biodiesel production; oleochemical feedstock for soap and fatty acid manufacturing.",
+    "packing": "Bulk, Flexitanks, IBC Containers",
+    "specification": [
+      "FFA (as palmitic): min 70%",
+      "Moisture: max 0.5%",
+      "IV (Wijs): 45–55",
+      "Saponification value: 195–210 mg KOH/g",
+      "Sulphur: max 10 ppm",
+      "Calorific value: ~9,000 kcal/kg",
+      "Appearance: semi-solid to liquid, yellow-brown"
+    ],
+    "industry": ["saf-feedstock"],
+    "pdfs": [
+      {
+        "name": "Coming soon",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "slug": "palm-oil-mill-effluent",
+    "name": "Palm Oil Mill Effluent (POME)",
+    "image": "/103-POME.png",
+    "market": "",
+    "marketLabel": "",
+    "info": "Palm Oil Mill Effluent (POME) is the wastewater generated during palm oil processing. After treatment, the captured biogas or residual oil fraction serves as a SAF feedstock.",
+    "description": "POME-derived biogas and extracted oil are advanced SAF feedstocks classified under RED II Annex IX and CORSIA Annex S1. The POME pathway delivers among the highest GHG savings of any SAF feedstock, often exceeding 90% reduction versus fossil jet fuel, making it highly valuable for airline sustainability obligations.",
+    "application": "Advanced SAF feedstock (HEFA and bio-methane-to-jet pathways); RED II Annex IX double-counting; CORSIA eligible for highest-tier GHG credits.",
+    "packing": "Bulk liquid (POME oil fraction), biogas in pipeline",
+    "specification": [
+      "POME oil fraction: FFA: 5–15%",
+      "Moisture: max 3%",
+      "IV (Wijs): 50–60",
+      "GHG savings: >90% vs fossil",
+      "Sustainability: RSPO/ISCC certification required",
+      "Appearance: dark brown viscous liquid"
+    ],
+    "industry": ["saf-feedstock"],
+    "pdfs": [
+      {
+        "name": "Coming soon",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "slug": "tall-oil",
+    "name": "Tall Oil",
+    "image": "/104-TallOil.png",
+    "market": "",
+    "marketLabel": "",
+    "info": "Tall oil is a byproduct of the Kraft wood pulping process. It is a mixture of rosin acids, fatty acids, and sterols.",
+    "description": "Crude tall oil (CTO) and its distilled fractions (TOFA – Tall Oil Fatty Acids) are advanced SAF and biofuel feedstocks classified under RED II Annex IX. Tall oil provides among the highest GHG savings of any lignocellulosic feedstock and is widely used in the HEFA-SPK pathway for sustainable aviation fuel production.",
+    "application": "Premium advanced SAF feedstock via HEFA pathway; RED II Annex IX double-counting; also used as feedstock for HVO renewable diesel and specialty chemicals (rosin derivatives, dimer acids).",
+    "packing": "Bulk, Flexitanks, IBC Containers",
+    "specification": [
+      "Tall Oil Fatty Acids (TOFA): FFA content: min 90%",
+      "Rosin acids: max 10%",
+      "Moisture: max 0.5%",
+      "IV (Wijs): 130–160",
+      "Saponification value: 185–195 mg KOH/g",
+      "Sulphur: max 50 ppm",
+      "Calorific value: ~9,200 kcal/kg",
+      "Appearance: amber to dark brown liquid"
+    ],
+    "industry": ["saf-feedstock"],
+    "pdfs": [
+      {
+        "name": "Coming soon",
+        "url": ""
+      }
+    ]
   }
 ]

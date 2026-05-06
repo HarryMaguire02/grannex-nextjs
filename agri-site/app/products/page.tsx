@@ -29,6 +29,9 @@ const industryLabels: Record<string, string> = {
   'food-materials': 'Foods materials',
   'animal-feeds-materials': 'Animal feeds materials',
   'aqua-feeds-materials': 'Aqua feeds materials',
+  'biofuel-feedstock': 'Biofuel Feedstock',
+  'saf-feedstock': 'SAF Feedstock',
+  'oleochemical-applications': 'Oleochemical Applications',
 };
 
 type Product = {
