@@ -9,9 +9,9 @@ const primaryCategories = [
 ];
 
 const industrialCategories = [
-  { title: 'Oleochemical Ingredients', icon: '/oleochemicals.png', industry: 'oleochemical-applications' },
-  { title: 'Biofuel Feedstock', icon: '/biofuel-feedstock.png', industry: 'biofuel-feedstock' },
-  { title: 'SAF Feedstock', icon: '/SAF-feedstock.png', industry: 'saf-feedstock' },
+  { title: 'Oleochemical Ingredients', icon: '/oleochemicals.svg', industry: 'oleochemical-applications' },
+  { title: 'Biofuel Feedstock', icon: '/biofuel-feedstock.svg', industry: 'biofuel-feedstock' },
+  { title: 'SAF Feedstock', icon: '/SAF-feedstock.svg', industry: 'saf-feedstock' },
 ];
 
 export default function HeroSection() {
