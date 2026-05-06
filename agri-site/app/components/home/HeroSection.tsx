@@ -45,7 +45,7 @@ export default function HeroSection() {
         </div>
 
         {/* Category Cards */}
-        <div className="w-full flex flex-col gap-2">
+        <div className="w-full flex flex-col gap-2 md:gap-4 lg:gap-6">
           {/* Primary industries grid */}
           <div className="grid grid-cols-2 md:grid-cols-4 bg-primary rounded-2xl overflow-hidden">
             {primaryCategories.map((category, index) => (
