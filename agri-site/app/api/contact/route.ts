@@ -80,7 +80,7 @@ export async function POST(request: NextRequest) {
     }
 
     // Send email using Resend
-    const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://grannex.com';
+    const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.grannex.com';
 
     const { data, error } = await resend.emails.send({
       from: process.env.EMAIL_FROM || 'noreply@info.grannex.com',
