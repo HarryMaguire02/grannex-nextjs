@@ -93,6 +93,9 @@ export default function Footer() {
 
               {/* Legal Links */}
               <nav className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-xs text-secondary font-semibold">
+                <Link href="/supplier-code-of-conduct" className="hover:text-white transition-colors">
+                  Supplier Code of Conduct
+                </Link>
                 <Link href="/sales-conditions" className="hover:text-white transition-colors">
                   Sales Conditions
                 </Link>

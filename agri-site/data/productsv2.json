@@ -225,136 +225,6 @@
     ]
   },
   {
-    "slug": "cocoa-butter",
-    "name": "Cocoa Butter",
-    "image": "/9-CocoaButter.png",
-    "market": "oils-and-fats",
-    "marketLabel": "Oils and fats",
-    "info": "Cocoa butter is a pale-yellow, edible fat extracted from the cocoa bean. it is a solid vegetable fat with a high melting point.",
-    "description": "Cocoa butter is a specialty fat characterized by its unique texture-forming properties and stability in confectionery applications. It acts as a moisture barrier and texturizer in high-end bakery products and specialized nutritional treats.",
-    "application": "Texture agent for chocolate/bakery; skin-softening base for lotions.",
-    "packing": "Bulk, Big Bag 1MT, Bag 25kg",
-    "specification": [
-      "FFA (as oleic):1.75% max",
-      "IV (Wijs):33–42",
-      "Saponification value:188–198",
-      "Melting point:31–35°C",
-      "Unsaponifiable matter:0.35%"
-    ],
-    "industry": ["food-materials"],
-    "pdfs": [
-      {
-        "name": "Product specification",
-        "url": "9-CocoaButter.pdf"
-      }
-    ]
-  },
-  {
-    "slug": "butter",
-    "name": "Butter",
-    "image": "/10-Butter-v2.png",
-    "market": "oils-and-fats",
-    "marketLabel": "Oils and fats",
-    "info": "Butter is a concentrated dairy fat produced by churning fresh cream. It is primarily composed of milk fat, water, and milk solids, typically containing a minimum of 80-82% fat.",
-    "description": "Butter is a premium, natural dairy fat prized for its rich flavor profile and superior functional properties in baking and confectionery. It provides a unique mouthfeel and aromatic complexity, while acting as a highly palatable and digestible energy source rich in fat-soluble vitamins.",
-    "application": "Flavor enhancer for bakery; gourmet pet treats; high-calorie nutritional base.",
-    "packing": "Bulk, Big Bag 1MT, Bag 25kg",
-    "specification": [
-      "Dry matter:84.0%",
-      "Crude protein:0.85%",
-      "Crude fat:81.1%",
-      "Crude fibre:0%",
-      "Carbohydrate:0.06%",
-      "Ash:1.5%",
-      "Gross energy:30.5 MJ/kg DM"
-    ],
-    "industry": ["food-materials"],
-    "pdfs": [
-      {
-        "name": "Product specification",
-        "url": "10-Butter.pdf"
-      }
-    ]
-  },
-  {
-    "slug": "shortening-36-39",
-    "name": "Shortening 36-39",
-    "image": "/11-Shortening36-39-v2.png",
-    "market": "oils-and-fats",
-    "marketLabel": "Oils and fats",
-    "info": "Shortening is a semi-solid fat produced from vegetable oils through hydrogenation or interesterification. it features a specific melting range of 36-39°C.",
-    "description": "Shortening 36-39 is a functional fat characterized by its ability to provide structural stability and \"shortness\" to baked goods. It is essential for producing high-quality pastry crusts, cream fillings, and stabilized bakery structures.",
-    "application": "Solid fat for high-quality pastry crusts; cream fillings; bakery stability.",
-    "packing": "Bulk, Big Bag 1MT, Bag 25kg",
-    "specification": [
-      "FFA (as oleic):0.05%",
-      "Moisture:0.05%",
-      "Iodine value:48–54",
-      "Peroxide value:1.0 meq O2/kg",
-      "Slip melting point:36–39°C"
-    ],
-    "industry": ["food-materials"],
-    "pdfs": [
-      {
-        "name": "Product specification",
-        "url": "11-Shortening 36-39.pdf"
-      }
-    ]
-  },
-  {
-    "slug": "margarine",
-    "name": "Margarine",
-    "image": "/12-Margarine-v2.png",
-    "market": "oils-and-fats",
-    "marketLabel": "Oils and fats",
-    "info": "Margarine is an emulsion of vegetable fats and water. It is designed to mimic the functional properties of dairy butter.",
-    "description": "Margarine is a versatile baking fat characterized by its consistent texture and cost-effective energy delivery. It is used as a foundational ingredient in large-scale baking to improve crumb structure and provide essential lipids.",
-    "application": "Cost-effective butter alternative for large-scale baking and spreads.",
-    "packing": "Bulk, Big Bag 1MT, Bag 25kg",
-    "specification": [
-      "Fat content:80%",
-      "Moisture:16.5%",
-      "Salt:1.5%",
-      "Vitamin A:2000 IU/100g",
-      "Vitamin D3:200 IU/100g",
-      "Melting point:34–36°C"
-    ],
-    "industry": ["food-materials"],
-    "pdfs": [
-      {
-        "name": "Product specification",
-        "url": "12-Margarine.pdf"
-      }
-    ]
-  },
-  {
-    "slug": "mayonnaise",
-    "name": "Mayonnaise",
-    "image": "/84-Mayonnaise.jpeg",
-    "market": "oils-and-fats",
-    "marketLabel": "Oils and fats",
-    "info": "Mayonnaise is a thick, creamy cold sauce or dressing commonly used as a condiment. It is a stable emulsion of vegetable oil, egg yolk, and an acid (vinegar or lemon juice), often enhanced with seasonings.",
-    "description": "This premium emulsion is characterized by its smooth texture, rich mouthfeel, and high stability. It provides a concentrated source of fats and flavor, serving as a foundational ingredient that improves the consistency and palatability of various food and specialty pet products.",
-    "application": "Base for dressings and sauces; flavor and texture enhancer for gourmet pet foods; high-energy condiment for the food service sector.",
-    "packing": "Jar: 1kg; Tube: 500g; Bucket: 5kg; Bulk: Containers",
-    "specification": [
-      "Appearance:creamy white to pale yellow",
-      "Texture:thick, smooth emulsion",
-      "Fat content:min 70-80%",
-      "Moisture:max 15-20%",
-      "Acidity (as acetic acid):0.3-0.5%",
-      "pH:3.5-4.5",
-      "Cholesterol:approx 60-70 mg/100g"
-    ],
-    "industry": ["food-materials"],
-    "pdfs": [
-      {
-        "name": "Product specification",
-        "url": "84-Mayonnaise.pdf"
-      }
-    ]
-  },
-  {
     "slug": "l-lysine",
     "name": "L-Lysine",
     "image": "/13-L-Lysine.png",
@@ -530,31 +400,6 @@
     ]
   },
   {
-    "slug": "white-beet-sugar",
-    "name": "White Beet Sugar",
-    "image": "/20-WhiteBeetSugar.png",
-    "market": "sweeteners",
-    "marketLabel": "Sweeteners",
-    "info": "White beet sugar is a high-purity sucrose extracted from sugar beets. It is a refined, crystalline carbohydrate.",
-    "description": "White beet sugar is a clean energy source characterized by its instant digestibility and neutral taste profile. It enhances the palatability of specialized feeds and provides the quick glucose necessary for recovery or high-growth metabolic phases.",
-    "application": "Pure sucrose for baking; energy source and natural feed attractant.",
-    "packing": "Bulk, Big Bag 1MT, Bag 25kg",
-    "specification": [
-      "Polarization:99.7% min",
-      "Moisture:0.04% max",
-      "Ash content:0.04% max",
-      "Color:Max 45 ICUMSA units",
-      "Invert sugar:0.04% max"
-    ],
-    "industry": ["animal-feeds-materials", "food-materials"],
-    "pdfs": [
-      {
-        "name": "Product specification",
-        "url": "20-White Beet Sugar.pdf"
-      }
-    ]
-  },
-  {
     "slug": "crystaline-fructose",
     "name": "Crystaline Fructose",
     "image": "/21-CrystalineFructose.png",
@@ -659,32 +504,6 @@
     ]
   },
   {
-    "slug": "honey",
-    "name": "Honey",
-    "image": "/25-Honey.png",
-    "market": "sweeteners",
-    "marketLabel": "Sweeteners",
-    "info": "Honey is a natural sweet substance produced by honeybees. It contains a complex mixture of sugars, enzymes, and minerals.",
-    "description": "Honey is a natural humectant characterized by its antimicrobial properties and unique flavor profile. It provides a \"clean-label\" energy source that supports immune health and serves as a premium attractant in specialty pet and animal treats.",
-    "application": "Natural humectant; clean-label sweetener with antioxidant properties.",
-    "packing": "Bulk, IBC Containers, Bottled (1l, 3l, 5l, 20l and other)",
-    "specification": [
-      "Moisture:max 20%",
-      "Fructose:min 38%",
-      "Glucose:min 31%",
-      "Sucrose:max 5%",
-      "Ash:max 0.6%",
-      "pH:3.4–6.1"
-    ],
-    "industry": ["food-materials", "animal-feeds-materials"],
-    "pdfs": [
-      {
-        "name": "Product specification",
-        "url": "25-Honey.pdf"
-      }
-    ]
-  },
-  {
     "slug": "molasses",
     "name": "Molasses",
     "image": "/26-Molasses.png",
@@ -784,60 +603,6 @@
       {
         "name": "Product specification",
         "url": "29-Wheat Starch.pdf"
-      }
-    ]
-  },
-  {
-    "slug": "corn-starch",
-    "name": "Corn Starch",
-    "image": "/30-CornStarch.png",
-    "market": "starches",
-    "marketLabel": "Starches",
-    "info": "Corn starch is extracted from the endosperm of the maize kernel. It is a highly pure carbohydrate powder.",
-    "description": "Corn starch is a highly digestible energy source characterized by its ability to form stable, opaque gels. It acts as a versatile texturizer and thickener in animal feed and food, and serves as a neutral carrier for various micro-additives.",
-    "application": "Thickener for gravies; paper sizing; energy for young animals.",
-    "packing": "Bulk, Big Bag 1MT, Bag 25kg",
-    "specification": [
-      "Appearenc:white or light yellow shadow",
-      "Ash:0.3%",
-      "Protein:0.50%",
-      "Fat:0.20%",
-      "Moisture:14%",
-      "pH:4.5-6.5",
-      "SO2:30mg/kg"
-    ],
-    "industry": ["animal-feeds-materials", "food-materials"],
-    "pdfs": [
-      {
-        "name": "Product specification",
-        "url": "30-Corn Starch.pdf"
-      }
-    ]
-  },
-  {
-    "slug": "potato-starch",
-    "name": "Potato Starch",
-    "image": "/31-PotatoStarch.png",
-    "market": "starches",
-    "marketLabel": "Starches",
-    "info": "Potato starch is extracted from potato tubers. It features large granules that provide unique rheological properties.",
-    "description": "Potato starch is characterized by its exceptional water absorption and superior binding strength. It forms clear, high-viscosity gels with a neutral taste, making it an essential gluten-free binder for the meat, pet food, and textile industries.",
-    "application": "Gluten-free thickener; high-binding strength for meat and pet food.",
-    "packing": "Bulk, Big Bag 1MT, Bag 25kg",
-    "specification": [
-      "Appearenc:white powder",
-      "Neutral taste and odour:unique texture",
-      "Ash:0.5%",
-      "Viscosity:min 1350 BU",
-      "Moisture:20.5%",
-      "pH:6.0-8.0",
-      "SO2:10mg/kg"
-    ],
-    "industry": ["animal-feeds-materials", "food-materials"],
-    "pdfs": [
-      {
-        "name": "Product specification",
-        "url": "31-Potato Starch.pdf"
       }
     ]
   },
@@ -1803,34 +1568,6 @@
       {
         "name": "Product specification",
         "url": "68-FiberX.pdf"
-      }
-    ]
-  },
-  {
-    "slug": "used-cooking-oil",
-    "name": "Used Cooking Oil (UCO)",
-    "image": "/83-UCO-oil.jpeg",
-    "market": "oils-and-fats",
-    "marketLabel": "Oils and fats",
-    "info": "Used Cooking Oil (UCO) is a high-energy lipid source recovered from the food service and processing industries. After undergoing a rigorous collection and refining process—including heating, filtration, and dehydration—it is transformed into a consistent, calorie-dense raw material.",
-    "description": "Used Cooking Oil is a refined secondary fat product that has been processed to remove food particles, moisture, and impurities. It is a viscous, dark-amber liquid that provides a concentrated source of metabolizable energy. In the feed and technical industries, UCO is valued for its high caloric density and its ability to reduce dust during feed milling. To ensure quality, the oil is monitored for Free Fatty Acids (FFA), Moisture, and Insolubles (MIU), and is often stabilized with antioxidants to maintain shelf life and prevent rancidity during storage.",
-    "application": "Biofuel production (Biodiesel/FAME, Renewable Diesel/HVO); energy booster in poultry, swine, and ruminant feed; dust control in feed mills; base oil for biodegradable greases and industrial soaps; raw material for oleochemicals in detergents and coatings.",
-    "packing": "Bulk, Flexitanks, IBC Containers",
-    "specification": [
-      "FFA (as oleic):Max 5.0%",
-      "M&I:Max 1.0–2.0%",
-      "IV (Wijs):75–120 g I₂/100g",
-      "Saponification value:185–195 mg KOH/g",
-      "Insoluble impurities:Max 0.02%",
-      "Sulphur content:Max 50 ppm",
-      "Calorific value:~9,000–9,500 kcal/kg",
-      "Appearance:Dark brown to amber liquid"
-    ],
-    "industry": ["animal-feeds-materials"],
-    "pdfs": [
-      {
-        "name": "Product specification",
-        "url": "83-UCO-oil.pdf"
       }
     ]
   },
