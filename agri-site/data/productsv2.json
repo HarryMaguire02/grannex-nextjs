@@ -1954,5 +1954,33 @@
         "url": ""
       }
     ]
+  },
+  {
+    "slug": "butter",
+    "name": "Butter",
+    "image": "/10-Butter-v3.jpeg",
+    "market": "oils-and-fats",
+    "marketLabel": "Oils and fats",
+    "info": "Unsalted butter is a concentrated dairy fat made from 100% pasteurized natural cream, with a minimum fat content of 82.5%.",
+    "description": "This premium unsalted butter is characterized by its homogenous, plastic consistency and pure, well-defined creamy flavor from pasteurization. Produced under DSTU 4399:2005 standards, it delivers a dense, digestible energy source rich in fat-soluble nutrients for premium bakery, confectionery, and specialty food applications.",
+    "application": "Flavor enhancer for bakery and confectionery; high-calorie nutritional base for premium food products.",
+    "packing": "25 kg carton case net with polyethylene packet",
+    "specification": [
+      "Mass fraction of total fat (min):82.5%",
+      "Moisture:16%",
+      "Milk solids non-fat:1.5%",
+      "Energetic value:3075 kJ / 748 kcal per 100g",
+      "Titrated acidity of plasma (max):23°T",
+      "pH of plasma (min):6.25",
+      "Regulatory standard:DSTU 4399:2005",
+      "GMO status:GMO free"
+    ],
+    "industry": ["food-materials"],
+    "pdfs": [
+      {
+        "name": "Product specification",
+        "url": "10-Butter-v2.pdf"
+      }
+    ]
   }
 ]
