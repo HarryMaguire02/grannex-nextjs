@@ -25,7 +25,6 @@ const markets = [
 // Website-category locks. When ?industry=<slug> is present in the URL, the page
 // title and filter are constrained to that category; it cannot be toggled from the UI.
 const industryLabels: Record<string, string> = {
-  'oils-and-fats': 'Oils and fats',
   'food-materials': 'Foods materials',
   'animal-feeds-materials': 'Animal feeds materials',
   'aqua-feeds-materials': 'Aqua feeds materials',

@@ -4,7 +4,6 @@ import productsData from '@/data/productsv2.json';
 import ProductPageClient from './ProductPageClient';
 
 const industryLabels: Record<string, string> = {
-  'oils-and-fats': 'Oils and fats',
   'food-materials': 'Foods materials',
   'animal-feeds-materials': 'Animal feeds materials',
   'aqua-feeds-materials': 'Aqua feeds materials',

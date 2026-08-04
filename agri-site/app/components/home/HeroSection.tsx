@@ -2,7 +2,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 const primaryCategories = [
-  { title: 'Oils and fats', icon: '/oils-and-fats.svg', industry: 'oils-and-fats' },
   { title: 'Foods materials', icon: '/food-ingredients.svg', industry: 'food-materials' },
   { title: 'Animal feeds materials', icon: '/animal-feeds-ingredients.svg', industry: 'animal-feeds-materials' },
   { title: 'Aqua feeds materials', icon: '/aqua-feeds-ingredients.svg', industry: 'aqua-feeds-materials' },
@@ -47,7 +46,7 @@ export default function HeroSection() {
         {/* Category Cards */}
         <div className="w-full flex flex-col gap-2 md:gap-4 lg:gap-6">
           {/* Primary industries grid */}
-          <div className="grid grid-cols-2 md:grid-cols-4 bg-primary rounded-2xl overflow-hidden">
+          <div className="grid grid-cols-3 bg-primary rounded-2xl overflow-hidden">
             {primaryCategories.map((category, index) => (
               <Link
                 key={category.title}
@@ -66,14 +65,8 @@ export default function HeroSection() {
                 </div>
                 <h3 className="text-xs sm:text-sm md:text-sm lg:text-base font-light leading-tight text-center md:text-left">{category.title}</h3>
 
-                {(index === 0 || index === 2) && (
-                  <div className="absolute right-0 top-1/2 -translate-y-1/2 h-2/3 w-px bg-secondary md:hidden" />
-                )}
-                {index < 3 && (
-                  <div className="absolute right-0 top-1/2 -translate-y-1/2 h-2/3 w-px bg-secondary hidden md:block" />
-                )}
-                {(index === 0 || index === 1) && (
-                  <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-4/5 h-px bg-secondary md:hidden" />
+                {index < 2 && (
+                  <div className="absolute right-0 top-1/2 -translate-y-1/2 h-2/3 w-px bg-secondary" />
                 )}
               </Link>
             ))}
