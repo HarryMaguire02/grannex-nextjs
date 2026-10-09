@@ -1,12 +1,13 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import AnimateIn from '@/app/components/ui/AnimateIn';
 
 export default function RetailHero() {
   return (
     <section className="relative pb-8 sm:pb-10 md:pb-12 lg:pb-16 bg-white">
       <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-          <div>
+          <AnimateIn from="left">
             <h1 className="font-bold text-2xl sm:text-3xl uppercase text-primary leading-tight mb-4">
               Custom Private Label Solutions
             </h1>
@@ -34,18 +35,20 @@ export default function RetailHero() {
                 </svg>
               </Link>
             </div>
-          </div>
-          <div className="flex items-center justify-center">
-            <Image
-              src="/retail/retail-hero.png"
-              alt="Grannex private label products"
-              width={575}
-              height={387}
-              className="w-full h-auto"
-              sizes="(min-width: 1024px) 575px, 100vw"
-              priority
-            />
-          </div>
+          </AnimateIn>
+          <AnimateIn from="right">
+            <div className="flex items-center justify-center">
+              <Image
+                src="/retail/retail-hero.png"
+                alt="Grannex private label products"
+                width={575}
+                height={387}
+                className="w-full h-auto"
+                sizes="(min-width: 1024px) 575px, 100vw"
+                priority
+              />
+            </div>
+          </AnimateIn>
         </div>
       </div>
     </section>

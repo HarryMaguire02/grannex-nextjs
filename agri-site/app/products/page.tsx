@@ -6,6 +6,7 @@ import Link from 'next/link';
 import productsData from '@/data/productsv2.json';
 import ProductCard from '@/app/components/ProductCard';
 import MultiSelect from '@/app/components/inputs/MultiSelect';
+import AnimateIn from '@/app/components/ui/AnimateIn';
 
 // Static market options
 const markets = [
@@ -195,89 +196,94 @@ function ProductsContent() {
 
       <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12">
         {/* Title */}
-        <h1 className="text-3xl md:text-4xl font-bold text-primary mb-6 md:mb-8">
-          {lockedIndustry ? `Our Products - ${industryLabels[lockedIndustry]}` : 'Our products'}
-        </h1>
+        <AnimateIn from="bottom">
+          <h1 className="text-3xl md:text-4xl font-bold text-primary mb-6 md:mb-8">
+            {lockedIndustry ? `Our Products - ${industryLabels[lockedIndustry]}` : 'Our products'}
+          </h1>
 
-        {/* Description */}
-        <p className="text-primary font-normal text-sm sm:text-base leading-relaxed mb-8 max-w-3xl">
-          We offer a broad portfolio of products, commodities, and ingredients serving the human food,
-          aquaculture, and animal feed industries. Our range includes oilseeds, vegetable oils, and related
-          agricultural products sourced from multiple origins to meet diverse market and customer requirements.
-        </p>
+          {/* Description */}
+          <p className="text-primary font-normal text-sm sm:text-base leading-relaxed mb-8 max-w-3xl">
+            We offer a broad portfolio of products, commodities, and ingredients serving the human food,
+            aquaculture, and animal feed industries. Our range includes oilseeds, vegetable oils, and related
+            agricultural products sourced from multiple origins to meet diverse market and customer requirements.
+          </p>
+        </AnimateIn>
 
         {/* Filters and Search Row */}
-        <div className="flex flex-col sm:flex-row sm:items-center gap-4 mb-8">
-          {/* Market multi-select */}
-          <MultiSelect
-            options={markets}
-            selected={selectedMarkets}
-            onChange={handleMarketChange}
-            onClear={handleMarketClear}
-            placeholder="Select market"
-          />
-
-          {/* Search input */}
-          <div className="relative w-full sm:w-64">
-            <input
-              type="text"
-              placeholder="Search products..."
-              value={searchQuery}
-              onChange={(e) => {
-                setSearchQuery(e.target.value);
-                setCurrentPage(1);
-              }}
-              className="px-10 py-2.5 border border-primary/20 rounded-lg text-sm font-normal text-primary bg-white focus:outline-none focus:border-green-medium focus:ring-1 focus:ring-green-medium w-full"
+        <AnimateIn from="bottom" delay={0.1}>
+          <div className="flex flex-col sm:flex-row sm:items-center gap-4 mb-8">
+            {/* Market multi-select */}
+            <MultiSelect
+              options={markets}
+              selected={selectedMarkets}
+              onChange={handleMarketChange}
+              onClear={handleMarketClear}
+              placeholder="Select market"
             />
-            <svg
-              className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-primary/60"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-              />
-            </svg>
-            {searchQuery && (
-              <button
-                onClick={() => {
-                  setSearchQuery('');
+
+            {/* Search input */}
+            <div className="relative w-full sm:w-64">
+              <input
+                type="text"
+                placeholder="Search products..."
+                value={searchQuery}
+                onChange={(e) => {
+                  setSearchQuery(e.target.value);
                   setCurrentPage(1);
                 }}
-                className="absolute right-3 top-1/2 -translate-y-1/2 p-1 text-primary/60 hover:text-red-600 hover:bg-red-50 rounded transition-colors"
-                title="Clear search"
+                className="px-10 py-2.5 border border-primary/20 rounded-lg text-sm font-normal text-primary bg-white focus:outline-none focus:border-green-medium focus:ring-1 focus:ring-green-medium w-full"
+              />
+              <svg
+                className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-primary/60"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-4 w-4"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                />
+              </svg>
+              {searchQuery && (
+                <button
+                  onClick={() => {
+                    setSearchQuery('');
+                    setCurrentPage(1);
+                  }}
+                  className="absolute right-3 top-1/2 -translate-y-1/2 p-1 text-primary/60 hover:text-red-600 hover:bg-red-50 rounded transition-colors"
+                  title="Clear search"
                 >
-                  <path
-                    fillRule="evenodd"
-                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              </button>
-            )}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-4 w-4"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                </button>
+              )}
+            </div>
           </div>
-        </div>
+        </AnimateIn>
 
         {/* Product Grid */}
         <div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6 mb-8">
-          {paginatedProducts.map((product) => (
-            <ProductCard
-              key={product.slug}
-              slug={product.slug}
-              name={product.name}
-              image={product.image}
-              info={product.info}
-            />
+          {paginatedProducts.map((product, i) => (
+            <AnimateIn key={product.slug} from="bottom" delay={(i % 4) * 0.1}>
+              <ProductCard
+                slug={product.slug}
+                name={product.name}
+                image={product.image}
+                info={product.info}
+              />
+            </AnimateIn>
           ))}
         </div>
 

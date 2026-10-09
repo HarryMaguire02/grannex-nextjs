@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import AnimateIn from '@/app/components/ui/AnimateIn';
 
 const services = [
   { label: 'Production & Bottling', src: '/retail/production-and-bottling.png' },
@@ -15,24 +16,28 @@ export default function RetailServices() {
         <div className="relative">
           <div className="absolute inset-0 bg-linear-to-r from-secondary via-secondary/20 to-white" />
           <div className="relative max-w-content mx-auto px-6 sm:px-8 lg:px-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-8">Our Core Services</h2>
+            <AnimateIn from="bottom">
+              <h2 className="text-3xl md:text-4xl font-bold text-primary mb-8">Our Core Services</h2>
+            </AnimateIn>
           </div>
         </div>
         <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12 mt-8 pb-8 sm:pb-10 md:pb-12">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
-            {services.map((service) => (
-              <div key={service.label} className="flex flex-col items-center gap-4">
-                <div className="relative w-[110px] h-[110px]">
-                  <Image
-                    src={service.src}
-                    alt={service.label}
-                    fill
-                    className="object-contain"
-                    sizes="110px"
-                  />
+            {services.map((service, i) => (
+              <AnimateIn key={service.label} from="bottom" delay={i * 0.1}>
+                <div className="flex flex-col items-center gap-4">
+                  <div className="relative w-[110px] h-[110px]">
+                    <Image
+                      src={service.src}
+                      alt={service.label}
+                      fill
+                      className="object-contain"
+                      sizes="110px"
+                    />
+                  </div>
+                  <p className="text-sm font-medium text-primary text-center">{service.label}</p>
                 </div>
-                <p className="text-sm font-medium text-primary text-center">{service.label}</p>
-              </div>
+              </AnimateIn>
             ))}
           </div>
         </div>
@@ -47,7 +52,7 @@ export default function RetailServices() {
       <section className="py-8 sm:py-10 md:py-12 lg:py-16">
         <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-            <div>
+            <AnimateIn from="left">
               <h2 className="font-bold text-2xl sm:text-3xl text-primary leading-tight mb-6">
                 Flexible Packaging Solutions
               </h2>
@@ -66,16 +71,18 @@ export default function RetailServices() {
                   complete private label services available for retail and catering partners.
                 </p>
               </div>
-            </div>
-            <div className="relative w-full min-h-[240px] lg:min-h-[320px]">
-              <Image
-                src="/retail/flexible-packing-solutions.png"
-                alt="Flexible packaging solutions — oil bottles in various sizes"
-                fill
-                className="object-contain"
-                sizes="(min-width: 1024px) 50vw, 100vw"
-              />
-            </div>
+            </AnimateIn>
+            <AnimateIn from="right">
+              <div className="relative w-full min-h-[240px] lg:min-h-[320px]">
+                <Image
+                  src="/retail/flexible-packing-solutions.png"
+                  alt="Flexible packaging solutions — oil bottles in various sizes"
+                  fill
+                  className="object-contain"
+                  sizes="(min-width: 1024px) 50vw, 100vw"
+                />
+              </div>
+            </AnimateIn>
           </div>
         </div>
       </section>

@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import productsData from '@/data/productsv2.json';
 import ProductCard from '@/app/components/ProductCard';
+import AnimateIn from '@/app/components/ui/AnimateIn';
 
 type Product = {
   slug: string;
@@ -156,100 +157,108 @@ export default function IngredientsAndProductsSection() {
       <section className="relative py-8 sm:py-10 md:py-12 lg:py-16 bg-white">
         <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12">
           {/* Title */}
-          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6 md:mb-8">
-            Materials
-          </h2>
+          <AnimateIn from="bottom">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6 md:mb-8">
+              Materials
+            </h2>
+          </AnimateIn>
 
           {/* Tabs - scrollable with arrows on mobile */}
-          <div className="relative mb-8 sm:hidden">
-            {canScrollLeft && (
-              <button
-                onClick={() => scroll('left')}
-                className="absolute left-1 top-1/2 -translate-y-1/2 z-10 w-8 h-8 flex items-center justify-center bg-white/90 rounded-full shadow-md"
-                aria-label="Scroll left"
-              >
-                <svg className="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-                </svg>
-              </button>
-            )}
+          <AnimateIn from="bottom" delay={0.1}>
+            <div className="relative mb-8 sm:hidden">
+              {canScrollLeft && (
+                <button
+                  onClick={() => scroll('left')}
+                  className="absolute left-1 top-1/2 -translate-y-1/2 z-10 w-8 h-8 flex items-center justify-center bg-white/90 rounded-full shadow-md"
+                  aria-label="Scroll left"
+                >
+                  <svg className="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                  </svg>
+                </button>
+              )}
 
-            {canScrollRight && (
-              <button
-                onClick={() => scroll('right')}
-                className="absolute right-1 top-1/2 -translate-y-1/2 z-10 w-8 h-8 flex items-center justify-center bg-white/90 rounded-full shadow-md"
-                aria-label="Scroll right"
-              >
-                <svg className="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </button>
-            )}
+              {canScrollRight && (
+                <button
+                  onClick={() => scroll('right')}
+                  className="absolute right-1 top-1/2 -translate-y-1/2 z-10 w-8 h-8 flex items-center justify-center bg-white/90 rounded-full shadow-md"
+                  aria-label="Scroll right"
+                >
+                  <svg className="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </button>
+              )}
 
-            <div className="border-2 border-primary rounded-xl p-1">
-              <div
-                ref={tabsContainerRef}
-                onScroll={checkScrollPosition}
-                className="flex gap-2 overflow-x-auto whitespace-nowrap scrollbar-hide"
-              >
-                {tabs.map((tab) => (
-                  <button
-                    key={tab}
-                    onClick={() => setActiveTab(tab)}
-                    className={`shrink-0 px-6 py-2 text-sm font-medium transition-all rounded-lg ${
-                      activeTab === tab
-                        ? 'bg-primary text-white'
-                        : 'bg-transparent text-primary hover:bg-primary/10'
-                    }`}
-                  >
-                    {tab}
-                  </button>
-                ))}
+              <div className="border-2 border-primary rounded-xl p-1">
+                <div
+                  ref={tabsContainerRef}
+                  onScroll={checkScrollPosition}
+                  className="flex gap-2 overflow-x-auto whitespace-nowrap scrollbar-hide"
+                >
+                  {tabs.map((tab) => (
+                    <button
+                      key={tab}
+                      onClick={() => setActiveTab(tab)}
+                      className={`shrink-0 px-6 py-2 text-sm font-medium transition-all rounded-lg ${
+                        activeTab === tab
+                          ? 'bg-primary text-white'
+                          : 'bg-transparent text-primary hover:bg-primary/10'
+                      }`}
+                    >
+                      {tab}
+                    </button>
+                  ))}
+                </div>
               </div>
             </div>
-          </div>
+          </AnimateIn>
 
           {/* Tabs - 2 rows x 5 columns grid on sm and up */}
-          <div className="hidden sm:block mb-8">
-            <div className="border-2 border-primary rounded-xl p-1">
-              <div className="flex flex-wrap justify-center gap-2">
-                {tabs.map((tab) => (
-                  <button
-                    key={tab}
-                    onClick={() => setActiveTab(tab)}
-                    className={`w-[calc(20%-0.4rem)] px-2 py-2 text-sm font-medium transition-all rounded-lg text-center ${
-                      activeTab === tab
-                        ? 'bg-primary text-white'
-                        : 'bg-transparent text-primary hover:bg-primary/10'
-                    }`}
-                  >
-                    {tab}
-                  </button>
-                ))}
+          <AnimateIn from="bottom" delay={0.1}>
+            <div className="hidden sm:block mb-8">
+              <div className="border-2 border-primary rounded-xl p-1">
+                <div className="flex flex-wrap justify-center gap-2">
+                  {tabs.map((tab) => (
+                    <button
+                      key={tab}
+                      onClick={() => setActiveTab(tab)}
+                      className={`w-[calc(20%-0.4rem)] px-2 py-2 text-sm font-medium transition-all rounded-lg text-center ${
+                        activeTab === tab
+                          ? 'bg-primary text-white'
+                          : 'bg-transparent text-primary hover:bg-primary/10'
+                      }`}
+                    >
+                      {tab}
+                    </button>
+                  ))}
+                </div>
               </div>
             </div>
-          </div>
+          </AnimateIn>
 
           {/* Content */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             {/* Left Side - Text */}
-            <div>
+            <AnimateIn from="left">
               <h3 className="text-2xl font-bold text-primary mb-4">{content.title}</h3>
               <p className="text-primary font-normal text-sm leading-4 text-justify whitespace-pre-line">{content.description}</p>
-            </div>
+            </AnimateIn>
 
             {/* Right Side - Image */}
-            <div className="flex justify-center lg:justify-end">
-              <div className="relative w-full max-w-md h-60 md:h-64 flex items-center justify-center">
-                <Image
-                  src={content.image}
-                  alt={content.title}
-                  width={500}
-                  height={400}
-                  className="max-w-full max-h-full object-contain"
-                />
+            <AnimateIn from="right">
+              <div className="flex justify-center lg:justify-end">
+                <div className="relative w-full max-w-md h-60 md:h-64 flex items-center justify-center">
+                  <Image
+                    src={content.image}
+                    alt={content.title}
+                    width={500}
+                    height={400}
+                    className="max-w-full max-h-full object-contain"
+                  />
+                </div>
               </div>
-            </div>
+            </AnimateIn>
           </div>
         </div>
         {/* Decoration SVG - Bottom Left */}
@@ -273,35 +282,40 @@ export default function IngredientsAndProductsSection() {
       <section className="relative py-8 sm:py-10 md:py-12 lg:py-16 bg-white">
         <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12">
           {/* Title and Button Row */}
-          <div className="flex justify-between items-center mb-6 md:mb-8">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary">
-              Our products
-            </h2>
-            <Link
-              href={`/products?market=${tabToMarket[activeTab].join(',')}`}
-              className="px-6 py-2 md:px-8 md:py-3 bg-primary text-white rounded-lg font-medium hover:bg-green-medium transition-colors text-sm md:text-base"
-            >
-              View Products
-            </Link>
-          </div>
+          <AnimateIn from="bottom">
+            <div className="flex justify-between items-center mb-6 md:mb-8">
+              <h2 className="text-3xl md:text-4xl font-bold text-primary">
+                Our products
+              </h2>
+              <Link
+                href={`/products?market=${tabToMarket[activeTab].join(',')}`}
+                className="px-6 py-2 md:px-8 md:py-3 bg-primary text-white rounded-lg font-medium hover:bg-green-medium transition-colors text-sm md:text-base"
+              >
+                View Products
+              </Link>
+            </div>
+          </AnimateIn>
 
           {/* Description */}
-          <p className="text-primary font-normal text-sm leading-4 text-justify mb-8 w-full">
-            We offer a broad portfolio of products, commodities, and ingredients serving the human food,
-            aquaculture, and animal feed industries. Our range includes oilseeds, vegetable oils, and related
-            agricultural products sourced from multiple origins to meet diverse market and customer requirements.
-          </p>
+          <AnimateIn from="bottom" delay={0.1}>
+            <p className="text-primary font-normal text-sm leading-4 text-justify mb-8 w-full">
+              We offer a broad portfolio of products, commodities, and ingredients serving the human food,
+              aquaculture, and animal feed industries. Our range includes oilseeds, vegetable oils, and related
+              agricultural products sourced from multiple origins to meet diverse market and customer requirements.
+            </p>
+          </AnimateIn>
 
           {/* Product Grid */}
           <div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-            {filteredProducts.map((product) => (
-              <ProductCard
-                key={product.slug}
-                slug={product.slug}
-                name={product.name}
-                image={product.image}
-                info={product.info}
-              />
+            {filteredProducts.map((product, i) => (
+              <AnimateIn key={product.slug} from="bottom" delay={i * 0.1}>
+                <ProductCard
+                  slug={product.slug}
+                  name={product.name}
+                  image={product.image}
+                  info={product.info}
+                />
+              </AnimateIn>
             ))}
           </div>
         </div>

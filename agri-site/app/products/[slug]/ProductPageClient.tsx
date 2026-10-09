@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import AnimateIn from '@/app/components/ui/AnimateIn';
 
 type ProductPdf = {
   name: string;
@@ -134,45 +135,49 @@ export default function ProductPageClient({ product }: ProductPageClientProps) {
         <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 lg:gap-12">
             {/* Left: Product Image */}
-            <div className="flex items-center justify-center">
-              <div className="relative w-full  aspect-4/5 rounded-2xl overflow-hidden">
-                <Image
-                  src={product.image}
-                  alt={product.name}
-                  fill
-                  sizes="293px"
-                  className="object-cover"
-                  priority
-                />
+            <AnimateIn from="left">
+              <div className="flex items-center justify-center">
+                <div className="relative w-full  aspect-4/5 rounded-2xl overflow-hidden">
+                  <Image
+                    src={product.image}
+                    alt={product.name}
+                    fill
+                    sizes="293px"
+                    className="object-cover"
+                    priority
+                  />
+                </div>
               </div>
-            </div>
+            </AnimateIn>
 
             {/* Right: Product Description */}
-            <div className="flex flex-col">
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-6">
-                {product.name}
-              </h1>
+            <AnimateIn from="right">
+              <div className="flex flex-col">
+                <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-6">
+                  {product.name}
+                </h1>
 
-              <p className="text-primary font-normal text-sm leading-6 text-justify mb-8">
-                {product.description}
-              </p>
+                <p className="text-primary font-normal text-sm leading-6 text-justify mb-8">
+                  {product.description}
+                </p>
 
-              {/* CTA Buttons */}
-              <div className="flex flex-col sm:flex-row gap-4">
-                <button
-                  onClick={() => scrollToSection('specifications')}
-                  className="flex-1 px-2 md:px-8 py-3 bg-primary text-secondary text-sm md:text-lg rounded-lg font-medium hover:bg-green-medium transition-colors"
-                >
-                  Product Specifications
-                </button>
-                <button
-                  onClick={() => scrollToSection('enquiry')}
-                  className="flex-1 px-2 md:px-8 py-3 bg-primary text-secondary text-sm md:text-lg rounded-lg font-medium hover:bg-green-medium transition-colors"
-                >
-                  Make an enquiry
-                </button>
+                {/* CTA Buttons */}
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <button
+                    onClick={() => scrollToSection('specifications')}
+                    className="flex-1 px-2 md:px-8 py-3 bg-primary text-secondary text-sm md:text-lg rounded-lg font-medium hover:bg-green-medium transition-colors"
+                  >
+                    Product Specifications
+                  </button>
+                  <button
+                    onClick={() => scrollToSection('enquiry')}
+                    className="flex-1 px-2 md:px-8 py-3 bg-primary text-secondary text-sm md:text-lg rounded-lg font-medium hover:bg-green-medium transition-colors"
+                  >
+                    Make an enquiry
+                  </button>
+                </div>
               </div>
-            </div>
+            </AnimateIn>
           </div>
         </div>
       </section>
@@ -182,44 +187,52 @@ export default function ProductPageClient({ product }: ProductPageClientProps) {
         <div className="relative">
           <div className="absolute inset-0 bg-linear-to-r from-secondary via-secondary/20 to-white"></div>
           <div className="relative max-w-content mx-auto px-6 sm:px-8 lg:px-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-8">Summary</h2>
+            <AnimateIn from="bottom">
+              <h2 className="text-3xl md:text-4xl font-bold text-primary mb-8">Summary</h2>
+            </AnimateIn>
           </div>
         </div>
         <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12 mt-8">
           <div className="grid grid-cols-1 md:grid-cols-3">
             {/* Info */}
-            <div className="px-6 md:pl-0 md:pr-8 pb-6 md:py-0 border-b md:border-b-0 md:border-r border-primary/80">
-              <h3 className="text-xl font-bold text-primary mb-4">Info</h3>
-              <p className="text-primary font-normal text-sm leading-6 text-justify">
-                {product.info}
-              </p>
-            </div>
+            <AnimateIn from="bottom" delay={0}>
+              <div className="px-6 md:pl-0 md:pr-8 pb-6 md:py-0 border-b md:border-b-0 md:border-r border-primary/80">
+                <h3 className="text-xl font-bold text-primary mb-4">Info</h3>
+                <p className="text-primary font-normal text-sm leading-6 text-justify">
+                  {product.info}
+                </p>
+              </div>
+            </AnimateIn>
 
             {/* Application */}
-            <div className="px-6 md:px-8 py-6 md:py-0 border-b md:border-b-0 md:border-r border-primary/80">
-              <h3 className="text-xl font-bold text-primary mb-4">Application</h3>
-              <ul className="space-y-2">
-                {product.application.split(';').map((app, index) => (
-                  <li key={index} className="flex items-start">
-                    <span className="text-primary mr-2">›</span>
-                    <span className="text-primary font-normal text-sm leading-6">{app.trim()}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
+            <AnimateIn from="bottom" delay={0.1}>
+              <div className="px-6 md:px-8 py-6 md:py-0 border-b md:border-b-0 md:border-r border-primary/80">
+                <h3 className="text-xl font-bold text-primary mb-4">Application</h3>
+                <ul className="space-y-2">
+                  {product.application.split(';').map((app, index) => (
+                    <li key={index} className="flex items-start">
+                      <span className="text-primary mr-2">›</span>
+                      <span className="text-primary font-normal text-sm leading-6">{app.trim()}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </AnimateIn>
 
             {/* Packing Option */}
-            <div className="px-6 md:pl-8 md:pr-0 pt-6 md:py-0">
-              <h3 className="text-xl font-bold text-primary mb-4">Packing option</h3>
-              <ul className="space-y-2">
-                {product.packing.split(';').map((option, index) => (
-                  <li key={index} className="flex items-start">
-                    <span className="text-primary mr-2">›</span>
-                    <span className="text-primary font-normal text-sm leading-6">{option.trim()}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
+            <AnimateIn from="bottom" delay={0.2}>
+              <div className="px-6 md:pl-8 md:pr-0 pt-6 md:py-0">
+                <h3 className="text-xl font-bold text-primary mb-4">Packing option</h3>
+                <ul className="space-y-2">
+                  {product.packing.split(';').map((option, index) => (
+                    <li key={index} className="flex items-start">
+                      <span className="text-primary mr-2">›</span>
+                      <span className="text-primary font-normal text-sm leading-6">{option.trim()}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </AnimateIn>
           </div>
         </div>
       </section>
@@ -229,82 +242,88 @@ export default function ProductPageClient({ product }: ProductPageClientProps) {
         <div className="relative">
           <div className="absolute inset-0 bg-linear-to-r from-secondary via-secondary/20 to-white"></div>
           <div className="relative max-w-content mx-auto px-6 sm:px-8 lg:px-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-8">Specification</h2>
+            <AnimateIn from="bottom">
+              <h2 className="text-3xl md:text-4xl font-bold text-primary mb-8">Specification</h2>
+            </AnimateIn>
           </div>
         </div>
         <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12 mt-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
             {/* Left: Specification Table */}
-            <div className="overflow-hidden rounded-xl border-2 border-secondary">
-              <table className="w-full table-fixed border-collapse">
-                <thead>
-                  <tr className="bg-white">
-                    <th className="px-6 py-3 text-center text-md font-bold text-primary border-r-2 border-secondary">
-                      Description
-                    </th>
-                    <th className="px-6 py-3 text-center text-md font-bold text-primary">
-                      Value
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {product.specification.map((spec, index) => {
-                    const [description, value] = spec.split(':');
-                    return (
-                      <tr key={index}>
-                        <td className="px-6 py-3 text-sm text-primary font-medium bg-secondary border-r-2 border-secondary border-t-2 border-t-white/30">
-                          {description}
-                        </td>
-                        <td className="px-6 py-3 text-sm text-primary text-center bg-secondary/50 border-t-2 border-t-secondary/70">
-                          {value}
-                        </td>
-                      </tr>
-                    );
-                  })}
-                </tbody>
-              </table>
-            </div>
+            <AnimateIn from="left">
+              <div className="overflow-hidden rounded-xl border-2 border-secondary">
+                <table className="w-full table-fixed border-collapse">
+                  <thead>
+                    <tr className="bg-white">
+                      <th className="px-6 py-3 text-center text-md font-bold text-primary border-r-2 border-secondary">
+                        Description
+                      </th>
+                      <th className="px-6 py-3 text-center text-md font-bold text-primary">
+                        Value
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {product.specification.map((spec, index) => {
+                      const [description, value] = spec.split(':');
+                      return (
+                        <tr key={index}>
+                          <td className="px-6 py-3 text-sm text-primary font-medium bg-secondary border-r-2 border-secondary border-t-2 border-t-white/30">
+                            {description}
+                          </td>
+                          <td className="px-6 py-3 text-sm text-primary text-center bg-secondary/50 border-t-2 border-t-secondary/70">
+                            {value}
+                          </td>
+                        </tr>
+                      );
+                    })}
+                  </tbody>
+                </table>
+              </div>
+            </AnimateIn>
 
             {/* Right: Technical Specifications */}
-            <div className="relative flex flex-col justify-center">
-              <h3 className="text-2xl md:text-3xl font-bold text-primary mb-4">
-                Technical Specifications
-              </h3>
-              <p className="text-primary font-normal text-sm leading-6 mb-6">
-                Full specification ranges are available in the technical datasheet.
-              </p>
-              <div className="flex flex-col gap-3 text-center xs:max-w-2/3">
-                {product.pdfs.map((pdf, index) =>
-                  pdf.url ? (
-                    <a
-                      key={index}
-                      href={`/pdf/${pdf.url}`}
-                      download
-                      className="px-8 py-3 bg-primary text-secondary rounded-lg font-medium hover:bg-green-medium transition-colors text-center"
-                    >
-                      {pdf.name}
-                    </a>
-                  ) : (
-                    <span
-                      key={index}
-                      className="px-8 py-3 bg-primary text-secondary rounded-lg font-medium text-center"
-                    >
-                      {pdf.name}
-                    </span>
-                  )
-                )}
+            <AnimateIn from="right">
+              <div className="relative flex flex-col justify-center">
+                <h3 className="text-2xl md:text-3xl font-bold text-primary mb-4">
+                  Technical Specifications
+                </h3>
+                <p className="text-primary font-normal text-sm leading-6 mb-6">
+                  Full specification ranges are available in the technical datasheet.
+                </p>
+                <div className="flex flex-col gap-3 text-center xs:max-w-2/3">
+                  {product.pdfs.map((pdf, index) =>
+                    pdf.url ? (
+                      <a
+                        key={index}
+                        href={`/pdf/${pdf.url}`}
+                        download
+                        className="px-8 py-3 bg-primary text-secondary rounded-lg font-medium hover:bg-green-medium transition-colors text-center"
+                      >
+                        {pdf.name}
+                      </a>
+                    ) : (
+                      <span
+                        key={index}
+                        className="px-8 py-3 bg-primary text-secondary rounded-lg font-medium text-center"
+                      >
+                        {pdf.name}
+                      </span>
+                    )
+                  )}
+                </div>
+                {/* Decoration SVG - Right Side */}
+                <div className="hidden sm:block absolute -right-12 lg:-right-20 top-1/2 -translate-y-1/2 w-32 h-32 md:w-48 md:h-48 lg:w-64 lg:h-64 pointer-events-none">
+                  <Image
+                    src="/decoration2.png"
+                    alt=""
+                    width={256}
+                    height={256}
+                    className="w-full h-full object-contain"
+                  />
+                </div>
               </div>
-              {/* Decoration SVG - Right Side */}
-              <div className="hidden sm:block absolute -right-12 lg:-right-20 top-1/2 -translate-y-1/2 w-32 h-32 md:w-48 md:h-48 lg:w-64 lg:h-64 pointer-events-none">
-                <Image
-                  src="/decoration2.png"
-                  alt=""
-                  width={256}
-                  height={256}
-                  className="w-full h-full object-contain"
-                />
-              </div>
-            </div>
+            </AnimateIn>
           </div>
         </div>
       </section>
@@ -314,36 +333,41 @@ export default function ProductPageClient({ product }: ProductPageClientProps) {
         <div className="relative">
           <div className="absolute inset-0 bg-linear-to-r from-secondary via-secondary/20 to-white"></div>
           <div className="relative max-w-content mx-auto px-6 sm:px-8 lg:px-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-8">Make an enquiry</h2>
+            <AnimateIn from="bottom">
+              <h2 className="text-3xl md:text-4xl font-bold text-primary mb-8">Make an enquiry</h2>
+            </AnimateIn>
           </div>
         </div>
         <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12 mt-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Left: Promotional Text with Decoration */}
-            <div className="relative flex flex-col justify-center">
-              <div className="block xs:hidden lg:block absolute -left-8 md:-left-12 lg:-left-16 top-1/2 -translate-y-1/2 w-full h-auto pointer-events-none">
-                <Image
-                  src="/decoration3.png"
-                  alt=""
-                  width={600}
-                  height={600}
-                  className="w-full h-auto object-contain"
-                />
-              </div>
+            <AnimateIn from="left">
+              <div className="relative flex flex-col justify-center">
+                <div className="block xs:hidden lg:block absolute -left-8 md:-left-12 lg:-left-16 top-1/2 -translate-y-1/2 w-full h-auto pointer-events-none">
+                  <Image
+                    src="/decoration3.png"
+                    alt=""
+                    width={600}
+                    height={600}
+                    className="w-full h-auto object-contain"
+                  />
+                </div>
 
-              <div className="relative z-10">
-                <h3 className="text-2xl md:text-3xl font-bold text-primary mb-4">
-                  You&apos;re one step closer<br />
-                  to achieving <span className="text-green-medium">your goal!</span>
-                </h3>
-                <p className="text-primary font-normal text-sm leading-6">
-                  GREENEX, we help our customers increase sales and lower costs while offering reasonable pricing, volume flexibility, and fast delivery.
-                </p>
+                <div className="relative z-10">
+                  <h3 className="text-2xl md:text-3xl font-bold text-primary mb-4">
+                    You&apos;re one step closer<br />
+                    to achieving <span className="text-green-medium">your goal!</span>
+                  </h3>
+                  <p className="text-primary font-normal text-sm leading-6">
+                    GREENEX, we help our customers increase sales and lower costs while offering reasonable pricing, volume flexibility, and fast delivery.
+                  </p>
+                </div>
               </div>
-            </div>
+            </AnimateIn>
 
             {/* Right: Form with Secondary Background */}
-            <div className="bg-secondary/20 border-2 border-secondary/60 rounded-3xl p-4 md:p-8">
+            <AnimateIn from="right">
+              <div className="bg-secondary/20 border-2 border-secondary/60 rounded-3xl p-4 md:p-8">
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
@@ -473,7 +497,8 @@ export default function ProductPageClient({ product }: ProductPageClientProps) {
                   </button>
                 </div>
               </form>
-            </div>
+              </div>
+            </AnimateIn>
           </div>
         </div>
       </section>
